@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 uses(RefreshDatabase::class);
 
 beforeEach(function () {
-    $this->processor = new LawTreeProcessor;
+    $this->processor = app(LawTreeProcessor::class);
 });
 
 test('processes simple law with html to markdown conversion', function () {

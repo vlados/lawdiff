@@ -12,8 +12,9 @@ class LawTreeProcessor
 
     protected int $sortOrder = 0;
 
-    public function __construct()
-    {
+    public function __construct(
+        protected LawPathBuilder $pathBuilder
+    ) {
         $this->converter = new HtmlConverter([
             'strip_tags' => true,
             'remove_nodes' => 'script style',
@@ -87,10 +88,10 @@ class LawTreeProcessor
             $usedPIds[] = $node['pId'];
 
             $caption = $node['caption'] ?? '';
-            $nodeType = $this->determineNodeType($caption);
+            $nodeType = $this->pathBuilder->determineNodeType($caption);
 
-            // Skip ГЛАВА and РАЗДЕЛ nodes entirely - don't create them, but process their children
-            if ($nodeType === 'chapter' || $nodeType === 'section') {
+            // Skip ГЛАВА, РАЗДЕЛ, and transitional section headers - don't create them, but process their children
+            if ($this->pathBuilder->shouldSkipNode($nodeType)) {
                 // Process children with the same parent path (skip this node in the path)
                 if (isset($node['children']) && is_array($node['children']) && count($node['children']) > 0) {
                     $this->buildAndSaveNodes(
@@ -107,7 +108,7 @@ class LawTreeProcessor
             }
 
             // Build the path for this node
-            $pathSegment = $this->buildPathSegment($caption, $node['pId']);
+            $pathSegment = $this->pathBuilder->buildSegment($caption, $node['pId']);
             $currentPath = $parentPath ? $parentPath.'/'.$pathSegment : $pathSegment;
 
             // Get text data if available
@@ -147,7 +148,8 @@ class LawTreeProcessor
     {
         foreach ($textMap as $pId => $data) {
             if (! in_array($pId, $usedPIds)) {
-                $pathSegment = $this->buildOrphanedPath($data);
+                $data['pId'] = $pId;
+                $pathSegment = $this->pathBuilder->buildOrphanedPath($data);
 
                 LawNode::create([
                     'law_id' => $law->id,
@@ -155,7 +157,7 @@ class LawTreeProcessor
                     'p_id' => $pId,
                     'caption' => null,
                     'text_markdown' => $data['text'],
-                    'node_type' => $this->determineOrphanedNodeType($data),
+                    'node_type' => $this->pathBuilder->determineOrphanedNodeType($data),
                     'type' => $data['type'],
                     'field_type' => $data['fieldType'],
                     'has_in_links' => $data['hasInLinks'],
@@ -165,81 +167,6 @@ class LawTreeProcessor
                 ]);
             }
         }
-    }
-
-    protected function buildPathSegment(?string $caption, int $pId): string
-    {
-        if (! $caption) {
-            return 'NODE_'.$pId;
-        }
-
-        // Normalize the caption to create a path segment
-        $normalized = mb_strtoupper($caption);
-
-        // Remove all non-alphanumeric characters
-        $normalized = preg_replace('/[^\p{L}\p{N}]+/u', '', $normalized);
-
-        return $normalized ?: 'NODE_'.$pId;
-    }
-
-    protected function buildOrphanedPath(array $data): string
-    {
-        $type = $data['type'] ?? 0;
-        $fieldType = $data['fieldType'] ?? 0;
-
-        // Try to determine what kind of orphaned node this is
-        if ($fieldType === 1) {
-            return 'ЗАГЛАВИЕ';
-        }
-
-        if ($fieldType === 2) {
-            return 'ПУБЛ_ИНФО';
-        }
-
-        if ($fieldType === 9) {
-            return 'ЗАБЕЛЕЖКА_'.($data['pId'] ?? uniqid());
-        }
-
-        return 'ORPHAN_'.($type ?? 0).'_'.($data['pId'] ?? uniqid());
-    }
-
-    protected function determineNodeType(string $caption): string
-    {
-        $upper = mb_strtoupper($caption);
-
-        if (str_contains($upper, 'ГЛАВА') || str_starts_with($upper, 'ГЛ.')) {
-            return 'chapter';
-        }
-
-        if (str_contains($upper, 'РАЗДЕЛ') || str_starts_with($upper, 'РАЗД.')) {
-            return 'section';
-        }
-
-        if (str_contains($upper, 'ЧЛ.') || str_starts_with($upper, 'ЧЛ.')) {
-            return 'article';
-        }
-
-        if (str_contains($upper, 'АЛ.') || str_starts_with($upper, 'АЛ.')) {
-            return 'paragraph';
-        }
-
-        if (str_contains($upper, 'Т.') || preg_match('/^\d+\./', $caption)) {
-            return 'point';
-        }
-
-        return 'unknown';
-    }
-
-    protected function determineOrphanedNodeType(array $data): string
-    {
-        $fieldType = $data['fieldType'] ?? 0;
-
-        return match ($fieldType) {
-            1 => 'title',
-            2 => 'publication_info',
-            9 => 'note',
-            default => 'metadata',
-        };
     }
 
     protected function convertHtmlToMarkdown(string $html): string
@@ -271,9 +198,9 @@ class LawTreeProcessor
 
     protected function parseAndSplitArticles(Law $law): void
     {
-        // Get all article nodes that have text to parse
+        // Get all article and transitional_paragraph nodes that have text to parse
         $articles = $law->nodes()
-            ->where('node_type', 'article')
+            ->whereIn('node_type', ['article', 'transitional_paragraph'])
             ->whereNotNull('text_markdown')
             ->orderBy('sort_order')
             ->get();
@@ -291,23 +218,24 @@ class LawTreeProcessor
             return;
         }
 
-        // Check if this article has алинеи (paragraphs) marked with (1), (2), etc.
+        // Check if this node has алинеи (paragraphs) marked with (1), (2), etc.
         // Pattern can be: " (1)" inline or "\n\n(1)" on new line
+        // Both regular articles (чл.) and transitional paragraphs (§) can have алинеи
         if (preg_match('/(?:\s\((\d+)\)|\n\n\((\d+)\))/u', $text)) {
             $this->parseAlinees($law, $article, $text);
 
             return;
         }
 
-        // Check if this article has точки (points) marked with 1., 2., etc.
-        // Note: periods are escaped in markdown as \. (literal backslash + period)
-        if (preg_match('/\n\n\d+\\\\./u', $text)) {
+        // Check if this node has точки (points) marked with 1., 2., etc.
+        // Pattern matches: "\n\n 1." (regular) or "\n\n1\." (escaped period in markdown)
+        if (preg_match('/\n\n\s*\d+(\\\\\.|\\.)/u', $text)) {
             $this->parsePoints($law, $article, $text);
 
             return;
         }
 
-        // Check if this article has букви (letters) marked with а), б), etc.
+        // Check if this node has букви (letters) marked with а), б), etc.
         if (preg_match('/\n\n[а-я]\)/u', $text)) {
             $this->parseLetters($law, $article, $text);
         }
@@ -315,11 +243,12 @@ class LawTreeProcessor
 
     protected function parseAlinees(Law $law, LawNode $article, string $text): void
     {
-        // Normalize: Convert inline " (N)" to "\n\n(N)" for consistent parsing
-        $text = preg_replace('/\s+\((\d+)\)/u', "\n\n($1)", $text);
+        // Normalize: Convert inline " (N)" or " (Nа)" to "\n\n(N)" for consistent parsing
+        // Pattern matches (1), (2), (5а), (5б), etc.
+        $text = preg_replace('/\s+\((\d+[а-я]?)\)/u', "\n\n($1)", $text);
 
-        // Split text by алинея pattern: \n\n(1), \n\n(2), etc.
-        $parts = preg_split('/\n\n\((\d+)\)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+        // Split text by алинея pattern: \n\n(1), \n\n(2), \n\n(5а), etc.
+        $parts = preg_split('/\n\n\((\d+[а-я]?)\)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
 
         // First part is the article introduction (before first алинея)
         $introduction = trim($parts[0]);
@@ -333,11 +262,11 @@ class LawTreeProcessor
                 break;
             }
 
-            $alineaNumber = $parts[$i];
+            $alineaNumber = $parts[$i]; // Keep as string to preserve letter suffixes like "5а"
             $alineaText = trim($parts[$i + 1]);
 
             // Create алинея node
-            $alineaPath = $article->path.'/АЛ'.$alineaNumber;
+            $alineaPath = $this->pathBuilder->buildAlineaPath($article->path, $alineaNumber);
 
             $alineaNode = LawNode::create([
                 'law_id' => $law->id,
@@ -355,7 +284,7 @@ class LawTreeProcessor
             ]);
 
             // Check if this алинея contains точки or букви
-            if (preg_match('/\n\n\d+\\\\./u', $alineaText)) {
+            if (preg_match('/\n\n\s*\d+(\\\\\.|\\.)/u', $alineaText)) {
                 $this->parsePoints($law, $alineaNode, $alineaText);
             } elseif (preg_match('/\n\n[а-я]\)/u', $alineaText)) {
                 $this->parseLetters($law, $alineaNode, $alineaText);
@@ -365,9 +294,9 @@ class LawTreeProcessor
 
     protected function parsePoints(Law $law, LawNode $parent, string $text): void
     {
-        // Split text by точка pattern: \n\n1\., \n\n2\., etc.
-        // Note: periods are escaped in markdown as \. (literal backslash + period)
-        $parts = preg_split('/\n\n(\d+)\\\\./u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+        // Split text by точка pattern: \n\n 1. or \n\n1\. (escaped)
+        // Pattern matches optional space and either regular or escaped period
+        $parts = preg_split('/\n\n\s*(\d+)(\\\\\.|\.)/', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
 
         // First part is introduction (before first точка)
         $introduction = trim($parts[0]);
@@ -376,16 +305,17 @@ class LawTreeProcessor
         $parent->update(['text_markdown' => $introduction ?: null]);
 
         // Process точки
-        for ($i = 1; $i < count($parts); $i += 2) {
-            if (! isset($parts[$i]) || ! isset($parts[$i + 1])) {
+        // With 2 capture groups, array has: [intro, digit, period, text, digit, period, text...]
+        for ($i = 1; $i < count($parts); $i += 3) {
+            if (! isset($parts[$i]) || ! isset($parts[$i + 2])) {
                 break;
             }
 
-            $pointNumber = $parts[$i];
-            $pointText = trim($parts[$i + 1]);
+            $pointNumber = (int) $parts[$i];
+            $pointText = trim($parts[$i + 2]);
 
             // Create точка node
-            $pointPath = $parent->path.'/Т'.$pointNumber;
+            $pointPath = $this->pathBuilder->buildPointPath($parent->path, $pointNumber);
 
             $pointNode = LawNode::create([
                 'law_id' => $law->id,
@@ -430,7 +360,7 @@ class LawTreeProcessor
             $letterText = trim($parts[$i + 1]);
 
             // Create буква node with uppercase letter in path
-            $letterPath = $parent->path.'/БУКВА_'.mb_strtoupper($letter);
+            $letterPath = $this->pathBuilder->buildLetterPath($parent->path, $letter);
 
             LawNode::create([
                 'law_id' => $law->id,
