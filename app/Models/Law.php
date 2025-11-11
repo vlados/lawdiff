@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Law extends Model
 {
@@ -32,6 +33,10 @@ class Law extends Model
         'celex',
         'doc_lead',
         'seria',
+        'content_structure',
+        'content_text',
+        'content_fetched_at',
+        'processed_at',
     ];
 
     protected function casts(): array
@@ -51,6 +56,15 @@ class Law extends Model
             'has_content' => 'boolean',
             'dv' => 'integer',
             'original_id' => 'integer',
+            'content_structure' => 'array',
+            'content_text' => 'array',
+            'content_fetched_at' => 'datetime',
+            'processed_at' => 'datetime',
         ];
+    }
+
+    public function nodes(): HasMany
+    {
+        return $this->hasMany(LawNode::class);
     }
 }
