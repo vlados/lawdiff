@@ -1,8 +1,5 @@
 <div align="center">
 
-<!-- Banner Image -->
-<img src=".github/assets/banner.svg" alt="LawDiff Banner" width="100%">
-
 # LawDiff
 
 ### Система за анализ на законодателни промени
