@@ -4,7 +4,14 @@
       "mcp__laravel-boost__search-docs",
       "Bash(php artisan make:test:*)",
       "Bash(php artisan test:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(curl:*)",
+      "Bash(php artisan:*)",
+      "mcp__laravel-boost__tinker",
+      "mcp__laravel-boost__database-query",
+      "Bash(vendor/bin/pint:*)",
+      "mcp__fetch__fetch",
+      "Bash(git commit:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
