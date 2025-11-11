@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Banner Image -->
-<img src=".github/assets/banner.png" alt="LawDiff Banner" width="100%">
+<img src=".github/assets/banner.svg" alt="LawDiff Banner" width="100%">
 
 # LawDiff
 
@@ -82,7 +82,7 @@ LawDiff е Laravel базирано приложение, което автом�
 ## <a id="architecture"></a>🏗 Архитектура
 
 <div align="center">
-<img src=".github/assets/architecture.png" alt="Architecture Diagram" width="800">
+<img src=".github/assets/architecture.svg" alt="Architecture Diagram" width="800">
 <p><em>Архитектура на системата</em></p>
 </div>
 
