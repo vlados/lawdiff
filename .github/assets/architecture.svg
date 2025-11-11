@@ -94,7 +94,7 @@
 
   <!-- Layer 5: Frontend -->
   <rect x="250" y="720" width="500" height="60" rx="10" class="frontend-box"/>
-  <text x="500" y="755" class="text-white" text-anchor="middle">API / Livewire Frontend</text>
+  <text x="500" y="755" class="text-white" text-anchor="middle">Livewire Frontend</text>
 
   <!-- Path examples -->
   <g transform="translate(100, 100)">
