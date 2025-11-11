@@ -12,7 +12,9 @@
       "Bash(vendor/bin/pint:*)",
       "mcp__fetch__fetch",
       "Bash(git commit:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "mcp__laravel-boost__database-schema",
+      "Bash(npm audit:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
