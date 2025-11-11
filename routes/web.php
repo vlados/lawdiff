@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LawController;
+use App\Livewire\HomePage;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -8,9 +9,7 @@ use App\Livewire\Settings\TwoFactor;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', HomePage::class)->name('home');
 
 Route::get('/laws/{law}', [LawController::class, 'show'])->name('laws.show');
 
