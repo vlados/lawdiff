@@ -13,6 +13,7 @@ This application is a Laravel application and its main Laravel ecosystems packag
 - laravel/framework (LARAVEL) - v12
 - laravel/prompts (PROMPTS) - v0
 - livewire/flux (FLUXUI_FREE) - v2
+- livewire/flux-pro (FLUXUI_PRO) - v2
 - livewire/livewire (LIVEWIRE) - v3
 - livewire/volt (VOLT) - v1
 - laravel/mcp (MCP) - v0
@@ -181,18 +182,18 @@ protected function isAccessible(User $user, ?string $path = null): bool
 - Casts can and likely should be set in a `casts()` method on a model rather than the `$casts` property. Follow existing conventions from other models.
 
 
-=== fluxui-free/core rules ===
+=== fluxui-pro/core rules ===
 
-## Flux UI Free
+## Flux UI Pro
 
-- This project is using the free edition of Flux UI. It has full access to the free components and variants, but does not have access to the Pro components.
+- This project is using the Pro version of Flux UI. It has full access to the free components and variants, as well as full access to the Pro components and variants.
 - Flux UI is a component library for Livewire. Flux is a robust, hand-crafted, UI component library for your Livewire applications. It's built using Tailwind CSS and provides a set of components that are easy to use and customize.
 - You should use Flux UI components when available.
 - Fallback to standard Blade components if Flux is unavailable.
 - If available, use Laravel Boost's `search-docs` tool to get the exact documentation and code snippets available for this project.
 - Flux UI components look like this:
 
-<code-snippet name="Flux UI Component Usage Example" lang="blade">
+<code-snippet name="Flux UI component usage example" lang="blade">
     <flux:button variant="primary"/>
 </code-snippet>
 
@@ -201,7 +202,7 @@ protected function isAccessible(User $user, ?string $path = null): bool
 This is correct as of Boost installation, but there may be additional components within the codebase.
 
 <available-flux-components>
-avatar, badge, brand, breadcrumbs, button, callout, checkbox, dropdown, field, heading, icon, input, modal, navbar, profile, radio, select, separator, switch, text, textarea, tooltip
+accordion, autocomplete, avatar, badge, brand, breadcrumbs, button, calendar, callout, card, chart, checkbox, command, context, date-picker, dropdown, editor, field, heading, file upload, icon, input, modal, navbar, pagination, pillbox, popover, profile, radio, select, separator, switch, table, tabs, text, textarea, toast, tooltip
 </available-flux-components>
 
 
