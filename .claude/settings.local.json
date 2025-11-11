@@ -11,7 +11,8 @@
       "mcp__laravel-boost__database-query",
       "Bash(vendor/bin/pint:*)",
       "mcp__fetch__fetch",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git restore:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
