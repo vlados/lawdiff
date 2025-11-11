@@ -79,7 +79,7 @@ test('command respects limit option', function () {
     expect(Law::whereNull('content_fetched_at')->count())->toBe(2);
 });
 
-test('command skips laws with existing content and old dates by default', function () {
+test('command skips laws with existing content by default', function () {
     $lawWithContent = Law::factory()->create([
         'content_fetched_at' => now(),
         'content_structure' => ['data' => 'existing'],
@@ -105,12 +105,12 @@ test('command skips laws with existing content and old dates by default', functi
     expect($lawWithoutContent->content_structure)->toBe(['new' => 'data']);
 });
 
-test('command refetches content for laws with future publication date', function () {
-    $lawWithFuturePublDate = Law::factory()->create([
-        'content_fetched_at' => now()->subDay(),
+test('command refetches laws published after last fetch once publication date passes', function () {
+    $lawPublishedYesterday = Law::factory()->create([
+        'content_fetched_at' => now()->subWeek(), // Fetched a week ago
         'content_structure' => ['data' => 'old'],
         'content_text' => ['data' => 'old'],
-        'publ_date' => now()->addWeek(),
+        'publ_date' => now()->subDay(), // Published yesterday (after last fetch, before now)
         'start_date' => now()->subYear(),
     ]);
 
@@ -122,18 +122,41 @@ test('command refetches content for laws with future publication date', function
     $this->artisan('laws:fetch-contents')
         ->assertSuccessful();
 
-    $lawWithFuturePublDate->refresh();
+    $lawPublishedYesterday->refresh();
 
-    expect($lawWithFuturePublDate->content_structure)->toBe(['data' => 'updated']);
+    expect($lawPublishedYesterday->content_structure)->toBe(['data' => 'updated']);
 });
 
-test('command refetches content for laws with future start date', function () {
-    $lawWithFutureStartDate = Law::factory()->create([
-        'content_fetched_at' => now()->subDay(),
+test('command does not refetch laws with future publication dates', function () {
+    $lawPublishedTomorrow = Law::factory()->create([
+        'content_fetched_at' => now()->subDay(), // Fetched yesterday
+        'content_structure' => ['data' => 'preliminary'],
+        'content_text' => ['data' => 'preliminary'],
+        'publ_date' => now()->addDay(), // Will be published tomorrow
+        'start_date' => now()->subYear(),
+    ]);
+
+    Http::fake([
+        '*/DocContent*' => Http::response(['data' => 'should-not-fetch'], 200),
+        '*/DocTextJson/*' => Http::response(['paragraphs' => ['data' => 'should-not-fetch']], 200),
+    ]);
+
+    $this->artisan('laws:fetch-contents')
+        ->assertSuccessful();
+
+    $lawPublishedTomorrow->refresh();
+
+    // Should NOT be updated because publication date is in the future
+    expect($lawPublishedTomorrow->content_structure)->toBe(['data' => 'preliminary']);
+});
+
+test('command refetches laws with start date after last fetch once start date passes', function () {
+    $lawStartedYesterday = Law::factory()->create([
+        'content_fetched_at' => now()->subWeek(), // Fetched a week ago
         'content_structure' => ['data' => 'old'],
         'content_text' => ['data' => 'old'],
         'publ_date' => now()->subYear(),
-        'start_date' => now()->addMonth(),
+        'start_date' => now()->subDay(), // Started yesterday (after last fetch, before now)
     ]);
 
     Http::fake([
@@ -144,9 +167,9 @@ test('command refetches content for laws with future start date', function () {
     $this->artisan('laws:fetch-contents')
         ->assertSuccessful();
 
-    $lawWithFutureStartDate->refresh();
+    $lawStartedYesterday->refresh();
 
-    expect($lawWithFutureStartDate->content_structure)->toBe(['data' => 'updated']);
+    expect($lawStartedYesterday->content_structure)->toBe(['data' => 'updated']);
 });
 
 test('command force refetches with force option', function () {

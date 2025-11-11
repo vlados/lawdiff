@@ -43,11 +43,21 @@ class FetchLawContents extends Command
             $query->where('id', $lawId);
         } elseif (! $force) {
             $query->where(function ($q) {
+                // Fetch laws without content
                 $q->whereNull('content_fetched_at')
-                    ->orWhere('publ_date', '>', now())
-                    ->orWhere('start_date', '>', now());
+                    // OR laws published after last fetch AND publication date has passed
+                    ->orWhere(function ($q) {
+                        $q->whereColumn('publ_date', '>', 'content_fetched_at')
+                            ->where('publ_date', '<=', now());
+                    })
+                    // OR laws starting after last fetch AND start date has passed
+                    ->orWhere(function ($q) {
+                        $q->whereColumn('start_date', '>', 'content_fetched_at')
+                            ->where('start_date', '<=', now());
+                    });
             });
         }
+        //        dd($query->toRawSql());
 
         $totalToProcess = min($query->count(), $limit);
 

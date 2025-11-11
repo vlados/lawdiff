@@ -207,9 +207,9 @@ test('processes laws with complex nested structure', function () {
 
     $nodes = $law->nodes()->orderBy('sort_order')->get();
 
-    expect($nodes)->toHaveCount(2)
-        ->and($nodes[0]->path)->toBe('1')
-        ->and($nodes[0]->text_markdown)->toContain('**text**')
-        ->and($nodes[1]->path)->toBe('1/ЧЛ1')
-        ->and($nodes[1]->text_markdown)->toContain('*text*');
+    // Chapter nodes are skipped, only article is saved
+    expect($nodes)->toHaveCount(1)
+        ->and($nodes[0]->path)->toBe('ЧЛ1')
+        ->and($nodes[0]->caption)->toBe('Чл. 1')
+        ->and($nodes[0]->text_markdown)->toContain('*text*');
 });
