@@ -21,3 +21,7 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+# Conversation logs and temporary files
+*-create-a-console-commands-*.txt
+*.log.txt
