@@ -1,6 +1,24 @@
-# LawDiff - Система за анализ на законодателни промени
+<div align="center">
+
+<!-- Banner Image -->
+<img src=".github/assets/banner.png" alt="LawDiff Banner" width="100%">
+
+# LawDiff
+
+### Система за анализ на законодателни промени
+
+[![Tests](https://github.com/vlados/lawdiff/actions/workflows/tests.yml/badge.svg)](https://github.com/vlados/lawdiff/actions/workflows/tests.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![PHP Version](https://img.shields.io/badge/php-%5E8.4-777BB4.svg)](https://php.net)
+[![Laravel Version](https://img.shields.io/badge/laravel-%5E12.0-FF2D20.svg)](https://laravel.com)
 
 Уеб приложение за обработка, структуриране и анализ на български закони и законодателни изменения.
+
+[Инсталация](#installation) • [Документация](#api-docs) • [Принос](#принос)
+
+</div>
+
+---
 
 ## 📋 Съдържание
 
@@ -62,6 +80,11 @@ LawDiff е Laravel базирано приложение, което автом�
 - **Laravel Boost** - MCP сървър за разработка
 
 ## <a id="architecture"></a>🏗 Архитектура
+
+<div align="center">
+<img src=".github/assets/architecture.png" alt="Architecture Diagram" width="800">
+<p><em>Архитектура на системата</em></p>
+</div>
 
 ### Модели
 
