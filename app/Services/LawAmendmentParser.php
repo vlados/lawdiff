@@ -90,8 +90,11 @@ class LawAmendmentParser
         $targets = [];
         $this->context = [];
 
+        // Remove motives section to avoid extracting references from there
+        $contentWithoutMotives = preg_replace('/Мотиви:\s*.+$/isu', '', $content);
+
         // Split into lines
-        $lines = preg_split('/\r\n|\r|\n/', $content);
+        $lines = preg_split('/\r\n|\r|\n/', $contentWithoutMotives);
 
         foreach ($lines as $line) {
             $line = trim($line);
@@ -118,31 +121,48 @@ class LawAmendmentParser
 
     protected function processLine(string $line, array &$targets): void
     {
-        // Skip lines that are modifications text (contain quotes or specific change keywords)
+        // Try to parse a complete reference in one line first
+        // Pattern: "В чл. X, ал. Y, т. Z, буква "а""
+        // This handles lines like: "В чл. 151, ал. 1, т. 12 думите..."
+        if ($this->parseCompleteReference($line, $targets)) {
+            return;
+        }
+
+        // Skip lines that are ONLY modifications text (no structural references)
         if ($this->isModificationText($line)) {
             return;
         }
 
-        // Check for main article reference: "В чл. X"
-        if (preg_match('/^В\s+чл\.\s*(\d+[а-я]?)/iu', $line, $matches)) {
+        // Check for main article reference: "В чл. X" or "чл. X"
+        // Handles: "В чл. 21", "чл. 151", "чл. 164в" (with letter suffixes)
+        if (preg_match('/В\s+чл\.\s*(\d+[а-я]?)/iu', $line, $matches)) {
             $this->context['article'] = $matches[1];
-            unset($this->context['paragraph'], $this->context['point'], $this->context['letter']);
+            unset($this->context['paragraph'], $this->context['point'], $this->context['letter'], $this->context['section']);
 
             $this->addTarget($targets);
         }
 
-        // Check for paragraph: "В ал. X" or "1. В ал. X:"
-        if (preg_match('/(?:^\d+\.)?\s*В\s+ал\.\s*(\d+)/iu', $line, $matches)) {
-            if (isset($this->context['article'])) {
+        // Check for section reference: "В § X" or "§ X"
+        // Handles: "§ 6", "§ 104", "§ 18б" (with letter suffixes)
+        if (preg_match('/(?:В\s+)?§\s*(\d+[а-я]?)/iu', $line, $matches)) {
+            $this->context['section'] = $matches[1];
+            unset($this->context['article'], $this->context['paragraph'], $this->context['point'], $this->context['letter']);
+
+            $this->addTarget($targets);
+        }
+
+        // Check for paragraph: "В ал. X" or "ал. X"
+        if (preg_match('/(?:В\s+)?ал\.\s*(\d+[а-я]?)/iu', $line, $matches)) {
+            if (isset($this->context['article']) || isset($this->context['section'])) {
                 $this->context['paragraph'] = $matches[1];
                 unset($this->context['point'], $this->context['letter']);
                 $this->addTarget($targets);
             }
         }
 
-        // Check for point: "в т. X" or "а) в т. X"
-        if (preg_match('/в\s+т\.\s*(\d+)/iu', $line, $matches)) {
-            if (isset($this->context['article'])) {
+        // Check for point: "т. X"
+        if (preg_match('/т\.\s*(\d+[а-я]?)/iu', $line, $matches)) {
+            if (isset($this->context['article']) || isset($this->context['section'])) {
                 $this->context['point'] = $matches[1];
                 unset($this->context['letter']);
                 $this->addTarget($targets);
@@ -151,11 +171,68 @@ class LawAmendmentParser
 
         // Check for letter: 'буква "X"'
         if (preg_match('/буква\s*["\']([а-я])["\']/', $line, $matches)) {
-            if (isset($this->context['article'])) {
+            if (isset($this->context['article']) || isset($this->context['section'])) {
                 $this->context['letter'] = $matches[1];
                 $this->addTarget($targets);
             }
         }
+    }
+
+    protected function parseCompleteReference(string $line, array &$targets): bool
+    {
+        // Try to match complete reference patterns like:
+        // "В чл. 151, ал. 1, т. 12"
+        // "В чл. 21, в таблицата към ал. 1"
+        // "В чл. 164в, ал. 2, т. 5, буква "б""
+        // "В § 6, т. 18б"
+
+        $foundComplete = false;
+
+        // Pattern for article-based complete reference (allowing extra text like "в таблицата към")
+        // Matches: "В чл. X" optionally followed by "ал. Y", "т. Z", "буква "а""
+        // Commas are optional between components
+        if (preg_match('/В\s+чл\.\s*(\d+[а-я]?)(?:[^,]*?(?:,\s*)?(?:в\s+таблицата\s+към\s+)?ал\.\s*(\d+[а-я]?))?(?:[^,]*?(?:,\s*)?т\.\s*(\d+[а-я]?))?(?:[^,]*?(?:,\s*)?буква\s*["\']([а-я])["\'])?/iu', $line, $matches)) {
+            $this->context['article'] = $matches[1];
+            unset($this->context['section']);
+
+            if (! empty($matches[2])) {
+                $this->context['paragraph'] = $matches[2];
+            } else {
+                unset($this->context['paragraph']);
+            }
+
+            if (! empty($matches[3])) {
+                $this->context['point'] = $matches[3];
+            } else {
+                unset($this->context['point']);
+            }
+
+            if (! empty($matches[4])) {
+                $this->context['letter'] = $matches[4];
+            } else {
+                unset($this->context['letter']);
+            }
+
+            $this->addTarget($targets);
+            $foundComplete = true;
+        }
+
+        // Pattern for section-based complete reference (Supplementary provisions)
+        if (preg_match('/В\s+§\s*(\d+[а-я]?)(?:,\s*т\.\s*(\d+[а-я]?))?/iu', $line, $matches)) {
+            $this->context['section'] = $matches[1];
+            unset($this->context['article'], $this->context['paragraph'], $this->context['letter']);
+
+            if (! empty($matches[2])) {
+                $this->context['point'] = $matches[2];
+            } else {
+                unset($this->context['point']);
+            }
+
+            $this->addTarget($targets);
+            $foundComplete = true;
+        }
+
+        return $foundComplete;
     }
 
     protected function isModificationText(string $line): bool
@@ -185,10 +262,15 @@ class LawAmendmentParser
         $path = [];
         $target = [];
 
+        // Handle either article or section reference
         if (isset($this->context['article'])) {
             $article = 'чл. '.$this->context['article'];
             $path[] = $article;
             $target['article'] = $article;
+        } elseif (isset($this->context['section'])) {
+            $section = '§ '.$this->context['section'];
+            $path[] = $section;
+            $target['section'] = $section;
         }
 
         if (isset($this->context['paragraph'])) {
