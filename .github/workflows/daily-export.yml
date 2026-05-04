@@ -1,0 +1,127 @@
+name: daily-export
+
+on:
+  schedule:
+    # 06:00 UTC = 09:00 Europe/Sofia
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      fetch-limit:
+        description: 'Max laws to fetch contents for in this run'
+        required: false
+        default: '500'
+      force-refetch:
+        description: 'Re-fetch contents even if already present'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+concurrency:
+  group: daily-export
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    env:
+      FETCH_LIMIT: ${{ github.event.inputs.fetch-limit || '500' }}
+      FORCE_REFETCH: ${{ github.event.inputs.force-refetch || 'false' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Need full history so we can push a meaningful commit back
+          fetch-depth: 1
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          tools: composer:v2
+          extensions: mbstring, sqlite3, pdo_sqlite, intl
+          coverage: none
+
+      - name: Configure Flux Pro credentials
+        run: composer config http-basic.composer.fluxui.dev "${{ secrets.FLUX_USERNAME }}" "${{ secrets.FLUX_LICENSE_KEY }}"
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: composer-${{ runner.os }}-php8.4-${{ hashFiles('composer.lock') }}
+          restore-keys: |
+            composer-${{ runner.os }}-php8.4-
+
+      - name: Install PHP dependencies
+        run: composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader
+
+      - name: Prepare environment
+        run: |
+          cp .env.example .env
+          {
+            echo ""
+            echo "DB_CONNECTION=sqlite"
+            echo "DB_DATABASE=${{ github.workspace }}/database/database.sqlite"
+            echo "SESSION_DRIVER=array"
+            echo "CACHE_STORE=array"
+            echo "QUEUE_CONNECTION=sync"
+          } >> .env
+          mkdir -p database
+          touch database/database.sqlite
+          php artisan key:generate --no-interaction
+
+      - name: Restore SQLite snapshot from previous run
+        id: db-cache
+        uses: actions/cache@v4
+        with:
+          path: database/database.sqlite
+          key: lawdiff-sqlite-${{ github.run_id }}
+          restore-keys: |
+            lawdiff-sqlite-
+
+      - name: Run migrations
+        run: php artisan migrate --force --no-interaction
+
+      - name: Fetch law list
+        run: php artisan laws:fetch --no-interaction
+
+      - name: Fetch law contents
+        run: |
+          ARGS="--limit=${FETCH_LIMIT} --no-interaction"
+          if [ "${FORCE_REFETCH}" = "true" ]; then
+            ARGS="${ARGS} --force"
+          fi
+          php artisan laws:fetch-contents ${ARGS}
+
+      - name: Export public dataset
+        run: php artisan laws:export-public --prune --no-interaction
+
+      - name: Inspect changes
+        id: diff
+        run: |
+          git add data
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --staged --stat
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name 'lawdiff-bot'
+          git config user.email 'lawdiff-bot@users.noreply.github.com'
+          COUNT=$(jq -r '.count' data/index.json)
+          git commit -m "data: daily refresh ($(date -u +%Y-%m-%d), ${COUNT} laws)"
+          git push origin HEAD:${GITHUB_REF#refs/heads/}
