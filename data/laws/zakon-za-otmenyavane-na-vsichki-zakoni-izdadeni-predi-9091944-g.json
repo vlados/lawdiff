@@ -1,0 +1,71 @@
+{
+    "unique_id": 9083,
+    "slug": "zakon-za-otmenyavane-na-vsichki-zakoni-izdadeni-predi-9091944-g",
+    "code": "4014",
+    "caption": "ЗАКОН за отменяване на всички закони, издадени преди 9.09.1944 г.",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1951,
+    "publ_date": "1951-11-20",
+    "start_date": "1951-11-23",
+    "end_date": null,
+    "act_date": "1951-11-20",
+    "dv": 93,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 9083,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-04",
+    "processed_at": "2026-05-04",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 272926,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Отменяват се като противоречащи на Димитровската конституция и на установеното след 9 септември 1944 г. социалистическо законодателство в България и се считат за недействителни всички издадени до 9 септември 1944 г. закони и законодателни актове.\n\n Изпълнението на настоящия указ се възлага на министъра на правосъдието.",
+            "children": []
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 272924,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### ЗАКОН за отменяване на всички закони, издадени преди 9.09.1944 г.",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 272925,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 2,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Обн., Изв., бр. 93 от 20.11.1951 г.",
+            "children": []
+        }
+    ]
+}

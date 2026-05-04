@@ -1,0 +1,71 @@
+{
+    "unique_id": 10629,
+    "slug": "naredba-zakon-za-zapazvane-na-balgarskoto-podanstvo-ot-lica-napusnali-stranata-poradi-presledvane-ot-vlastta",
+    "code": "4185",
+    "caption": "НАРЕДБА-ЗАКОН за запазване на българското поданство от лица, напуснали страната поради преследване от властта",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1945,
+    "publ_date": "1945-10-03",
+    "start_date": "1945-10-06",
+    "end_date": null,
+    "act_date": "1945-10-03",
+    "dv": 230,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 10629,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-04",
+    "processed_at": "2026-05-04",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 322618,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Счита се, че лицата, напуснали страната след 9 юни 1923 година, поради създадения тогава политически режим и които са приели чуждо поданство или са постъпили на военна или друга държавна служба в чужда държава, както и онези, които поради същата причина не са се явили в редовете на войската, не са загубили българското си поданство, въпреки противните разпореждания в Закона за българското поданство .",
+            "children": []
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 322616,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### НАРЕДБА-ЗАКОН за запазване на българското поданство от лица, напуснали страната поради преследване от властта",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 322617,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 2,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Приета с ПМС № 2 от 18.09.1945 г., обн., ДВ, бр. 230 от 3.10.1945 г.",
+            "children": []
+        }
+    ]
+}

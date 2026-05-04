@@ -1,0 +1,71 @@
+{
+    "unique_id": 9901,
+    "slug": "zakon-za-izplashtane-na-zadalzheniyata-ugovoreni-v-zlato",
+    "code": "4052",
+    "caption": "ЗАКОН за изплащане на задълженията, уговорени в злато",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1946,
+    "publ_date": "1946-08-14",
+    "start_date": "1946-08-17",
+    "end_date": null,
+    "act_date": "1946-08-14",
+    "dv": 184,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 9901,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-04",
+    "processed_at": "2026-05-04",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 295582,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Всички задължения в лева, уговорени за плащане със злато или според курса на златото, или пък според курса на някоя чужда валута, се изплащат с толкова лева банкноти - колкото е означено в задълженията.",
+            "children": []
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 295580,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### ЗАКОН за изплащане на задълженията, уговорени в злато",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 295581,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 2,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Обн., ДВ, бр. 184 от 14.08.1946 г.",
+            "children": []
+        }
+    ]
+}

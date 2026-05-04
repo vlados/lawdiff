@@ -1,0 +1,71 @@
+{
+    "unique_id": 9379,
+    "slug": "zakon-za-priznavane-uchitelska-pravosposobnost-na-lica-pridobili-prava-na-redovni-uchiteli-v-savetskiya-sayuz",
+    "code": "4027",
+    "caption": "ЗАКОН за признаване учителска правоспособност на лица, придобили права на редовни учители в Съветския съюз",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1947,
+    "publ_date": "1947-02-18",
+    "start_date": "1947-02-21",
+    "end_date": null,
+    "act_date": "1947-02-18",
+    "dv": 39,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 9379,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-04",
+    "processed_at": "2026-05-04",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 281268,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Завършилите образованието си в съветски учебни заведения и придобили права на редовни учители в Съветския съюз, за съответната степен училище, при заемане на учителска служба в Народната Република България, се признават за редовни учители за същата степен училище, за която са придобили учителска правоспособност в Съветския съюз, без да им се иска стаж и държавен изпит.",
+            "children": []
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 281266,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### ЗАКОН за признаване учителска правоспособност на лица, придобили права на редовни учители в Съветския съюз",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 281267,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 2,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Обн., ДВ, бр. 39 от 18.02.1947 г.",
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "unique_id": 10522,
+    "slug": "talkuvatelna-naredba-zakon-na-zakonite-za-amnistii-ot-8-i-19091944-g",
+    "code": "4135",
+    "caption": "ТЪЛКУВАТЕЛНА НАРЕДБА-ЗАКОН на законите за амнистии от 8 и 19.09.1944 г.",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1945,
+    "publ_date": "1945-02-15",
+    "start_date": "1945-02-18",
+    "end_date": null,
+    "act_date": "1945-02-15",
+    "dv": 37,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 10522,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-04",
+    "processed_at": "2026-05-04",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 318864,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Разпоредбите на законите за амнистии от 8 и 19 септември 1944 г. не се отнасят до престъпни деяния, извършени от военни или приравнени лица спрямо военнопленници.",
+            "children": []
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 318862,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### ТЪЛКУВАТЕЛНА НАРЕДБА-ЗАКОН на законите за амнистии от 8 и 19.09.1944 г.",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 318863,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 2,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Обн., ДВ, бр. 37 от 15.02.1945 г.",
+            "children": []
+        }
+    ]
+}
