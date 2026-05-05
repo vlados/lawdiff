@@ -15,9 +15,10 @@ class FetchLawContents extends Command
      * @var string
      */
     protected $signature = 'laws:fetch-contents
-                            {--limit=50 : Number of laws to fetch content for}
+                            {--limit= : Limit number of laws fetched (default: all matching)}
                             {--force : Force re-fetch content even if already fetched}
-                            {--law-id= : Fetch content for a specific law ID}';
+                            {--law-id= : Fetch content for a specific law ID}
+                            {--throttle-ms=100 : Delay between API calls in milliseconds}';
 
     /**
      * The console command description.
@@ -34,8 +35,9 @@ class FetchLawContents extends Command
         $this->info('Starting to fetch law contents...');
 
         $lawId = $this->option('law-id');
-        $limit = (int) $this->option('limit');
+        $limit = $this->option('limit') !== null ? (int) $this->option('limit') : null;
         $force = $this->option('force');
+        $throttleMs = max(0, (int) $this->option('throttle-ms'));
 
         $query = Law::query();
 
@@ -59,7 +61,8 @@ class FetchLawContents extends Command
         }
         //        dd($query->toRawSql());
 
-        $totalToProcess = min($query->count(), $limit);
+        $matching = (int) $query->count();
+        $totalToProcess = $limit !== null ? min($matching, $limit) : $matching;
 
         if ($totalToProcess === 0) {
             $this->info('No laws found to fetch content for.');
@@ -77,9 +80,9 @@ class FetchLawContents extends Command
         $progressBar->start();
 
         $query->orderBy('id')
-            ->chunk(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $progressBar) {
+            ->chunk(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $throttleMs, $progressBar) {
                 foreach ($laws as $law) {
-                    if ($totalProcessed >= $limit) {
+                    if ($limit !== null && $totalProcessed >= $limit) {
                         return false;
                     }
 
@@ -109,6 +112,10 @@ class FetchLawContents extends Command
 
                     $totalProcessed++;
                     $progressBar->advance();
+
+                    if ($throttleMs > 0) {
+                        usleep($throttleMs * 1000);
+                    }
                 }
 
                 return true;
@@ -136,10 +143,12 @@ class FetchLawContents extends Command
             'accept' => 'application/json',
             'origin' => 'https://legislation.apis.bg',
             'referer' => 'https://legislation.apis.bg/',
-        ])->get('https://web-api.apis.bg/api/obshtina-legislation/DocContent', [
-            'uniqueId' => $uniqueId,
-            'dbIndex' => $dbIndex,
-        ]);
+        ])
+            ->retry(3, 500, throw: false)
+            ->get('https://web-api.apis.bg/api/obshtina-legislation/DocContent', [
+                'uniqueId' => $uniqueId,
+                'dbIndex' => $dbIndex,
+            ]);
 
         if (! $response->successful()) {
             throw new \Exception("Failed to fetch DocContent. Status: {$response->status()}");
@@ -154,11 +163,13 @@ class FetchLawContents extends Command
             'accept' => 'application/json',
             'origin' => 'https://legislation.apis.bg',
             'referer' => 'https://legislation.apis.bg/',
-        ])->get('https://web-api.apis.bg/api/obshtina-legislation/DocTextJson/', [
-            'uniqueId' => $uniqueId,
-            'dbIndex' => $dbIndex,
-            'searchText' => '',
-        ]);
+        ])
+            ->retry(3, 500, throw: false)
+            ->get('https://web-api.apis.bg/api/obshtina-legislation/DocTextJson/', [
+                'uniqueId' => $uniqueId,
+                'dbIndex' => $dbIndex,
+                'searchText' => '',
+            ]);
 
         if (! $response->successful()) {
             throw new \Exception("Failed to fetch DocTextJson. Status: {$response->status()}");

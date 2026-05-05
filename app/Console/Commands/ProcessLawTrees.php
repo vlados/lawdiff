@@ -14,7 +14,7 @@ class ProcessLawTrees extends Command
      * @var string
      */
     protected $signature = 'laws:process-trees
-                            {--limit=50 : Number of laws to process}
+                            {--limit= : Limit number of laws processed (default: all matching)}
                             {--force : Force re-process even if already processed}
                             {--law-id= : Process a specific law ID}';
 
@@ -33,7 +33,7 @@ class ProcessLawTrees extends Command
         $this->info('Starting to process law trees...');
 
         $lawId = $this->option('law-id');
-        $limit = (int) $this->option('limit');
+        $limit = $this->option('limit') !== null ? (int) $this->option('limit') : null;
         $force = $this->option('force');
 
         $query = Law::query()
@@ -46,7 +46,8 @@ class ProcessLawTrees extends Command
             $query->whereNull('processed_at');
         }
 
-        $totalToProcess = min($query->count(), $limit);
+        $matching = $query->count();
+        $totalToProcess = $limit !== null ? min($matching, $limit) : $matching;
 
         if ($totalToProcess === 0) {
             $this->info('No laws found to process.');
@@ -66,7 +67,7 @@ class ProcessLawTrees extends Command
         $query->orderBy('id')
             ->chunk(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $progressBar) {
                 foreach ($laws as $law) {
-                    if ($totalProcessed >= $limit) {
+                    if ($limit !== null && $totalProcessed >= $limit) {
                         return false;
                     }
 

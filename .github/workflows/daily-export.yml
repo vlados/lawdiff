@@ -6,10 +6,6 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch:
     inputs:
-      fetch-limit:
-        description: 'Max laws to fetch contents for in this run'
-        required: false
-        default: '500'
       force-refetch:
         description: 'Re-fetch contents even if already present'
         required: false
@@ -32,7 +28,6 @@ jobs:
     timeout-minutes: 60
 
     env:
-      FETCH_LIMIT: ${{ github.event.inputs.fetch-limit || '500' }}
       FORCE_REFETCH: ${{ github.event.inputs.force-refetch || 'false' }}
 
     steps:
@@ -96,7 +91,7 @@ jobs:
 
       - name: Fetch law contents
         run: |
-          ARGS="--limit=${FETCH_LIMIT} --no-interaction"
+          ARGS="--no-interaction"
           if [ "${FORCE_REFETCH}" = "true" ]; then
             ARGS="${ARGS} --force"
           fi
