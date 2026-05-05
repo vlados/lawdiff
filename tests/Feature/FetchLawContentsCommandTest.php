@@ -72,11 +72,26 @@ test('command respects limit option', function () {
         '*/DocTextJson/*' => Http::response(['paragraphs' => []], 200),
     ]);
 
-    $this->artisan('laws:fetch-contents --limit=3')
+    $this->artisan('laws:fetch-contents --limit=3 --throttle-ms=0')
         ->assertSuccessful();
 
     expect(Law::whereNotNull('content_fetched_at')->count())->toBe(3);
     expect(Law::whereNull('content_fetched_at')->count())->toBe(2);
+});
+
+test('command processes all pending laws when no limit is given', function () {
+    Law::factory()->count(7)->create(['content_fetched_at' => null]);
+
+    Http::fake([
+        '*/DocContent*' => Http::response([], 200),
+        '*/DocTextJson/*' => Http::response(['paragraphs' => []], 200),
+    ]);
+
+    $this->artisan('laws:fetch-contents --throttle-ms=0')
+        ->assertSuccessful();
+
+    expect(Law::whereNotNull('content_fetched_at')->count())->toBe(7)
+        ->and(Law::whereNull('content_fetched_at')->count())->toBe(0);
 });
 
 test('command skips laws with existing content by default', function () {
