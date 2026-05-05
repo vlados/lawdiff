@@ -1,0 +1,100 @@
+{
+    "unique_id": 9490,
+    "slug": "zakon-za-preustanovyavane-mandata-na-okrazhnite-obshtinskite-i-rayonnite-narodni-saveti-i-na-kmetstvata",
+    "code": "4030",
+    "caption": "ЗАКОН за преустановяване мандата на окръжните, общинските и районните народни съвети и на кметствата",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1987,
+    "publ_date": "1987-11-15",
+    "start_date": "1987-11-18",
+    "end_date": null,
+    "act_date": "1987-11-15",
+    "dv": 97,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 9490,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-05",
+    "processed_at": "2026-05-05",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 282860,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Мандатът на окръжните, общинските и районните народни съвети и на кметствата, избрани на 8 юни 1986 г., се преустановява от 28 февруари 1988 г.",
+            "children": []
+        },
+        {
+            "path": "ЗАКЛЮЧИТЕЛНАРАЗПОРЕДБА",
+            "p_id": 282861,
+            "caption": "ЗАКЛЮЧИТЕЛНА РАЗПОРЕДБА",
+            "node_type": "unknown",
+            "type": 1,
+            "field_type": 9,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "###  ЗАКЛЮЧИТЕЛНА РАЗПОРЕДБА",
+            "children": [
+                {
+                    "path": "ЗАКЛЮЧИТЕЛНАРАЗПОРЕДБА/ПАРАГРАФЕДИНСТВЕН",
+                    "p_id": 282862,
+                    "caption": "Параграф единствен.",
+                    "node_type": "unknown",
+                    "type": 11,
+                    "field_type": 9,
+                    "level": 1,
+                    "sort_order": 2,
+                    "has_in_links": false,
+                    "is_orphaned": false,
+                    "text_markdown": "Параграф единствен. Изпълнението на закона се възлага на Министерския съвет.",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 282858,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 3,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### ЗАКОН за преустановяване мандата на окръжните, общинските и районните народни съвети и на кметствата",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 282859,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 4,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Обн., ДВ, бр. 97 от 15.11.1987 г.",
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "unique_id": 259181,
+    "slug": "zakon-ot-15011990-g-za-utvarzhdavane-na-ukaz-2900-za-izmenenieto-na-ukaz-1342-za-osiguryavane-zhilishta-na-mladite-novob",
+    "code": "40622",
+    "caption": "ЗАКОН от 15.01.1990 г. за утвърждаване на Указ № 2900 за изменението на Указ № 1342 за осигуряване жилища на младите новобрачни семейства",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1990,
+    "publ_date": "1990-01-19",
+    "start_date": "1990-01-23",
+    "end_date": null,
+    "act_date": "1990-01-19",
+    "dv": 6,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 259181,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-05",
+    "processed_at": "2026-05-05",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 3142889,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Утвърждава се Указ № 2900 за изменение на Указ № 1342 за осигуряване жилища на младите новобрачни семейства от 20 декември 1989 г., издаден от Държавния съвет на Народна република България на основание чл. 94, точка 2, ал. 2 от Конституцията на Народна република България.\n\n Законът е приет от Девето народно събрание на тридесетата му сесия, първо заседание, състояло се на 15 януари 1990 г., и е подпечатан с държавния печат.",
+            "children": []
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 4500334,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### ЗАКОН от 15.01.1990 г. за утвърждаване на Указ № 2900 за изменението на Указ № 1342 за осигуряване жилища на младите новобрачни семейства",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 3142888,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 2,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Обн., ДВ, бр. 6 от 19.01.1990 г.",
+            "children": []
+        }
+    ]
+}

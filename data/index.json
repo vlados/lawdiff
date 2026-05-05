@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-05-05T19:49:11+00:00",
-    "count": 369,
+    "generated_at": "2026-05-05T20:58:36+00:00",
+    "count": 419,
     "laws": [
         {
             "unique_id": 8747,
@@ -14,6 +14,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zadalzhitelnoto-depozirane-na-pechatni-i-drugi-proizvedeniya-i-za-obyavyavane-na-razprostranitelite-i-dostavchi.json"
+        },
+        {
+            "unique_id": 8752,
+            "code": "40004",
+            "slug": "zakon-za-talkuvane-na-chl-47-ot-zakona-za-chuzhdencite-v-republika-balgariya",
+            "caption": "ЗАКОН за тълкуване на чл. 47 от Закона за чужденците в Република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2001-06-05",
+            "start_date": "2001-06-09",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-talkuvane-na-chl-47-ot-zakona-za-chuzhdencite-v-republika-balgariya.json"
         },
         {
             "unique_id": 8772,
@@ -40,6 +53,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavnite-taksi.json"
+        },
+        {
+            "unique_id": 8985,
+            "code": "4008",
+            "slug": "zakon-za-zhilishtnostroitelnite-kooperacii",
+            "caption": "ЗАКОН за жилищностроителните кооперации",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1999-03-05",
+            "start_date": "1999-07-05",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zhilishtnostroitelnite-kooperacii.json"
         },
         {
             "unique_id": 9013,
@@ -172,6 +198,19 @@
             "file": "laws/zakon-za-ubezhishteto-i-bezhancite.json"
         },
         {
+            "unique_id": 9201,
+            "code": "4018",
+            "slug": "zakon-za-licata-i-semeystvoto",
+            "caption": "ЗАКОН за лицата и семейството",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2002-12-29",
+            "start_date": "2003-01-02",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-licata-i-semeystvoto.json"
+        },
+        {
             "unique_id": 9206,
             "code": "40182",
             "slug": "zakon-za-bezopasno-izpolzvane-na-yadrenata-energiya",
@@ -196,6 +235,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-biologichnoto-raznoobrazie.json"
+        },
+        {
+            "unique_id": 9231,
+            "code": "40195",
+            "slug": "zakon-za-amnistiya-ot-2002-g",
+            "caption": "ЗАКОН за амнистия от 2002 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2002-08-13",
+            "start_date": "2002-08-13",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-2002-g.json"
         },
         {
             "unique_id": 9236,
@@ -289,6 +341,19 @@
             "file": "laws/zakon-za-darzhavnite-rezervi-i-voennovremennite-zapasi.json"
         },
         {
+            "unique_id": 9317,
+            "code": "4023",
+            "slug": "zakon-za-nasledstvoto",
+            "caption": "ЗАКОН за наследството",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2009-06-23",
+            "start_date": "2009-10-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nasledstvoto.json"
+        },
+        {
             "unique_id": 9335,
             "code": "40244",
             "slug": "zakon-za-merkite-sreshtu-finansiraneto-na-terorizma-i-na-razprostranenieto-na-orazhiya-za-masovo-unishtozhenie-zagl-izm-",
@@ -300,6 +365,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-merkite-sreshtu-finansiraneto-na-terorizma-i-na-razprostranenieto-na-orazhiya-za-masovo-unishtozhenie-zagl-izm-.json"
+        },
+        {
+            "unique_id": 9336,
+            "code": "40245",
+            "slug": "zakon-za-prebroyavane-na-zemedelskite-stopanstva-v-republika-balgariya-prez-2003-g",
+            "caption": "ЗАКОН за преброяване на земеделските стопанства в Република България през 2003 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2003-02-21",
+            "start_date": "2003-02-25",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-prebroyavane-na-zemedelskite-stopanstva-v-republika-balgariya-prez-2003-g.json"
         },
         {
             "unique_id": 9339,
@@ -380,6 +458,19 @@
             "file": "laws/zakon-za-priznavane-uchitelska-pravosposobnost-na-lica-pridobili-prava-na-redovni-uchiteli-v-savetskiya-sayuz.json"
         },
         {
+            "unique_id": 9387,
+            "code": "40275",
+            "slug": "zakon-za-ordenite-i-medalite-na-republika-balgariya",
+            "caption": "ЗАКОН за ордените и медалите на Република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2011-04-19",
+            "start_date": "2011-04-23",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ordenite-i-medalite-na-republika-balgariya.json"
+        },
+        {
             "unique_id": 9393,
             "code": "40277",
             "slug": "zakon-za-ogranichavane-na-administrativnoto-regulirane-i-administrativniya-kontrol-varhu-stopanskata-deynost",
@@ -419,6 +510,19 @@
             "file": "laws/zakon-za-nyakoi-prava-na-licata-koito-sa-bili-prezidenti-na-republika-balgariya.json"
         },
         {
+            "unique_id": 9490,
+            "code": "4030",
+            "slug": "zakon-za-preustanovyavane-mandata-na-okrazhnite-obshtinskite-i-rayonnite-narodni-saveti-i-na-kmetstvata",
+            "caption": "ЗАКОН за преустановяване мандата на окръжните, общинските и районните народни съвети и на кметствата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1987-11-15",
+            "start_date": "1987-11-18",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-preustanovyavane-mandata-na-okrazhnite-obshtinskite-i-rayonnite-narodni-saveti-i-na-kmetstvata.json"
+        },
+        {
             "unique_id": 9491,
             "code": "40300",
             "slug": "zakon-za-transplantaciya-na-organi-takani-i-kletki",
@@ -443,6 +547,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-ot-diskriminaciya-zagl-izm-dv-br-68-ot-2006-g.json"
+        },
+        {
+            "unique_id": 9509,
+            "code": "40313",
+            "slug": "zakon-za-gerb-na-republika-balgariya",
+            "caption": "ЗАКОН за герб на Република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1997-08-05",
+            "start_date": "1997-08-09",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-gerb-na-republika-balgariya.json"
         },
         {
             "unique_id": 9524,
@@ -796,6 +913,32 @@
             "file": "laws/zakon-za-administrativnite-narusheniya-i-nakazaniya.json"
         },
         {
+            "unique_id": 9952,
+            "code": "4058",
+            "slug": "zakon-za-amnistiya-ot-7071981-g",
+            "caption": "ЗАКОН за амнистия от 7.07.1981 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1981-07-10",
+            "start_date": "1981-07-10",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-7071981-g.json"
+        },
+        {
+            "unique_id": 9953,
+            "code": "4059",
+            "slug": "zakon-za-amnistiya-ot-30051984-g",
+            "caption": "ЗАКОН за амнистия от 30.05.1984 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1984-06-01",
+            "start_date": "1984-06-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-30051984-g.json"
+        },
+        {
             "unique_id": 9968,
             "code": "4060",
             "slug": "zakon-za-borba-sreshtu-protivoobshtestvenite-proyavi-na-maloletnite-i-nepalnoletnite-zagl-izm-izv-br-11-ot-1961-g",
@@ -807,6 +950,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-borba-sreshtu-protivoobshtestvenite-proyavi-na-maloletnite-i-nepalnoletnite-zagl-izm-izv-br-11-ot-1961-g.json"
+        },
+        {
+            "unique_id": 10002,
+            "code": "4063",
+            "slug": "zakon-za-informaciya-otnosno-neobsluzhvani-krediti",
+            "caption": "ЗАКОН за информация относно необслужвани кредити",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2005-12-29",
+            "start_date": "2006-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-informaciya-otnosno-neobsluzhvani-krediti.json"
+        },
+        {
+            "unique_id": 10052,
+            "code": "4070",
+            "slug": "zakon-za-amnistiya-ot-28031990-g",
+            "caption": "ЗАКОН за амнистия от 28.03.1990 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1990-04-13",
+            "start_date": "1990-04-16",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-28031990-g.json"
         },
         {
             "unique_id": 10071,
@@ -835,6 +1004,32 @@
             "file": "laws/zakon-za-vazstanovyavane-sobstvenostta-varhu-odarzhaveni-nedvizhimi-imoti.json"
         },
         {
+            "unique_id": 10094,
+            "code": "4074",
+            "slug": "zakon-za-imushtestvoto-na-balgarskata-komunisticheska-partiya-balgarskiya-zemedelski-naroden-sayuz-otechestveniya-front-",
+            "caption": "ЗАКОН за имуществото на Българската комунистическа партия, Българския земеделски народен съюз, Отечествения фронт, Димитровския комунистически младежки съюз, Съюза на активните борци против фашизма и капитализма и Българските професионални съюзи",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2006-04-11",
+            "start_date": "2006-07-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-imushtestvoto-na-balgarskata-komunisticheska-partiya-balgarskiya-zemedelski-naroden-sayuz-otechestveniya-front-.json"
+        },
+        {
+            "unique_id": 10137,
+            "code": "4077",
+            "slug": "zakon-za-vazstanovyavane-sobstvenostta-varhu-nyakoi-otchuzhdeni-imoti-po-zakona-za-teritorialno-i-selishtno-ustroystvo-z",
+            "caption": "ЗАКОН за възстановяване собствеността върху някои отчуждени имоти по Закона за териториално и селищно устройство, Закона за плановото изграждане на населените места, Закона за благоустройство на населените места, Закона за държавните имоти и Закона за собс",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1999-11-05",
+            "start_date": "1999-11-09",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-vazstanovyavane-sobstvenostta-varhu-nyakoi-otchuzhdeni-imoti-po-zakona-za-teritorialno-i-selishtno-ustroystvo-z.json"
+        },
+        {
             "unique_id": 10149,
             "code": "4081",
             "slug": "zakon-za-balgarskata-akademiya-na-naukite",
@@ -861,6 +1056,97 @@
             "file": "laws/zakon-za-specialnite-razuznavatelni-sredstva.json"
         },
         {
+            "unique_id": 10159,
+            "code": "4083",
+            "slug": "zakon-za-amnistiya-i-vrashtane-na-otneti-imushtestva",
+            "caption": "ЗАКОН за амнистия и връщане на отнети имущества",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2000-04-25",
+            "start_date": "2000-04-29",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-i-vrashtane-na-otneti-imushtestva.json"
+        },
+        {
+            "unique_id": 10173,
+            "code": "4085",
+            "slug": "zakon-za-vanshnata-targoviya",
+            "caption": "ЗАКОН за външната търговия",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1989-01-13",
+            "start_date": "1989-01-16",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-vanshnata-targoviya.json"
+        },
+        {
+            "unique_id": 10195,
+            "code": "4092",
+            "slug": "zakon-za-amnistiya-ot-18121989-g",
+            "caption": "ЗАКОН за амнистия от 18.12.1989 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1989-12-22",
+            "start_date": "1989-12-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-18121989-g.json"
+        },
+        {
+            "unique_id": 10202,
+            "code": "4093",
+            "slug": "zakon-za-lihvite-varhu-danaci-taksi-i-drugi-podobni-darzhavni-vzemaniya",
+            "caption": "ЗАКОН за лихвите върху данъци, такси и други подобни държавни вземания",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1999-11-30",
+            "start_date": "2000-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-lihvite-varhu-danaci-taksi-i-drugi-podobni-darzhavni-vzemaniya.json"
+        },
+        {
+            "unique_id": 10205,
+            "code": "4094",
+            "slug": "zakon-za-obrazuvane-na-ednolichni-targovski-druzhestva-s-darzhavno-imushtestvo",
+            "caption": "ЗАКОН за образуване на еднолични търговски дружества с държавно имущество",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1999-04-02",
+            "start_date": "1999-04-06",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-obrazuvane-na-ednolichni-targovski-druzhestva-s-darzhavno-imushtestvo.json"
+        },
+        {
+            "unique_id": 10238,
+            "code": "4097",
+            "slug": "zakon-za-amnistiya-ot-20111989-g",
+            "caption": "ЗАКОН за амнистия от 20.11.1989 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1989-11-24",
+            "start_date": "1989-11-24",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-20111989-g.json"
+        },
+        {
+            "unique_id": 10313,
+            "code": "4105",
+            "slug": "zakon-za-amnistiya-ot-11051989-g",
+            "caption": "ЗАКОН за амнистия от 11.05.1989 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1991-01-04",
+            "start_date": "1991-01-07",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-11051989-g.json"
+        },
+        {
             "unique_id": 10314,
             "code": "4106",
             "slug": "zakon-za-obyavyavane-na-sela-i-selishta-za-gradove-i-selishta-ot-gradski-tip",
@@ -885,6 +1171,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-amnistiya-ot-1964-g.json"
+        },
+        {
+            "unique_id": 10317,
+            "code": "4109",
+            "slug": "zakon-za-amnistiya-ot-1974-g",
+            "caption": "ЗАКОН за амнистия от 1974 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1974-11-08",
+            "start_date": "1974-11-11",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-ot-1974-g.json"
         },
         {
             "unique_id": 10325,
@@ -1030,6 +1329,19 @@
             "file": "laws/zakon-za-mitnicite.json"
         },
         {
+            "unique_id": 10595,
+            "code": "4167",
+            "slug": "zakon-za-otmenyane-na-ukazi-4-ot-1974-g-606-ot-1977-g-i-3407-ot-1984-g",
+            "caption": "ЗАКОН за отменяне на Укази № 4 от 1974 г., № 606 от 1977 г. и № 3407 от 1984 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1991-10-15",
+            "start_date": "1991-10-18",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otmenyane-na-ukazi-4-ot-1974-g-606-ot-1977-g-i-3407-ot-1984-g.json"
+        },
+        {
             "unique_id": 10604,
             "code": "4168",
             "slug": "zakon-za-zashtitenite-teritorii",
@@ -1173,6 +1485,19 @@
             "file": "laws/zakon-za-urezhdane-pravata-na-grazhdani-s-mnogogodishni-zhilishtno-spestovni-vlogove-zagl-izm-dv-br-100-ot-2008-g-v-sila.json"
         },
         {
+            "unique_id": 10711,
+            "code": "4202",
+            "slug": "zakon-za-vazstanovyavane-sobstvenostta-varhu-nyakoi-magazini-rabotilnici-skladove-i-atelieta",
+            "caption": "ЗАКОН за възстановяване собствеността върху някои магазини, работилници, складове и ателиета",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1991-12-19",
+            "start_date": "1991-12-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-vazstanovyavane-sobstvenostta-varhu-nyakoi-magazini-rabotilnici-skladove-i-atelieta.json"
+        },
+        {
             "unique_id": 10716,
             "code": "4203",
             "slug": "zakon-za-otgovornostta-na-darzhavata-i-obshtinite-za-vredi-zagl-izm-dv-br-30-ot-2006-g",
@@ -1186,6 +1511,71 @@
             "file": "laws/zakon-za-otgovornostta-na-darzhavata-i-obshtinite-za-vredi-zagl-izm-dv-br-30-ot-2006-g.json"
         },
         {
+            "unique_id": 10745,
+            "code": "4209",
+            "slug": "zakon-za-administrativno-teritorialni-promeni-v-stranata",
+            "caption": "ЗАКОН за административно-териториални промени в страната",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1991-08-22",
+            "start_date": "1991-08-25",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-administrativno-teritorialni-promeni-v-stranata.json"
+        },
+        {
+            "unique_id": 10749,
+            "code": "4212",
+            "slug": "zakon-za-amnistiya-i-za-osvobozhdavane-ot-iztarpyavane-na-nalozheni-nakazaniya",
+            "caption": "ЗАКОН за амнистия и за освобождаване от изтърпяване на наложени наказания",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1990-01-19",
+            "start_date": "1990-01-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya-i-za-osvobozhdavane-ot-iztarpyavane-na-nalozheni-nakazaniya.json"
+        },
+        {
+            "unique_id": 10776,
+            "code": "4221",
+            "slug": "zakon-za-vazstanovyavane-sobstvenostta-varhu-konfiskuvanite-s-ukaz-88-na-prezidiuma-na-ns-ot-12031953-g-neobnarodvan-ned",
+            "caption": "ЗАКОН за възстановяване собствеността върху конфискуваните с Указ № 88 на Президиума на НС от 12.03.1953 г. (необнародван) недвижими и движими имоти, принадлежащи на Католическата черква в пределите на Народна република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1992-12-24",
+            "start_date": "1992-12-27",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-vazstanovyavane-sobstvenostta-varhu-konfiskuvanite-s-ukaz-88-na-prezidiuma-na-ns-ot-12031953-g-neobnarodvan-ned.json"
+        },
+        {
+            "unique_id": 10778,
+            "code": "4222",
+            "slug": "zakon-za-vazstanovyavane-sobstvenostta-varhu-nedvizhimi-imoti-na-balgarski-grazhdani-ot-turski-proizhod-napravili-postap",
+            "caption": "ЗАКОН за възстановяване собствеността върху недвижими имоти на български граждани от турски произход, направили постъпки за заминаване в Република Турция и други страни през периода май - септември 1989 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2006-04-11",
+            "start_date": "2006-07-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-vazstanovyavane-sobstvenostta-varhu-nedvizhimi-imoti-na-balgarski-grazhdani-ot-turski-proizhod-napravili-postap.json"
+        },
+        {
+            "unique_id": 10794,
+            "code": "4227",
+            "slug": "zakon-za-zakrivane-na-medicinskata-akademiya",
+            "caption": "ЗАКОН за закриване на Медицинската академия",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1992-07-21",
+            "start_date": "1992-07-25",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zakrivane-na-medicinskata-akademiya.json"
+        },
+        {
             "unique_id": 10833,
             "code": "4237",
             "slug": "zakon-za-arbitrazha-zagl-izm-dv-br-63-ot-2025-g-v-sila-ot-1082025-g",
@@ -1197,6 +1587,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-arbitrazha-zagl-izm-dv-br-63-ot-2025-g-v-sila-ot-1082025-g.json"
+        },
+        {
+            "unique_id": 10911,
+            "code": "4247",
+            "slug": "zakon-za-otmyana-na-zakona-za-drugarskite-sadilishta",
+            "caption": "ЗАКОН за отмяна на Закона за другарските съдилища",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1991-12-19",
+            "start_date": "1991-12-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otmyana-na-zakona-za-drugarskite-sadilishta.json"
         },
         {
             "unique_id": 10920,
@@ -1236,6 +1639,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-sabraniyata-mitingite-i-manifestaciite.json"
+        },
+        {
+            "unique_id": 10993,
+            "code": "4267",
+            "slug": "zakon-za-tvorcheskite-fondove",
+            "caption": "ЗАКОН за творческите фондове",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1999-03-05",
+            "start_date": "1999-07-05",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-tvorcheskite-fondove.json"
+        },
+        {
+            "unique_id": 10996,
+            "code": "4269",
+            "slug": "zakon-za-urezhdane-na-stari-zadalzheniya-po-bankovi-krediti",
+            "caption": "ЗАКОН за уреждане на стари задължения по банкови кредити",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1991-05-07",
+            "start_date": "1991-05-10",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-urezhdane-na-stari-zadalzheniya-po-bankovi-krediti.json"
         },
         {
             "unique_id": 10997,
@@ -1407,6 +1836,19 @@
             "file": "laws/zakon-za-malkite-i-srednite-predpriyatiya.json"
         },
         {
+            "unique_id": 11188,
+            "code": "4347",
+            "slug": "zakon-za-urezhdane-na-zadalzheniya-na-bulgargaz-ead-kam-darzhavata",
+            "caption": "ЗАКОН за уреждане на задължения на \"Булгаргаз\" - ЕАД, към държавата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2002-04-30",
+            "start_date": "2002-04-30",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-urezhdane-na-zadalzheniya-na-bulgargaz-ead-kam-darzhavata.json"
+        },
+        {
             "unique_id": 11198,
             "code": "4349",
             "slug": "zakon-za-tehnicheskite-iziskvaniya-kam-produktite",
@@ -1511,6 +1953,19 @@
             "file": "laws/zakon-za-konsultativen-savet-za-nacionalna-sigurnost.json"
         },
         {
+            "unique_id": 11363,
+            "code": "4471",
+            "slug": "zakon-za-otmyana-na-zakona-za-vremenno-vavezhdane-na-nyakoi-dopalnitelni-iziskvaniya-kam-chlenovete-na-rakovodstvata-na-",
+            "caption": "ЗАКОН за отмяна на Закона за временно въвеждане на някои допълнителни изисквания към членовете на ръководствата на научните организации на Висшата атестационна комисия",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1995-03-30",
+            "start_date": "1995-04-02",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otmyana-na-zakona-za-vremenno-vavezhdane-na-nyakoi-dopalnitelni-iziskvaniya-kam-chlenovete-na-rakovodstvata-na-.json"
+        },
+        {
             "unique_id": 11412,
             "code": "4477",
             "slug": "zakon-za-administrativno-teritorialnoto-ustroystvo-na-republika-balgariya",
@@ -1563,6 +2018,19 @@
             "file": "laws/zakon-za-darzhaven-vestnik.json"
         },
         {
+            "unique_id": 11472,
+            "code": "4487",
+            "slug": "zakon-za-otmenyane-na-zakona-za-darzhavnite-predpriyatiya-obn-izv-br-90-ot-1960-g",
+            "caption": "ЗАКОН за отменяне на Закона за държавните предприятия (Обн., Изв., бр. 90 от 1960 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1975-12-12",
+            "start_date": "1975-12-15",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otmenyane-na-zakona-za-darzhavnite-predpriyatiya-obn-izv-br-90-ot-1960-g.json"
+        },
+        {
             "unique_id": 11492,
             "code": "4489",
             "slug": "zakon-za-vissheto-obrazovanie",
@@ -1574,6 +2042,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-vissheto-obrazovanie.json"
+        },
+        {
+            "unique_id": 11535,
+            "code": "4492",
+            "slug": "zakon-za-privatizacionnite-fondove",
+            "caption": "ЗАКОН за приватизационните фондове",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2008-07-29",
+            "start_date": "2008-08-02",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-privatizacionnite-fondove.json"
         },
         {
             "unique_id": 11572,
@@ -1680,6 +2161,19 @@
             "file": "laws/zakon-za-stokovite-borsi-i-tarzhishtata.json"
         },
         {
+            "unique_id": 11685,
+            "code": "4513",
+            "slug": "zakon-za-urezhdane-pravnite-posledici-na-brakove-sklyucheni-v-narushenie-na-chl-7-ot-semeyniya-kodeks",
+            "caption": "ЗАКОН за уреждане правните последици на бракове, сключени в нарушение на чл. 7 от Семейния кодекс",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1999-05-04",
+            "start_date": "1999-05-04",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-urezhdane-pravnite-posledici-na-brakove-sklyucheni-v-narushenie-na-chl-7-ot-semeyniya-kodeks.json"
+        },
+        {
             "unique_id": 11692,
             "code": "4517",
             "slug": "zakon-za-nacionalniya-daritelski-fond-13-veka-balgariya",
@@ -1758,6 +2252,19 @@
             "file": "laws/zakon-za-zanayatite.json"
         },
         {
+            "unique_id": 11757,
+            "code": "4573",
+            "slug": "zakon-za-mezhdunarodnite-dogovori-na-republika-balgariya",
+            "caption": "ЗАКОН за международните договори на Република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2001-11-13",
+            "start_date": "2001-11-17",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-mezhdunarodnite-dogovori-na-republika-balgariya.json"
+        },
+        {
             "unique_id": 11854,
             "code": "4646",
             "slug": "zakon-za-vazstanovyavane-na-sobstvenostta-varhu-gorite-i-zemite-ot-gorskiya-fond",
@@ -1782,6 +2289,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavniya-pechat-i-nacionalnoto-zname-na-republika-balgariya.json"
+        },
+        {
+            "unique_id": 11877,
+            "code": "4654",
+            "slug": "zakon-za-preobrazuvane-na-darzhavnata-spestovna-kasa",
+            "caption": "ЗАКОН за преобразуване на Държавната спестовна каса",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2002-09-25",
+            "start_date": "2002-09-29",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-preobrazuvane-na-darzhavnata-spestovna-kasa.json"
         },
         {
             "unique_id": 11898,
@@ -1979,6 +2499,19 @@
             "file": "laws/zakon-za-morskite-prostranstva-vatreshnite-vodni-patishta-i-pristanishtata-na-republika-balgariya.json"
         },
         {
+            "unique_id": 12109,
+            "code": "4719",
+            "slug": "zakon-za-prebroyavane-na-naselenieto-zhilishtniya-fond-i-zemedelskite-stopanstva-v-republika-balgariya-prez-2001-g",
+            "caption": "ЗАКОН за преброяване на населението, жилищния фонд и земеделските стопанства в Република България през 2001 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2000-02-25",
+            "start_date": "2000-02-29",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-prebroyavane-na-naselenieto-zhilishtniya-fond-i-zemedelskite-stopanstva-v-republika-balgariya-prez-2001-g.json"
+        },
+        {
             "unique_id": 12123,
             "code": "4725",
             "slug": "zakon-za-patishtata",
@@ -2042,6 +2575,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-kadastara-i-imotniya-registar.json"
+        },
+        {
+            "unique_id": 12140,
+            "code": "4737",
+            "slug": "zakon-za-obyavyavane-na-komunisticheskiya-rezhim-v-balgariya-za-prestapen",
+            "caption": "ЗАКОН за обявяване на комунистическия режим в България за престъпен",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2000-05-05",
+            "start_date": "2000-05-09",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-obyavyavane-na-komunisticheskiya-rezhim-v-balgariya-za-prestapen.json"
         },
         {
             "unique_id": 12160,
@@ -2616,6 +3162,32 @@
             "file": "laws/zakon-za-lekarstvenite-produkti-v-humannata-medicina.json"
         },
         {
+            "unique_id": 259181,
+            "code": "40622",
+            "slug": "zakon-ot-15011990-g-za-utvarzhdavane-na-ukaz-2900-za-izmenenieto-na-ukaz-1342-za-osiguryavane-zhilishta-na-mladite-novob",
+            "caption": "ЗАКОН от 15.01.1990 г. за утвърждаване на Указ № 2900 за изменението на Указ № 1342 за осигуряване жилища на младите новобрачни семейства",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1990-01-19",
+            "start_date": "1990-01-23",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-ot-15011990-g-za-utvarzhdavane-na-ukaz-2900-za-izmenenieto-na-ukaz-1342-za-osiguryavane-zhilishta-na-mladite-novob.json"
+        },
+        {
+            "unique_id": 261712,
+            "code": "40701",
+            "slug": "zakon-za-zakrivane-na-agenciyata-za-chuzhdestranna-pomosht",
+            "caption": "ЗАКОН за закриване на Агенцията за чуждестранна помощ",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2007-05-22",
+            "start_date": "2007-05-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zakrivane-na-agenciyata-za-chuzhdestranna-pomosht.json"
+        },
+        {
             "unique_id": 261713,
             "code": "40702",
             "slug": "zakon-za-elektronnite-saobshteniya",
@@ -2889,6 +3461,19 @@
             "file": "laws/zakon-za-urezhdane-na-nyakoi-trudovi-i-osiguritelni-prava-na-balgarski-grazhdani.json"
         },
         {
+            "unique_id": 317455,
+            "code": "40800",
+            "slug": "zakon-za-nezavisimite-oceniteli",
+            "caption": "ЗАКОН за независимите оценители",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2011-03-08",
+            "start_date": "2011-04-09",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nezavisimite-oceniteli.json"
+        },
+        {
             "unique_id": 317457,
             "code": "40802",
             "slug": "zakon-za-darzhavniya-fond-za-garantirane-ustoychivost-na-darzhavnata-pensionna-sistema",
@@ -2993,6 +3578,19 @@
             "file": "laws/zakon-za-izpalnenie-na-nakazaniyata-i-zadarzhaneto-pod-strazha.json"
         },
         {
+            "unique_id": 340242,
+            "code": "40834",
+            "slug": "zakon-za-amnistiya",
+            "caption": "ЗАКОН за амнистия",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2009-04-07",
+            "start_date": "2009-04-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-amnistiya.json"
+        },
+        {
             "unique_id": 345375,
             "code": "40850",
             "slug": "zakon-za-otbranata-i-vaorazhenite-sili-na-republika-balgariya",
@@ -3004,6 +3602,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-otbranata-i-vaorazhenite-sili-na-republika-balgariya.json"
+        },
+        {
+            "unique_id": 348367,
+            "code": "40845",
+            "slug": "zakon-za-prebroyavane-na-naselenieto-i-zhilishtniya-fond-v-republika-balgariya-prez-2011-g",
+            "caption": "ЗАКОН за преброяване на населението и жилищния фонд в Република България през 2011 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2011-01-28",
+            "start_date": "2011-02-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-prebroyavane-na-naselenieto-i-zhilishtniya-fond-v-republika-balgariya-prez-2011-g.json"
         },
         {
             "unique_id": 350634,
@@ -3030,6 +3641,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pryako-uchastie-na-grazhdanite-v-darzhavnata-vlast-i-mestnoto-samoupravlenie.json"
+        },
+        {
+            "unique_id": 383648,
+            "code": "40874",
+            "slug": "zakon-za-prebroyavane-na-zemedelskite-stopanstva-v-republika-balgariya-prez-2010-g",
+            "caption": "ЗАКОН за преброяване на земеделските стопанства в Република България през 2010 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2009-12-22",
+            "start_date": "2009-12-26",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-prebroyavane-na-zemedelskite-stopanstva-v-republika-balgariya-prez-2010-g.json"
         },
         {
             "unique_id": 394738,
@@ -3084,6 +3708,19 @@
             "file": "laws/zakon-za-dostap-do-prostranstveni-danni.json"
         },
         {
+            "unique_id": 399373,
+            "code": "40890",
+            "slug": "zakon-za-zakrivane-na-socialnoinvesticionniya-fond",
+            "caption": "ЗАКОН за закриване на Социалноинвестиционния фонд",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2010-03-19",
+            "start_date": "2010-03-23",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zakrivane-na-socialnoinvesticionniya-fond.json"
+        },
+        {
             "unique_id": 411956,
             "code": "40898",
             "slug": "zakon-za-razvitieto-na-akademichniya-sastav-v-republika-balgariya",
@@ -3108,6 +3745,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-orazhiyata-boepripasite-vzrivnite-veshtestva-i-pirotehnicheskite-izdeliya.json"
+        },
+        {
+            "unique_id": 438697,
+            "code": "4246",
+            "slug": "zakon-za-otmyana-na-zakona-za-darzhavniya-arbitrazh",
+            "caption": "ЗАКОН за отмяна на Закона за Държавния арбитраж",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "1992-03-19",
+            "start_date": "1992-03-19",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otmyana-na-zakona-za-darzhavniya-arbitrazh.json"
         },
         {
             "unique_id": 443712,

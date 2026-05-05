@@ -1,0 +1,100 @@
+{
+    "unique_id": 11685,
+    "slug": "zakon-za-urezhdane-pravnite-posledici-na-brakove-sklyucheni-v-narushenie-na-chl-7-ot-semeyniya-kodeks",
+    "code": "4513",
+    "caption": "ЗАКОН за уреждане правните последици на бракове, сключени в нарушение на чл. 7 от Семейния кодекс",
+    "type": 4,
+    "func": 1,
+    "base": "NARH",
+    "is_actual": true,
+    "publ_year": 1999,
+    "publ_date": "1999-05-04",
+    "start_date": "1999-05-04",
+    "end_date": null,
+    "act_date": "1999-05-04",
+    "dv": 41,
+    "version": null,
+    "celex": null,
+    "doc_lead": null,
+    "seria": null,
+    "source": {
+        "provider": "APIS.BG",
+        "unique_id": 11685,
+        "db_index": 0
+    },
+    "fetched_at": "2026-05-05",
+    "processed_at": "2026-05-05",
+    "nodes": [
+        {
+            "path": "ЧЛЕДИНСТВЕН",
+            "p_id": 357728,
+            "caption": "Чл. единствен.",
+            "node_type": "article",
+            "type": 11,
+            "field_type": 8,
+            "level": 0,
+            "sort_order": 0,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "Член единствен. Гражданските бракове, сключени до влизането на този закон в сила при спазване на всички изисквания по глава втора от Семейния кодекс пред лице, което е действало публично като длъжностно лице по гражданското състояние, без да е имало законно това качество, пораждат всички правни последици на редовно сключени бракове от деня на сключването им.",
+            "children": []
+        },
+        {
+            "path": "ЗАКЛЮЧИТЕЛНАРАЗПОРЕДБА",
+            "p_id": 357729,
+            "caption": "ЗАКЛЮЧИТЕЛНА РАЗПОРЕДБА",
+            "node_type": "unknown",
+            "type": 1,
+            "field_type": 9,
+            "level": 0,
+            "sort_order": 1,
+            "has_in_links": false,
+            "is_orphaned": false,
+            "text_markdown": "###  ЗАКЛЮЧИТЕЛНА РАЗПОРЕДБА",
+            "children": [
+                {
+                    "path": "ЗАКЛЮЧИТЕЛНАРАЗПОРЕДБА/ПАРАГРАФЕДИНСТВЕН",
+                    "p_id": 357730,
+                    "caption": "Параграф единствен.",
+                    "node_type": "unknown",
+                    "type": 11,
+                    "field_type": 9,
+                    "level": 1,
+                    "sort_order": 2,
+                    "has_in_links": false,
+                    "is_orphaned": false,
+                    "text_markdown": "Параграф единствен. Законът влиза в сила от деня на обнародването му в \"Държавен вестник\".",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "path": "ЗАГЛАВИЕ",
+            "p_id": 357724,
+            "caption": null,
+            "node_type": "title",
+            "type": 0,
+            "field_type": 1,
+            "level": 0,
+            "sort_order": 3,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "### ЗАКОН за уреждане правните последици на бракове, сключени в нарушение на чл. 7 от Семейния кодекс",
+            "children": []
+        },
+        {
+            "path": "ПУБЛ_ИНФО",
+            "p_id": 357725,
+            "caption": null,
+            "node_type": "publication_info",
+            "type": 0,
+            "field_type": 2,
+            "level": 0,
+            "sort_order": 4,
+            "has_in_links": false,
+            "is_orphaned": true,
+            "text_markdown": "Обн., ДВ, бр. 41 от 4.05.1999 г., в сила от 4.05.1999 г.",
+            "children": []
+        }
+    ]
+}
