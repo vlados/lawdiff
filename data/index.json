@@ -1,7 +1,20 @@
 {
-    "generated_at": "2026-05-04T19:15:43+00:00",
-    "count": 219,
+    "generated_at": "2026-05-05T08:19:19+00:00",
+    "count": 319,
     "laws": [
+        {
+            "unique_id": 8747,
+            "code": "40001",
+            "slug": "zakon-za-zadalzhitelnoto-depozirane-na-pechatni-i-drugi-proizvedeniya-i-za-obyavyavane-na-razprostranitelite-i-dostavchi",
+            "caption": "ЗАКОН за задължителното депозиране на печатни и други произведения и за обявяване на разпространителите и доставчиците на медийни услуги  (Загл. изм. - ДВ, бр. 42 от 2009 г., в сила от 6.07.2009 г., доп., бр. 94 от 2018 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zadalzhitelnoto-depozirane-na-pechatni-i-drugi-proizvedeniya-i-za-obyavyavane-na-razprostranitelite-i-dostavchi.json"
+        },
         {
             "unique_id": 8772,
             "code": "4001",
@@ -16,6 +29,32 @@
             "file": "laws/zakon-za-avtorskoto-pravo-i-srodnite-mu-prava.json"
         },
         {
+            "unique_id": 8964,
+            "code": "4007",
+            "slug": "zakon-za-darzhavnite-taksi",
+            "caption": "ЗАКОН за държавните такси",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2021-03-09",
+            "start_date": "2021-03-13",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-darzhavnite-taksi.json"
+        },
+        {
+            "unique_id": 9013,
+            "code": "4009",
+            "slug": "zakon-za-zadalzheniyata-i-dogovorite",
+            "caption": "ЗАКОН за задълженията и договорите",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2021-04-27",
+            "start_date": "2021-05-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zadalzheniyata-i-dogovorite.json"
+        },
+        {
             "unique_id": 9083,
             "code": "4014",
             "slug": "zakon-za-otmenyavane-na-vsichki-zakoni-izdadeni-predi-9091944-g",
@@ -27,6 +66,58 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-otmenyavane-na-vsichki-zakoni-izdadeni-predi-9091944-g.json"
+        },
+        {
+            "unique_id": 9100,
+            "code": "40144",
+            "slug": "zakon-za-zashtita-na-lichnite-danni",
+            "caption": "ЗАКОН за защита на личните данни",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zashtita-na-lichnite-danni.json"
+        },
+        {
+            "unique_id": 9136,
+            "code": "40158",
+            "slug": "zakon-za-privatizaciya-i-sledprivatizacionen-kontrol",
+            "caption": "ЗАКОН за приватизация и следприватизационен контрол",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-privatizaciya-i-sledprivatizacionen-kontrol.json"
+        },
+        {
+            "unique_id": 9146,
+            "code": "40162",
+            "slug": "zakon-za-semeyni-pomoshti-za-deca",
+            "caption": "ЗАКОН за семейни помощи за деца",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-08-01",
+            "start_date": "2023-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-semeyni-pomoshti-za-deca.json"
+        },
+        {
+            "unique_id": 9154,
+            "code": "40165",
+            "slug": "zakon-za-zashtita-na-klasificiranata-informaciya",
+            "caption": "ЗАКОН за защита на класифицираната информация",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zashtita-na-klasificiranata-informaciya.json"
         },
         {
             "unique_id": 9155,
@@ -81,6 +172,19 @@
             "file": "laws/zakon-za-biologichnoto-raznoobrazie.json"
         },
         {
+            "unique_id": 9236,
+            "code": "40197",
+            "slug": "zakon-za-opazvane-na-okolnata-sreda",
+            "caption": "ЗАКОН за опазване на околната среда",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-opazvane-na-okolnata-sreda.json"
+        },
+        {
             "unique_id": 9247,
             "code": "40203",
             "slug": "zakon-za-darzhavniya-dalg",
@@ -133,6 +237,19 @@
             "file": "laws/zakon-za-darzhavnite-rezervi-i-voennovremennite-zapasi.json"
         },
         {
+            "unique_id": 9335,
+            "code": "40244",
+            "slug": "zakon-za-merkite-sreshtu-finansiraneto-na-terorizma-i-na-razprostranenieto-na-orazhiya-za-masovo-unishtozhenie-zagl-izm-",
+            "caption": "ЗАКОН за мерките срещу финансирането на тероризма и на разпространението на оръжия за масово унищожение (Загл. изм. – ДВ, бр. 49 от 2025 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-merkite-sreshtu-finansiraneto-na-terorizma-i-na-razprostranenieto-na-orazhiya-za-masovo-unishtozhenie-zagl-izm-.json"
+        },
+        {
             "unique_id": 9339,
             "code": "40248",
             "slug": "zakon-za-posevniya-i-posadachniya-material",
@@ -159,6 +276,19 @@
             "file": "laws/zakon-za-kamarite-na-arhitektite-i-inzhenerite-v-investicionnoto-proektirane.json"
         },
         {
+            "unique_id": 9366,
+            "code": "4026",
+            "slug": "zakon-za-opazvane-na-selskostopanskoto-imushtestvo",
+            "caption": "ЗАКОН за опазване на селскостопанското имущество",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-opazvane-na-selskostopanskoto-imushtestvo.json"
+        },
+        {
             "unique_id": 9373,
             "code": "40266",
             "slug": "zakon-za-borba-s-trafika-na-hora",
@@ -172,6 +302,19 @@
             "file": "laws/zakon-za-borba-s-trafika-na-hora.json"
         },
         {
+            "unique_id": 9377,
+            "code": "40268",
+            "slug": "zakon-za-ombudsmana",
+            "caption": "ЗАКОН за омбудсмана",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ombudsmana.json"
+        },
+        {
             "unique_id": 9379,
             "code": "4027",
             "slug": "zakon-za-priznavane-uchitelska-pravosposobnost-na-lica-pridobili-prava-na-redovni-uchiteli-v-savetskiya-sayuz",
@@ -183,6 +326,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-priznavane-uchitelska-pravosposobnost-na-lica-pridobili-prava-na-redovni-uchiteli-v-savetskiya-sayuz.json"
+        },
+        {
+            "unique_id": 9395,
+            "code": "40279",
+            "slug": "zakon-za-pchelarstvoto",
+            "caption": "ЗАКОН за пчеларството",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-pchelarstvoto.json"
         },
         {
             "unique_id": 9416,
@@ -250,6 +406,19 @@
             "file": "laws/zakon-za-energetikata.json"
         },
         {
+            "unique_id": 9577,
+            "code": "4034",
+            "slug": "zakon-za-sobstvenostta",
+            "caption": "ЗАКОН за собствеността",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-03-04",
+            "start_date": "2022-03-08",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-sobstvenostta.json"
+        },
+        {
             "unique_id": 9685,
             "code": "40393",
             "slug": "zakon-za-garantiranite-vzemaniya-na-rabotnicite-i-sluzhitelite-pri-nesastoyatelnost-na-rabotodatelya",
@@ -274,6 +443,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-oproshtavane-na-zadalzheniya-kam-darzhavata.json"
+        },
+        {
+            "unique_id": 9701,
+            "code": "40409",
+            "slug": "zakon-za-advokaturata",
+            "caption": "ЗАКОН за адвокатурата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-13",
+            "start_date": "2026-02-17",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-advokaturata.json"
         },
         {
             "unique_id": 9704,
@@ -302,6 +484,19 @@
             "file": "laws/zakon-za-grazhdanskoto-vazduhoplavane.json"
         },
         {
+            "unique_id": 9731,
+            "code": "40426",
+            "slug": "zakon-za-zdraveto",
+            "caption": "ЗАКОН за здравето",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zdraveto.json"
+        },
+        {
             "unique_id": 9777,
             "code": "40453",
             "slug": "zakon-za-opazvane-na-obshtestveniya-red-pri-provezhdaneto-na-sportni-meropriyatiya",
@@ -313,6 +508,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-opazvane-na-obshtestveniya-red-pri-provezhdaneto-na-sportni-meropriyatiya.json"
+        },
+        {
+            "unique_id": 9779,
+            "code": "40455",
+            "slug": "zakon-za-zashtita-na-lica-zastrasheni-vav-vrazka-s-nakazatelno-proizvodstvo",
+            "caption": "ЗАКОН за защита на лица, застрашени във връзка с наказателно производство",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2021-09-24",
+            "start_date": "2021-09-28",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zashtita-na-lica-zastrasheni-vav-vrazka-s-nakazatelno-proizvodstvo.json"
         },
         {
             "unique_id": 9819,
@@ -380,6 +588,19 @@
             "file": "laws/zakon-za-obshtinskiya-dalg.json"
         },
         {
+            "unique_id": 9846,
+            "code": "40493",
+            "slug": "zakon-za-zadalzheniyata-kam-mezhdunarodniya-fond-za-obezshtetenie-pri-shteti-prichineni-ot-zamarsyavane-s-neft",
+            "caption": "ЗАКОН за задълженията към Международния фонд за обезщетение при щети, причинени от замърсяване с нефт",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-08-02",
+            "start_date": "2022-08-06",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zadalzheniyata-kam-mezhdunarodniya-fond-za-obezshtetenie-pri-shteti-prichineni-ot-zamarsyavane-s-neft.json"
+        },
+        {
             "unique_id": 9877,
             "code": "40502",
             "slug": "zakon-za-registar-bulstat",
@@ -391,6 +612,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-registar-bulstat.json"
+        },
+        {
+            "unique_id": 9881,
+            "code": "40506",
+            "slug": "zakon-za-chastnite-sadebni-izpalniteli",
+            "caption": "ЗАКОН за частните съдебни изпълнители",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2020-12-18",
+            "start_date": "2020-12-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-chastnite-sadebni-izpalniteli.json"
         },
         {
             "unique_id": 9896,
@@ -445,6 +679,19 @@
             "file": "laws/zakon-za-urezhdane-na-kolektivnite-trudovi-sporove.json"
         },
         {
+            "unique_id": 9951,
+            "code": "4057",
+            "slug": "zakon-za-administrativnite-narusheniya-i-nakazaniya",
+            "caption": "ЗАКОН за административните нарушения и наказания",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-13",
+            "start_date": "2026-02-17",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-administrativnite-narusheniya-i-nakazaniya.json"
+        },
+        {
             "unique_id": 9968,
             "code": "4060",
             "slug": "zakon-za-borba-sreshtu-protivoobshtestvenite-proyavi-na-maloletnite-i-nepalnoletnite-zagl-izm-izv-br-11-ot-1961-g",
@@ -456,6 +703,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-borba-sreshtu-protivoobshtestvenite-proyavi-na-maloletnite-i-nepalnoletnite-zagl-izm-izv-br-11-ot-1961-g.json"
+        },
+        {
+            "unique_id": 10071,
+            "code": "4071",
+            "slug": "zakon-za-mestnoto-samoupravlenie-i-mestnata-administraciya",
+            "caption": "ЗАКОН за местното самоуправление и местната администрация",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-mestnoto-samoupravlenie-i-mestnata-administraciya.json"
         },
         {
             "unique_id": 10093,
@@ -482,6 +742,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-balgarskata-akademiya-na-naukite.json"
+        },
+        {
+            "unique_id": 10154,
+            "code": "4082",
+            "slug": "zakon-za-specialnite-razuznavatelni-sredstva",
+            "caption": "ЗАКОН за специалните разузнавателни средства",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-specialnite-razuznavatelni-sredstva.json"
         },
         {
             "unique_id": 10314,
@@ -547,6 +820,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-osobenite-zalozi.json"
+        },
+        {
+            "unique_id": 10397,
+            "code": "4116",
+            "slug": "zakon-za-notariusite-i-notarialnata-deynost-zagl-izm-dv-br-123-ot-1997-g",
+            "caption": "ЗАКОН за нотариусите и нотариалната дейност (Загл. изм. - ДВ, бр. 123 от 1997 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-10-06",
+            "start_date": "2023-10-06",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-notariusite-i-notarialnata-deynost-zagl-izm-dv-br-123-ot-1997-g.json"
         },
         {
             "unique_id": 10436,
@@ -627,6 +913,32 @@
             "file": "laws/zakon-za-zdravoslovni-i-bezopasni-usloviya-na-trud.json"
         },
         {
+            "unique_id": 10563,
+            "code": "4141",
+            "slug": "zakon-za-mitnicite",
+            "caption": "ЗАКОН за митниците",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-mitnicite.json"
+        },
+        {
+            "unique_id": 10604,
+            "code": "4168",
+            "slug": "zakon-za-zashtitenite-teritorii",
+            "caption": "ЗАКОН за защитените територии",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zashtitenite-teritorii.json"
+        },
+        {
             "unique_id": 10616,
             "code": "4177",
             "slug": "zakon-za-urezhdane-pravata-na-kupuvachi-na-nedvizhimi-imoti-s-chastni-dogovori",
@@ -692,6 +1004,19 @@
             "file": "laws/naredba-zakon-za-sadene-ot-naroden-sad-vinovnicite-za-vavlichane-balgariya-v-svetovnata-voyna-sreshtu-sayuzenite-narodi-.json"
         },
         {
+            "unique_id": 10660,
+            "code": "4193",
+            "slug": "zakon-za-radioto-i-televiziyata",
+            "caption": "ЗАКОН за радиото и телевизията",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-radioto-i-televiziyata.json"
+        },
+        {
             "unique_id": 10663,
             "code": "4195",
             "slug": "zakon-za-veteranite-ot-voynite-na-republika-balgariya-zagl-dop-dv-br-105-ot-2016-g",
@@ -703,6 +1028,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-veteranite-ot-voynite-na-republika-balgariya-zagl-dop-dv-br-105-ot-2016-g.json"
+        },
+        {
+            "unique_id": 10710,
+            "code": "4201",
+            "slug": "zakon-za-urezhdane-pravata-na-grazhdani-s-mnogogodishni-zhilishtno-spestovni-vlogove-zagl-izm-dv-br-100-ot-2008-g-v-sila",
+            "caption": "ЗАКОН за уреждане правата на граждани с многогодишни жилищно-спестовни влогове (Загл. изм. - ДВ, бр. 100 от 2008 г., в сила от 21.11.2008 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-03-04",
+            "start_date": "2022-03-04",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-urezhdane-pravata-na-grazhdani-s-mnogogodishni-zhilishtno-spestovni-vlogove-zagl-izm-dv-br-100-ot-2008-g-v-sila.json"
+        },
+        {
+            "unique_id": 10716,
+            "code": "4203",
+            "slug": "zakon-za-otgovornostta-na-darzhavata-i-obshtinite-za-vredi-zagl-izm-dv-br-30-ot-2006-g",
+            "caption": "ЗАКОН за отговорността на държавата и общините за вреди (Загл. изм. - ДВ, бр. 30 от 2006 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otgovornostta-na-darzhavata-i-obshtinite-za-vredi-zagl-izm-dv-br-30-ot-2006-g.json"
         },
         {
             "unique_id": 10833,
@@ -729,6 +1080,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-patentite-i-registraciyata-na-poleznite-modeli-zagl-izm-dv-br-64-ot-2006-g.json"
+        },
+        {
+            "unique_id": 10925,
+            "code": "4250",
+            "slug": "zakon-za-politicheska-i-grazhdanska-reabilitaciya-na-represirani-lica",
+            "caption": "ЗАКОН за политическа и гражданска реабилитация на репресирани лица",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-01-25",
+            "start_date": "2023-01-29",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-politicheska-i-grazhdanska-reabilitaciya-na-represirani-lica.json"
         },
         {
             "unique_id": 10978,
@@ -768,6 +1132,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-kontrol-varhu-narkotichnite-veshtestva-i-prekursorite.json"
+        },
+        {
+            "unique_id": 11037,
+            "code": "4286",
+            "slug": "zakon-za-zakrila-i-razvitie-na-kulturata",
+            "caption": "ЗАКОН за закрила и развитие на културата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zakrila-i-razvitie-na-kulturata.json"
+        },
+        {
+            "unique_id": 11071,
+            "code": "4293",
+            "slug": "zakon-za-statistikata",
+            "caption": "ЗАКОН за статистиката",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-statistikata.json"
         },
         {
             "unique_id": 11100,
@@ -952,6 +1342,19 @@
             "file": "laws/zakon-za-konsultativen-savet-za-nacionalna-sigurnost.json"
         },
         {
+            "unique_id": 11412,
+            "code": "4477",
+            "slug": "zakon-za-administrativno-teritorialnoto-ustroystvo-na-republika-balgariya",
+            "caption": "ЗАКОН за административно-териториалното устройство на Република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-administrativno-teritorialnoto-ustroystvo-na-republika-balgariya.json"
+        },
+        {
             "unique_id": 11430,
             "code": "4479",
             "slug": "zakon-za-teritorialnoto-delenie-na-stolichnata-obshtina-i-golemite-gradove",
@@ -1017,6 +1420,32 @@
             "file": "laws/zakon-za-opazvane-na-zemedelskite-zemi.json"
         },
         {
+            "unique_id": 11607,
+            "code": "4499",
+            "slug": "zakon-za-obshtinskata-sobstvenost",
+            "caption": "ЗАКОН за общинската собственост",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2021-02-26",
+            "start_date": "2021-03-02",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-obshtinskata-sobstvenost.json"
+        },
+        {
+            "unique_id": 11649,
+            "code": "4508",
+            "slug": "zakon-za-arendata-v-zemedelieto",
+            "caption": "ЗАКОН за арендата в земеделието",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-arendata-v-zemedelieto.json"
+        },
+        {
             "unique_id": 11655,
             "code": "4509",
             "slug": "zakon-za-zakrila-na-novite-sortove-rasteniya-i-porodi-zhivotni",
@@ -1028,6 +1457,45 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zakrila-na-novite-sortove-rasteniya-i-porodi-zhivotni.json"
+        },
+        {
+            "unique_id": 11677,
+            "code": "4511",
+            "slug": "zakon-za-narodnite-chitalishta",
+            "caption": "ЗАКОН за народните читалища",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-narodnite-chitalishta.json"
+        },
+        {
+            "unique_id": 11684,
+            "code": "4512",
+            "slug": "zakon-za-stokovite-borsi-i-tarzhishtata",
+            "caption": "ЗАКОН за стоковите борси и тържищата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-stokovite-borsi-i-tarzhishtata.json"
+        },
+        {
+            "unique_id": 11692,
+            "code": "4517",
+            "slug": "zakon-za-nacionalniya-daritelski-fond-13-veka-balgariya",
+            "caption": "ЗАКОН за Националния дарителски фонд \"13 века България\"",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nacionalniya-daritelski-fond-13-veka-balgariya.json"
         },
         {
             "unique_id": 11714,
@@ -1043,6 +1511,19 @@
             "file": "laws/zakon-za-elektronniya-dokument-i-elektronnite-udostoveritelni-uslugi-zagl-izm-dv-br-85-ot-2017-g.json"
         },
         {
+            "unique_id": 11716,
+            "code": "4537",
+            "slug": "zakon-za-sdruzheniya-za-napoyavane",
+            "caption": "ЗАКОН за сдружения за напояване",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-sdruzheniya-za-napoyavane.json"
+        },
+        {
             "unique_id": 11728,
             "code": "4545",
             "slug": "zakon-za-ikonomicheski-i-socialen-savet",
@@ -1054,6 +1535,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ikonomicheski-i-socialen-savet.json"
+        },
+        {
+            "unique_id": 11735,
+            "code": "4552",
+            "slug": "zakon-za-ribarstvoto-i-akvakulturite",
+            "caption": "ЗАКОН за рибарството и аквакултурите",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ribarstvoto-i-akvakulturite.json"
+        },
+        {
+            "unique_id": 11854,
+            "code": "4646",
+            "slug": "zakon-za-vazstanovyavane-na-sobstvenostta-varhu-gorite-i-zemite-ot-gorskiya-fond",
+            "caption": "ЗАКОН за възстановяване на собствеността върху горите и земите от горския фонд",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-vazstanovyavane-na-sobstvenostta-varhu-gorite-i-zemite-ot-gorskiya-fond.json"
         },
         {
             "unique_id": 11873,
@@ -1108,6 +1615,32 @@
             "file": "laws/zakon-za-eksportnoto-zastrahovane.json"
         },
         {
+            "unique_id": 11950,
+            "code": "4667",
+            "slug": "zakon-za-zdravnoto-osiguryavane",
+            "caption": "ЗАКОН за здравното осигуряване",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zdravnoto-osiguryavane.json"
+        },
+        {
+            "unique_id": 11959,
+            "code": "4672",
+            "slug": "zakon-za-registraciya-i-kontrol-na-zemedelskata-i-gorskata-tehnika",
+            "caption": "ЗАКОН за регистрация и контрол на земеделската и горската техника",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-registraciya-i-kontrol-na-zemedelskata-i-gorskata-tehnika.json"
+        },
+        {
             "unique_id": 11963,
             "code": "4675",
             "slug": "zakon-za-saslovnite-organizacii-na-lekarite-i-na-lekarite-po-dentalna-medicina-zagl-izm-dv-br-76-ot-2005-g",
@@ -1160,6 +1693,19 @@
             "file": "laws/zakon-za-darzhavniya-sluzhitel.json"
         },
         {
+            "unique_id": 12091,
+            "code": "4708",
+            "slug": "zakon-za-profesionalnoto-obrazovanie-i-obuchenie",
+            "caption": "ЗАКОН за професионалното образование и обучение",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-profesionalnoto-obrazovanie-i-obuchenie.json"
+        },
+        {
             "unique_id": 12098,
             "code": "4715",
             "slug": "zakon-za-zabrana-na-himicheskoto-orazhie-i-za-kontrol-na-toksichnite-himicheski-veshtestva-i-tehnite-prekursori",
@@ -1184,6 +1730,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-ot-vrednoto-vazdeystvie-na-himichnite-veshtestva-i-smesi-zagl-izm-dv-br-114-ot-2003-g-br-63-ot-2010-g-.json"
+        },
+        {
+            "unique_id": 12126,
+            "code": "4726",
+            "slug": "zakon-za-lechebnite-rasteniya",
+            "caption": "ЗАКОН за лечебните растения",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-lechebnite-rasteniya.json"
         },
         {
             "unique_id": 12130,
@@ -1251,6 +1810,32 @@
             "file": "laws/zakon-za-dostap-do-obshtestvena-informaciya.json"
         },
         {
+            "unique_id": 12188,
+            "code": "4764",
+            "slug": "zakon-za-zhivotnovadstvoto",
+            "caption": "ЗАКОН за животновъдството",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zhivotnovadstvoto.json"
+        },
+        {
+            "unique_id": 12192,
+            "code": "4765",
+            "slug": "zakon-za-lova-i-opazvane-na-divecha",
+            "caption": "ЗАКОН за лова и опазване на дивеча",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-lova-i-opazvane-na-divecha.json"
+        },
+        {
             "unique_id": 12224,
             "code": "4783",
             "slug": "zakon-za-zhelezopatniya-transport",
@@ -1290,6 +1875,19 @@
             "file": "laws/zakon-za-zashtita-ot-shuma-v-okolnata-sreda.json"
         },
         {
+            "unique_id": 195169,
+            "code": "4402",
+            "slug": "zakon-za-pravnata-pomosht",
+            "caption": "ЗАКОН за правната помощ",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-pravnata-pomosht.json"
+        },
+        {
             "unique_id": 198384,
             "code": "40372",
             "slug": "zakon-za-veterinarnomedicinskata-deynost",
@@ -1303,6 +1901,19 @@
             "file": "laws/zakon-za-veterinarnomedicinskata-deynost.json"
         },
         {
+            "unique_id": 198584,
+            "code": "40373",
+            "slug": "zakon-za-nacionalnata-standartizaciya",
+            "caption": "ЗАКОН за националната стандартизация",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nacionalnata-standartizaciya.json"
+        },
+        {
             "unique_id": 202063,
             "code": "40527",
             "slug": "zakon-za-zashtita-na-potrebitelite",
@@ -1314,6 +1925,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-na-potrebitelite.json"
+        },
+        {
+            "unique_id": 202239,
+            "code": "40530",
+            "slug": "zakon-za-nacionalnata-akreditaciya-na-organi-za-ocenyavane-na-saotvetstvieto-zagl-izm-dv-br-41-ot-2010-g-v-sila-ot-10620",
+            "caption": "ЗАКОН за националната акредитация на органи за оценяване на съответствието (Загл. изм. - ДВ, бр. 41 от 2010 г., в сила от 1.06.2010 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nacionalnata-akreditaciya-na-organi-za-ocenyavane-na-saotvetstvieto-zagl-izm-dv-br-41-ot-2010-g-v-sila-ot-10620.json"
         },
         {
             "unique_id": 202777,
@@ -1459,6 +2083,19 @@
             "file": "laws/zakon-za-informirane-i-konsultirane-s-rabotnicite-i-sluzhitelite-v-mnogonacionalni-predpriyatiya-grupi-predpriyatiya-i-e.json"
         },
         {
+            "unique_id": 227991,
+            "code": "40594",
+            "slug": "zakon-za-priznavane-izpalnenie-postanovyavane-i-izprashtane-na-aktove-za-obezpechavane-na-imushtestvo-zagl-izm-dv-br-16-",
+            "caption": "ЗАКОН за признаване, изпълнение, постановяване и изпращане на актове за обезпечаване на имущество (Загл. изм. - ДВ, бр. 16 от 2018 г., бр. 56 от 2022 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-10-06",
+            "start_date": "2023-10-06",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-priznavane-izpalnenie-postanovyavane-i-izprashtane-na-aktove-za-obezpechavane-na-imushtestvo-zagl-izm-dv-br-16-.json"
+        },
+        {
             "unique_id": 227992,
             "code": "40595",
             "slug": "zakon-za-dopalnitelniya-nadzor-varhu-finansovite-konglomerati",
@@ -1589,6 +2226,45 @@
             "file": "laws/zakon-za-korporativnoto-podohodno-oblagane.json"
         },
         {
+            "unique_id": 245401,
+            "code": "40658",
+            "slug": "zakon-za-podpomagane-i-finansova-kompensaciya-na-postradali-ot-prestapleniya",
+            "caption": "ЗАКОН за подпомагане и финансова компенсация на пострадали от престъпления",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-10-06",
+            "start_date": "2023-10-10",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-podpomagane-i-finansova-kompensaciya-na-postradali-ot-prestapleniya.json"
+        },
+        {
+            "unique_id": 245403,
+            "code": "40660",
+            "slug": "zakon-za-bezmitnata-targoviya",
+            "caption": "ЗАКОН за безмитната търговия",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2020-12-11",
+            "start_date": "2021-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-bezmitnata-targoviya.json"
+        },
+        {
+            "unique_id": 246263,
+            "code": "40662",
+            "slug": "zakon-za-ustroystvoto-i-zastroyavaneto-na-stolichnata-obshtina",
+            "caption": "ЗАКОН за устройството и застрояването на Столичната община",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-08-02",
+            "start_date": "2022-08-06",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ustroystvoto-i-zastroyavaneto-na-stolichnata-obshtina.json"
+        },
+        {
             "unique_id": 246508,
             "code": "40663",
             "slug": "zakon-za-kamarata-na-stroitelite",
@@ -1602,6 +2278,45 @@
             "file": "laws/zakon-za-kamarata-na-stroitelite.json"
         },
         {
+            "unique_id": 257405,
+            "code": "40692",
+            "slug": "zakon-za-lekarstvenite-produkti-v-humannata-medicina",
+            "caption": "ЗАКОН за лекарствените продукти в хуманната медицина",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-lekarstvenite-produkti-v-humannata-medicina.json"
+        },
+        {
+            "unique_id": 261713,
+            "code": "40702",
+            "slug": "zakon-za-elektronnite-saobshteniya",
+            "caption": "ЗАКОН за електронните съобщения",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-13",
+            "start_date": "2026-02-17",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-elektronnite-saobshteniya.json"
+        },
+        {
+            "unique_id": 263366,
+            "code": "40706",
+            "slug": "zakon-za-elektronnoto-upravlenie",
+            "caption": "ЗАКОН за електронното управление",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-13",
+            "start_date": "2026-02-17",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-elektronnoto-upravlenie.json"
+        },
+        {
             "unique_id": 263367,
             "code": "40707",
             "slug": "zakon-za-medicinskite-izdeliya",
@@ -1613,6 +2328,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-medicinskite-izdeliya.json"
+        },
+        {
+            "unique_id": 266592,
+            "code": "40714",
+            "slug": "zakon-za-nacionalniya-arhiven-fond",
+            "caption": "ЗАКОН за Националния архивен фонд",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-02-22",
+            "start_date": "2022-02-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nacionalniya-arhiven-fond.json"
         },
         {
             "unique_id": 268708,
@@ -1667,6 +2395,19 @@
             "file": "laws/zakon-za-saslovnata-organizaciya-na-veterinarnite-lekari-v-balgariya.json"
         },
         {
+            "unique_id": 276479,
+            "code": "40738",
+            "slug": "zakon-za-pochvite",
+            "caption": "ЗАКОН за почвите",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-pochvite.json"
+        },
+        {
             "unique_id": 281324,
             "code": "40746",
             "slug": "zakon-za-darzhavna-agenciya-nacionalna-sigurnost",
@@ -1693,6 +2434,19 @@
             "file": "laws/zakon-za-voennite-pametnici.json"
         },
         {
+            "unique_id": 293693,
+            "code": "40768",
+            "slug": "zakon-za-otgovornostta-za-predotvratyavane-i-otstranyavane-na-ekologichni-shteti",
+            "caption": "ЗАКОН за отговорността за предотвратяване и отстраняване на екологични щети",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otgovornostta-za-predotvratyavane-i-otstranyavane-na-ekologichni-shteti.json"
+        },
+        {
             "unique_id": 293694,
             "code": "40769",
             "slug": "zakon-za-balgarskata-banka-za-razvitie",
@@ -1704,6 +2458,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-balgarskata-banka-za-razvitie.json"
+        },
+        {
+            "unique_id": 296758,
+            "code": "40775",
+            "slug": "zakon-za-regionalnoto-razvitie",
+            "caption": "ЗАКОН за регионалното развитие",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-07-01",
+            "start_date": "2022-07-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-regionalnoto-razvitie.json"
         },
         {
             "unique_id": 300040,
@@ -1771,6 +2538,32 @@
             "file": "laws/zakon-za-darzhavniya-fond-za-garantirane-ustoychivost-na-darzhavnata-pensionna-sistema.json"
         },
         {
+            "unique_id": 319847,
+            "code": "40804",
+            "slug": "zakon-za-inspektirane-na-truda",
+            "caption": "ЗАКОН за инспектиране на труда",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-inspektirane-na-truda.json"
+        },
+        {
+            "unique_id": 319848,
+            "code": "40808",
+            "slug": "zakon-za-zashtita-na-konkurenciyata",
+            "caption": "ЗАКОН за защита на конкуренцията",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zashtita-na-konkurenciyata.json"
+        },
+        {
             "unique_id": 334810,
             "code": "40829",
             "slug": "zakon-za-transliteraciyata",
@@ -1784,6 +2577,45 @@
             "file": "laws/zakon-za-transliteraciyata.json"
         },
         {
+            "unique_id": 334811,
+            "code": "40830",
+            "slug": "zakon-za-kulturnoto-nasledstvo",
+            "caption": "ЗАКОН за културното наследство",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-kulturnoto-nasledstvo.json"
+        },
+        {
+            "unique_id": 339588,
+            "code": "40840",
+            "slug": "zakon-za-izpalnenie-na-nakazaniyata-i-zadarzhaneto-pod-strazha",
+            "caption": "ЗАКОН за изпълнение на наказанията и задържането под стража",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-izpalnenie-na-nakazaniyata-i-zadarzhaneto-pod-strazha.json"
+        },
+        {
+            "unique_id": 345375,
+            "code": "40850",
+            "slug": "zakon-za-otbranata-i-vaorazhenite-sili-na-republika-balgariya",
+            "caption": "ЗАКОН за отбраната и въоръжените сили на Република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otbranata-i-vaorazhenite-sili-na-republika-balgariya.json"
+        },
+        {
             "unique_id": 350634,
             "code": "40847",
             "slug": "zakon-za-obshtestvenite-biblioteki",
@@ -1795,6 +2627,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-obshtestvenite-biblioteki.json"
+        },
+        {
+            "unique_id": 352307,
+            "code": "40852",
+            "slug": "zakon-za-pryako-uchastie-na-grazhdanite-v-darzhavnata-vlast-i-mestnoto-samoupravlenie",
+            "caption": "ЗАКОН за пряко участие на гражданите в държавната власт и местното самоуправление",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-02-22",
+            "start_date": "2022-02-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-pryako-uchastie-na-grazhdanite-v-darzhavnata-vlast-i-mestnoto-samoupravlenie.json"
         },
         {
             "unique_id": 394739,
@@ -1823,6 +2668,45 @@
             "file": "laws/zakon-za-potrebitelskiya-kredit.json"
         },
         {
+            "unique_id": 397759,
+            "code": "40887",
+            "slug": "zakon-za-dostap-do-prostranstveni-danni",
+            "caption": "ЗАКОН за достъп до пространствени данни",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-02-22",
+            "start_date": "2022-02-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-dostap-do-prostranstveni-danni.json"
+        },
+        {
+            "unique_id": 411956,
+            "code": "40898",
+            "slug": "zakon-za-razvitieto-na-akademichniya-sastav-v-republika-balgariya",
+            "caption": "ЗАКОН за развитието на академичния състав в Република България",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-12-23",
+            "start_date": "2022-12-27",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-razvitieto-na-akademichniya-sastav-v-republika-balgariya.json"
+        },
+        {
+            "unique_id": 436255,
+            "code": "40917",
+            "slug": "zakon-za-orazhiyata-boepripasite-vzrivnite-veshtestva-i-pirotehnicheskite-izdeliya",
+            "caption": "ЗАКОН за оръжията, боеприпасите, взривните вещества и пиротехническите изделия",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-orazhiyata-boepripasite-vzrivnite-veshtestva-i-pirotehnicheskite-izdeliya.json"
+        },
+        {
             "unique_id": 443712,
             "code": "40924",
             "slug": "zakon-za-danak-varhu-zastrahovatelnite-premii",
@@ -1849,6 +2733,19 @@
             "file": "laws/zakon-za-vazstanovyavane-na-nadvnesen-akciz-za-upotrebyavani-avtomobili.json"
         },
         {
+            "unique_id": 457203,
+            "code": "40941",
+            "slug": "zakon-za-balgarskata-agenciya-po-bezopasnost-na-hranite",
+            "caption": "ЗАКОН за Българската агенция по безопасност на храните",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-balgarskata-agenciya-po-bezopasnost-na-hranite.json"
+        },
+        {
             "unique_id": 461211,
             "code": "40949",
             "slug": "zakon-za-ogranichavane-na-plashtaniyata-v-broy",
@@ -1873,6 +2770,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-gorite.json"
+        },
+        {
+            "unique_id": 466973,
+            "code": "40958",
+            "slug": "zakon-za-ustanovyavane-na-trudov-i-osiguritelen-stazh-po-sadeben-red",
+            "caption": "ЗАКОН за установяване на трудов и осигурителен стаж по съдебен ред",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-10-10",
+            "start_date": "2025-06-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ustanovyavane-na-trudov-i-osiguritelen-stazh-po-sadeben-red.json"
         },
         {
             "unique_id": 466974,
@@ -1966,6 +2876,19 @@
             "file": "laws/zakon-za-balgarskata-telegrafna-agenciya.json"
         },
         {
+            "unique_id": 527868,
+            "code": "41001",
+            "slug": "zakon-za-sahranenie-na-vagleroden-dioksid-v-zemnite-nedra",
+            "caption": "ЗАКОН за съхранение на въглероден диоксид в земните недра",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-sahranenie-na-vagleroden-dioksid-v-zemnite-nedra.json"
+        },
+        {
             "unique_id": 531942,
             "code": "41005",
             "slug": "zakon-za-rezerva-na-vaorazhenite-sili-na-republika-balgariya",
@@ -1990,6 +2913,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-priznavane-izpalnenie-i-izprashtane-na-sadebni-resheniya-i-resheniya-za-probaciya-s-ogled-uprazhnyavane-na-nadz.json"
+        },
+        {
+            "unique_id": 541457,
+            "code": "41011",
+            "slug": "zakon-za-mladezhta",
+            "caption": "ЗАКОН за младежта",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-08-02",
+            "start_date": "2022-08-02",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-mladezhta.json"
+        },
+        {
+            "unique_id": 549449,
+            "code": "41014",
+            "slug": "zakon-za-statistikata-na-vatresayuznata-targoviya-sas-stoki-zagl-izm-dv-br-61-ot-2022-g",
+            "caption": "ЗАКОН за статистиката на вътресъюзната търговия със стоки (Загл. изм. – ДВ, бр. 61 от 2022 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-08-02",
+            "start_date": "2022-08-06",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-statistikata-na-vatresayuznata-targoviya-sas-stoki-zagl-izm-dv-br-61-ot-2022-g.json"
         },
         {
             "unique_id": 554180,
@@ -2057,6 +3006,19 @@
             "file": "laws/zakon-za-publichnite-finansi.json"
         },
         {
+            "unique_id": 1218662,
+            "code": "41053",
+            "slug": "zakon-za-turizma",
+            "caption": "ЗАКОН за туризма",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-turizma.json"
+        },
+        {
             "unique_id": 1355783,
             "code": "41059",
             "slug": "zakona-za-darzhavena-kontrola-varhu-chastnite-zastrahovatelni-predpriyatiya",
@@ -2083,6 +3045,19 @@
             "file": "laws/zakon-za-ikonomicheskite-i-finansovite-otnosheniya-s-druzhestvata-registrirani-v-yurisdikcii-s-preferencialen-danachen-r.json"
         },
         {
+            "unique_id": 2011194,
+            "code": "41266",
+            "slug": "zakon-za-ogranichavane-izmenenieto-na-klimata",
+            "caption": "ЗАКОН за ограничаване изменението на климата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ogranichavane-izmenenieto-na-klimata.json"
+        },
+        {
             "unique_id": 2229939,
             "code": "41299",
             "slug": "zakon-za-ministerstvoto-na-vatreshnite-raboti",
@@ -2107,6 +3082,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-na-rasteniyata.json"
+        },
+        {
+            "unique_id": 2451195,
+            "code": "41518",
+            "slug": "zakon-za-smetnata-palata",
+            "caption": "ЗАКОН за Сметната палата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-smetnata-palata.json"
+        },
+        {
+            "unique_id": 2547151,
+            "code": "41526",
+            "slug": "zakon-za-fiskalen-savet-i-avtomatichni-korektivni-mehanizmi",
+            "caption": "ЗАКОН за Фискален съвет и автоматични корективни механизми",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-fiskalen-savet-i-avtomatichni-korektivni-mehanizmi.json"
         },
         {
             "unique_id": 2560203,
@@ -2146,6 +3147,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zakrivane-na-nacionalnata-sluzhba-po-zarnoto.json"
+        },
+        {
+            "unique_id": 2643322,
+            "code": "41640",
+            "slug": "zakon-za-nacionalnata-sluzhba-za-ohrana",
+            "caption": "ЗАКОН за Националната служба за охрана",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nacionalnata-sluzhba-za-ohrana.json"
         },
         {
             "unique_id": 2643325,
@@ -2252,6 +3266,32 @@
             "file": "laws/zakon-za-schetovodstvoto.json"
         },
         {
+            "unique_id": 2719535,
+            "code": "41762",
+            "slug": "zakon-za-upravlenie-na-sredstvata-ot-evropeyskite-fondove-pri-spodeleno-upravlenie-zagl-izm-dv-br-51-ot-2022-g-v-sila-ot",
+            "caption": "ЗАКОН за управление на средствата от Европейските фондове при споделено управление (Загл. изм. – ДВ, бр. 51 от 2022 г., в сила от 1.07.2022 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-upravlenie-na-sredstvata-ot-evropeyskite-fondove-pri-spodeleno-upravlenie-zagl-izm-dv-br-51-ot-2022-g-v-sila-ot.json"
+        },
+        {
+            "unique_id": 2752471,
+            "code": "41765",
+            "slug": "zakon-za-obshtestvenite-porachki",
+            "caption": "ЗАКОН за обществените поръчки",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-obshtestvenite-porachki.json"
+        },
+        {
             "unique_id": 2797997,
             "code": "41850",
             "slug": "zakon-za-priznavane-izpalnenie-i-izprashtane-na-aktove-za-nalagane-na-merki-za-procesualna-prinuda-razlichni-ot-merkite-",
@@ -2276,6 +3316,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ravnopostavenost-na-zhenite-i-mazhete.json"
+        },
+        {
+            "unique_id": 2817269,
+            "code": "41857",
+            "slug": "zakon-za-elektronnata-identifikaciya",
+            "caption": "ЗАКОН за електронната идентификация",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-02-22",
+            "start_date": "2022-02-22",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-elektronnata-identifikaciya.json"
         },
         {
             "unique_id": 2827962,
@@ -2356,6 +3409,45 @@
             "file": "laws/zakon-za-nezavisimiya-finansov-odit-i-izrazyavaneto-na-sigurnost-po-ustoychivostta-zagl-dop-dv-br-79-ot-2024-g.json"
         },
         {
+            "unique_id": 3206713,
+            "code": "42489",
+            "slug": "zakon-za-darzhavnite-pomoshti",
+            "caption": "ЗАКОН за държавните помощи",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-darzhavnite-pomoshti.json"
+        },
+        {
+            "unique_id": 3237972,
+            "code": "42492",
+            "slug": "zakon-za-koncesiite",
+            "caption": "ЗАКОН за концесиите",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-koncesiite.json"
+        },
+        {
+            "unique_id": 3263996,
+            "code": "42500",
+            "slug": "zakon-za-otnemane-na-nezakonno-pridobitoto-imushtestvo-zagl-izm-dv-br-84-ot-2023-g-v-sila-ot-6102023-g",
+            "caption": "ЗАКОН за отнемане на незаконно придобитото имущество (Загл. изм. – ДВ, бр. 84 от 2023 г., в сила от 6.10.2023 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-otnemane-na-nezakonno-pridobitoto-imushtestvo-zagl-izm-dv-br-84-ot-2023-g-v-sila-ot-6102023-g.json"
+        },
+        {
             "unique_id": 3269488,
             "code": "42502",
             "slug": "zakon-za-chastnata-ohranitelna-deynost",
@@ -2406,6 +3498,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-platezhnite-uslugi-i-platezhnite-sistemi.json"
+        },
+        {
+            "unique_id": 3464904,
+            "code": "42512",
+            "slug": "zakon-za-merkite-sreshtu-izpiraneto-na-pari",
+            "caption": "ЗАКОН за мерките срещу изпирането на пари",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-merkite-sreshtu-izpiraneto-na-pari.json"
         },
         {
             "unique_id": 3754522,
@@ -2473,6 +3578,32 @@
             "file": "laws/zakon-za-horata-s-uvrezhdaniya.json"
         },
         {
+            "unique_id": 3858846,
+            "code": "42568",
+            "slug": "zakon-za-lichnata-pomosht",
+            "caption": "ЗАКОН за личната помощ",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-01-28",
+            "start_date": "2022-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-lichnata-pomosht.json"
+        },
+        {
+            "unique_id": 3923940,
+            "code": "42575",
+            "slug": "zakon-za-prebroyavane-na-naselenieto-i-zhilishtniya-fond-v-republika-balgariya-prez-2021-g",
+            "caption": "ЗАКОН за преброяване на населението и жилищния фонд в Република България през 2021 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2020-12-22",
+            "start_date": "2020-12-26",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-prebroyavane-na-naselenieto-i-zhilishtniya-fond-v-republika-balgariya-prez-2021-g.json"
+        },
+        {
             "unique_id": 3929369,
             "code": "42577",
             "slug": "zakon-za-prebroyavane-na-zemedelskite-stopanstva-v-republika-balgariya-prez-2020-g",
@@ -2512,6 +3643,32 @@
             "file": "laws/zakon-za-zashtita-na-targovskata-tayna.json"
         },
         {
+            "unique_id": 4017044,
+            "code": "42587",
+            "slug": "zakon-za-priznavane-izpalnenie-i-izprashtane-na-sadebni-aktove-za-nalagane-na-nakazanie-lishavane-ot-svoboda-ili-na-merk",
+            "caption": "ЗАКОН за признаване, изпълнение и изпращане на съдебни актове за налагане на наказание лишаване от свобода или на мерки, включващи лишаване от свобода",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-07-19",
+            "start_date": "2022-07-23",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-priznavane-izpalnenie-i-izprashtane-na-sadebni-aktove-za-nalagane-na-nakazanie-lishavane-ot-svoboda-ili-na-merk.json"
+        },
+        {
+            "unique_id": 4154010,
+            "code": "42671",
+            "slug": "zakon-za-publichnite-predpriyatiya",
+            "caption": "ЗАКОН за публичните предприятия",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-publichnite-predpriyatiya.json"
+        },
+        {
             "unique_id": 4251557,
             "code": "42676",
             "slug": "zakon-za-markite-i-geografskite-oznacheniya",
@@ -2523,6 +3680,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-markite-i-geografskite-oznacheniya.json"
+        },
+        {
+            "unique_id": 4287616,
+            "code": "42685",
+            "slug": "zakon-za-maslodaynata-roza",
+            "caption": "ЗАКОН за маслодайната роза",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-12-08",
+            "start_date": "2023-12-12",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-maslodaynata-roza.json"
+        },
+        {
+            "unique_id": 4329753,
+            "code": "42693",
+            "slug": "zakon-za-merkite-i-deystviyata-po-vreme-na-izvanrednoto-polozhenie-obyaveno-s-reshenie-na-narodnoto-sabranie-ot-13-mart-",
+            "caption": "ЗАКОН за мерките и действията по време на извънредното положение, обявено с решение на Народното събрание от 13 март 2020 г., и за преодоляване на последиците (Загл. доп. – ДВ, бр. 44 от 2020 г., в сила от 14.05.2020 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-07-08",
+            "start_date": "2022-07-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-merkite-i-deystviyata-po-vreme-na-izvanrednoto-polozhenie-obyaveno-s-reshenie-na-narodnoto-sabranie-ot-13-mart-.json"
         },
         {
             "unique_id": 4353466,
@@ -2564,6 +3747,19 @@
             "file": "laws/zakon-za-otteglyane-na-rezervata-napravena-ot-republika-balgariya-po-chl-31-ot-konvenciyata-za-statuta-na-licata-bez-gra.json"
         },
         {
+            "unique_id": 4523434,
+            "code": "42721",
+            "slug": "zakon-za-balgarskiya-zhestov-ezik",
+            "caption": "ЗАКОН за българския жестов език",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-01-31",
+            "start_date": "2023-01-31",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-balgarskiya-zhestov-ezik.json"
+        },
+        {
             "unique_id": 4544385,
             "code": "42724",
             "slug": "zakon-za-industrialnite-parkove",
@@ -2603,6 +3799,19 @@
             "file": "laws/zakon-za-predostavyane-na-cifrovo-sadarzhanie-i-cifrovi-uslugi-i-za-prodazhba-na-stoki.json"
         },
         {
+            "unique_id": 4803412,
+            "code": "42739",
+            "slug": "zakon-za-prilagane-na-razporedbi-na-zakona-za-darzhavniya-byudzhet-na-republika-balgariya-za-2021-g-zakona-za-byudzheta-",
+            "caption": "ЗАКОН за прилагане на разпоредби на Закона за държавния бюджет на Република България за 2021 г., Закона за бюджета на държавното обществено осигуряване за 2021 г. и Закона за бюджета на Националната здравноосигурителна каса за 2021 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2022-03-04",
+            "start_date": "2022-03-04",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-prilagane-na-razporedbi-na-zakona-za-darzhavniya-byudzhet-na-republika-balgariya-za-2021-g-zakona-za-byudzheta-.json"
+        },
+        {
             "unique_id": 4838786,
             "code": "42745",
             "slug": "zakon-za-pokritite-obligacii",
@@ -2614,6 +3823,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pokritite-obligacii.json"
+        },
+        {
+            "unique_id": 5054483,
+            "code": "42777",
+            "slug": "zakon-za-prilagane-na-razporedbi-na-zakona-za-darzhavniya-byudzhet-na-republika-balgariya-za-2022-g-zakona-za-byudzheta-",
+            "caption": "ЗАКОН за прилагане на разпоредби на Закона за държавния бюджет на Република България за 2022 г., Закона за бюджета на държавното обществено осигуряване за 2022 г. и Закона за бюджета на Националната здравноосигурителна каса за 2022 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-06-20",
+            "start_date": "2023-06-10",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-prilagane-na-razporedbi-na-zakona-za-darzhavniya-byudzhet-na-republika-balgariya-za-2022-g-zakona-za-byudzheta-.json"
+        },
+        {
+            "unique_id": 5114945,
+            "code": "42785",
+            "slug": "zakon-za-kompensirane-na-razhodite-na-potrebitelite-za-transport",
+            "caption": "ЗАКОН за компенсиране на разходите на потребителите за транспорт",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-11-17",
+            "start_date": "2023-11-17",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-kompensirane-na-razhodite-na-potrebitelite-za-transport.json"
         },
         {
             "unique_id": 5127293,
@@ -2629,6 +3864,32 @@
             "file": "laws/zakon-za-kontrol-po-prilagane-na-ogranichitelnite-merki-s-ogled-na-deystviyata-na-rusiya-destabilizirashti-polozhenieto-.json"
         },
         {
+            "unique_id": 5160447,
+            "code": "42789",
+            "slug": "zakon-za-zashtita-na-licata-podavashti-signali-ili-publichno-opovestyavashti-informaciya-za-narusheniya",
+            "caption": "ЗАКОН за защита на лицата, подаващи сигнали или публично оповестяващи информация за нарушения",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zashtita-na-licata-podavashti-signali-ili-publichno-opovestyavashti-informaciya-za-narusheniya.json"
+        },
+        {
+            "unique_id": 5403309,
+            "code": "40478",
+            "slug": "zakon-za-zashtita-ot-domashnoto-nasilie-zagl-izm-dv-br-102-ot-2009-g-v-sila-ot-22122009-g",
+            "caption": "ЗАКОН за защита от домашното насилие (Загл. изм. - ДВ, бр. 102 от 2009 г., в сила от 22.12.2009 г.)",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2023-08-11",
+            "start_date": "2023-08-15",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-zashtita-ot-domashnoto-nasilie-zagl-izm-dv-br-102-ot-2009-g-v-sila-ot-22122009-g.json"
+        },
+        {
             "unique_id": 5503599,
             "code": "42818",
             "slug": "zakon-za-balgarskata-narodna-banka",
@@ -2640,6 +3901,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-balgarskata-narodna-banka.json"
+        },
+        {
+            "unique_id": 5753285,
+            "code": "42837",
+            "slug": "zakon-za-nasarchavane-na-nauchnite-izsledvaniya-i-inovaciite",
+            "caption": "ЗАКОН за насърчаване на научните изследвания и иновациите",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-nasarchavane-na-nauchnite-izsledvaniya-i-inovaciite.json"
         },
         {
             "unique_id": 5927777,
@@ -2770,6 +4044,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-sabiraneto-na-prihodi-i-izvarshvaneto-na-razhodi-prez-2026-g-do-priemaneto-na-zakona-za-darzhavniya-byudzhet-na.json"
+        },
+        {
+            "unique_id": 6810807,
+            "code": "42979",
+            "slug": "zakon-za-obshtite-iziskvaniya-za-bezopasnost-pri-predostavyane-na-atrakcionni-uslugi-predstavlyavashti-iztochnik-na-povi",
+            "caption": "ЗАКОН за общите изисквания за безопасност при предоставяне на атракционни услуги, представляващи източник на повишена опасност",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-obshtite-iziskvaniya-za-bezopasnost-pri-predostavyane-na-atrakcionni-uslugi-predstavlyavashti-iztochnik-na-povi.json"
+        },
+        {
+            "unique_id": 6810808,
+            "code": "42980",
+            "slug": "zakon-za-ratificirane-na-sporazumenieto-mezhdu-pravitelstvoto-na-republika-balgariya-i-pravitelstvoto-na-italianskata-re",
+            "caption": "ЗАКОН за ратифициране на Споразумението между правителството на Република България и правителството на Италианската република за сътрудничество в областта на отбраната относно съвместното изграждане и използване на военни съоръжения на територията на войск",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-02-10",
+            "start_date": "2026-02-14",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ratificirane-na-sporazumenieto-mezhdu-pravitelstvoto-na-republika-balgariya-i-pravitelstvoto-na-italianskata-re.json"
         },
         {
             "unique_id": 6834268,
