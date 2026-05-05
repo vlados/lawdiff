@@ -31,17 +31,22 @@ class ExportPublicLaws extends Command
         $outputDir = $this->option('output') ?: base_path('data');
         $lawsDir = $outputDir.DIRECTORY_SEPARATOR.'laws';
 
+        $lawId = $this->option('law-id');
+        $limit = $this->option('limit') !== null ? (int) $this->option('limit') : null;
+
+        $stats = $this->collectPipelineStats($lawId);
+        $this->renderPipelineStats($stats);
+
         $query = Law::query()
             ->whereNotNull('processed_at')
             ->orderBy('unique_id');
 
-        if ($lawId = $this->option('law-id')) {
+        if ($lawId) {
             $query->where('id', $lawId);
         }
 
-        $limit = $this->option('limit') !== null ? (int) $this->option('limit') : null;
-
-        $total = $limit !== null ? min($query->count(), $limit) : $query->count();
+        $eligible = (int) $query->count();
+        $total = $limit !== null ? min($eligible, $limit) : $eligible;
 
         if ($total === 0) {
             $this->warn('No processed laws found to export.');
@@ -95,15 +100,118 @@ class ExportPublicLaws extends Command
         }
 
         $this->info('✓ Export complete.');
+
+        $this->renderExportVerification(
+            stats: $stats,
+            outputDir: $outputDir,
+            lawsDir: $lawsDir,
+            exported: count($manifest),
+            eligible: $eligible,
+            limited: $limit !== null,
+            scopedToLawId: $lawId !== null,
+        );
+
+        return self::SUCCESS;
+    }
+
+    /**
+     * @return array{total:int, has_content:int, content_fetched:int, processed:int, missing_content:int, fetched_not_processed:int}
+     */
+    private function collectPipelineStats(int|string|null $lawId): array
+    {
+        $base = Law::query();
+
+        if ($lawId !== null && $lawId !== '') {
+            $base->where('id', $lawId);
+        }
+
+        $total = (int) (clone $base)->count();
+        $hasContent = (int) (clone $base)->where('has_content', true)->count();
+        $contentFetched = (int) (clone $base)->whereNotNull('content_fetched_at')->count();
+        $processed = (int) (clone $base)->whereNotNull('processed_at')->count();
+
+        return [
+            'total' => $total,
+            'has_content' => $hasContent,
+            'content_fetched' => $contentFetched,
+            'processed' => $processed,
+            'missing_content' => max($total - $contentFetched, 0),
+            'fetched_not_processed' => max($contentFetched - $processed, 0),
+        ];
+    }
+
+    /**
+     * @param  array{total:int, has_content:int, content_fetched:int, processed:int, missing_content:int, fetched_not_processed:int}  $stats
+     */
+    private function renderPipelineStats(array $stats): void
+    {
+        $this->info('Law pipeline status:');
+        $this->table(
+            ['Stage', 'Count'],
+            [
+                ['Laws in database', $stats['total']],
+                ['Marked has_content', $stats['has_content']],
+                ['Content fetched (content_fetched_at)', $stats['content_fetched']],
+                ['Processed into trees (processed_at) — eligible for export', $stats['processed']],
+                ['Missing content (not yet fetched)', $stats['missing_content']],
+                ['Fetched but not processed', $stats['fetched_not_processed']],
+            ]
+        );
+    }
+
+    /**
+     * @param  array{total:int, has_content:int, content_fetched:int, processed:int, missing_content:int, fetched_not_processed:int}  $stats
+     */
+    private function renderExportVerification(
+        array $stats,
+        string $outputDir,
+        string $lawsDir,
+        int $exported,
+        int $eligible,
+        bool $limited,
+        bool $scopedToLawId,
+    ): void {
+        $filesOnDisk = File::isDirectory($lawsDir) ? count(File::files($lawsDir)) : 0;
+
         $this->table(
             ['Metric', 'Value'],
             [
-                ['Laws exported', count($manifest)],
+                ['Laws in database', $stats['total']],
+                ['Eligible for export (processed)', $eligible],
+                ['Laws exported (this run)', $exported],
+                ['Files on disk in laws/', $filesOnDisk],
                 ['Output directory', $outputDir],
             ]
         );
 
-        return self::SUCCESS;
+        if ($scopedToLawId || $limited) {
+            return;
+        }
+
+        $missing = $stats['total'] - $exported;
+
+        if ($missing > 0) {
+            $this->warn(sprintf(
+                '%d law(s) in the database were not exported because they are not yet processed.',
+                $missing
+            ));
+            $this->line(sprintf(
+                '  • %d still need content fetched (run `laws:fetch-contents`)',
+                $stats['missing_content']
+            ));
+            $this->line(sprintf(
+                '  • %d have content but are not processed yet (run `laws:process-trees`)',
+                $stats['fetched_not_processed']
+            ));
+        }
+
+        if ($exported !== $eligible) {
+            $this->error(sprintf(
+                'Export count mismatch: %d eligible processed law(s) but %d file(s) written.',
+                $eligible,
+                $exported
+            ));
+        }
     }
 
     /**

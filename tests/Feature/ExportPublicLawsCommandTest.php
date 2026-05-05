@@ -148,6 +148,70 @@ test('disambiguates slug collisions', function () {
     expect($stems->unique()->count())->toBe(2);
 });
 
+test('reports pipeline counts and warns when laws are missing from export', function () {
+    Law::factory()->create([
+        'caption' => 'ЗАКОН A',
+        'has_content' => true,
+        'content_fetched_at' => now(),
+        'processed_at' => now(),
+    ]);
+
+    Law::factory()->create([
+        'caption' => 'ЗАКОН B',
+        'has_content' => true,
+        'content_fetched_at' => now(),
+        'processed_at' => null,
+    ]);
+
+    Law::factory()->create([
+        'caption' => 'ЗАКОН C',
+        'has_content' => false,
+        'content_fetched_at' => null,
+        'processed_at' => null,
+    ]);
+
+    $this->artisan('laws:export-public', ['--output' => $this->outputDir])
+        ->expectsOutputToContain('Law pipeline status:')
+        ->expectsOutputToContain('Laws in database')
+        ->expectsOutputToContain('Eligible for export (processed)')
+        ->expectsOutputToContain('Laws exported (this run)')
+        ->expectsOutputToContain('Files on disk in laws/')
+        ->expectsOutputToContain('2 law(s) in the database were not exported')
+        ->expectsOutputToContain('still need content fetched')
+        ->expectsOutputToContain('have content but are not processed yet')
+        ->assertExitCode(0);
+
+    expect(File::files($this->outputDir.'/laws'))->toHaveCount(1);
+});
+
+test('does not warn about missing exports when scoped by law-id', function () {
+    Law::factory()->create([
+        'caption' => 'ЗАКОН processed',
+        'processed_at' => now(),
+    ]);
+
+    $unprocessed = Law::factory()->create([
+        'caption' => 'ЗАКОН unprocessed',
+        'processed_at' => null,
+        'content_fetched_at' => null,
+        'has_content' => false,
+    ]);
+
+    Law::factory()->create([
+        'caption' => 'ЗАКОН other unprocessed',
+        'processed_at' => null,
+        'content_fetched_at' => null,
+        'has_content' => false,
+    ]);
+
+    $this->artisan('laws:export-public', [
+        '--output' => $this->outputDir,
+        '--law-id' => $unprocessed->id,
+    ])
+        ->doesntExpectOutputToContain('were not exported because they are not yet processed')
+        ->assertExitCode(0);
+});
+
 test('prune removes stale law files', function () {
     $law = Law::factory()->create([
         'caption' => 'ЗАКОН за тест',
