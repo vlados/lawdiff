@@ -8,11 +8,11 @@
     "base": "NARH",
     "is_actual": true,
     "publ_year": 2026,
-    "publ_date": "2026-02-10",
-    "start_date": "2026-02-14",
+    "publ_date": "2026-06-05",
+    "start_date": "2026-06-05",
     "end_date": null,
     "act_date": "2024-05-01",
-    "dv": 16,
+    "dv": 51,
     "version": null,
     "celex": null,
     "doc_lead": null,
@@ -22,8 +22,8 @@
         "unique_id": 5753285,
         "db_index": 0
     },
-    "fetched_at": "2026-05-05",
-    "processed_at": "2026-05-05",
+    "fetched_at": "2026-06-05",
+    "processed_at": "2026-06-05",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -2580,7 +2580,7 @@
         },
         {
             "path": "ЧЛ28",
-            "p_id": 56332239,
+            "p_id": 57291860,
             "caption": "Чл. 28",
             "node_type": "article",
             "type": 11,
@@ -2593,7 +2593,7 @@
             "children": [
                 {
                     "path": "ЧЛ28/АЛ1",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2606,7 +2606,7 @@
                     "children": [
                         {
                             "path": "ЧЛ28/АЛ1/Т1",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2620,7 +2620,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ1/Т2",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2634,7 +2634,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ1/Т3",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2650,7 +2650,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ2",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2664,7 +2664,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ3",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2678,7 +2678,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ4",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2692,7 +2692,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ5",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2706,7 +2706,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ6",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2720,7 +2720,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ7",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2734,7 +2734,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ8",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2748,7 +2748,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ9",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2761,7 +2761,7 @@
                     "children": [
                         {
                             "path": "ЧЛ28/АЛ9/Т1",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2775,7 +2775,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ9/Т2",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2789,7 +2789,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ9/Т3",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2803,7 +2803,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ9/Т4",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2817,7 +2817,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ9/Т5",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2831,7 +2831,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ9/Т6",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2845,7 +2845,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ9/Т7",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2861,7 +2861,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ10",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2874,7 +2874,7 @@
                     "children": [
                         {
                             "path": "ЧЛ28/АЛ10/Т1",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2888,7 +2888,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ10/Т2",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2902,7 +2902,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ10/Т3",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2916,7 +2916,7 @@
                         },
                         {
                             "path": "ЧЛ28/АЛ10/Т4",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2925,12 +2925,12 @@
                             "sort_order": 278,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "(изм. – ДВ, бр. 16 от 2026 г.) влизане в сила на акт, с който е установен конфликт на интереси по Закона за Сметната палата;",
+                            "text_markdown": "(изм. – ДВ, бр. 16 от 2026 г., бр. 51 от 2026 г., в сила от 5.06.2026 г.) влизане в сила на акт, с който е установен конфликт на интереси по Закона за противодействие на корупцията сред лица, заемащи публични длъжности;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ28/АЛ10/Т5",
-                            "p_id": 56332239,
+                            "p_id": 57291860,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -2946,7 +2946,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ11",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2960,7 +2960,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ12",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2974,7 +2974,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ13",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2988,7 +2988,7 @@
                 },
                 {
                     "path": "ЧЛ28/АЛ14",
-                    "p_id": 56332239,
+                    "p_id": 57291860,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5527,7 +5527,7 @@
         },
         {
             "path": "ЧЛ55",
-            "p_id": 56332240,
+            "p_id": 57291861,
             "caption": "Чл. 55",
             "node_type": "article",
             "type": 11,
@@ -5540,7 +5540,7 @@
             "children": [
                 {
                     "path": "ЧЛ55/АЛ1",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5553,7 +5553,7 @@
                     "children": [
                         {
                             "path": "ЧЛ55/АЛ1/Т1",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5567,7 +5567,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ1/Т2",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5581,7 +5581,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ1/Т3",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5597,7 +5597,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ2",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5611,7 +5611,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ3",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5625,7 +5625,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ4",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5639,7 +5639,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ5",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5653,7 +5653,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ6",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5667,7 +5667,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ7",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5681,7 +5681,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ8",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5694,7 +5694,7 @@
                     "children": [
                         {
                             "path": "ЧЛ55/АЛ8/Т1",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5708,7 +5708,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ8/Т2",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5722,7 +5722,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ8/Т3",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5736,7 +5736,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ8/Т4",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5752,7 +5752,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ9",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5765,7 +5765,7 @@
                     "children": [
                         {
                             "path": "ЧЛ55/АЛ9/Т1",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5779,7 +5779,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ9/Т2",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5793,7 +5793,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ9/Т3",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5807,7 +5807,7 @@
                         },
                         {
                             "path": "ЧЛ55/АЛ9/Т4",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5816,12 +5816,12 @@
                             "sort_order": 455,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "(изм. – ДВ, бр. 16 от 2026 г.) влизане в сила на акт, с който е установен конфликт на интереси по Закона за Сметната палата;",
+                            "text_markdown": "(изм. – ДВ, бр. 16 от 2026 г., бр. 51 от 2026 г., в сила от 5.06.2026 г.) влизане в сила на акт, с който е установен конфликт на интереси по Закона за противодействие на корупцията сред лица, заемащи публични длъжности;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ55/АЛ9/Т5",
-                            "p_id": 56332240,
+                            "p_id": 57291861,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -5837,7 +5837,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ10",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5851,7 +5851,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ11",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5865,7 +5865,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ12",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -5879,7 +5879,7 @@
                 },
                 {
                     "path": "ЧЛ55/АЛ13",
-                    "p_id": 56332240,
+                    "p_id": 57291861,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8760,7 +8760,7 @@
         },
         {
             "path": "ПУБЛ_ИНФО",
-            "p_id": 56332238,
+            "p_id": 57291859,
             "caption": null,
             "node_type": "publication_info",
             "type": 0,
@@ -8769,7 +8769,7 @@
             "sort_order": 100,
             "has_in_links": false,
             "is_orphaned": true,
-            "text_markdown": "Oбн., ДВ, бр. 39 от 1.05.2024 г., изм., бр. 16 от 10.02.2026 г.",
+            "text_markdown": "Oбн., ДВ, бр. 39 от 1.05.2024 г., изм., бр. 16 от 10.02.2026 г., бр. 51 от 5.06.2026 г., в сила от 5.06.2026 г.",
             "children": []
         },
         {

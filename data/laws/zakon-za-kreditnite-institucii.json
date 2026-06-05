@@ -8,11 +8,11 @@
     "base": "NARH",
     "is_actual": true,
     "publ_year": 2026,
-    "publ_date": "2026-03-10",
-    "start_date": "2026-03-14",
+    "publ_date": "2026-06-05",
+    "start_date": "2026-06-05",
     "end_date": null,
     "act_date": "2006-07-21",
-    "dv": 25,
+    "dv": 51,
     "version": null,
     "celex": null,
     "doc_lead": null,
@@ -22,8 +22,8 @@
         "unique_id": 227993,
         "db_index": 0
     },
-    "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "fetched_at": "2026-06-05",
+    "processed_at": "2026-06-05",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -8135,7 +8135,7 @@
         },
         {
             "path": "ЧЛ56",
-            "p_id": 56331846,
+            "p_id": 57291559,
             "caption": "Чл. 56.",
             "node_type": "article",
             "type": 11,
@@ -8148,7 +8148,7 @@
             "children": [
                 {
                     "path": "ЧЛ56/АЛ1",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8161,7 +8161,7 @@
                     "children": [
                         {
                             "path": "ЧЛ56/АЛ1/Т1",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8175,7 +8175,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ1/Т2",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8189,7 +8189,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ1/Т3",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8203,7 +8203,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ1/Т4",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8217,7 +8217,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ1/Т5",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8233,7 +8233,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ2",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8247,7 +8247,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ3",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8260,7 +8260,7 @@
                     "children": [
                         {
                             "path": "ЧЛ56/АЛ3/Т1",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8274,7 +8274,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т2",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8288,7 +8288,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т3",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8302,7 +8302,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т4",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8311,12 +8311,12 @@
                             "sort_order": 877,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "(Изм. – ДВ, бр. 84 от 2023 г., в сила от 6.10.2023 г., доп., бр. 70 от 2024 г., в сила от 24.08.2024 г., изм., бр. 16 от 2026 г.) Сметната палата и Комисията за отнемане на незаконно придобитото имущество;",
+                            "text_markdown": "(Изм. – ДВ, бр. 84 от 2023 г., в сила от 6.10.2023 г., доп., бр. 70 от 2024 г., в сила от 24.08.2024 г., изм., бр. 16 от 2026 г., бр. 51 от 2026 г., в сила от 5.06.2026 г.) Комисията за противодействие на корупцията и Комисията за отнемане на незаконно придобитото имущество;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т5",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8330,7 +8330,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т6",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8344,7 +8344,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т7",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8358,7 +8358,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т8",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8372,7 +8372,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т9",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8386,7 +8386,7 @@
                         },
                         {
                             "path": "ЧЛ56/АЛ3/Т10",
-                            "p_id": 56331846,
+                            "p_id": 57291559,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8402,7 +8402,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ4",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8416,7 +8416,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ5",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8430,7 +8430,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ6",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8444,7 +8444,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ7",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8458,7 +8458,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ8",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8472,7 +8472,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ9",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8486,7 +8486,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ10",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8500,7 +8500,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ11",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8514,7 +8514,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ12",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8528,7 +8528,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ13",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8542,7 +8542,7 @@
                 },
                 {
                     "path": "ЧЛ56/АЛ14",
-                    "p_id": 56331846,
+                    "p_id": 57291559,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8558,7 +8558,7 @@
         },
         {
             "path": "ЧЛ56А",
-            "p_id": 56331847,
+            "p_id": 57291560,
             "caption": "Чл. 56а.",
             "node_type": "article",
             "type": 11,
@@ -8571,7 +8571,7 @@
             "children": [
                 {
                     "path": "ЧЛ56А/АЛ1",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8585,7 +8585,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ2",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8599,7 +8599,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ3",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8612,7 +8612,7 @@
                     "children": [
                         {
                             "path": "ЧЛ56А/АЛ3/Т1",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8626,7 +8626,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т2",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8640,7 +8640,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т3",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8654,7 +8654,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т4",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8668,7 +8668,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т5",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8677,12 +8677,12 @@
                             "sort_order": 902,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "(Изм. – ДВ, бр. 7 от 2018 г., бр. 84 от 2023 г., в сила от 6.10.2023 г., доп., бр. 70 от 2024 г., в сила от 24.08.2024 г., изм., бр. 16 от 2026 г.) Сметната палата и Комисията за отнемане на незаконно придобитото имущество;",
+                            "text_markdown": "(Изм. – ДВ, бр. 7 от 2018 г., бр. 84 от 2023 г., в сила от 6.10.2023 г., доп., бр. 70 от 2024 г., в сила от 24.08.2024 г., изм., бр. 16 от 2026 г., бр. 51 от 2026 г., в сила от 5.06.2026 г.) Комисията за противодействие на корупцията и Комисията за отнемане на незаконно придобитото имущество;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т6",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8696,7 +8696,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т7",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8710,7 +8710,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т8",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8724,7 +8724,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т9",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8738,7 +8738,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т10",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8752,7 +8752,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т11",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8766,7 +8766,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т12",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8780,7 +8780,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т13",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8794,7 +8794,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т14",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8808,7 +8808,7 @@
                         },
                         {
                             "path": "ЧЛ56А/АЛ3/Т15",
-                            "p_id": 56331847,
+                            "p_id": 57291560,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -8824,7 +8824,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ4",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8838,7 +8838,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ5",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8852,7 +8852,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ6",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8866,7 +8866,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ7",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8880,7 +8880,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ8",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8894,7 +8894,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ9",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8908,7 +8908,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ10",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8922,7 +8922,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ11",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8936,7 +8936,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ12",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -8950,7 +8950,7 @@
                 },
                 {
                     "path": "ЧЛ56А/АЛ13",
-                    "p_id": 56331847,
+                    "p_id": 57291560,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9519,7 +9519,7 @@
         },
         {
             "path": "ЧЛ62",
-            "p_id": 56331848,
+            "p_id": 57291561,
             "caption": "Чл. 62.",
             "node_type": "article",
             "type": 11,
@@ -9532,7 +9532,7 @@
             "children": [
                 {
                     "path": "ЧЛ62/АЛ1",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9546,7 +9546,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ2",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9560,7 +9560,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ3",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9574,7 +9574,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ4",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9588,7 +9588,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ5",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9601,7 +9601,7 @@
                     "children": [
                         {
                             "path": "ЧЛ62/АЛ5/Т1",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9615,7 +9615,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ5/Т2",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9629,7 +9629,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ5/Т3",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9643,7 +9643,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ5/Т4",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9657,7 +9657,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ5/Т5",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9673,7 +9673,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ6",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9686,7 +9686,7 @@
                     "children": [
                         {
                             "path": "ЧЛ62/АЛ6/Т1",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9700,7 +9700,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т2",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9714,7 +9714,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т3",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9728,7 +9728,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т4",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9737,12 +9737,12 @@
                             "sort_order": 971,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "(Изм. - ДВ, бр. 38 от 2012 г., в сила от 19.11.2012 г., бр. 7 от 2018 г., бр. 84 от 2023 г., в сила от 6.10.2023 г., бр. 16 от 2026 г.) Сметната палата и Комисията за отнемане на незаконно придобитото имущество;",
+                            "text_markdown": "(Изм. - ДВ, бр. 38 от 2012 г., в сила от 19.11.2012 г., бр. 7 от 2018 г., бр. 84 от 2023 г., в сила от 6.10.2023 г., бр. 16 от 2026 г., бр. 51 от 2026 г., в сила от 5.06.2026 г.) Комисията за противодействие на корупцията и Комисията за отнемане на незаконно придобитото имущество;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т5",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9756,7 +9756,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т6",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9770,7 +9770,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т7",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9784,7 +9784,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т8",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9798,7 +9798,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т9",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9812,7 +9812,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т10",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9826,7 +9826,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т11",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9840,7 +9840,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ6/Т12",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9856,7 +9856,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ7",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9870,7 +9870,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ8",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9884,7 +9884,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ9",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9898,7 +9898,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ10",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9912,7 +9912,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ11",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9926,7 +9926,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ12",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -9939,7 +9939,7 @@
                     "children": [
                         {
                             "path": "ЧЛ62/АЛ12/Т1",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9953,7 +9953,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ12/Т2",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9967,7 +9967,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ12/Т3",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9981,7 +9981,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ12/Т4",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -9994,7 +9994,7 @@
                             "children": [
                                 {
                                     "path": "ЧЛ62/АЛ12/Т4/БУКВА_А",
-                                    "p_id": 56331848,
+                                    "p_id": 57291561,
                                     "caption": null,
                                     "node_type": "letter",
                                     "type": 11,
@@ -10008,7 +10008,7 @@
                                 },
                                 {
                                     "path": "ЧЛ62/АЛ12/Т4/БУКВА_Б",
-                                    "p_id": 56331848,
+                                    "p_id": 57291561,
                                     "caption": null,
                                     "node_type": "letter",
                                     "type": 11,
@@ -10022,7 +10022,7 @@
                                 },
                                 {
                                     "path": "ЧЛ62/АЛ12/Т4/БУКВА_В",
-                                    "p_id": 56331848,
+                                    "p_id": 57291561,
                                     "caption": null,
                                     "node_type": "letter",
                                     "type": 11,
@@ -10036,7 +10036,7 @@
                                 },
                                 {
                                     "path": "ЧЛ62/АЛ12/Т4/БУКВА_Г",
-                                    "p_id": 56331848,
+                                    "p_id": 57291561,
                                     "caption": null,
                                     "node_type": "letter",
                                     "type": 11,
@@ -10050,7 +10050,7 @@
                                 },
                                 {
                                     "path": "ЧЛ62/АЛ12/Т4/БУКВА_Д",
-                                    "p_id": 56331848,
+                                    "p_id": 57291561,
                                     "caption": null,
                                     "node_type": "letter",
                                     "type": 11,
@@ -10066,7 +10066,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ12/Т5",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10080,7 +10080,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ12/Т6",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10094,7 +10094,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ12/Т7",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10110,7 +10110,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ13",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10124,7 +10124,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ14",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10138,7 +10138,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ15",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10151,7 +10151,7 @@
                     "children": [
                         {
                             "path": "ЧЛ62/АЛ15/Т1",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10165,7 +10165,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ15/Т2",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10181,7 +10181,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ16",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10194,7 +10194,7 @@
                     "children": [
                         {
                             "path": "ЧЛ62/АЛ16/Т1",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10208,7 +10208,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ16/Т2",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10222,7 +10222,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ16/Т3",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10236,7 +10236,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ16/Т4",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10250,7 +10250,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ16/Т5",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10264,7 +10264,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ16/Т6",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10278,7 +10278,7 @@
                         },
                         {
                             "path": "ЧЛ62/АЛ16/Т7",
-                            "p_id": 56331848,
+                            "p_id": 57291561,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10294,7 +10294,7 @@
                 },
                 {
                     "path": "ЧЛ62/АЛ17",
-                    "p_id": 56331848,
+                    "p_id": 57291561,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10409,7 +10409,7 @@
         },
         {
             "path": "ЧЛ64",
-            "p_id": 56331849,
+            "p_id": 57291562,
             "caption": "Чл. 64.",
             "node_type": "article",
             "type": 11,
@@ -10422,7 +10422,7 @@
             "children": [
                 {
                     "path": "ЧЛ64/АЛ1",
-                    "p_id": 56331849,
+                    "p_id": 57291562,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10435,7 +10435,7 @@
                     "children": [
                         {
                             "path": "ЧЛ64/АЛ1/Т1",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10449,7 +10449,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т2",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10463,7 +10463,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т3",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10477,7 +10477,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т4",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10491,7 +10491,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т5",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10500,12 +10500,12 @@
                             "sort_order": 1023,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "(изм. – ДВ, бр. 27 от 2014 г.) одиторите на финансовите отчети на кредитни институции, инвестиционни посредници, застрахователи или на финансови институции, както и на лицата, които по закон осъществяват контрол върху одиторите на кредитни институции, инвестиционни посредници, застрахователи или финансови институции;\n\n 5а. (Нова – ДВ, бр. 50 от 2015 г., доп., бр. 16 от 2026 г.) Сметната палата за целите на извършваните от нея одити на дейността на Българската народна банка и за целите на извършване на дейността по чл. 1, ал. 2, т. 2 от Закона за Сметната палата;",
+                            "text_markdown": "(изм. – ДВ, бр. 27 от 2014 г.) одиторите на финансовите отчети на кредитни институции, инвестиционни посредници, застрахователи или на финансови институции, както и на лицата, които по закон осъществяват контрол върху одиторите на кредитни институции, инвестиционни посредници, застрахователи или финансови институции;\n\n 5а. (Нова – ДВ, бр. 50 от 2015 г., доп., бр. 16 от 2026 г., изм., бр. 51 от 2026 г., в сила от 5.06.2026 г.) Сметната палата за целите на извършваните от нея одити на дейността на Българската народна банка;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т6",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10514,12 +10514,12 @@
                             "sort_order": 1024,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "(Нова – ДВ, бр. 7 от 2018 г., изм., бр. 84 от 2023 г., в сила от 6.10.2023 г., отм., бр. 16 от 2026 г.);",
+                            "text_markdown": "(Нова – ДВ, бр. 7 от 2018 г., изм., бр. 84 от 2023 г., в сила от 6.10.2023 г., отм., бр. 16 от 2026 г., нова, бр. 51 от 2026 г., в сила от 5.06.2026 г.) Комисията за противодействие на корупцията и/или на нейните органи;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т7",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10533,7 +10533,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т8",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10547,7 +10547,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т9",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10561,7 +10561,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т10",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10575,7 +10575,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т11",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10589,7 +10589,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т12",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10603,7 +10603,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т13",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10617,7 +10617,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т14",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10631,7 +10631,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т15",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10645,7 +10645,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т16",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10659,7 +10659,7 @@
                         },
                         {
                             "path": "ЧЛ64/АЛ1/Т17",
-                            "p_id": 56331849,
+                            "p_id": 57291562,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -10675,7 +10675,7 @@
                 },
                 {
                     "path": "ЧЛ64/АЛ2",
-                    "p_id": 56331849,
+                    "p_id": 57291562,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10689,7 +10689,7 @@
                 },
                 {
                     "path": "ЧЛ64/АЛ3",
-                    "p_id": 56331849,
+                    "p_id": 57291562,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10703,7 +10703,7 @@
                 },
                 {
                     "path": "ЧЛ64/АЛ4",
-                    "p_id": 56331849,
+                    "p_id": 57291562,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10717,7 +10717,7 @@
                 },
                 {
                     "path": "ЧЛ64/АЛ5",
-                    "p_id": 56331849,
+                    "p_id": 57291562,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -10731,7 +10731,7 @@
                 },
                 {
                     "path": "ЧЛ64/АЛ6",
-                    "p_id": 56331849,
+                    "p_id": 57291562,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -26922,7 +26922,7 @@
         },
         {
             "path": "ПУБЛ_ИНФО",
-            "p_id": 56570886,
+            "p_id": 57291558,
             "caption": null,
             "node_type": "publication_info",
             "type": 0,
@@ -26931,7 +26931,7 @@
             "sort_order": 261,
             "has_in_links": false,
             "is_orphaned": true,
-            "text_markdown": "Обн., ДВ, бр. 59 от 21.07.2006 г., в сила от 1.01.2007 г., доп., бр. 105 от 22.12.2006 г., в сила от 1.01.2007 г., изм. и доп., бр. 52 от 29.06.2007 г., в сила от 1.11.2007 г., изм., бр. 59 от 20.07.2007 г., в сила от 1.03.2008 г., бр. 109 от 20.12.2007 г., в сила от 1.01.2008 г., бр. 69 от 5.08.2008 г., изм. и доп., бр. 23 от 27.03.2009 г., в сила от 1.11.2009 г., бр. 24 от 31.03.2009 г., в сила от 31.03.2009 г., бр. 44 от 12.06.2009 г., в сила от 12.06.2009 г., изм., бр. 93 от 24.11.2009 г., в сила от 25.12.2009 г., бр. 95 от 1.12.2009 г., в сила от 1.12.2009 г., изм. и доп., бр. 94 от 30.11.2010 г., в сила от 31.12.2010 г., бр. 101 от 28.12.2010 г., в сила от 30.04.2011 г., доп., бр. 77 от 4.10.2011 г., изм. и доп., бр. 105 от 29.12.2011 г., изм., бр. 38 от 18.05.2012 г., в сила от 19.11.2012 г., бр. 44 от 12.06.2012 г., в сила от 1.07.2012 г., бр. 52 от 14.06.2013 г., в сила от 14.06.2013 г., изм. и доп., бр. 70 от 9.08.2013 г., доп., бр. 109 от 20.12.2013 г., в сила от 1.01.2014 г., бр. 22 от 11.03.2014 г., в сила от 11.03.2014 г., изм. и доп., бр. 27 от 25.03.2014 г., доп., бр. 35 от 22.04.2014 г., в сила от 23.07.2014 г., изм., бр. 53 от 27.06.2014 г., бр. 14 от 20.02.2015 г., доп., бр. 22 от 24.03.2015 г., в сила от 24.03.2015 г., изм. и доп., бр. 50 от 3.07.2015 г., бр. 62 от 14.08.2015 г., в сила от 14.08.2015 г., доп., бр. 94 от 4.12.2015 г., в сила от 1.01.2016 г., изм. и доп., бр. 33 от 26.04.2016 г., в сила от 26.04.2016 г., бр. 59 от 29.07.2016 г., доп., бр. 62 от 9.08.2016 г., в сила от 9.08.2016 г., изм., бр. 81 от 14.10.2016 г., в сила от 14.10.2016 г., изм. и доп., бр. 95 от 29.11.2016 г., бр. 98 от 9.12.2016 г., в сила от 1.01.2017 г., изм., бр. 63 от 4.08.2017 г., в сила от 4.08.2017 г., изм. и доп., бр. 97 от 5.12.2017 г., в сила от 5.12.2017 г., доп., бр. 103 от 28.12.2017 г., в сила от 1.01.2018 г., изм. и доп., бр. 7 от 19.01.2018 г., бр. 15 от 16.02.2018 г., в сила от 16.02.2018 г., доп., бр. 16 от 20.02.2018 г., изм. и доп., бр. 20 от 6.03.2018 г., в сила от 6.03.2018 г., доп., бр. 22 от 13.03.2018 г., бр. 51 от 19.06.2018 г., в сила от 1.07.2018 г., доп., бр. 77 от 18.09.2018 г., в сила от 1.01.2019 г., изм., бр. 98 от 27.11.2018 г., в сила от 7.01.2019 г., изм. и доп., бр. 106 от 21.12.2018 г., изм., бр. 37 от 7.05.2019 г., в сила от 7.05.2019 г., изм. и доп., бр. 42 от 28.05.2019 г., в сила от 28.05.2019 г., бр. 83 от 22.10.2019 г., в сила от 22.10.2019 г., бр. 94 от 29.11.2019 г., доп., бр. 96 от 6.12.2019 г., в сила от 1.01.2020 г., бр. 11 от 7.02.2020 г., изм., бр. 13 от 14.02.2020 г., в сила от 14.02.2020 г., изм. и доп., бр. 14 от 18.02.2020 г., бр. 18 от 28.02.2020 г., в сила от 28.02.2020 г., изм., бр. 64 от 18.07.2020 г., в сила от 21.08.2020 г., изм. и доп., бр. 12 от 12.02.2021 г., в сила от 12.02.2021 г., бр. 21 от 12.03.2021 г., бр. 25 от 29.03.2022 г., в сила от 29.03.2022 г., бр. 51 от 1.07.2022 г., бр. 65 от 28.07.2023 г., бр. 66 от 1.08.2023 г., в сила от 5.08.2023 г., бр. 84 от 6.10.2023 г., бр. 85 от 10.10.2023 г., в сила от 10.10.2023 г., изм., бр. 13 от 13.02.2024 г., в сила от 1.01.2026 г., изм. и доп., бр. 70 от 20.08.2024 г., в сила от 1.01.2026 г., бр. 79 от 17.09.2024 г., изм., бр. 49 от 17.06.2025 г., изм. и доп., бр. 50 от 20.06.2025 г., в сила от 20.06.2025 г., бр. 54 от 4.07.2025 г., бр. 63 от 1.08.2025 г., бр. 67 от 15.08.2025 г., изм., бр. 99 от 21.11.2025 г., изм. и доп., бр. 16 от 10.02.2026 г., бр. 25 от 10.03.2026 г.",
+            "text_markdown": "Обн., ДВ, бр. 59 от 21.07.2006 г., в сила от 1.01.2007 г., доп., бр. 105 от 22.12.2006 г., в сила от 1.01.2007 г., изм. и доп., бр. 52 от 29.06.2007 г., в сила от 1.11.2007 г., изм., бр. 59 от 20.07.2007 г., в сила от 1.03.2008 г., бр. 109 от 20.12.2007 г., в сила от 1.01.2008 г., бр. 69 от 5.08.2008 г., изм. и доп., бр. 23 от 27.03.2009 г., в сила от 1.11.2009 г., бр. 24 от 31.03.2009 г., в сила от 31.03.2009 г., бр. 44 от 12.06.2009 г., в сила от 12.06.2009 г., изм., бр. 93 от 24.11.2009 г., в сила от 25.12.2009 г., бр. 95 от 1.12.2009 г., в сила от 1.12.2009 г., изм. и доп., бр. 94 от 30.11.2010 г., в сила от 31.12.2010 г., бр. 101 от 28.12.2010 г., в сила от 30.04.2011 г., доп., бр. 77 от 4.10.2011 г., изм. и доп., бр. 105 от 29.12.2011 г., изм., бр. 38 от 18.05.2012 г., в сила от 19.11.2012 г., бр. 44 от 12.06.2012 г., в сила от 1.07.2012 г., бр. 52 от 14.06.2013 г., в сила от 14.06.2013 г., изм. и доп., бр. 70 от 9.08.2013 г., доп., бр. 109 от 20.12.2013 г., в сила от 1.01.2014 г., бр. 22 от 11.03.2014 г., в сила от 11.03.2014 г., изм. и доп., бр. 27 от 25.03.2014 г., доп., бр. 35 от 22.04.2014 г., в сила от 23.07.2014 г., изм., бр. 53 от 27.06.2014 г., бр. 14 от 20.02.2015 г., доп., бр. 22 от 24.03.2015 г., в сила от 24.03.2015 г., изм. и доп., бр. 50 от 3.07.2015 г., бр. 62 от 14.08.2015 г., в сила от 14.08.2015 г., доп., бр. 94 от 4.12.2015 г., в сила от 1.01.2016 г., изм. и доп., бр. 33 от 26.04.2016 г., в сила от 26.04.2016 г., бр. 59 от 29.07.2016 г., доп., бр. 62 от 9.08.2016 г., в сила от 9.08.2016 г., изм., бр. 81 от 14.10.2016 г., в сила от 14.10.2016 г., изм. и доп., бр. 95 от 29.11.2016 г., бр. 98 от 9.12.2016 г., в сила от 1.01.2017 г., изм., бр. 63 от 4.08.2017 г., в сила от 4.08.2017 г., изм. и доп., бр. 97 от 5.12.2017 г., в сила от 5.12.2017 г., доп., бр. 103 от 28.12.2017 г., в сила от 1.01.2018 г., изм. и доп., бр. 7 от 19.01.2018 г., бр. 15 от 16.02.2018 г., в сила от 16.02.2018 г., доп., бр. 16 от 20.02.2018 г., изм. и доп., бр. 20 от 6.03.2018 г., в сила от 6.03.2018 г., доп., бр. 22 от 13.03.2018 г., бр. 51 от 19.06.2018 г., в сила от 1.07.2018 г., доп., бр. 77 от 18.09.2018 г., в сила от 1.01.2019 г., изм., бр. 98 от 27.11.2018 г., в сила от 7.01.2019 г., изм. и доп., бр. 106 от 21.12.2018 г., изм., бр. 37 от 7.05.2019 г., в сила от 7.05.2019 г., изм. и доп., бр. 42 от 28.05.2019 г., в сила от 28.05.2019 г., бр. 83 от 22.10.2019 г., в сила от 22.10.2019 г., бр. 94 от 29.11.2019 г., доп., бр. 96 от 6.12.2019 г., в сила от 1.01.2020 г., бр. 11 от 7.02.2020 г., изм., бр. 13 от 14.02.2020 г., в сила от 14.02.2020 г., изм. и доп., бр. 14 от 18.02.2020 г., бр. 18 от 28.02.2020 г., в сила от 28.02.2020 г., изм., бр. 64 от 18.07.2020 г., в сила от 21.08.2020 г., изм. и доп., бр. 12 от 12.02.2021 г., в сила от 12.02.2021 г., бр. 21 от 12.03.2021 г., бр. 25 от 29.03.2022 г., в сила от 29.03.2022 г., бр. 51 от 1.07.2022 г., бр. 65 от 28.07.2023 г., бр. 66 от 1.08.2023 г., в сила от 5.08.2023 г., бр. 84 от 6.10.2023 г., бр. 85 от 10.10.2023 г., в сила от 10.10.2023 г., изм., бр. 13 от 13.02.2024 г., в сила от 1.01.2026 г., изм. и доп., бр. 70 от 20.08.2024 г., в сила от 1.01.2026 г., бр. 79 от 17.09.2024 г., изм., бр. 49 от 17.06.2025 г., изм. и доп., бр. 50 от 20.06.2025 г., в сила от 20.06.2025 г., бр. 54 от 4.07.2025 г., бр. 63 от 1.08.2025 г., бр. 67 от 15.08.2025 г., изм., бр. 99 от 21.11.2025 г., изм. и доп., бр. 16 от 10.02.2026 г., бр. 25 от 10.03.2026 г., бр. 51 от 5.06.2026 г., в сила от 5.06.2026 г.",
             "children": []
         },
         {
