@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-06-05T07:42:02+00:00",
-    "count": 419,
+    "generated_at": "2026-06-06T07:13:49+00:00",
+    "count": 420,
     "laws": [
         {
             "unique_id": 8747,
@@ -5448,6 +5448,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-obshtestveniya-transport.json"
+        },
+        {
+            "unique_id": 7006518,
+            "code": "42991",
+            "slug": "zakon-za-protivodeystvie-na-korupciyata-sred-lica-zaemashti-publichni-dlazhnosti",
+            "caption": "ЗАКОН за противодействие на корупцията сред лица, заемащи публични длъжности",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-06-05",
+            "start_date": "2026-06-05",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-protivodeystvie-na-korupciyata-sred-lica-zaemashti-publichni-dlazhnosti.json"
         }
     ]
 }

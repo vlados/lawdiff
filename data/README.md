@@ -9,7 +9,7 @@ Generated daily from APIS.BG and committed to this repository.
 Each law file includes the structured tree of articles, paragraphs, and items
 as parsed by `App\Services\LawTreeProcessor`, with text rendered as Markdown.
 
-**Total laws:** 419
+**Total laws:** 420
 
 ## Consuming the data
 
