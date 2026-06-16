@@ -7,12 +7,12 @@
     "func": 1,
     "base": "NARH",
     "is_actual": true,
-    "publ_year": 2025,
-    "publ_date": "2025-11-04",
-    "start_date": "2025-11-08",
+    "publ_year": 2026,
+    "publ_date": "2026-06-16",
+    "start_date": "2026-06-20",
     "end_date": null,
     "act_date": "2015-08-11",
-    "dv": 94,
+    "dv": 55,
     "version": null,
     "celex": null,
     "doc_lead": null,
@@ -22,8 +22,8 @@
         "unique_id": 2643325,
         "db_index": 0
     },
-    "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "fetched_at": "2026-06-16",
+    "processed_at": "2026-06-16",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -876,7 +876,7 @@
         },
         {
             "path": "ЧЛ8",
-            "p_id": 46023998,
+            "p_id": 57321502,
             "caption": "Чл. 8",
             "node_type": "article",
             "type": 11,
@@ -889,7 +889,7 @@
             "children": [
                 {
                     "path": "ЧЛ8/АЛ1",
-                    "p_id": 46023998,
+                    "p_id": 57321502,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -903,7 +903,7 @@
                 },
                 {
                     "path": "ЧЛ8/АЛ2",
-                    "p_id": 46023998,
+                    "p_id": 57321502,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -917,7 +917,7 @@
                 },
                 {
                     "path": "ЧЛ8/АЛ3",
-                    "p_id": 46023998,
+                    "p_id": 57321502,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -930,7 +930,7 @@
                     "children": [
                         {
                             "path": "ЧЛ8/АЛ3/Т1",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -944,7 +944,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т2",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -958,7 +958,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т3",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -972,7 +972,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т4",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -981,12 +981,12 @@
                             "sort_order": 98,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "министърът на финансите;\n\n4а. (нова – ДВ, бр. 15 от 2022 г., в сила от 22.02.2022 г.) министърът на електронното управление;",
+                            "text_markdown": "министърът на финансите;\n\n4а. (нова – ДВ, бр. 15 от 2022 г., в сила от 22.02.2022 г., изм., бр. 55 от 2026 г.) министърът на иновациите и дигиталната трансформация;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т5",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1000,7 +1000,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т6",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1014,7 +1014,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т7",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1028,7 +1028,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т8",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1042,7 +1042,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т9",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1056,7 +1056,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т10",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1070,7 +1070,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т11",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1084,7 +1084,7 @@
                         },
                         {
                             "path": "ЧЛ8/АЛ3/Т12",
-                            "p_id": 46023998,
+                            "p_id": 57321502,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1100,7 +1100,7 @@
                 },
                 {
                     "path": "ЧЛ8/АЛ4",
-                    "p_id": 46023998,
+                    "p_id": 57321502,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -1114,7 +1114,7 @@
                 },
                 {
                     "path": "ЧЛ8/АЛ5",
-                    "p_id": 46023998,
+                    "p_id": 57321502,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -1128,7 +1128,7 @@
                 },
                 {
                     "path": "ЧЛ8/АЛ6",
-                    "p_id": 46023998,
+                    "p_id": 57321502,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -2680,7 +2680,7 @@
         },
         {
             "path": "ПУБЛ_ИНФО",
-            "p_id": 55550058,
+            "p_id": 57321501,
             "caption": null,
             "node_type": "publication_info",
             "type": 0,
@@ -2689,7 +2689,7 @@
             "sort_order": 34,
             "has_in_links": false,
             "is_orphaned": true,
-            "text_markdown": "Обн., ДВ, бр. 61 от 11.08.2015 г., в сила от 1.11.2015 г., изм., бр. 94 от 13.11.2018 г., бр. 69 от 4.08.2020 г., доп., бр. 15 от 22.02.2022 г., в сила от 22.02.2022 г., изм., бр. 90 от 28.10.2025 г., изм. и доп., бр. 94 от 4.11.2025 г.",
+            "text_markdown": "Обн., ДВ, бр. 61 от 11.08.2015 г., в сила от 1.11.2015 г., изм., бр. 94 от 13.11.2018 г., бр. 69 от 4.08.2020 г., доп., бр. 15 от 22.02.2022 г., в сила от 22.02.2022 г., изм., бр. 90 от 28.10.2025 г., изм. и доп., бр. 94 от 4.11.2025 г., изм., бр. 55 от 16.06.2026 г.",
             "children": []
         },
         {
