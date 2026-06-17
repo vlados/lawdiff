@@ -22,8 +22,8 @@
         "unique_id": 12130,
         "db_index": 0
     },
-    "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "fetched_at": "2026-06-17",
+    "processed_at": "2026-06-17",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -1409,7 +1409,7 @@
         },
         {
             "path": "ЧЛ22В",
-            "p_id": 51028364,
+            "p_id": 57321894,
             "caption": "Чл. 22в",
             "node_type": "article",
             "type": 11,
@@ -1422,7 +1422,7 @@
             "children": [
                 {
                     "path": "ЧЛ22В/АЛ1",
-                    "p_id": 51028364,
+                    "p_id": 57321894,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -1436,7 +1436,7 @@
                 },
                 {
                     "path": "ЧЛ22В/АЛ2",
-                    "p_id": 51028364,
+                    "p_id": 57321894,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -1450,7 +1450,7 @@
                 },
                 {
                     "path": "ЧЛ22В/АЛ3",
-                    "p_id": 51028364,
+                    "p_id": 57321894,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -1463,7 +1463,7 @@
                     "children": [
                         {
                             "path": "ЧЛ22В/АЛ3/Т1",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1477,7 +1477,7 @@
                         },
                         {
                             "path": "ЧЛ22В/АЛ3/Т2",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1491,7 +1491,7 @@
                         },
                         {
                             "path": "ЧЛ22В/АЛ3/Т3",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1505,7 +1505,7 @@
                         },
                         {
                             "path": "ЧЛ22В/АЛ3/Т4",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1519,7 +1519,7 @@
                         },
                         {
                             "path": "ЧЛ22В/АЛ3/Т5",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1533,7 +1533,7 @@
                         },
                         {
                             "path": "ЧЛ22В/АЛ3/Т6",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1547,7 +1547,7 @@
                         },
                         {
                             "path": "ЧЛ22В/АЛ3/Т7",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1556,12 +1556,12 @@
                             "sort_order": 121,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "министърът на електронното управление;",
+                            "text_markdown": "(изм. – ДВ, бр. 55 от 2026 г.) министърът на иновациите и дигиталната трансформация;",
                             "children": []
                         },
                         {
                             "path": "ЧЛ22В/АЛ3/Т8",
-                            "p_id": 51028364,
+                            "p_id": 57321894,
                             "caption": null,
                             "node_type": "point",
                             "type": 11,
@@ -1577,7 +1577,7 @@
                 },
                 {
                     "path": "ЧЛ22В/АЛ4",
-                    "p_id": 51028364,
+                    "p_id": 57321894,
                     "caption": null,
                     "node_type": "paragraph",
                     "type": 11,
@@ -1991,7 +1991,7 @@
         },
         {
             "path": "ПУБЛ_ИНФО",
-            "p_id": 51028357,
+            "p_id": 57321893,
             "caption": null,
             "node_type": "publication_info",
             "type": 0,
@@ -2000,7 +2000,7 @@
             "sort_order": 36,
             "has_in_links": false,
             "is_orphaned": true,
-            "text_markdown": "Обн., ДВ, бр. 30 от 11.04.2000 г., изм., бр. 58 от 26.07.2016 г., бр. 21 от 12.03.2021 г., изм. и доп., бр. 39 от 1.05.2024 г.",
+            "text_markdown": "Обн., ДВ, бр. 30 от 11.04.2000 г., изм., бр. 58 от 26.07.2016 г., бр. 21 от 12.03.2021 г., изм. и доп., бр. 39 от 1.05.2024 г., изм., бр. 55 от 16.06.2026 г.",
             "children": []
         },
         {
