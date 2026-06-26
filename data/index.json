@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-25T07:21:53+00:00",
+    "generated_at": "2026-06-26T07:28:06+00:00",
     "count": 420,
     "laws": [
         {
@@ -2765,9 +2765,9 @@
             "caption": "ЗАКОН за защита на потребителите",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
-            "end_date": null,
+            "publ_date": "2026-06-26",
+            "start_date": "2026-08-09",
+            "end_date": "2027-08-09",
             "version": null,
             "file": "laws/zakon-za-zashtita-na-potrebitelite.json"
         },
@@ -3519,8 +3519,8 @@
             "caption": "ЗАКОН за защита на конкуренцията",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-06-26",
+            "start_date": "2026-06-26",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-na-konkurenciyata.json"
