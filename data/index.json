@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-06-30T07:27:57+00:00",
-    "count": 420,
+    "generated_at": "2026-07-01T07:41:05+00:00",
+    "count": 421,
     "laws": [
         {
             "unique_id": 8747,
@@ -867,8 +867,8 @@
             "caption": "ЗАКОН за екстрадицията и Европейската заповед за арест",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2024-03-01",
-            "start_date": "2024-03-05",
+            "publ_date": "2026-06-30",
+            "start_date": "2026-07-04",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ekstradiciyata-i-evropeyskata-zapoved-za-arest.json"
@@ -1322,8 +1322,8 @@
             "caption": "ЗАКОН за митниците",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-06-30",
+            "start_date": "2026-07-04",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-mitnicite.json"
@@ -1504,8 +1504,8 @@
             "caption": "ЗАКОН за отговорността на държавата и общините за вреди (Загл. изм. - ДВ, бр. 30 от 2006 г.)",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-06-30",
+            "start_date": "2026-07-04",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-otgovornostta-na-darzhavata-i-obshtinite-za-vredi-zagl-izm-dv-br-30-ot-2006-g.json"
@@ -3324,8 +3324,8 @@
             "caption": "ЗАКОН за Държавна агенция \"Национална сигурност\"",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-06-30",
+            "start_date": "2026-07-04",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavna-agenciya-nacionalna-sigurnost.json"
@@ -3662,8 +3662,8 @@
             "caption": "ЗАКОН за признаване, изпълнение и изпращане на актове за конфискация или отнемане и решения за налагане на финансови санкции (Загл. изм. – ДВ, бр. 56 от 2022 г.)",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-06-10",
-            "start_date": "2025-06-14",
+            "publ_date": "2026-06-30",
+            "start_date": "2026-07-04",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-priznavane-izpalnenie-i-izprashtane-na-aktove-za-konfiskaciya-ili-otnemane-i-resheniya-za-nalagane-na-finansovi.json"
@@ -3896,8 +3896,8 @@
             "caption": "ЗАКОН за военната полиция",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2024-03-01",
-            "start_date": "2024-03-05",
+            "publ_date": "2026-06-30",
+            "start_date": "2026-07-04",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-voennata-policiya.json"
@@ -4130,8 +4130,8 @@
             "caption": "ЗАКОН за Министерството на вътрешните работи",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-06-30",
+            "start_date": "2026-07-04",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ministerstvoto-na-vatreshnite-raboti.json"
@@ -5461,6 +5461,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-protivodeystvie-na-korupciyata-sred-lica-zaemashti-publichni-dlazhnosti.json"
+        },
+        {
+            "unique_id": 7034255,
+            "code": "42997",
+            "slug": "zakon-za-ratificirane-na-parvo-izmenenie-i-potvarzhdavane-na-sporazumenieto-za-finansov-prinos-mezhdu-evropeyskiya-sayuz",
+            "caption": "ЗАКОН за ратифициране на Първо изменение и потвърждаване на Споразумението за финансов принос между Европейския съюз и Република България по отношение на Раздел \"Държава членка\" по Програма InvestEU",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-06-30",
+            "start_date": "2026-06-30",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ratificirane-na-parvo-izmenenie-i-potvarzhdavane-na-sporazumenieto-za-finansov-prinos-mezhdu-evropeyskiya-sayuz.json"
         }
     ]
 }
