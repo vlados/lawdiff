@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-01T07:41:05+00:00",
+    "generated_at": "2026-07-02T07:16:51+00:00",
     "count": 421,
     "laws": [
         {
@@ -2076,8 +2076,8 @@
             "caption": "ЗАКОН за държавната собственост",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-09-09",
-            "start_date": "2025-09-13",
+            "publ_date": "2026-07-01",
+            "start_date": "2026-07-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavnata-sobstvenost.json"
@@ -3194,8 +3194,8 @@
             "caption": "ЗАКОН за електронните съобщения",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-01",
+            "start_date": "2026-07-05",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-elektronnite-saobshteniya.json"
@@ -3272,8 +3272,8 @@
             "caption": "ЗАКОН за съдебната власт",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-01",
+            "start_date": "2026-07-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-sadebnata-vlast.json"

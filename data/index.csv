@@ -158,7 +158,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 11492,4489,zakon-za-vissheto-obrazovanie,"ЗАКОН за висшето образование",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-vissheto-obrazovanie.json
 11535,4492,zakon-za-privatizacionnite-fondove,"ЗАКОН за приватизационните фондове",4,true,2008-07-29,2008-08-02,,,laws/zakon-za-privatizacionnite-fondove.json
 11572,4497,zakon-za-opazvane-na-zemedelskite-zemi,"ЗАКОН за опазване на земеделските земи",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-opazvane-na-zemedelskite-zemi.json
-11591,4498,zakon-za-darzhavnata-sobstvenost,"ЗАКОН за държавната собственост",4,true,2025-09-09,2025-09-13,,,laws/zakon-za-darzhavnata-sobstvenost.json
+11591,4498,zakon-za-darzhavnata-sobstvenost,"ЗАКОН за държавната собственост",4,true,2026-07-01,2026-07-01,,,laws/zakon-za-darzhavnata-sobstvenost.json
 11607,4499,zakon-za-obshtinskata-sobstvenost,"ЗАКОН за общинската собственост",4,true,2021-02-26,2021-03-02,,,laws/zakon-za-obshtinskata-sobstvenost.json
 11615,4500,zakon-za-chistotata-na-atmosferniya-vazduh,"ЗАКОН за чистотата на атмосферния въздух",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-chistotata-na-atmosferniya-vazduh.json
 11649,4508,zakon-za-arendata-v-zemedelieto,"ЗАКОН за арендата в земеделието",4,true,2023-12-08,2023-12-12,,,laws/zakon-za-arendata-v-zemedelieto.json
@@ -244,13 +244,13 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 257405,40692,zakon-za-lekarstvenite-produkti-v-humannata-medicina,"ЗАКОН за лекарствените продукти в хуманната медицина",4,true,2026-06-05,2026-06-05,,,laws/zakon-za-lekarstvenite-produkti-v-humannata-medicina.json
 259181,40622,zakon-ot-15011990-g-za-utvarzhdavane-na-ukaz-2900-za-izmenenieto-na-ukaz-1342-za-osiguryavane-zhilishta-na-mladite-novob,"ЗАКОН от 15.01.1990 г. за утвърждаване на Указ № 2900 за изменението на Указ № 1342 за осигуряване жилища на младите новобрачни семейства",4,true,1990-01-19,1990-01-23,,,laws/zakon-ot-15011990-g-za-utvarzhdavane-na-ukaz-2900-za-izmenenieto-na-ukaz-1342-za-osiguryavane-zhilishta-na-mladite-novob.json
 261712,40701,zakon-za-zakrivane-na-agenciyata-za-chuzhdestranna-pomosht,"ЗАКОН за закриване на Агенцията за чуждестранна помощ",4,true,2007-05-22,2007-05-22,,,laws/zakon-za-zakrivane-na-agenciyata-za-chuzhdestranna-pomosht.json
-261713,40702,zakon-za-elektronnite-saobshteniya,"ЗАКОН за електронните съобщения",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-elektronnite-saobshteniya.json
+261713,40702,zakon-za-elektronnite-saobshteniya,"ЗАКОН за електронните съобщения",4,true,2026-07-01,2026-07-05,,,laws/zakon-za-elektronnite-saobshteniya.json
 263366,40706,zakon-za-elektronnoto-upravlenie,"ЗАКОН за електронното управление",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-elektronnoto-upravlenie.json
 263367,40707,zakon-za-medicinskite-izdeliya,"ЗАКОН за медицинските изделия",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-medicinskite-izdeliya.json
 263788,40708,zakon-za-ustroystvoto-na-chernomorskoto-kraybrezhie,"ЗАКОН за устройството на Черноморското крайбрежие",4,true,2025-07-29,2026-01-31,,,laws/zakon-za-ustroystvoto-na-chernomorskoto-kraybrezhie.json
 266592,40714,zakon-za-nacionalniya-arhiven-fond,"ЗАКОН за Националния архивен фонд",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-nacionalniya-arhiven-fond.json
 268708,40720,naredba-zakon-za-urezhdane-imushtestvenite-posledici-ot-otmyanata-na-protivoevreyskite-zakoni,"НАРЕДБА-ЗАКОН за уреждане имуществените последици от отмяната на противоеврейските закони",4,true,1946-08-13,1946-08-17,,,laws/naredba-zakon-za-urezhdane-imushtestvenite-posledici-ot-otmyanata-na-protivoevreyskite-zakoni.json
-268938,40730,zakon-za-sadebnata-vlast,"ЗАКОН за съдебната власт",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-sadebnata-vlast.json
+268938,40730,zakon-za-sadebnata-vlast,"ЗАКОН за съдебната власт",4,true,2026-07-01,2026-07-01,,,laws/zakon-za-sadebnata-vlast.json
 272076,40721,zakon-za-diplomaticheskata-sluzhba,"ЗАКОН за дипломатическата служба",4,true,2026-06-05,2026-06-05,,,laws/zakon-za-diplomaticheskata-sluzhba.json
 274253,40736,zakon-za-saslovnata-organizaciya-na-veterinarnite-lekari-v-balgariya,"ЗАКОН за съсловната организация на ветеринарните лекари в България",4,true,2024-03-19,2024-03-23,,,laws/zakon-za-saslovnata-organizaciya-na-veterinarnite-lekari-v-balgariya.json
 276479,40738,zakon-za-pochvite,"ЗАКОН за почвите",4,true,2023-12-08,2023-12-12,,,laws/zakon-za-pochvite.json
