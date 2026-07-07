@@ -20,7 +20,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 9231,40195,zakon-za-amnistiya-ot-2002-g,"ЗАКОН за амнистия от 2002 г.",4,true,2002-08-13,2002-08-13,,,laws/zakon-za-amnistiya-ot-2002-g.json
 9236,40197,zakon-za-opazvane-na-okolnata-sreda,"ЗАКОН за опазване на околната среда",4,true,2026-06-05,2026-06-05,,,laws/zakon-za-opazvane-na-okolnata-sreda.json
 9239,40198,zakon-za-bankovata-nesastoyatelnost,"ЗАКОН за банковата несъстоятелност",4,true,2025-08-15,2026-01-01,,,laws/zakon-za-bankovata-nesastoyatelnost.json
-9247,40203,zakon-za-darzhavniya-dalg,"ЗАКОН за държавния дълг",4,true,2026-06-05,2026-06-05,,,laws/zakon-za-darzhavniya-dalg.json
+9247,40203,zakon-za-darzhavniya-dalg,"ЗАКОН за държавния дълг",4,true,2026-07-07,2026-07-07,,,laws/zakon-za-darzhavniya-dalg.json
 9266,40211,zakon-za-nacionalnata-agenciya-za-prihodite,"ЗАКОН за Националната агенция за приходите",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-nacionalnata-agenciya-za-prihodite.json
 9275,40218,zakon-za-veroizpovedaniyata,"ЗАКОН за вероизповеданията",4,true,2025-03-27,2025-01-01,,,laws/zakon-za-veroizpovedaniyata.json
 9301,40225,zakon-za-komisiyata-za-finansov-nadzor,"ЗАКОН за Комисията за финансов надзор",4,true,2026-06-05,2026-06-05,,,laws/zakon-za-komisiyata-za-finansov-nadzor.json
@@ -92,7 +92,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 10317,4109,zakon-za-amnistiya-ot-1974-g,"ЗАКОН за амнистия от 1974 г.",4,true,1974-11-08,1974-11-11,,,laws/zakon-za-amnistiya-ot-1974-g.json
 10325,4110,zakon-za-nasarchavane-na-investiciite-zagl-izm-dv-br-37-ot-2004-g,"ЗАКОН за насърчаване на инвестициите (Загл. изм. - ДВ, бр. 37 от 2004 г.)",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-nasarchavane-na-investiciite-zagl-izm-dv-br-37-ot-2004-g.json
 10355,4112,zakon-za-obezshtetyavane-na-sobstvenici-na-odarzhaveni-imoti,"ЗАКОН за обезщетяване на собственици на одържавени имоти",4,true,2024-08-20,2026-01-01,,,laws/zakon-za-obezshtetyavane-na-sobstvenici-na-odarzhaveni-imoti.json
-10386,4114,zakon-za-osobenite-zalozi,"ЗАКОН за особените залози",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-osobenite-zalozi.json
+10386,4114,zakon-za-osobenite-zalozi,"ЗАКОН за особените залози",4,true,2026-07-07,2026-07-07,,,laws/zakon-za-osobenite-zalozi.json
 10397,4116,zakon-za-notariusite-i-notarialnata-deynost-zagl-izm-dv-br-123-ot-1997-g,"ЗАКОН за нотариусите и нотариалната дейност (Загл. изм. - ДВ, бр. 123 от 1997 г.)",4,true,2023-10-06,2023-10-06,,,laws/zakon-za-notariusite-i-notarialnata-deynost-zagl-izm-dv-br-123-ot-1997-g.json
 10436,4123,zakon-za-mestnite-danaci-i-taksi,"ЗАКОН за местните данъци и такси",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-mestnite-danaci-i-taksi.json
 10521,4134,naredba-zakon-za-amnistiya,"НАРЕДБА-ЗАКОН за амнистия",4,true,1945-07-25,1945-07-28,,,laws/naredba-zakon-za-amnistiya.json
@@ -144,7 +144,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 11198,4349,zakon-za-tehnicheskite-iziskvaniya-kam-produktite,"ЗАКОН за техническите изисквания към продуктите",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-tehnicheskite-iziskvaniya-kam-produktite.json
 11221,4370,zakon-za-selskostopanskata-akademiya-zagl-izm-dv-br-43-ot-2008-g,"ЗАКОН за Селскостопанската академия (Загл. изм. - ДВ, бр. 43 от 2008 г.)",4,true,2023-12-08,2023-12-12,,,laws/zakon-za-selskostopanskata-akademiya-zagl-izm-dv-br-43-ot-2008-g.json
 11225,4371,zakon-za-kooperaciite,"ЗАКОН за кооперациите",4,true,2018-05-22,2018-05-22,,,laws/zakon-za-kooperaciite.json
-11243,4378,zakon-za-publichnoto-predlagane-na-cenni-knizha,"ЗАКОН за публичното предлагане на ценни книжа",4,true,2026-06-05,2026-06-05,,,laws/zakon-za-publichnoto-predlagane-na-cenni-knizha.json
+11243,4378,zakon-za-publichnoto-predlagane-na-cenni-knizha,"ЗАКОН за публичното предлагане на ценни книжа",4,true,2026-07-07,2026-07-07,,,laws/zakon-za-publichnoto-predlagane-na-cenni-knizha.json
 11276,4401,zakon-za-konstitucionen-sad,"ЗАКОН за Конституционен съд",4,true,2014-03-05,2014-03-05,,,laws/zakon-za-konstitucionen-sad.json
 11290,4406,zakon-za-tyutyuna-tyutyunevite-i-svarzanite-s-tyah-izdeliya-zagl-izm-dv-br-28-ot-2016-g-v-sila-ot-8042016-g,"ЗАКОН за тютюна, тютюневите и свързаните с тях изделия (Загл. изм. – ДВ, бр. 28 от 2016 г., в сила от 8.04.2016 г.)",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-tyutyuna-tyutyunevite-i-svarzanite-s-tyah-izdeliya-zagl-izm-dv-br-28-ot-2016-g-v-sila-ot-8042016-g.json
 11303,4407,zakon-za-urezhdane-na-neobsluzhvanite-krediti-dogovoreni-do-31-dekemvri-1990-g,"ЗАКОН за уреждане на необслужваните кредити, договорени до 31 декември 1990 г.",4,true,2019-10-08,2019-10-12,,,laws/zakon-za-urezhdane-na-neobsluzhvanite-krediti-dogovoreni-do-31-dekemvri-1990-g.json
@@ -350,7 +350,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 3237972,42492,zakon-za-koncesiite,"ЗАКОН за концесиите",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-koncesiite.json
 3263996,42500,zakon-za-otnemane-na-nezakonno-pridobitoto-imushtestvo-zagl-izm-dv-br-84-ot-2023-g-v-sila-ot-6102023-g,"ЗАКОН за отнемане на незаконно придобитото имущество (Загл. изм. – ДВ, бр. 84 от 2023 г., в сила от 6.10.2023 г.)",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-otnemane-na-nezakonno-pridobitoto-imushtestvo-zagl-izm-dv-br-84-ot-2023-g-v-sila-ot-6102023-g.json
 3269488,42502,zakon-za-chastnata-ohranitelna-deynost,"ЗАКОН за частната охранителна дейност",4,true,2020-08-04,2020-08-08,,,laws/zakon-za-chastnata-ohranitelna-deynost.json
-3334715,42505,zakon-za-pazarite-na-finansovi-instrumenti,"ЗАКОН за пазарите на финансови инструменти",4,true,2026-06-05,2026-06-05,,,laws/zakon-za-pazarite-na-finansovi-instrumenti.json
+3334715,42505,zakon-za-pazarite-na-finansovi-instrumenti,"ЗАКОН за пазарите на финансови инструменти",4,true,2026-07-07,2026-07-07,,,laws/zakon-za-pazarite-na-finansovi-instrumenti.json
 3347503,42506,zakon-za-evropeyskata-zapoved-za-razsledvane,"ЗАКОН за Европейската заповед за разследване",4,true,2024-04-23,2024-04-27,,,laws/zakon-za-evropeyskata-zapoved-za-razsledvane.json
 3398997,42509,zakon-za-platezhnite-uslugi-i-platezhnite-sistemi,"ЗАКОН за платежните услуги и платежните системи",4,true,2026-03-10,2026-03-14,,,laws/zakon-za-platezhnite-uslugi-i-platezhnite-sistemi.json
 3406105,42510,zakon-za-elektronnite-saobshtitelni-mrezhi-i-fizicheska-infrastruktura,"ЗАКОН за електронните съобщителни мрежи и физическа инфраструктура",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-elektronnite-saobshtitelni-mrezhi-i-fizicheska-infrastruktura.json

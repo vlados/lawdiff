@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-06T10:43:24+00:00",
+    "generated_at": "2026-07-07T09:48:29+00:00",
     "count": 421,
     "laws": [
         {
@@ -282,8 +282,8 @@
             "caption": "ЗАКОН за държавния дълг",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-07",
+            "start_date": "2026-07-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavniya-dalg.json"
@@ -1218,8 +1218,8 @@
             "caption": "ЗАКОН за особените залози",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-07",
+            "start_date": "2026-07-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-osobenite-zalozi.json"
@@ -1894,8 +1894,8 @@
             "caption": "ЗАКОН за публичното предлагане на ценни книжа",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-07",
+            "start_date": "2026-07-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-publichnoto-predlagane-na-cenni-knizha.json"
@@ -4572,8 +4572,8 @@
             "caption": "ЗАКОН за пазарите на финансови инструменти",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-07",
+            "start_date": "2026-07-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pazarite-na-finansovi-instrumenti.json"
