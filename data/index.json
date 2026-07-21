@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-20T09:20:16+00:00",
+    "generated_at": "2026-07-21T08:34:20+00:00",
     "count": 421,
     "laws": [
         {
@@ -724,8 +724,8 @@
             "caption": "ЗАКОН за защита на лица, застрашени във връзка с наказателно производство",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2021-09-24",
-            "start_date": "2021-09-28",
+            "publ_date": "2026-07-21",
+            "start_date": "2026-07-25",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-na-lica-zastrasheni-vav-vrazka-s-nakazatelno-proizvodstvo.json"
@@ -3194,8 +3194,8 @@
             "caption": "ЗАКОН за електронните съобщения",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-01",
-            "start_date": "2026-07-05",
+            "publ_date": "2026-07-21",
+            "start_date": "2026-07-25",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-elektronnite-saobshteniya.json"
@@ -3324,8 +3324,8 @@
             "caption": "ЗАКОН за Държавна агенция \"Национална сигурност\"",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-30",
-            "start_date": "2026-07-04",
+            "publ_date": "2026-07-21",
+            "start_date": "2026-07-25",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavna-agenciya-nacionalna-sigurnost.json"
@@ -4130,8 +4130,8 @@
             "caption": "ЗАКОН за Министерството на вътрешните работи",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-30",
-            "start_date": "2026-07-04",
+            "publ_date": "2026-07-21",
+            "start_date": "2026-07-25",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ministerstvoto-na-vatreshnite-raboti.json"
@@ -4507,8 +4507,8 @@
             "caption": "ЗАКОН за противодействие на тероризма",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-21",
+            "start_date": "2026-07-25",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-protivodeystvie-na-terorizma.json"
