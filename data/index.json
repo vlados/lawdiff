@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-23T08:34:48+00:00",
+    "generated_at": "2026-07-24T08:32:49+00:00",
     "count": 421,
     "laws": [
         {
@@ -269,8 +269,8 @@
             "caption": "ЗАКОН за банковата несъстоятелност",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-08-15",
-            "start_date": "2026-01-01",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-bankovata-nesastoyatelnost.json"
@@ -321,8 +321,8 @@
             "caption": "ЗАКОН за Комисията за финансов надзор",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-komisiyata-za-finansov-nadzor.json"
@@ -2960,8 +2960,8 @@
             "caption": "ЗАКОН за кредитните институции",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-kreditnite-institucii.json"
@@ -3389,8 +3389,8 @@
             "caption": "ЗАКОН за Българската банка за развитие",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-balgarskata-banka-za-razvitie.json"
@@ -3909,8 +3909,8 @@
             "caption": "ЗАКОН за дейността на колективните инвестиционни схеми и на други предприятия за колективно инвестиране",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-10",
-            "start_date": "2026-03-14",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-deynostta-na-kolektivnite-investicionni-shemi-i-na-drugi-predpriyatiya-za-kolektivno-investirane.json"
@@ -4247,8 +4247,8 @@
             "caption": "ЗАКОН за гарантиране на влоговете в банките",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-garantirane-na-vlogovete-v-bankite.json"
@@ -4260,8 +4260,8 @@
             "caption": "ЗАКОН за възстановяване и преструктуриране на кредитни институции и инвестиционни посредници",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-10",
-            "start_date": "2026-03-14",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-vazstanovyavane-i-prestrukturirane-na-kreditni-institucii-i-investicionni-posrednici.json"
@@ -4338,8 +4338,8 @@
             "caption": "ЗАКОН за счетоводството",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-27",
-            "start_date": "2026-01-01",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": "2026-03-10",
             "version": null,
             "file": "laws/zakon-za-schetovodstvoto.json"
@@ -4572,8 +4572,8 @@
             "caption": "ЗАКОН за пазарите на финансови инструменти",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-07",
-            "start_date": "2026-07-07",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pazarite-na-finansovi-instrumenti.json"
@@ -4598,8 +4598,8 @@
             "caption": "ЗАКОН за платежните услуги и платежните системи",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-10",
-            "start_date": "2026-03-14",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-platezhnite-uslugi-i-platezhnite-sistemi.json"
@@ -4910,8 +4910,8 @@
             "caption": "ЗАКОН за дружествата със специална инвестиционна цел и за дружествата за секюритизация",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-10",
-            "start_date": "2026-03-14",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-druzhestvata-sas-specialna-investicionna-cel-i-za-druzhestvata-za-sekyuritizaciya.json"
@@ -5027,8 +5027,8 @@
             "caption": "ЗАКОН за Българската народна банка",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-balgarskata-narodna-banka-1.json"
@@ -5196,8 +5196,8 @@
             "caption": "ЗАКОН за лицата, обслужващи кредити, и купувачите на кредити",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-06-20",
-            "start_date": "2025-06-20",
+            "publ_date": "2026-07-24",
+            "start_date": "2026-07-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-licata-obsluzhvashti-krediti-i-kupuvachite-na-krediti.json"
