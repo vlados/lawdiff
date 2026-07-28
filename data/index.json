@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-07-27T09:57:10+00:00",
-    "count": 421,
+    "generated_at": "2026-07-28T08:39:53+00:00",
+    "count": 423,
     "laws": [
         {
             "unique_id": 8747,
@@ -633,8 +633,8 @@
             "caption": "ЗАКОН за гарантираните вземания на работниците и служителите при несъстоятелност на работодателя",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2020-12-04",
-            "start_date": "2021-01-01",
+            "publ_date": "2026-07-28",
+            "start_date": "2026-08-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-garantiranite-vzemaniya-na-rabotnicite-i-sluzhitelite-pri-nesastoyatelnost-na-rabotodatelya.json"
@@ -698,8 +698,8 @@
             "caption": "ЗАКОН за здравето",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-02-10",
-            "start_date": "2026-02-14",
+            "publ_date": "2026-07-28",
+            "start_date": "2026-08-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zdraveto.json"
@@ -2349,8 +2349,8 @@
             "caption": "ЗАКОН за здравното осигуряване",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-28",
+            "start_date": "2026-01-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zdravnoto-osiguryavane.json"
@@ -5474,6 +5474,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ratificirane-na-parvo-izmenenie-i-potvarzhdavane-na-sporazumenieto-za-finansov-prinos-mezhdu-evropeyskiya-sayuz.json"
+        },
+        {
+            "unique_id": 7096329,
+            "code": "43001",
+            "slug": "zakon-za-byudzheta-na-darzhavnoto-obshtestveno-osiguryavane-za-2026-g",
+            "caption": "ЗАКОН за бюджета на държавното обществено осигуряване за 2026 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-07-28",
+            "start_date": "2026-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-byudzheta-na-darzhavnoto-obshtestveno-osiguryavane-za-2026-g.json"
+        },
+        {
+            "unique_id": 7096330,
+            "code": "43002",
+            "slug": "zakon-za-byudzheta-na-nacionalnata-zdravnoosiguritelna-kasa-za-2026-g",
+            "caption": "ЗАКОН за бюджета на Националната здравноосигурителна каса за 2026 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-07-28",
+            "start_date": "2026-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-byudzheta-na-nacionalnata-zdravnoosiguritelna-kasa-za-2026-g.json"
         }
     ]
 }
