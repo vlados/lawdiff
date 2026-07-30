@@ -4722,10 +4722,10 @@
                     "type": 11,
                     "field_type": 8,
                     "level": 1,
-                    "sort_order": 518,
+                    "sort_order": 516,
                     "has_in_links": true,
                     "is_orphaned": false,
-                    "text_markdown": "(Отм. - ДВ, бр. 92 от 2006 г.).",
+                    "text_markdown": "(Изм. - ДВ, бр. 92 от 2006 г., предишна ал. 2, изм., бр. 11 от 2021 г.) Прекратяването на договора за достъп и използване на инфраструктурата преди изтичането на срока, за който е сключен, поради отнемане на лицензията в случаите по ал. 3, т. 1, се счита за прекратяване по вина на превозвача.",
                     "children": []
                 },
                 {
@@ -4740,6 +4740,20 @@
                     "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "(Предишна ал. 3 – ДВ, бр. 11 от 2021 г.) Договорът за достъп и използване на инфраструктурата се прекратява от датата на отнемане на лицензията.",
+                    "children": []
+                },
+                {
+                    "path": "ЧЛ42/АЛ4-2",
+                    "p_id": 55303360,
+                    "caption": null,
+                    "node_type": "paragraph",
+                    "type": 11,
+                    "field_type": 8,
+                    "level": 1,
+                    "sort_order": 518,
+                    "has_in_links": true,
+                    "is_orphaned": false,
+                    "text_markdown": "(Отм. - ДВ, бр. 92 от 2006 г.).",
                     "children": []
                 },
                 {
@@ -4972,6 +4986,20 @@
             "children": [
                 {
                     "path": "ЧЛ46/АЛ1",
+                    "p_id": 55303361,
+                    "caption": null,
+                    "node_type": "paragraph",
+                    "type": 11,
+                    "field_type": 8,
+                    "level": 1,
+                    "sort_order": 531,
+                    "has_in_links": true,
+                    "is_orphaned": false,
+                    "text_markdown": "(Изм. и доп. - ДВ, бр. 92 от 2006 г., изм., бр. 47 от 2011 г., в сила от 21.06.2011 г.)",
+                    "children": []
+                },
+                {
+                    "path": "ЧЛ46/АЛ1-2",
                     "p_id": 55303361,
                     "caption": null,
                     "node_type": "paragraph",

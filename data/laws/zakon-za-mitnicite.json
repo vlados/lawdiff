@@ -15112,6 +15112,20 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
+                            "sort_order": 1145,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Създава се нова ал. 3:\n\n \"Съдът може да постанови разкриване на сведенията по ал. 2 и по искане на началниците на Главното управление на митниците и на районните митнически управления, когато:",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§5/Т1-2",
+                            "p_id": 321021,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
                             "sort_order": 1146,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -15126,10 +15140,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 1150,
+                            "sort_order": 1147,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Досегашната ал. 3 става ал. 4.",
+                            "text_markdown": "с акт на митническите органи са установени митнически нарушения;",
                             "children": []
                         },
                         {
@@ -15158,6 +15172,20 @@
                             "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "с акт на държавен орган е установено настъпването на случайно събитие, довело до унищожаване на отчетната документация на проверявания от митническите органи обект.\"",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§5/Т2-2",
+                            "p_id": 321021,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 1150,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Досегашната ал. 3 става ал. 4.",
                             "children": []
                         }
                     ]

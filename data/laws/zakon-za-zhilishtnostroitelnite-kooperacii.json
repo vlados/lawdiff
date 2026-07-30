@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -415,13 +415,27 @@
                     "type": 11,
                     "field_type": 8,
                     "level": 1,
+                    "sort_order": 79,
+                    "has_in_links": true,
+                    "is_orphaned": false,
+                    "text_markdown": "(Изм. - ДВ, бр. 46 от 1989 г.)",
+                    "children": []
+                },
+                {
+                    "path": "ЧЛ8/АЛ1-2",
+                    "p_id": 3770058,
+                    "caption": null,
+                    "node_type": "paragraph",
+                    "type": 11,
+                    "field_type": 8,
+                    "level": 1,
                     "sort_order": 80,
                     "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Жилищностроителната кооперация се счита учредена, след като бъде регистрирана в окръжния съд по седалището й. Молбата за регистрация се подава от управителния съвет. Към нея се прилагат:",
                     "children": [
                         {
-                            "path": "ЧЛ8/АЛ1/Т1",
+                            "path": "ЧЛ8/АЛ1-2/Т1",
                             "p_id": 3770058,
                             "caption": null,
                             "node_type": "point",
@@ -435,7 +449,7 @@
                             "children": []
                         },
                         {
-                            "path": "ЧЛ8/АЛ1/Т2",
+                            "path": "ЧЛ8/АЛ1-2/Т2",
                             "p_id": 3770058,
                             "caption": null,
                             "node_type": "point",
@@ -449,7 +463,7 @@
                             "children": []
                         },
                         {
-                            "path": "ЧЛ8/АЛ1/Т3",
+                            "path": "ЧЛ8/АЛ1-2/Т3",
                             "p_id": 3770058,
                             "caption": null,
                             "node_type": "point",
@@ -463,7 +477,7 @@
                             "children": []
                         },
                         {
-                            "path": "ЧЛ8/АЛ1/Т4",
+                            "path": "ЧЛ8/АЛ1-2/Т4",
                             "p_id": 3770058,
                             "caption": null,
                             "node_type": "point",

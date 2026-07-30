@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -38487,10 +38487,10 @@
                                     "type": 11,
                                     "field_type": 9,
                                     "level": 3,
-                                    "sort_order": 2919,
+                                    "sort_order": 2917,
                                     "has_in_links": true,
                                     "is_orphaned": false,
-                                    "text_markdown": "за рулетка в казино за игрална маса - 18 000 лв. на тримесечие за всяко съоръжение;",
+                                    "text_markdown": "Създава се чл. 46г:\n\n \"Чл. 46г. Данъкът по чл. 2г е в размер, както следва:",
                                     "children": []
                                 },
                                 {
@@ -38508,7 +38508,35 @@
                                     "children": []
                                 },
                                 {
+                                    "path": "ПЗР/§7/АЛ4/Т2-2",
+                                    "p_id": 2283577,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 2919,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "за рулетка в казино за игрална маса - 18 000 лв. на тримесечие за всяко съоръжение;",
+                                    "children": []
+                                },
+                                {
                                     "path": "ПЗР/§7/АЛ4/Т3",
+                                    "p_id": 2283577,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 2920,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "за друго игрално съоръжение в казино - 3000 лв. на тримесечие за всяко съоръжение.\"",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§7/АЛ4/Т3-2",
                                     "p_id": 2283577,
                                     "caption": null,
                                     "node_type": "point",

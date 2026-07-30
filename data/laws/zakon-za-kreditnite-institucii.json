@@ -30162,6 +30162,62 @@
                                             "type": 11,
                                             "field_type": 9,
                                             "level": 4,
+                                            "sort_order": 2280,
+                                            "has_in_links": true,
+                                            "is_orphaned": false,
+                                            "text_markdown": "всяко физическо лице, което заема ръководна длъжност в юридическо лице, в което заявителят заема ръководна длъжност, или е негов действителен собственик;",
+                                            "children": []
+                                        },
+                                        {
+                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_Б",
+                                            "p_id": 57703164,
+                                            "caption": null,
+                                            "node_type": "letter",
+                                            "type": 11,
+                                            "field_type": 9,
+                                            "level": 4,
+                                            "sort_order": 2281,
+                                            "has_in_links": true,
+                                            "is_orphaned": false,
+                                            "text_markdown": "всяко физическо лице, което е действителен собственик на юридическо лице, в което заявителят заема ръководна длъжност;",
+                                            "children": []
+                                        },
+                                        {
+                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_В",
+                                            "p_id": 57703164,
+                                            "caption": null,
+                                            "node_type": "letter",
+                                            "type": 11,
+                                            "field_type": 9,
+                                            "level": 4,
+                                            "sort_order": 2282,
+                                            "has_in_links": true,
+                                            "is_orphaned": false,
+                                            "text_markdown": "всяко физическо лице, което е действителен собственик на юридическо лице съвместно със заявител;",
+                                            "children": []
+                                        },
+                                        {
+                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_Г",
+                                            "p_id": 57703164,
+                                            "caption": null,
+                                            "node_type": "letter",
+                                            "type": 11,
+                                            "field_type": 9,
+                                            "level": 4,
+                                            "sort_order": 2283,
+                                            "has_in_links": true,
+                                            "is_orphaned": false,
+                                            "text_markdown": "всяко физическо лице, свързано със заявителя по смисъла на т. 4, буква \"а\", както и всяко лице, което има тесни делови взаимоотношения със заявителя извън тези по букви \"а\" – \"в\".\n\n4в. (Нова – ДВ, бр. 84 от 2023 г.) \"Близък сътрудник на кандидат за одобрение по чл. 10 – 11а\" е:",
+                                            "children": []
+                                        },
+                                        {
+                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_А-2",
+                                            "p_id": 57703164,
+                                            "caption": null,
+                                            "node_type": "letter",
+                                            "type": 11,
+                                            "field_type": 9,
+                                            "level": 4,
                                             "sort_order": 2284,
                                             "has_in_links": true,
                                             "is_orphaned": false,
@@ -30169,7 +30225,7 @@
                                             "children": []
                                         },
                                         {
-                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_Б",
+                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_Б-2",
                                             "p_id": 57703164,
                                             "caption": null,
                                             "node_type": "letter",
@@ -30183,7 +30239,7 @@
                                             "children": []
                                         },
                                         {
-                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_В",
+                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_В-2",
                                             "p_id": 57703164,
                                             "caption": null,
                                             "node_type": "letter",
@@ -30197,7 +30253,7 @@
                                             "children": []
                                         },
                                         {
-                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_Г",
+                                            "path": "ДОП/§1/АЛ1/Т4/БУКВА_Г-2",
                                             "p_id": 57703164,
                                             "caption": null,
                                             "node_type": "letter",
@@ -31702,6 +31758,90 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
+                            "sort_order": 2376,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "С договора за наем на сейф наемодателят предоставя на наемателя за определен срок срещу възнаграждение ползването на сейф в охраняемо помещение. Сейфът служи за съхраняване на ценности и ценни книги, други вещи и документи. До съдържанието на сейфа достъп има само наемателят.",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§14/АЛ2",
+                            "p_id": 29615409,
+                            "caption": null,
+                            "node_type": "paragraph",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 2377,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Договорът за наем на сейф може да бъде с обявено или необявено пред наемодателя съдържание на вложеното.",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§14/АЛ3",
+                            "p_id": 29615409,
+                            "caption": null,
+                            "node_type": "paragraph",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 2378,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Наемодателят няма право да притежава копие от ключа на сейфа, предаден на наемателя.\n\n Забранени предмети\n\n Чл. 606.",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§14/АЛ1-2",
+                            "p_id": 29615409,
+                            "caption": null,
+                            "node_type": "paragraph",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 2379,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "В сейфа не могат да се поставят предмети, застрашаващи сигурността на сейфа и на наемодателя, и вещи, чието приемане е забранено от закона.",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§14/АЛ2-2",
+                            "p_id": 29615409,
+                            "caption": null,
+                            "node_type": "paragraph",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 2380,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Наемодателят контролира по подходящ начин спазването на изискването на ал. 1, без да се разкрива съдържанието на вложеното, когато то не е обявено.",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§14/АЛ3-2",
+                            "p_id": 29615409,
+                            "caption": null,
+                            "node_type": "paragraph",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 2381,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "При неизпълнение на задължението по ал. 1 наемодателят може незабавно да развали договора.\n\n Права на наемодателя при неплащане\n\n Чл. 606а.",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§14/АЛ1-3",
+                            "p_id": 29615409,
+                            "caption": null,
+                            "node_type": "paragraph",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
                             "sort_order": 2382,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -31709,7 +31849,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§14/АЛ2",
+                            "path": "ПЗР/§14/АЛ2-3",
                             "p_id": 29615409,
                             "caption": null,
                             "node_type": "paragraph",
@@ -31722,7 +31862,7 @@
                             "text_markdown": "За вземанията си по договора наемодателят има право на задържане върху вложеното в сейфа.\"",
                             "children": [
                                 {
-                                    "path": "ПЗР/§14/АЛ2/Т4",
+                                    "path": "ПЗР/§14/АЛ2-3/Т4",
                                     "p_id": 29615409,
                                     "caption": null,
                                     "node_type": "point",
@@ -31736,20 +31876,6 @@
                                     "children": []
                                 }
                             ]
-                        },
-                        {
-                            "path": "ПЗР/§14/АЛ3",
-                            "p_id": 29615409,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2381,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "При неизпълнение на задължението по ал. 1 наемодателят може незабавно да развали договора.\n\n Права на наемодателя при неплащане\n\n Чл. 606а.",
-                            "children": []
                         }
                     ]
                 },

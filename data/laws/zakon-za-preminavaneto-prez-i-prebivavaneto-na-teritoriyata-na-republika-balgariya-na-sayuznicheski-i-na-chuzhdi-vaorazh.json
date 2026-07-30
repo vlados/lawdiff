@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -1492,6 +1492,34 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
+                            "sort_order": 114,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "В чл. 6, ал. 3, т. 3 накрая се добавя \"както и от съюзнически и/или чужди въоръжени сили, преминаващи през територията на Република България и пребиваващи на нея.\"",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§2/Т2",
+                            "p_id": 2425060,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 115,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "В чл. 12б, ал. 1 се създава изречение второ:\n\n \"Наредбата не се прилага за превоз на:",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§2/Т1-2",
+                            "p_id": 2425060,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
                             "sort_order": 116,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -1499,7 +1527,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§2/Т2",
+                            "path": "ПЗР/§2/Т2-2",
                             "p_id": 2425060,
                             "caption": null,
                             "node_type": "point",
@@ -1520,6 +1548,34 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
+                            "sort_order": 118,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "пътници и товари при бедствия, аварии и други извънредни ситуации;",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§2/Т4",
+                            "p_id": 2425060,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 119,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "пътници и товари, извършван от Министерството на отбраната, структурите на подчинение на министъра на отбраната, Министерството на вътрешните работи, държавните предприятия \"Строителство и възстановяване\", \"Транспортно строителство и възстановяване\" и \"Съобщително строителство и възстановяване\", свързан с нормативно определените им публични задачи, както и от съюзническите и/или чуждите въоръжени сили, преминаващи през територията на Република България и пребиваващи на нея.\"",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§2/Т3-2",
+                            "p_id": 2425060,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
                             "sort_order": 120,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -1527,7 +1583,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§2/Т4",
+                            "path": "ПЗР/§2/Т4-2",
                             "p_id": 2425060,
                             "caption": null,
                             "node_type": "point",

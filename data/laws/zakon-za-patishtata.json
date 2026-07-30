@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -11018,6 +11018,48 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
+                            "sort_order": 945,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Заглавието се променя на \"Закон за таксите върху течните горива за Националния фонд за опазване на околната среда\".",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§7/Т2",
+                            "p_id": 377519,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 946,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "В чл. 1 се правят следните изменения:\n\n а) алинея 1 се отменя;\n\n б) алинея 3 се изменя така:\n\n \"(3) Тридесет на сто от таксите, набрани по този закон в Националния фонд за опазване на околната среда, се разходват в планинските райони целево за финансиране на екологични проекти.\";\n\n в) алинеи 4, 4а и 6 се отменят.",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§7/Т3",
+                            "p_id": 377519,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 947,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Членове 3 и 4 се изменят, както следва:\n\n \"Чл. 3. Производителите и вносителите на течни горива начисляват такси, които се внасят в Националния фонд за опазване на околната среда, върху:",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§7/Т1-2",
+                            "p_id": 377519,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
                             "sort_order": 948,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -11025,7 +11067,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§7/Т2",
+                            "path": "ПЗР/§7/Т2-2",
                             "p_id": 377519,
                             "caption": null,
                             "node_type": "point",
@@ -11039,7 +11081,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§7/Т3",
+                            "path": "ПЗР/§7/Т3-2",
                             "p_id": 377519,
                             "caption": null,
                             "node_type": "point",

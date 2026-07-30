@@ -3972,10 +3972,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 324,
+                            "sort_order": 290,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "банката не е изплатила влогове, които са изискуеми и дължими, и БНБ е започнала процедура за произнасяне по чл. 20, ал. 1, т. 2 от Закона за гарантиране на влоговете в банките, и",
+                            "text_markdown": "В чл. 36:",
                             "children": [
                                 {
                                     "path": "ПЗР/§6/Т1/БУКВА_А",
@@ -4029,54 +4029,11 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 325,
+                            "sort_order": 294,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "банката не отговаря на условията за преструктуриране по Закона за възстановяване и преструктуриране на кредитните институции и инвестиционни посредници.\";",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§6/Т2/БУКВА_Б",
-                                    "p_id": 44273849,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 326,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "алинея 2 се отменя;",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§6/Т2/БУКВА_В",
-                                    "p_id": 44273849,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 327,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "в ал. 3 изречение първо думите \"6 месеца\" се заменят с \"един месец\", а изречение второ се заличава;",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§6/Т2/БУКВА_Г",
-                                    "p_id": 44273849,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 328,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "създава се ал. 4:\n\n\"(4) В случаите на чл. 107, 109, 110 и чл. 115 – 121 разпоредбите на Закона за публичното предлагане на ценни книжа не се прилагат по отношение на банка – публично дружество.\"",
-                                    "children": []
-                                }
-                            ]
+                            "text_markdown": "В чл. 37, ал. 2 се създава изречение второ: \"Искането се подава не по-късно от два работни дни след отнемането на лиценза.\"",
+                            "children": []
                         },
                         {
                             "path": "ПЗР/§6/Т3",
@@ -4086,10 +4043,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 307,
+                            "sort_order": 295,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "с определение на съда, когато това е необходимо за изясняване на обстоятелствата по разглеждано от него дело, или",
+                            "text_markdown": "В чл. 56 се създава ал. 5:\n\n\"(5) Включването и изключването от информационната система се извършва с акт на подуправителя, ръководещ управление \"Банково\".\"",
                             "children": []
                         },
                         {
@@ -4100,10 +4057,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 308,
+                            "sort_order": 296,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "в случаите по ал. 12 при банка в производство по несъстоятелност.\"",
+                            "text_markdown": "В чл. 57:",
                             "children": [
                                 {
                                     "path": "ПЗР/§6/Т4/БУКВА_А",
@@ -4220,6 +4177,62 @@
                                     "children": []
                                 }
                             ]
+                        },
+                        {
+                            "path": "ПЗР/§6/Т1-2",
+                            "p_id": 44273849,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 305,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "с тяхно съгласие;",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§6/Т2-2",
+                            "p_id": 44273849,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 306,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "по решение на съда, взето по реда на ал. 6 и 7;",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§6/Т3-2",
+                            "p_id": 44273849,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 307,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "с определение на съда, когато това е необходимо за изясняване на обстоятелствата по разглеждано от него дело, или",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§6/Т4-2",
+                            "p_id": 44273849,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 308,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "в случаите по ал. 12 при банка в производство по несъстоятелност.\"",
+                            "children": []
                         },
                         {
                             "path": "ПЗР/§6/Т7",
@@ -4431,6 +4444,77 @@
                                     "has_in_links": true,
                                     "is_orphaned": false,
                                     "text_markdown": "алинея 1 се изменя така:\n\n\"(1) Българската народна банка може да постави банка под специален надзор при следните условия:",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "path": "ПЗР/§6/Т1-3",
+                            "p_id": 44273849,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 324,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "банката не е изплатила влогове, които са изискуеми и дължими, и БНБ е започнала процедура за произнасяне по чл. 20, ал. 1, т. 2 от Закона за гарантиране на влоговете в банките, и",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§6/Т2-3",
+                            "p_id": 44273849,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 325,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "банката не отговаря на условията за преструктуриране по Закона за възстановяване и преструктуриране на кредитните институции и инвестиционни посредници.\";",
+                            "children": [
+                                {
+                                    "path": "ПЗР/§6/Т2-3/БУКВА_Б",
+                                    "p_id": 44273849,
+                                    "caption": null,
+                                    "node_type": "letter",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 326,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "алинея 2 се отменя;",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§6/Т2-3/БУКВА_В",
+                                    "p_id": 44273849,
+                                    "caption": null,
+                                    "node_type": "letter",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 327,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "в ал. 3 изречение първо думите \"6 месеца\" се заменят с \"един месец\", а изречение второ се заличава;",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§6/Т2-3/БУКВА_Г",
+                                    "p_id": 44273849,
+                                    "caption": null,
+                                    "node_type": "letter",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 328,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "създава се ал. 4:\n\n\"(4) В случаите на чл. 107, 109, 110 и чл. 115 – 121 разпоредбите на Закона за публичното предлагане на ценни книжа не се прилагат по отношение на банка – публично дружество.\"",
                                     "children": []
                                 }
                             ]

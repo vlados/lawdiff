@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-05-04",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -5752,54 +5752,11 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 427,
+                            "sort_order": 423,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Членове на сдружение за напояване могат да бъдат физически и юридически лица, собственици и упълномощени от собствениците ползватели на земеделски земи, разположени на територията на сдружението, които имат интерес от дейността на сдружението.\"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§6/АЛ1/Т6",
-                                    "p_id": 358657,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 428,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 91 ал. 5 се отменя.",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§6/АЛ1/Т7",
-                                    "p_id": 358657,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 429,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 104, ал. 2 след думите \"предназначени за осигуряване на услугата за доставяне на вода за населението\" се добавя \"и за напояване\".",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§6/АЛ1/Т8",
-                                    "p_id": 358657,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 430,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 194 се създава ал. 4:\n\n \"(4) Сдруженията за напояване, регистрирани по Закона за сдружения за напояване, имат право на преференциални такси за водоползване в размер не повече от 0,01 лв. на 100 куб. м съгласно тарифата по ал. 3.\"",
-                                    "children": []
-                                }
-                            ]
+                            "text_markdown": "Водните сдружения са юридически лица.",
+                            "children": []
                         },
                         {
                             "path": "ПЗР/§6/АЛ2",
@@ -5840,6 +5797,63 @@
                                     "has_in_links": true,
                                     "is_orphaned": false,
                                     "text_markdown": "В чл. 90 ал. 1 се изменя така:\n\n \"Чл. 90.",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "path": "ПЗР/§6/АЛ1-2",
+                            "p_id": 358657,
+                            "caption": null,
+                            "node_type": "paragraph",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 427,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "Членове на сдружение за напояване могат да бъдат физически и юридически лица, собственици и упълномощени от собствениците ползватели на земеделски земи, разположени на територията на сдружението, които имат интерес от дейността на сдружението.\"",
+                            "children": [
+                                {
+                                    "path": "ПЗР/§6/АЛ1-2/Т6",
+                                    "p_id": 358657,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 428,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 91 ал. 5 се отменя.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§6/АЛ1-2/Т7",
+                                    "p_id": 358657,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 429,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 104, ал. 2 след думите \"предназначени за осигуряване на услугата за доставяне на вода за населението\" се добавя \"и за напояване\".",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§6/АЛ1-2/Т8",
+                                    "p_id": 358657,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 430,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 194 се създава ал. 4:\n\n \"(4) Сдруженията за напояване, регистрирани по Закона за сдружения за напояване, имат право на преференциални такси за водоползване в размер не повече от 0,01 лв. на 100 куб. м съгласно тарифата по ал. 3.\"",
                                     "children": []
                                 }
                             ]

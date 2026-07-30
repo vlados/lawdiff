@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-05",
-    "processed_at": "2026-05-05",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -23390,6 +23390,48 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
+                            "sort_order": 1731,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "В чл. 98, ал. 3 думите \"Закона за ограничаване на вредното въздействие на отпадъците върху околната среда\" се заменят със \"Закона за управление на отпадъците\".",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§23/Т2",
+                            "p_id": 32807789,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 1732,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "В чл. 142, ал. 5 се създава т. 9:\n\n \"9. изискванията за селективно разделяне на отпадъците, образувани по време на строително-монтажните работи и дейностите по разрушаване с цел осигуряване на последващото им оползотворяване, включително рециклиране и постигане на съответните количествени цели за оползотворяване и рециклиране.\"",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§23/Т3",
+                            "p_id": 32807789,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 1733,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "В чл. 148 ал. 9 се изменя така:\n\n \"(9) В разрешението за строеж се вписват:",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§23/Т1-2",
+                            "p_id": 32807789,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
                             "sort_order": 1734,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -23397,7 +23439,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§23/Т2",
+                            "path": "ПЗР/§23/Т2-2",
                             "p_id": 32807789,
                             "caption": null,
                             "node_type": "point",
@@ -23411,7 +23453,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§23/Т3",
+                            "path": "ПЗР/§23/Т3-2",
                             "p_id": 32807789,
                             "caption": null,
                             "node_type": "point",
@@ -23426,6 +23468,20 @@
                         },
                         {
                             "path": "ПЗР/§23/Т4",
+                            "p_id": 32807789,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 1737,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "премахването на сградите без режим на застрояване или запазването им за определен срок до завършването на строежа.\"",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§23/Т4-2",
                             "p_id": 32807789,
                             "caption": null,
                             "node_type": "point",
