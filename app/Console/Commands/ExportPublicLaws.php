@@ -95,8 +95,8 @@ class ExportPublicLaws extends Command
         $this->writeIndexCsv($outputDir, $manifest);
         $this->writeReadme($outputDir, count($manifest));
 
-        if ($this->option('prune')) {
-            $this->prune($lawsDir, $writtenFiles);
+        if ($this->option('prune') && ! $this->prune($lawsDir, $writtenFiles)) {
+            return self::FAILURE;
         }
 
         $this->info('✓ Export complete.');
@@ -110,6 +110,10 @@ class ExportPublicLaws extends Command
             limited: $limit !== null,
             scopedToLawId: $lawId !== null,
         );
+
+        if ($lawId === null && $limit === null && count($manifest) !== $eligible) {
+            return self::FAILURE;
+        }
 
         return self::SUCCESS;
     }
@@ -329,24 +333,45 @@ MD;
     }
 
     /**
+     * Returns false (without deleting anything) when the prune looks like a corpus
+     * collapse rather than routine turnover. Laws are essentially never removed from
+     * APIS — they are end-dated instead — so a mass removal means the fetch was
+     * partial or the database was rebuilt from scratch, and the daily job must go
+     * red rather than commit the deletion.
+     *
      * @param  list<string>  $writtenFiles
      */
-    private function prune(string $lawsDir, array $writtenFiles): void
+    private function prune(string $lawsDir, array $writtenFiles): bool
     {
         $kept = array_flip($writtenFiles);
         $existing = File::files($lawsDir);
-        $removed = 0;
 
-        foreach ($existing as $file) {
-            if (! isset($kept[$file->getFilename()])) {
-                File::delete($file->getPathname());
-                $removed++;
-            }
+        $stale = array_values(array_filter(
+            $existing,
+            fn ($file): bool => ! isset($kept[$file->getFilename()])
+        ));
+
+        $removals = count($stale);
+
+        if ($removals > 10 && $removals > 0.2 * count($existing)) {
+            $this->error(sprintf(
+                'Prune aborted: it would delete %d of %d law files. Nothing was deleted.',
+                $removals,
+                count($existing)
+            ));
+
+            return false;
         }
 
-        if ($removed > 0) {
-            $this->info("Pruned {$removed} stale law file(s).");
+        foreach ($stale as $file) {
+            File::delete($file->getPathname());
         }
+
+        if ($removals > 0) {
+            $this->info("Pruned {$removals} stale law file(s).");
+        }
+
+        return true;
     }
 
     private function slugFor(Law $law): string

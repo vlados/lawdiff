@@ -39,6 +39,18 @@ class Law extends Model
         'processed_at',
     ];
 
+    /**
+     * Raw APIS payloads are megabytes per law; they must never be serialized
+     * onto the public JSON endpoint. Internal code reads them as properties,
+     * which $hidden does not affect.
+     *
+     * @var list<string>
+     */
+    protected $hidden = [
+        'content_structure',
+        'content_text',
+    ];
+
     protected function casts(): array
     {
         return [

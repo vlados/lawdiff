@@ -243,6 +243,33 @@ test('does not warn about missing exports when scoped by law-id', function () {
         ->assertExitCode(0);
 });
 
+test('prune refuses a mass deletion and fails the command', function () {
+    // A shrunken corpus (partial fetch, rebuilt database) must not translate into
+    // deleting most of the published dataset from an unattended job.
+    $law = Law::factory()->create([
+        'caption' => 'ЗАКОН единствен оцелял',
+        'processed_at' => now(),
+    ]);
+    LawNode::create([
+        'law_id' => $law->id,
+        'path' => 'ЧЛ1',
+        'caption' => 'Чл. 1',
+        'sort_order' => 1,
+    ]);
+
+    File::ensureDirectoryExists($this->outputDir.'/laws');
+    foreach (range(1, 30) as $i) {
+        File::put($this->outputDir."/laws/stale-{$i}.json", '{}');
+    }
+
+    $this->artisan('laws:export-public', ['--output' => $this->outputDir, '--prune' => true])
+        ->expectsOutputToContain('Prune aborted')
+        ->assertExitCode(1);
+
+    expect(File::exists($this->outputDir.'/laws/stale-1.json'))->toBeTrue()
+        ->and(File::exists($this->outputDir.'/laws/stale-30.json'))->toBeTrue();
+});
+
 test('prune removes stale law files', function () {
     $law = Law::factory()->create([
         'caption' => 'ЗАКОН за тест',

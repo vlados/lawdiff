@@ -11,7 +11,9 @@ use Laravel\Fortify\Features;
 
 Route::get('/', HomePage::class)->name('home');
 
-Route::get('/laws/{law}', [LawController::class, 'show'])->name('laws.show');
+Route::get('/laws/{law}', [LawController::class, 'show'])
+    ->middleware('throttle:60,1')
+    ->name('laws.show');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

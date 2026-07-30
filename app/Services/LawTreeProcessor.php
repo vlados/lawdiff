@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\Law;
 use App\Models\LawNode;
+use Illuminate\Support\Facades\DB;
 use League\HTMLToMarkdown\HtmlConverter;
 
 class LawTreeProcessor
@@ -11,6 +12,15 @@ class LawTreeProcessor
     protected HtmlConverter $converter;
 
     protected int $sortOrder = 0;
+
+    /**
+     * Paths already assigned within the current process() run, used to keep
+     * every node path unique per law. Duplicate paths silently overwrite each
+     * other in the export tree builder, which keys nodes by path.
+     *
+     * @var array<string, true>
+     */
+    protected array $usedPaths = [];
 
     public function __construct(
         protected LawPathBuilder $pathBuilder
@@ -21,34 +31,66 @@ class LawTreeProcessor
         ]);
     }
 
+    /**
+     * Runs in a transaction: the rebuild is delete-then-insert, and a mid-run
+     * failure must roll back to the previous complete node set rather than
+     * leave a partially rebuilt law that the export would happily ship.
+     */
     public function process(Law $law): void
     {
-        $this->sortOrder = 0;
+        DB::transaction(function () use ($law): void {
+            $this->sortOrder = 0;
+            $this->usedPaths = [];
 
-        // Delete existing nodes for this law
-        $law->nodes()->delete();
+            // Delete existing nodes for this law
+            $law->nodes()->delete();
 
-        // Create a map of paragraph IDs to their text content
-        $textMap = $this->buildTextMap($law->content_text ?? []);
+            // Create a map of paragraph IDs to their text content
+            $textMap = $this->buildTextMap($law->content_text ?? []);
 
-        // Track which pIds are used in the structure
-        $usedPIds = [];
+            // Track which pIds are used in the structure
+            $usedPIds = [];
 
-        // Build and save the tree nodes
-        $this->buildAndSaveNodes(
-            $law,
-            $law->content_structure ?? [],
-            $textMap,
-            '',
-            0,
-            $usedPIds
-        );
+            // Build and save the tree nodes
+            $this->buildAndSaveNodes(
+                $law,
+                $law->content_structure ?? [],
+                $textMap,
+                '',
+                0,
+                $usedPIds
+            );
 
-        // Find and save orphaned paragraphs
-        $this->saveOrphanedParagraphs($law, $textMap, $usedPIds);
+            // Find and save orphaned paragraphs
+            $this->saveOrphanedParagraphs($law, $textMap, $usedPIds);
 
-        // Parse and split article text into алинеи, точки, букви
-        $this->parseAndSplitArticles($law);
+            // Parse and split article text into алинеи, точки, букви
+            $this->parseAndSplitArticles($law);
+        });
+    }
+
+    /**
+     * Reserve a unique path, suffixing repeats with -2, -3, … Repeated captions
+     * are real in the corpus (budget-law appendices restate "Чл. 1" per annex;
+     * orphan paths like ЗАГЛАВИЕ are constants), and each occurrence must keep
+     * its own node.
+     */
+    protected function uniquePath(string $path): string
+    {
+        if (! isset($this->usedPaths[$path])) {
+            $this->usedPaths[$path] = true;
+
+            return $path;
+        }
+
+        $suffix = 2;
+        while (isset($this->usedPaths["{$path}-{$suffix}"])) {
+            $suffix++;
+        }
+
+        $this->usedPaths["{$path}-{$suffix}"] = true;
+
+        return "{$path}-{$suffix}";
     }
 
     protected function buildTextMap(array $contentText): array
@@ -109,7 +151,7 @@ class LawTreeProcessor
 
             // Build the path for this node
             $pathSegment = $this->pathBuilder->buildSegment($caption, $node['pId']);
-            $currentPath = $parentPath ? $parentPath.'/'.$pathSegment : $pathSegment;
+            $currentPath = $this->uniquePath($parentPath ? $parentPath.'/'.$pathSegment : $pathSegment);
 
             // Get text data if available
             $textData = $textMap[$node['pId']] ?? null;
@@ -149,7 +191,7 @@ class LawTreeProcessor
         foreach ($textMap as $pId => $data) {
             if (! in_array($pId, $usedPIds)) {
                 $data['pId'] = $pId;
-                $pathSegment = $this->pathBuilder->buildOrphanedPath($data);
+                $pathSegment = $this->uniquePath($this->pathBuilder->buildOrphanedPath($data));
 
                 LawNode::create([
                     'law_id' => $law->id,
@@ -221,7 +263,9 @@ class LawTreeProcessor
         // Check if this node has алинеи (paragraphs) marked with (1), (2), etc.
         // Pattern can be: " (1)" inline or "\n\n(1)" on new line
         // Both regular articles (чл.) and transitional paragraphs (§) can have алинеи
-        if (preg_match('/(?:\s\((\d+)\)|\n\n\((\d+)\))/u', $text)) {
+        // Bounded to 1-2 digits: real алинеи never reach 100, but amendment history
+        // references like "(2011)" do — an unbounded \d+ turned years into алинеи.
+        if (preg_match('/(?:\s\((\d{1,2})\)|\n\n\((\d{1,2})\))/u', $text)) {
             $this->parseAlinees($law, $article, $text);
 
             return;
@@ -244,11 +288,12 @@ class LawTreeProcessor
     protected function parseAlinees(Law $law, LawNode $article, string $text): void
     {
         // Normalize: Convert inline " (N)" or " (Nа)" to "\n\n(N)" for consistent parsing
-        // Pattern matches (1), (2), (5а), (5б), etc.
-        $text = preg_replace('/\s+\((\d+[а-я]?)\)/u', "\n\n($1)", $text);
+        // Pattern matches (1), (2), (5а), (5б), etc. — bounded to 1-2 digits so
+        // year references like "(2011)" in amendment history are left alone.
+        $text = preg_replace('/\s+\((\d{1,2}[а-я]?)\)/u', "\n\n($1)", $text);
 
         // Split text by алинея pattern: \n\n(1), \n\n(2), \n\n(5а), etc.
-        $parts = preg_split('/\n\n\((\d+[а-я]?)\)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+        $parts = preg_split('/\n\n\((\d{1,2}[а-я]?)\)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
 
         // First part is the article introduction (before first алинея)
         $introduction = trim($parts[0]);
@@ -266,7 +311,7 @@ class LawTreeProcessor
             $alineaText = trim($parts[$i + 1]);
 
             // Create алинея node
-            $alineaPath = $this->pathBuilder->buildAlineaPath($article->path, $alineaNumber);
+            $alineaPath = $this->uniquePath($this->pathBuilder->buildAlineaPath($article->path, $alineaNumber));
 
             $alineaNode = LawNode::create([
                 'law_id' => $law->id,
@@ -315,7 +360,7 @@ class LawTreeProcessor
             $pointText = trim($parts[$i + 2]);
 
             // Create точка node
-            $pointPath = $this->pathBuilder->buildPointPath($parent->path, $pointNumber);
+            $pointPath = $this->uniquePath($this->pathBuilder->buildPointPath($parent->path, $pointNumber));
 
             $pointNode = LawNode::create([
                 'law_id' => $law->id,
@@ -360,7 +405,7 @@ class LawTreeProcessor
             $letterText = trim($parts[$i + 1]);
 
             // Create буква node with uppercase letter in path
-            $letterPath = $this->pathBuilder->buildLetterPath($parent->path, $letter);
+            $letterPath = $this->uniquePath($this->pathBuilder->buildLetterPath($parent->path, $letter));
 
             LawNode::create([
                 'law_id' => $law->id,

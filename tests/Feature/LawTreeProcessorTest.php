@@ -480,3 +480,87 @@ test('parses deeply nested structure with алинея containing точка con
         ->and($nodes[6]->level)->toBe(1)
         ->and($nodes[6]->text_markdown)->toContain('Допълнителни изисквания');
 });
+
+test('repeated captions get suffixed paths instead of colliding', function () {
+    // Budget-law appendices restate "Чл. 1" per annex. Duplicate paths silently
+    // overwrite each other in the export tree builder, so every occurrence must
+    // get its own path.
+    $law = Law::factory()->create([
+        'content_structure' => [
+            ['pId' => 1, 'caption' => 'Чл. 5'],
+            ['pId' => 2, 'caption' => 'Чл. 5'],
+            ['pId' => 3, 'caption' => 'Чл. 5'],
+        ],
+        'content_text' => [
+            'paragraphs' => [
+                ['pId' => 1, 'text' => '<p>Първо приложение</p>', 'type' => 1],
+                ['pId' => 2, 'text' => '<p>Второ приложение</p>', 'type' => 1],
+                ['pId' => 3, 'text' => '<p>Трето приложение</p>', 'type' => 1],
+            ],
+        ],
+        'content_fetched_at' => now(),
+    ]);
+
+    $this->processor->process($law);
+
+    $paths = $law->nodes()->orderBy('sort_order')->pluck('path');
+
+    expect($paths->all())->toBe(['ЧЛ5', 'ЧЛ5-2', 'ЧЛ5-3'])
+        ->and($paths->unique())->toHaveCount(3);
+});
+
+test('year references in parentheses are not parsed as алинеи', function () {
+    // Amendment history like "(2011, 1989)" used to become ал. 2011 nodes and
+    // truncate the real article text at the first year.
+    $law = Law::factory()->create([
+        'content_structure' => [
+            ['pId' => 1, 'caption' => 'Чл. 4а'],
+        ],
+        'content_text' => [
+            'paragraphs' => [
+                ['pId' => 1, 'text' => '<p>Мерките по този закон се прилагат съгласно резолюции (2011) и (1988) на Съвета за сигурност.</p>', 'type' => 1],
+            ],
+        ],
+        'content_fetched_at' => now(),
+    ]);
+
+    $this->processor->process($law);
+
+    $nodes = $law->nodes;
+
+    expect($nodes)->toHaveCount(1)
+        ->and($nodes[0]->path)->toBe('ЧЛ4А')
+        ->and($nodes[0]->text_markdown)->toContain('(2011)')
+        ->and($nodes[0]->text_markdown)->toContain('(1988)');
+});
+
+test('a mid-process failure rolls back to the previous complete node set', function () {
+    // The rebuild is delete-then-insert. Without a transaction a crash leaves a
+    // partially rebuilt law with a stale processed_at, and the export ships it.
+    $law = Law::factory()->create([
+        'content_structure' => [['pId' => 1, 'caption' => 'Чл. 1']],
+        'content_text' => ['paragraphs' => [['pId' => 1, 'text' => '<p>Ново</p>', 'type' => 1]]],
+        'content_fetched_at' => now(),
+        'processed_at' => now()->subDay(),
+    ]);
+
+    foreach ([['ЧЛ1', 1], ['ЧЛ2', 2]] as [$path, $sort]) {
+        App\Models\LawNode::create([
+            'law_id' => $law->id,
+            'path' => $path,
+            'caption' => $path,
+            'text_markdown' => 'от предишна обработка',
+            'sort_order' => $sort,
+        ]);
+    }
+
+    $builder = Mockery::mock(App\Services\LawPathBuilder::class);
+    $builder->shouldReceive('determineNodeType')->andThrow(new RuntimeException('boom'));
+
+    $processor = new App\Services\LawTreeProcessor($builder);
+
+    expect(fn () => $processor->process($law))->toThrow(RuntimeException::class);
+
+    expect($law->nodes()->count())->toBe(2)
+        ->and($law->nodes()->orderBy('sort_order')->pluck('path')->all())->toBe(['ЧЛ1', 'ЧЛ2']);
+});

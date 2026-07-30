@@ -34,6 +34,7 @@ class FetchBulgarianLaws extends Command
         $totalProcessed = 0;
         $totalCreated = 0;
         $totalUpdated = 0;
+        $failed = false;
 
         do {
             $this->info("Fetching page {$pageNumber}...");
@@ -62,6 +63,7 @@ class FetchBulgarianLaws extends Command
 
                 if (! $response->successful()) {
                     $this->error("Failed to fetch page {$pageNumber}. Status: {$response->status()}");
+                    $failed = true;
                     break;
                 }
 
@@ -119,12 +121,12 @@ class FetchBulgarianLaws extends Command
                 }
             } catch (\Exception $e) {
                 $this->error("Error fetching page {$pageNumber}: ".$e->getMessage());
+                $failed = true;
                 break;
             }
         } while (true);
 
         $this->newLine();
-        $this->info('✓ Finished fetching Bulgarian laws!');
         $this->table(
             ['Metric', 'Count'],
             [
@@ -133,6 +135,14 @@ class FetchBulgarianLaws extends Command
                 ['Updated', $totalUpdated],
             ]
         );
+
+        if ($failed) {
+            $this->error('Law list fetch is incomplete — failing so downstream export/prune does not run against a partial list.');
+
+            return self::FAILURE;
+        }
+
+        $this->info('✓ Finished fetching Bulgarian laws!');
 
         return self::SUCCESS;
     }

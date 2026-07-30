@@ -51,6 +51,8 @@ class HomePage extends Component
             // Reset form
             $this->reset(['lawDraft']);
         } catch (\Exception $e) {
+            report($e);
+
             session()->flash('error', 'Грешка при качването на файла. Моля, опитайте отново.');
         }
     }

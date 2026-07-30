@@ -213,3 +213,36 @@ test('processes laws with complex nested structure', function () {
         ->and($nodes[0]->caption)->toBe('Чл. 1')
         ->and($nodes[0]->text_markdown)->toContain('*text*');
 });
+
+test('command processes every pending law across chunk boundaries', function () {
+    // Without --force the filter keys on processed_at, which the loop sets as it
+    // goes — offset paging would silently skip past whole pages of pending laws.
+    Law::factory()->count(60)->create([
+        'content_structure' => [['pId' => 1, 'caption' => 'Чл. 1']],
+        'content_text' => ['paragraphs' => [['pId' => 1, 'text' => '<p>Текст</p>', 'type' => 1]]],
+        'content_fetched_at' => now(),
+        'processed_at' => null,
+    ]);
+
+    $this->artisan('laws:process-trees')->assertExitCode(0);
+
+    expect(Law::whereNull('processed_at')->count())->toBe(0)
+        ->and(Law::whereNotNull('processed_at')->count())->toBe(60);
+});
+
+test('command fails when every law fails to process', function () {
+    Law::factory()->create([
+        'content_structure' => [['pId' => 1, 'caption' => 'Чл. 1']],
+        'content_text' => ['paragraphs' => [['pId' => 1, 'text' => '<p>Текст</p>', 'type' => 1]]],
+        'content_fetched_at' => now(),
+        'processed_at' => null,
+    ]);
+
+    $this->mock(App\Services\LawTreeProcessor::class, function ($mock) {
+        $mock->shouldReceive('process')->andThrow(new RuntimeException('boom'));
+    });
+
+    $this->artisan('laws:process-trees')
+        ->expectsOutputToContain('Every law failed to process')
+        ->assertExitCode(1);
+});

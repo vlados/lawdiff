@@ -240,15 +240,38 @@ test('command updates existing laws', function () {
         ->code->toBe('NEW');
 });
 
-test('command handles API errors gracefully', function () {
+test('command fails when the API errors so the pipeline stops before export', function () {
     Http::fake([
         'web-api.apis.bg/api/obshtina-legislation/DocList' => Http::response(null, 500),
     ]);
 
     $this->artisan('laws:fetch')
         ->expectsOutput('Starting to fetch Bulgarian laws...')
-        ->expectsOutput('Fetching page 1...')
-        ->assertSuccessful();
+        ->expectsOutputToContain('Law list fetch is incomplete')
+        ->assertExitCode(1);
 
     expect(Law::count())->toBe(0);
+});
+
+test('command fails on a mid-pagination error but keeps the laws already fetched', function () {
+    // A partial list must fail the run: the export step prunes files for laws
+    // missing from the database, so a silently truncated list deletes data.
+    $lawRow = fn (int $id) => [
+        'uniqueId' => $id, 'dbIndex' => 0, 'caption' => "ЗАКОН {$id}", 'func' => 1,
+        'type' => 4, 'base' => 'NARH', 'isActual' => 1,
+        'publDate' => '2025-11-11T00:00:00+02:00', 'startDate' => '2025-11-11T00:00:00+02:00',
+        'endDate' => null, 'actDate' => '1997-10-24T00:00:00+03:00', 'publYear' => 2025,
+        'isConnected' => 1, 'hasContent' => 1, 'code' => (string) $id, 'dv' => 1,
+        'originalId' => null, 'version' => null, 'celex' => null, 'docLead' => null, 'seria' => null,
+    ];
+
+    Http::fake([
+        'web-api.apis.bg/api/obshtina-legislation/DocList' => Http::sequence()
+            ->push(['totalCount' => 4, 'data' => [$lawRow(1), $lawRow(2)]])
+            ->push(null, 500),
+    ]);
+
+    $this->artisan('laws:fetch --page-size=2')->assertExitCode(1);
+
+    expect(Law::count())->toBe(2);
 });

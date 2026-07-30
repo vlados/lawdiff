@@ -59,7 +59,6 @@ class FetchLawContents extends Command
                     });
             });
         }
-        //        dd($query->toRawSql());
 
         $matching = (int) $query->count();
         $totalToProcess = $limit !== null ? min($matching, $limit) : $matching;
@@ -126,7 +125,6 @@ class FetchLawContents extends Command
         $progressBar->finish();
 
         $this->newLine(2);
-        $this->info('✓ Finished fetching law contents!');
         $this->table(
             ['Metric', 'Count'],
             [
@@ -135,6 +133,14 @@ class FetchLawContents extends Command
                 ['Failed', $totalFailed],
             ]
         );
+
+        if ($totalProcessed > 0 && $totalSuccess === 0) {
+            $this->error('Every fetch failed — the API is likely down. Failing instead of pretending success.');
+
+            return self::FAILURE;
+        }
+
+        $this->info('✓ Finished fetching law contents!');
 
         return self::SUCCESS;
     }

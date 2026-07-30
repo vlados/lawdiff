@@ -64,38 +64,38 @@ class ProcessLawTrees extends Command
         $progressBar = $this->output->createProgressBar($totalToProcess);
         $progressBar->start();
 
-        $query->orderBy('id')
-            ->chunk(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $progressBar) {
-                foreach ($laws as $law) {
-                    if ($limit !== null && $totalProcessed >= $limit) {
-                        return false;
-                    }
-
-                    try {
-                        $processor->process($law);
-
-                        $law->update([
-                            'processed_at' => now(),
-                        ]);
-
-                        $totalSuccess++;
-                    } catch (\Exception $e) {
-                        $this->newLine();
-                        $this->error("Failed to process law {$law->unique_id}: ".$e->getMessage());
-                        $totalFailed++;
-                    }
-
-                    $totalProcessed++;
-                    $progressBar->advance();
+        // chunkById, not chunk: without --force the filter keys on processed_at, which
+        // the loop sets — offset paging would skip past whole pages of pending laws.
+        $query->chunkById(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $progressBar) {
+            foreach ($laws as $law) {
+                if ($limit !== null && $totalProcessed >= $limit) {
+                    return false;
                 }
 
-                return true;
-            });
+                try {
+                    $processor->process($law);
+
+                    $law->update([
+                        'processed_at' => now(),
+                    ]);
+
+                    $totalSuccess++;
+                } catch (\Exception $e) {
+                    $this->newLine();
+                    $this->error("Failed to process law {$law->unique_id}: ".$e->getMessage());
+                    $totalFailed++;
+                }
+
+                $totalProcessed++;
+                $progressBar->advance();
+            }
+
+            return true;
+        });
 
         $progressBar->finish();
 
         $this->newLine(2);
-        $this->info('✓ Finished processing law trees!');
         $this->table(
             ['Metric', 'Count'],
             [
@@ -104,6 +104,14 @@ class ProcessLawTrees extends Command
                 ['Failed', $totalFailed],
             ]
         );
+
+        if ($totalProcessed > 0 && $totalSuccess === 0) {
+            $this->error('Every law failed to process — failing instead of pretending success.');
+
+            return self::FAILURE;
+        }
+
+        $this->info('✓ Finished processing law trees!');
 
         return self::SUCCESS;
     }

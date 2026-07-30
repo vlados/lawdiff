@@ -225,6 +225,21 @@ test('command force refetches with force option', function () {
     expect($law->content_structure)->toBe(['data' => 'new']);
 });
 
+test('command fails when every fetch fails', function () {
+    // Partial failures retry tomorrow, but a total outage must go red instead of
+    // letting the pipeline continue as if nothing happened.
+    Law::factory()->count(2)->create(['content_fetched_at' => null]);
+
+    Http::fake([
+        '*/DocContent*' => Http::response(null, 500),
+        '*/DocTextJson/*' => Http::response(null, 500),
+    ]);
+
+    $this->artisan('laws:fetch-contents --throttle-ms=0')
+        ->expectsOutputToContain('Every fetch failed')
+        ->assertExitCode(1);
+});
+
 test('command handles API errors gracefully', function () {
     $law1 = Law::factory()->create(['unique_id' => 1, 'content_fetched_at' => null]);
     $law2 = Law::factory()->create(['unique_id' => 2, 'content_fetched_at' => null]);

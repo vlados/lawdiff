@@ -22,7 +22,10 @@ test('can retrieve a law as JSON', function () {
     ]);
 });
 
-test('can retrieve a law with content', function () {
+test('does not expose the multi-megabyte raw content payloads', function () {
+    // content_structure/content_text are the raw APIS payloads — megabytes per
+    // law. The public endpoint returns metadata only; the full structured text
+    // lives in the exported dataset.
     $law = Law::factory()->create([
         'unique_id' => 11110,
         'caption' => 'ЗАКОН за движението по пътищата',
@@ -44,12 +47,8 @@ test('can retrieve a law with content', function () {
         'unique_id' => 11110,
         'caption' => 'ЗАКОН за движението по пътищата',
     ]);
-    $response->assertJsonFragment([
-        'content_structure' => [
-            ['pId' => 334983, 'caption' => 'Глава първа'],
-        ],
-    ]);
-    $response->assertJsonPath('content_text.paragraphs.0.text', 'Test content');
+    $response->assertJsonMissingPath('content_structure');
+    $response->assertJsonMissingPath('content_text');
 });
 
 test('returns 404 for non-existent law', function () {
@@ -87,8 +86,6 @@ test('law JSON includes all relevant fields', function () {
         'celex',
         'doc_lead',
         'seria',
-        'content_structure',
-        'content_text',
         'content_fetched_at',
         'created_at',
         'updated_at',
