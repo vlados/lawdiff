@@ -22,8 +22,8 @@
         "unique_id": 301352,
         "db_index": 0
     },
-    "fetched_at": "2026-06-20",
-    "processed_at": "2026-06-20",
+    "fetched_at": "2026-07-30",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧАСТПЪРВАОБЩАЧАСТ",
@@ -37257,7 +37257,7 @@
             "field_type": 8,
             "level": 0,
             "sort_order": 698,
-            "has_in_links": false,
+            "has_in_links": true,
             "is_orphaned": false,
             "text_markdown": "Чл. 542. Чекът не подлежи на приемане. Бележка за приемане върху чека е недействителна.",
             "children": []

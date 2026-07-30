@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Console\Commands;
 
 use App\Models\Law;
-use App\Models\LawNode;
+use App\Services\LawExportPresenter;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\File;
@@ -26,7 +26,7 @@ class ExportPublicLaws extends Command
      */
     private array $slugUsage = [];
 
-    public function handle(): int
+    public function handle(LawExportPresenter $presenter): int
     {
         $outputDir = $this->option('output') ?: base_path('data');
         $lawsDir = $outputDir.DIRECTORY_SEPARATOR.'laws';
@@ -66,7 +66,7 @@ class ExportPublicLaws extends Command
         $exported = 0;
 
         $query->with(['nodes' => fn ($q) => $q->orderBy('sort_order')])
-            ->chunk(50, function (Collection $laws) use (&$manifest, &$writtenFiles, &$exported, $limit, $lawsDir, $progress): bool {
+            ->chunk(50, function (Collection $laws) use ($presenter, &$manifest, &$writtenFiles, &$exported, $limit, $lawsDir, $progress): bool {
                 foreach ($laws as $law) {
                     if ($limit !== null && $exported >= $limit) {
                         return false;
@@ -76,10 +76,10 @@ class ExportPublicLaws extends Command
                     $relative = "laws/{$slug}.json";
                     $absolute = $lawsDir.DIRECTORY_SEPARATOR."{$slug}.json";
 
-                    File::put($absolute, $this->encodeJson($this->lawPayload($law, $slug)));
+                    File::put($absolute, $presenter->encodeJson($this->lawPayload($presenter, $law, $slug)));
 
                     $writtenFiles[] = "{$slug}.json";
-                    $manifest[] = $this->manifestRow($law, $slug, $relative);
+                    $manifest[] = $this->manifestRow($presenter, $law, $slug, $relative);
 
                     $exported++;
                     $progress->advance();
@@ -91,7 +91,7 @@ class ExportPublicLaws extends Command
         $progress->finish();
         $this->newLine(2);
 
-        $this->writeIndexJson($outputDir, $manifest);
+        $this->writeIndexJson($presenter, $outputDir, $manifest);
         $this->writeIndexCsv($outputDir, $manifest);
         $this->writeReadme($outputDir, count($manifest));
 
@@ -215,93 +215,25 @@ class ExportPublicLaws extends Command
     }
 
     /**
-     * @return array<string, mixed>
-     */
-    private function lawPayload(Law $law, string $slug): array
-    {
-        return [
-            'unique_id' => $law->unique_id,
-            'slug' => $slug,
-            'code' => $law->code,
-            'caption' => $law->caption,
-            'type' => $law->type,
-            'func' => $law->func,
-            'base' => $law->base,
-            'is_actual' => (bool) $law->is_actual,
-            'publ_year' => $law->publ_year,
-            'publ_date' => $this->date($law->publ_date),
-            'start_date' => $this->date($law->start_date),
-            'end_date' => $this->date($law->end_date),
-            'act_date' => $this->date($law->act_date),
-            'dv' => $law->dv,
-            'version' => $law->version,
-            'celex' => $law->celex,
-            'doc_lead' => $law->doc_lead,
-            'seria' => $law->seria,
-            'source' => [
-                'provider' => 'APIS.BG',
-                'unique_id' => $law->unique_id,
-                'db_index' => $law->db_index,
-            ],
-            'fetched_at' => $this->date($law->content_fetched_at),
-            'processed_at' => $this->date($law->processed_at),
-            'nodes' => $this->buildNodeTree($law->nodes),
-        ];
-    }
-
-    /**
-     * Convert the flat node collection into a nested tree using path hierarchy
-     * (parent path = path with the last "/segment" stripped).
+     * Key order is load-bearing: it is what 423 committed files already use, so
+     * changing it would churn the whole dataset. array_merge keeps a key in its
+     * first-seen position, which pins `slug` directly after `unique_id`.
      *
-     * @param  iterable<LawNode>  $nodes
-     * @return list<array<string, mixed>>
+     * @return array<string, mixed>
      */
-    private function buildNodeTree(iterable $nodes): array
+    private function lawPayload(LawExportPresenter $presenter, Law $law, string $slug): array
     {
-        $shaped = [];
-        foreach ($nodes as $node) {
-            $shaped[$node->path] = [
-                'path' => $node->path,
-                'p_id' => $node->p_id,
-                'caption' => $node->caption,
-                'node_type' => $node->node_type,
-                'type' => $node->type,
-                'field_type' => $node->field_type,
-                'level' => $node->level,
-                'sort_order' => $node->sort_order,
-                'has_in_links' => (bool) $node->has_in_links,
-                'is_orphaned' => (bool) $node->is_orphaned,
-                'text_markdown' => $node->text_markdown,
-                'children' => [],
-            ];
-        }
-
-        $roots = [];
-        foreach ($shaped as &$entry) {
-            $parentPath = $this->parentPath((string) $entry['path']);
-
-            if ($parentPath !== null && isset($shaped[$parentPath])) {
-                $shaped[$parentPath]['children'][] = &$entry;
-            } else {
-                $roots[] = &$entry;
-            }
-        }
-        unset($entry);
-
-        return $roots;
-    }
-
-    private function parentPath(string $path): ?string
-    {
-        $pos = strrpos($path, '/');
-
-        return $pos === false ? null : substr($path, 0, $pos);
+        return array_merge(
+            ['unique_id' => $law->unique_id, 'slug' => $slug],
+            $presenter->metadata($law),
+            ['nodes' => $presenter->buildNodeTree($law->nodes)],
+        );
     }
 
     /**
      * @return array<string, mixed>
      */
-    private function manifestRow(Law $law, string $slug, string $file): array
+    private function manifestRow(LawExportPresenter $presenter, Law $law, string $slug, string $file): array
     {
         return [
             'unique_id' => $law->unique_id,
@@ -310,9 +242,9 @@ class ExportPublicLaws extends Command
             'caption' => $law->caption,
             'type' => $law->type,
             'is_actual' => (bool) $law->is_actual,
-            'publ_date' => $this->date($law->publ_date),
-            'start_date' => $this->date($law->start_date),
-            'end_date' => $this->date($law->end_date),
+            'publ_date' => $presenter->date($law->publ_date),
+            'start_date' => $presenter->date($law->start_date),
+            'end_date' => $presenter->date($law->end_date),
             'version' => $law->version,
             'file' => $file,
         ];
@@ -321,7 +253,7 @@ class ExportPublicLaws extends Command
     /**
      * @param  list<array<string, mixed>>  $manifest
      */
-    private function writeIndexJson(string $outputDir, array $manifest): void
+    private function writeIndexJson(LawExportPresenter $presenter, string $outputDir, array $manifest): void
     {
         $payload = [
             'generated_at' => now()->toIso8601String(),
@@ -331,7 +263,7 @@ class ExportPublicLaws extends Command
 
         File::put(
             $outputDir.DIRECTORY_SEPARATOR.'index.json',
-            $this->encodeJson($payload)
+            $presenter->encodeJson($payload)
         );
     }
 
@@ -368,6 +300,8 @@ Generated daily from APIS.BG and committed to this repository.
 - `index.json` — machine-readable manifest of every exported law
 - `index.csv` — same manifest as a spreadsheet-friendly CSV
 - `laws/<slug>.json` — one file per law containing metadata + structured node tree
+- `ieps/` — [topical fork](ieps/README.md): every provision regulating индивидуални
+  електрически превозни средства (e-scooters), sliced out of the laws above
 
 Each law file includes the structured tree of articles, paragraphs, and items
 as parsed by `App\Services\LawTreeProcessor`, with text rendered as Markdown.
@@ -435,30 +369,6 @@ MD;
         $this->warn("Slug collision for \"{$law->caption}\" — appending -{$count}");
 
         return "{$base}-{$count}";
-    }
-
-    /**
-     * @param  array<string, mixed>  $payload
-     */
-    private function encodeJson(array $payload): string
-    {
-        return json_encode(
-            $payload,
-            JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR
-        )."\n";
-    }
-
-    private function date(mixed $value): ?string
-    {
-        if ($value === null) {
-            return null;
-        }
-
-        if ($value instanceof \DateTimeInterface) {
-            return $value->format('Y-m-d');
-        }
-
-        return (string) $value;
     }
 
     private function csvValue(mixed $value): string

@@ -137,6 +137,13 @@ php artisan laws:fetch-contents --limit=50
 # Обработка на законите в структурирани nodes
 php artisan laws:process-trees --limit=50 --force
 
+# Експорт на публичния набор от данни в data/
+php artisan laws:export-public --prune
+
+# Тематичен експорт на разпоредбите за ИЕПС в data/ieps/
+# (изисква предварително изпълнен laws:export-public — ползва data/index.json за slug-овете)
+php artisan laws:export-ieps --prune
+
 # Тестване на преходни разпоредби
 php artisan law:test-transitional {law_id}
 

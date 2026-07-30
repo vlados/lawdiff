@@ -100,6 +100,11 @@ jobs:
       - name: Export public dataset
         run: php artisan laws:export-public --prune --no-interaction
 
+      # Reads data/index.json to keep slugs aligned with the export above, so it
+      # must run after it. Fails the job rather than committing a gutted dataset.
+      - name: Export ИЕПС dataset
+        run: php artisan laws:export-ieps --prune --no-interaction
+
       - name: Inspect changes
         id: diff
         run: |

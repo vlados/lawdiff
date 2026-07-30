@@ -1,0 +1,39 @@
+{
+    "topic": "ieps",
+    "topic_label": "Индивидуални електрически превозни средства",
+    "generated_at": "2026-07-30T20:20:02+00:00",
+    "count": 1,
+    "node_count": 77,
+    "criteria": {
+        "keywords": [
+            "/индивидуалн[а-я]*\\s+електрическ[а-я]*/iu",
+            "/\\bИЕПС\\b/u",
+            "/тротинетк[а-я]*/iu"
+        ],
+        "allowlist": {
+            "zakon-za-dvizhenieto-po-patishtata": [
+                "ЧЛ80А"
+            ]
+        },
+        "rule": "A selected node is exported together with its full subtree and its ancestor chain."
+    },
+    "laws": [
+        {
+            "unique_id": 11110,
+            "code": "4321",
+            "slug": "zakon-za-dvizhenieto-po-patishtata",
+            "caption": "ЗАКОН за движението по пътищата",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-06-16",
+            "start_date": "2026-06-20",
+            "end_date": null,
+            "version": null,
+            "matched_nodes": 34,
+            "exported_nodes": 77,
+            "total_nodes_in_law": 2325,
+            "file": "laws/zakon-za-dvizhenieto-po-patishtata.json",
+            "full_text": "data/laws/zakon-za-dvizhenieto-po-patishtata.json"
+        }
+    ]
+}

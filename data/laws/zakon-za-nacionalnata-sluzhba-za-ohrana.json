@@ -22,8 +22,8 @@
         "unique_id": 2643322,
         "db_index": 0
     },
-    "fetched_at": "2026-06-05",
-    "processed_at": "2026-06-05",
+    "fetched_at": "2026-07-30",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -1052,7 +1052,7 @@
             "field_type": 8,
             "level": 0,
             "sort_order": 11,
-            "has_in_links": false,
+            "has_in_links": true,
             "is_orphaned": false,
             "text_markdown": "Чл. 12. Народното събрание упражнява контрол върху дейността на Националната служба за охрана съгласно Конституцията на Република България чрез постоянна комисия.",
             "children": []
@@ -5912,7 +5912,7 @@
             "field_type": 8,
             "level": 0,
             "sort_order": 71,
-            "has_in_links": false,
+            "has_in_links": true,
             "is_orphaned": false,
             "text_markdown": "Чл. 71.",
             "children": [
@@ -5925,7 +5925,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 499,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "При пенсиониране прослуженото време на офицерите и сержантите в Националната служба за охрана се зачита за осигурителен стаж от първа категория.",
                     "children": []
@@ -5939,7 +5939,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 500,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Средствата за социално осигуряване на офицерите, сержантите и държавните служители от Националната служба за охрана са за сметка на държавния бюджет.",
                     "children": []
@@ -5953,7 +5953,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 501,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Част от разходите за отдих и възстановяване на служителите и членовете на техните семейства се извършва за сметка на средствата за социално-битово и културно обслужване по бюджета на Националната служба за охрана по ред, определен от началника й.",
                     "children": []
@@ -5967,7 +5967,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 502,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Пенсионираните служители от Националната служба за охрана могат да ползват възстановителните бази на службата по ред, определен от началника й.",
                     "children": []

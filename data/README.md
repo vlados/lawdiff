@@ -5,6 +5,8 @@ Generated daily from APIS.BG and committed to this repository.
 - `index.json` — machine-readable manifest of every exported law
 - `index.csv` — same manifest as a spreadsheet-friendly CSV
 - `laws/<slug>.json` — one file per law containing metadata + structured node tree
+- `ieps/` — [topical fork](ieps/README.md): every provision regulating индивидуални
+  електрически превозни средства (e-scooters), sliced out of the laws above
 
 Each law file includes the structured tree of articles, paragraphs, and items
 as parsed by `App\Services\LawTreeProcessor`, with text rendered as Markdown.

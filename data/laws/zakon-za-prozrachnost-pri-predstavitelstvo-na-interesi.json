@@ -22,8 +22,8 @@
         "unique_id": 6884775,
         "db_index": 0
     },
-    "fetched_at": "2026-06-20",
-    "processed_at": "2026-06-20",
+    "fetched_at": "2026-07-30",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -1466,7 +1466,7 @@
             "field_type": 8,
             "level": 0,
             "sort_order": 14,
-            "has_in_links": false,
+            "has_in_links": true,
             "is_orphaned": false,
             "text_markdown": "Чл. 15. (В сила от 29.12.2026 г. – ДВ, бр. 30 от 2026 г.)",
             "children": [
@@ -1479,7 +1479,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 126,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Вписванията в Регистъра се извършват самостоятелно от лицата по чл. 13, ал. 1 по електронен път, като регистрацията не подлежи на одобрение от служител на администрацията.",
                     "children": []
@@ -1493,7 +1493,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 127,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Вписването се извършва лично от физическо лице и съответно от законния представител на юридическо лице. И в двата случая вписването може да бъде извършено от упълномощено лице с изрично писмено пълномощно или по реда на чл. 24 от Закона за електронното управление.",
                     "children": []
@@ -1507,7 +1507,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 128,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Лицето, извършващо вписването, се идентифицира по реда на чл. 5 от Закона за електронното управление.",
                     "children": []
@@ -1521,7 +1521,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 129,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Нередовни вписвания се заличават от служители, определени с наредбата по чл. 19, ал. 3, в едноседмичен срок от връчване на съобщение на заявилото вписване лице, с което му се дават указания да отстрани нередовностите.",
                     "children": []

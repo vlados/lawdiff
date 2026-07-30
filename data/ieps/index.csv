@@ -1,0 +1,2 @@
+unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version,matched_nodes,exported_nodes,total_nodes_in_law,file,full_text
+11110,4321,zakon-za-dvizhenieto-po-patishtata,"ЗАКОН за движението по пътищата",4,true,2026-06-16,2026-06-20,,,34,77,2325,laws/zakon-za-dvizhenieto-po-patishtata.json,data/laws/zakon-za-dvizhenieto-po-patishtata.json

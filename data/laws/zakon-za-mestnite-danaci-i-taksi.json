@@ -22,8 +22,8 @@
         "unique_id": 10436,
         "db_index": 0
     },
-    "fetched_at": "2026-06-20",
-    "processed_at": "2026-06-20",
+    "fetched_at": "2026-07-30",
+    "processed_at": "2026-07-30",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -14037,7 +14037,7 @@
             "sort_order": 361,
             "has_in_links": false,
             "is_orphaned": true,
-            "text_markdown": "Таблица № 11  \n (Изм. - ДВ, бр. 105 от 2008 г.,  \n в сила от 1.01.2009 г.)   \n  \n    &lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;   Базисна данъчна стойност по категории (лв./кв.м)\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  Начин на трайно ползване\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  I\n\n II\n\n III\n\n IV\n\n V\n\n VI\n\n VII\n\n VIII\n\n IX\n\n X\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n 10\n\n 11\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  Трайни\n\n          &lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  насаждения\n\n 0,338\n\n 0,306\n\n 0,270\n\n 0,234\n\n 0,180\n\n 0,147\n\n 0,090\n\n 0,063\n\n 0,039\n\n 0,014\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  Ниви\n\n 0,188\n\n 0,168\n\n 0,147\n\n 0,129\n\n 0,098\n\n 0,081\n\n 0,050\n\n 0,035\n\n 0,023\n\n 0,009\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  Ливади\n\n 0,122\n\n 0,111\n\n 0,098\n\n 0,084\n\n 0,066\n\n 0,054\n\n 0,032\n\n 0,023\n\n 0,014\n\n 0,005\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;  Пасища\n\n 0,072\n\n 0,066\n\n 0,059\n\n 0,050\n\n 0,039\n\n 0,032\n\n 0,018\n\n 0,014\n\n 0,008\n\n 0,003\n\n&lt;!\\[if !supportMisalignedRows\\]&gt; &lt;!\\[endif\\]&gt;",
+            "text_markdown": "Таблица № 11  \n (Изм. - ДВ, бр. 105 от 2008 г.,  \n в сила от 1.01.2009 г.)   \n  \n        Базисна данъчна стойност по категории (лв./кв.м)\n\n   Начин на трайно ползване\n\n   I\n\n II\n\n III\n\n IV\n\n V\n\n VI\n\n VII\n\n VIII\n\n IX\n\n X\n\n   1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8\n\n 9\n\n 10\n\n 11\n\n   Трайни\n\n             насаждения\n\n 0,338\n\n 0,306\n\n 0,270\n\n 0,234\n\n 0,180\n\n 0,147\n\n 0,090\n\n 0,063\n\n 0,039\n\n 0,014\n\n   Ниви\n\n 0,188\n\n 0,168\n\n 0,147\n\n 0,129\n\n 0,098\n\n 0,081\n\n 0,050\n\n 0,035\n\n 0,023\n\n 0,009\n\n   Ливади\n\n 0,122\n\n 0,111\n\n 0,098\n\n 0,084\n\n 0,066\n\n 0,054\n\n 0,032\n\n 0,023\n\n 0,014\n\n 0,005\n\n   Пасища\n\n 0,072\n\n 0,066\n\n 0,059\n\n 0,050\n\n 0,039\n\n 0,032\n\n 0,018\n\n 0,014\n\n 0,008\n\n 0,003",
             "children": []
         },
         {

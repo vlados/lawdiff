@@ -64,6 +64,37 @@ test('exports a processed law to a slug-named JSON file', function () {
         ->and($index['laws'][0]['file'])->toBe('laws/'.pathinfo($filename, PATHINFO_FILENAME).'.json');
 });
 
+test('law payload key order is stable', function () {
+    // 423 files are already committed with this exact order. Reordering keys would
+    // churn the entire dataset in a single daily commit for no semantic change.
+    $law = Law::factory()->create([
+        'caption' => 'ЗАКОН за реда на ключовете',
+        'processed_at' => now(),
+    ]);
+
+    LawNode::create([
+        'law_id' => $law->id,
+        'path' => 'ЧЛ1',
+        'caption' => 'Чл. 1',
+        'sort_order' => 1,
+    ]);
+
+    $this->artisan('laws:export-public', ['--output' => $this->outputDir])
+        ->assertExitCode(0);
+
+    $payload = json_decode(
+        File::get(File::files($this->outputDir.'/laws')[0]->getPathname()),
+        true,
+        flags: JSON_THROW_ON_ERROR
+    );
+
+    expect(array_keys($payload))->toBe([
+        'unique_id', 'slug', 'code', 'caption', 'type', 'func', 'base', 'is_actual',
+        'publ_year', 'publ_date', 'start_date', 'end_date', 'act_date', 'dv', 'version',
+        'celex', 'doc_lead', 'seria', 'source', 'fetched_at', 'processed_at', 'nodes',
+    ]);
+});
+
 test('nests child nodes under their parent path', function () {
     $law = Law::factory()->create([
         'caption' => 'ЗАКОН за тестово вложение',
