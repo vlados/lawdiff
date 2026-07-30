@@ -94,6 +94,24 @@ test('command processes all pending laws when no limit is given', function () {
         ->and(Law::whereNull('content_fetched_at')->count())->toBe(0);
 });
 
+test('command processes every pending law across chunk boundaries', function () {
+    // The pending filter keys on content_fetched_at, which the command sets as it goes.
+    // Offset-based chunking walks past whole pages as the result set shrinks underneath
+    // it, so anything beyond the first chunk is silently skipped.
+    Law::factory()->count(60)->create(['content_fetched_at' => null]);
+
+    Http::fake([
+        '*/DocContent*' => Http::response([], 200),
+        '*/DocTextJson/*' => Http::response(['paragraphs' => []], 200),
+    ]);
+
+    $this->artisan('laws:fetch-contents --throttle-ms=0')
+        ->assertSuccessful();
+
+    expect(Law::whereNull('content_fetched_at')->count())->toBe(0)
+        ->and(Law::whereNotNull('content_fetched_at')->count())->toBe(60);
+});
+
 test('command skips laws with existing content by default', function () {
     $lawWithContent = Law::factory()->create([
         'content_fetched_at' => now(),

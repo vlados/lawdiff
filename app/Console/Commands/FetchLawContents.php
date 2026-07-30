@@ -79,47 +79,49 @@ class FetchLawContents extends Command
         $progressBar = $this->output->createProgressBar($totalToProcess);
         $progressBar->start();
 
-        $query->orderBy('id')
-            ->chunk(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $throttleMs, $progressBar) {
-                foreach ($laws as $law) {
-                    if ($limit !== null && $totalProcessed >= $limit) {
-                        return false;
-                    }
-
-                    try {
-                        $contentStructure = $this->fetchDocContent($law->unique_id, $law->db_index);
-                        $contentText = $this->fetchDocTextJson($law->unique_id, $law->db_index);
-
-                        $law->update([
-                            'content_structure' => $contentStructure,
-                            'content_text' => $contentText,
-                            'content_fetched_at' => now(),
-                        ]);
-
-                        // Process the tree with markdown conversion and save to law_nodes
-                        $processor->process($law->fresh());
-
-                        $law->update([
-                            'processed_at' => now(),
-                        ]);
-
-                        $totalSuccess++;
-                    } catch (\Exception $e) {
-                        $this->newLine();
-                        $this->error("Failed to fetch content for law {$law->unique_id}: ".$e->getMessage());
-                        $totalFailed++;
-                    }
-
-                    $totalProcessed++;
-                    $progressBar->advance();
-
-                    if ($throttleMs > 0) {
-                        usleep($throttleMs * 1000);
-                    }
+        // chunkById, not chunk: the pending filter keys on content_fetched_at and the
+        // loop below sets it, so the result set shrinks as we go. Offset-based paging
+        // would step past whole pages of unfetched laws.
+        $query->chunkById(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $throttleMs, $progressBar) {
+            foreach ($laws as $law) {
+                if ($limit !== null && $totalProcessed >= $limit) {
+                    return false;
                 }
 
-                return true;
-            });
+                try {
+                    $contentStructure = $this->fetchDocContent($law->unique_id, $law->db_index);
+                    $contentText = $this->fetchDocTextJson($law->unique_id, $law->db_index);
+
+                    $law->update([
+                        'content_structure' => $contentStructure,
+                        'content_text' => $contentText,
+                        'content_fetched_at' => now(),
+                    ]);
+
+                    // Process the tree with markdown conversion and save to law_nodes
+                    $processor->process($law->fresh());
+
+                    $law->update([
+                        'processed_at' => now(),
+                    ]);
+
+                    $totalSuccess++;
+                } catch (\Exception $e) {
+                    $this->newLine();
+                    $this->error("Failed to fetch content for law {$law->unique_id}: ".$e->getMessage());
+                    $totalFailed++;
+                }
+
+                $totalProcessed++;
+                $progressBar->advance();
+
+                if ($throttleMs > 0) {
+                    usleep($throttleMs * 1000);
+                }
+            }
+
+            return true;
+        });
 
         $progressBar->finish();
 
