@@ -22,8 +22,8 @@
         "unique_id": 261713,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-07-25",
+    "processed_at": "2026-07-25",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -1928,20 +1928,6 @@
                 },
                 {
                     "path": "ЧЛ21/АЛ6",
-                    "p_id": 56346102,
-                    "caption": null,
-                    "node_type": "paragraph",
-                    "type": 11,
-                    "field_type": 8,
-                    "level": 1,
-                    "sort_order": 779,
-                    "has_in_links": true,
-                    "is_orphaned": false,
-                    "text_markdown": "(Нова – ДВ, бр. 99 от 2025 г.) Комисията изпълнява функциите на Координатор за цифровите услуги по чл. 49, параграф 2 от Регламент (ЕС) 2022/2065.",
-                    "children": []
-                },
-                {
-                    "path": "ЧЛ21/АЛ6-2",
                     "p_id": 56346102,
                     "caption": null,
                     "node_type": "paragraph",
@@ -45177,34 +45163,6 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 3291,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "В чл. 15:\n\n а) в ал. 1 думите \"упълномощен оператор за далекосъобщения\" се заменят с \"упълномощено предприятие, осъществяващо електронни съобщения\";\n\n б) в ал. 2 думата \"далекосъобщения\" се заменя с \"електронни съобщения\".",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§24/Т2",
-                            "p_id": 4118325,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 3292,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Създава се чл. 60б:\n\n \"Чл. 60б. Министърът на транспорта или упълномощено от него длъжностно лице:",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§24/Т1-2",
-                            "p_id": 4118325,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 3293,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -45212,7 +45170,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§24/Т2-2",
+                            "path": "ПЗР/§24/Т2",
                             "p_id": 4118325,
                             "caption": null,
                             "node_type": "point",

@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-07-30",
+    "processed_at": "2026-05-04",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -4204,20 +4204,6 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 338,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "В чл. 68:\n\n а) алинея 6 се изменя така:\n\n \"(6) Ръководителите на аптеки на лечебни заведения или на общини трябва да:",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т1-2",
-                            "p_id": 3767725,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 339,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -4232,62 +4218,6 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 340,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "отговарят на условията на чл. 4 от Закона за съсловната организация на магистър-фармацевтите;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т3",
-                            "p_id": 3767725,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 341,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "не са лишени от право да упражняват професията на магистър-фармацевт;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т4",
-                            "p_id": 3767725,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 342,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "имат най-малко една година стаж като магистър-фармацевти;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т5",
-                            "p_id": 3767725,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 343,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "не са осъждани за престъпления, свързани с упражняване на професията им, за присвоителни престъпления или за умишлени престъпления срещу личността.\";\n\n б) алинея 7 се отменя.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т2-2",
-                            "p_id": 3767725,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 344,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -4295,7 +4225,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§9/Т3-2",
+                            "path": "ПЗР/§9/Т3",
                             "p_id": 3767725,
                             "caption": null,
                             "node_type": "point",
@@ -4309,7 +4239,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§9/Т4-2",
+                            "path": "ПЗР/§9/Т4",
                             "p_id": 3767725,
                             "caption": null,
                             "node_type": "point",
@@ -4323,7 +4253,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§9/Т5-2",
+                            "path": "ПЗР/§9/Т5",
                             "p_id": 3767725,
                             "caption": null,
                             "node_type": "point",

@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-07-30",
+    "processed_at": "2026-05-04",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -8510,20 +8510,6 @@
                                     "type": 11,
                                     "field_type": 9,
                                     "level": 3,
-                                    "sort_order": 611,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "не се включват покритите облигации по чл. 2 от Закона за покритите облигации, за които ограничението се прилага отделно;\"",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§11/Т4/БУКВА_Б-2",
-                                    "p_id": 46168833,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
                                     "sort_order": 612,
                                     "has_in_links": true,
                                     "is_orphaned": false,
@@ -8666,20 +8652,6 @@
                                     "type": 11,
                                     "field_type": 9,
                                     "level": 3,
-                                    "sort_order": 622,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "в ал. 1 т. 3 се изменя така:\n\n\"3. когато емитентът е банка:",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§11/Т6/БУКВА_А-2",
-                                    "p_id": 46168833,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
                                     "sort_order": 623,
                                     "has_in_links": true,
                                     "is_orphaned": false,
@@ -8688,20 +8660,6 @@
                                 },
                                 {
                                     "path": "ПЗР/§11/Т6/БУКВА_Б",
-                                    "p_id": 46168833,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 624,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "не се включват покритите облигации по чл. 2 от Закона за покритите облигации, за които ограничението се прилага отделно;\"",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§11/Т6/БУКВА_Б-2",
                                     "p_id": 46168833,
                                     "caption": null,
                                     "node_type": "letter",
@@ -8964,10 +8922,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 639,
+                            "sort_order": 642,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Общото събрание на облигационерите може да взема решения, ако на него е представена поне половината от размера на облигационната емисия, като в условията на емисията може да бъде предвиден и по-голям кворум.",
+                            "text_markdown": "Решението на общото събрание на облигационерите се приема с мнозинство от представените облигации, освен ако в условията на емисията не е предвидено друго по-голямо мнозинство.",
                             "children": []
                         },
                         {
@@ -8978,10 +8936,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 640,
+                            "sort_order": 643,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "При липса на кворум се прилага съответно разпоредбата на чл. 227, ал. 3.",
+                            "text_markdown": "При определяне на мнозинството за вземане на решения от общото събрание на облигационерите не се вземат предвид обратно изкупените облигации от дружеството, издало емисията облигации.\"",
                             "children": []
                         },
                         {
@@ -8996,34 +8954,6 @@
                             "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "При определяне на кворума не се вземат предвид обратно изкупените облигации от дружеството, издало емисията облигации.\n\nМнозинство\n\nЧл. 214б.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§15/АЛ1-2",
-                            "p_id": 46168837,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 642,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Решението на общото събрание на облигационерите се приема с мнозинство от представените облигации, освен ако в условията на емисията не е предвидено друго по-голямо мнозинство.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§15/АЛ2-2",
-                            "p_id": 46168837,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 643,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "При определяне на мнозинството за вземане на решения от общото събрание на облигационерите не се вземат предвид обратно изкупените облигации от дружеството, издало емисията облигации.\"",
                             "children": []
                         }
                     ]

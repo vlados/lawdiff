@@ -22,8 +22,8 @@
         "unique_id": 500237,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-07-28",
+    "processed_at": "2026-07-28",
     "nodes": [
         {
             "path": "ЧАСТПЪРВАОСНОВНИПОЛОЖЕНИЯ",
@@ -35865,20 +35865,6 @@
                         },
                         {
                             "path": "ДОП/§1/Т44",
-                            "p_id": 56570919,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2604,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "(Нова – ДВ, бр. 99 от 2025 г., в сила от 25.06.2026 г.) \"Централен контрагент\" е централен контрагент по смисъла на чл. 2, т. 1 от Рег­ламент (ЕС) № 648/2012.",
-                            "children": []
-                        },
-                        {
-                            "path": "ДОП/§1/Т44-2",
                             "p_id": 56570919,
                             "caption": null,
                             "node_type": "point",

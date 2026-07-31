@@ -22,8 +22,8 @@
         "unique_id": 2229939,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-07-25",
+    "processed_at": "2026-07-25",
     "nodes": [
         {
             "path": "ЧАСТПЪРВАПРИНЦИПИОСНОВНИДЕЙНОСТИУПРАВЛЕНИЕИУСТРОЙСТВОНАМИНИСТЕРСТВОТОНАВЪТРЕШНИТЕРАБОТИ",
@@ -30134,10 +30134,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2230,
+                            "sort_order": 2252,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Оперативната защита се осъществява в съответствие с аварийните планове по чл. 138а и с плановете за защита при бедствия по чл. 9 от Закона за защита при бедствия.\"",
+                            "text_markdown": "Техническото и експлоатационното състояние на водностопанските системи и съоръжения, готовността за въвеждане на плановете по ал. 1 и тяхното ресурсно осигуряване с цел намаляване на риска от наводнения се проверява ежегодно от комисия, назначена от областния управител.\"",
                             "children": [
                                 {
                                     "path": "ПЗР/§38/АЛ3/Т3",
@@ -30151,6 +30151,62 @@
                                     "has_in_links": true,
                                     "is_orphaned": false,
                                     "text_markdown": "Член 138а се изменя така:\n\n\"Чл. 138а.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§38/АЛ3/Т4",
+                                    "p_id": 20776934,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 2253,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 140, ал. 3 т. 1, 4 и 5 се отменят.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§38/АЛ3/Т5",
+                                    "p_id": 20776934,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 2254,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 190 ал. 3 се отменя.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§38/АЛ3/Т6",
+                                    "p_id": 20776934,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 2255,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 200, ал. 1 т. 15 се отменя.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§38/АЛ3/Т7",
+                                    "p_id": 20776934,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 2256,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 201 ал. 5 и 6 се отменят.",
                                     "children": []
                                 }
                             ]
@@ -30436,77 +30492,6 @@
                             "is_orphaned": false,
                             "text_markdown": "Собствениците и ползвателите на хидротехнически съоръжения осигуряват за своя сметка предвидените в плановете по ал. 1 мероприятия, сили и средства за провеждане на неотложни аварийно-възстановителни работи.",
                             "children": []
-                        },
-                        {
-                            "path": "ПЗР/§38/АЛ3-2",
-                            "p_id": 20776934,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2252,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Техническото и експлоатационното състояние на водностопанските системи и съоръжения, готовността за въвеждане на плановете по ал. 1 и тяхното ресурсно осигуряване с цел намаляване на риска от наводнения се проверява ежегодно от комисия, назначена от областния управител.\"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§38/АЛ3-2/Т4",
-                                    "p_id": 20776934,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 2253,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 140, ал. 3 т. 1, 4 и 5 се отменят.",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§38/АЛ3-2/Т5",
-                                    "p_id": 20776934,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 2254,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 190 ал. 3 се отменя.",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§38/АЛ3-2/Т6",
-                                    "p_id": 20776934,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 2255,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 200, ал. 1 т. 15 се отменя.",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§38/АЛ3-2/Т7",
-                                    "p_id": 20776934,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 2256,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 201 ал. 5 и 6 се отменят.",
-                                    "children": []
-                                }
-                            ]
                         }
                     ]
                 },
@@ -31161,10 +31146,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2287,
+                            "sort_order": 2311,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 6 т. 5 се изменя така:\n\n\"5. мерки за защита на критичните инфраструктури;\".",
+                            "text_markdown": "превантивни дейности от националната програма по чл. 18, включени в годишния план за нейното изпълнение като допълващо финансиране към одобрения бюджет на съответния компетентен орган и/или към осигурените средства от други източници;",
                             "children": []
                         },
                         {
@@ -31175,10 +31160,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2288,
+                            "sort_order": 2312,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 8а:",
+                            "text_markdown": "непредвидени разходи за спасителни и неотложни аварийни работи при бедствия на включените сили и средства на единната спасителна система;",
                             "children": [
                                 {
                                     "path": "ПЗР/§53/Т2/БУКВА_А",
@@ -31216,10 +31201,10 @@
                                     "type": 11,
                                     "field_type": 9,
                                     "level": 3,
-                                    "sort_order": 2291,
+                                    "sort_order": 2309,
                                     "has_in_links": true,
                                     "is_orphaned": false,
-                                    "text_markdown": "алинея 3 се изменя така:\n\n\"(3) Мерките за защита на критичните инфраструктури са с приоритет при определяне на дейностите в плановете по чл. 18, ал. 3.\"",
+                                    "text_markdown": "досегашната ал. 4 става ал. 5.",
                                     "children": []
                                 }
                             ]
@@ -31232,10 +31217,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2292,
+                            "sort_order": 2313,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Член 10 се отменя.",
+                            "text_markdown": "неотложни възстановителни работи;",
                             "children": []
                         },
                         {
@@ -31246,10 +31231,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2293,
+                            "sort_order": 2314,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 35, ал. 2 след думата \"закон\" се добавя \"или в издадените въз основа на него подзаконови актове\".",
+                            "text_markdown": "възстановителна помощ по чл. 55, ал. 3;",
                             "children": []
                         },
                         {
@@ -31260,10 +31245,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2294,
+                            "sort_order": 2315,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 36, ал. 1, в текста преди т. 1 след думата \"територията\" се добавя \"както и в училища и детски градини от по-ниска категория\".",
+                            "text_markdown": "контролни проверки по изпълнението на решенията на комисията;",
                             "children": []
                         },
                         {
@@ -31274,10 +31259,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2295,
+                            "sort_order": 2316,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 40:",
+                            "text_markdown": "проверки по жалби и сигнали;",
                             "children": [
                                 {
                                     "path": "ПЗР/§53/Т6/БУКВА_А",
@@ -31317,10 +31302,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 2298,
+                            "sort_order": 2317,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 42, ал. 1:",
+                            "text_markdown": "обезщетяване на физически и юридически лица за реално причинените им вреди при или по повод извършването на нормативно установени действия за защита при бедствия при условия, по ред и в размери, определени с правилника по чл. 54, ал. 6.\"",
                             "children": [
                                 {
                                     "path": "ПЗР/§53/Т7/БУКВА_А",
@@ -31439,49 +31424,6 @@
                             ]
                         },
                         {
-                            "path": "ПЗР/§53/Т1-2",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2307,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "частичното възстановяване и/или частичната замяна на конструктивни елементи на строежа, както и за строително-монтажни работи, с които първоначално изпълнени, но увредени конструкции и конструктивни елементи, се заменят с други видове или се извършват нови видове работи, с които се възстановява експлоатационната им годност, след издаване на разрешение за строеж;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т2-2",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2308,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "премахване на строежи, за които е издадена заповед от кмета на общината съгласно чл. 195, ал. 6 ЗУТ, поради природно явление с геологичен (геофизичен, геоложки) или хидрометеорологичен произход са станали опасни за здравето и живота на гражданите, негодни са за използване, застрашени са от самосрутване и не могат да се поправят или заздравят.\";",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§53/Т2-2/БУКВА_В",
-                                    "p_id": 20776953,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 2309,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "досегашната ал. 4 става ал. 5.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
                             "path": "ПЗР/§53/Т10",
                             "p_id": 20776953,
                             "caption": null,
@@ -31493,104 +31435,6 @@
                             "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "В чл. 56 ал. 1 се изменя така:\n\n\"(1) Комисията приема решение за предоставяне на средства от резерва за непредвидени и/или неотложни разходи в частта за предотвратяване, овладяване и преодоляване на последиците от бедствия и контролира целевото им разходване. Средствата се предоставят за финансиране на:",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т1-3",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2311,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "превантивни дейности от националната програма по чл. 18, включени в годишния план за нейното изпълнение като допълващо финансиране към одобрения бюджет на съответния компетентен орган и/или към осигурените средства от други източници;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т2-3",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2312,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "непредвидени разходи за спасителни и неотложни аварийни работи при бедствия на включените сили и средства на единната спасителна система;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т3-2",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2313,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "неотложни възстановителни работи;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т4-2",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2314,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "възстановителна помощ по чл. 55, ал. 3;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т5-2",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2315,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "контролни проверки по изпълнението на решенията на комисията;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т6-2",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2316,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "проверки по жалби и сигнали;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§53/Т7-2",
-                            "p_id": 20776953,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 2317,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "обезщетяване на физически и юридически лица за реално причинените им вреди при или по повод извършването на нормативно установени действия за защита при бедствия при условия, по ред и в размери, определени с правилника по чл. 54, ал. 6.\"",
                             "children": []
                         }
                     ]

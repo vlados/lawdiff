@@ -22,8 +22,8 @@
         "unique_id": 3000866,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-07-25",
+    "processed_at": "2026-07-25",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -5273,10 +5273,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 387,
+                            "sort_order": 431,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Органите на агенцията, оправомощени със заповед на председателя на агенцията, могат да задържат за срок до 24 часа лице, за което има данни, че е извършило престъпление, свързано с някоя от дейностите по чл. 4, ал. 1, т. 11 или 13.",
+                            "text_markdown": "Който без уважителни причини не се яви в местата по чл. 128а, ал. 1, след като е редовно призован, се наказва с глоба от 100 до 300 лв.",
                             "children": []
                         },
                         {
@@ -5287,10 +5287,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 388,
+                            "sort_order": 432,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "За задържането по ал. 1 се издава писмена заповед за задържане, в която се посочват:",
+                            "text_markdown": "При повторно неявяване без уважителни причини се налага глоба в двоен размер.\"",
                             "children": [
                                 {
                                     "path": "ПЗР/§4/АЛ2/Т1",
@@ -5471,10 +5471,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 401,
+                            "sort_order": 428,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Задържаното лице попълва декларация, че е запознато с правата си, както и за намерението си да упражни или да не упражни правата си по ал. 2, т. 6, букви \"б\" – \"е\". Заповедта се подписва от органа и от задържаното лице. Отказът или невъзможността на задържаното лице да подпише заповедта се удостоверява с подписа на един свидетел.",
+                            "text_markdown": "В неотложни случаи призоваването може да се извършва по телефон, телекс или факс. Призоваването по телефон или факс се удостоверява писмено от длъжностното лице, което го е извършило, а по телекс – с писмено потвърждаване за полученото съобщение.",
                             "children": []
                         },
                         {
@@ -5485,11 +5485,40 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 402,
+                            "sort_order": 429,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Заповедта за задържане се вписва в специален регистър.",
-                            "children": []
+                            "text_markdown": "За призоваването задължително се изготвя протокол.\"",
+                            "children": [
+                                {
+                                    "path": "ПЗР/§4/АЛ4/Т5",
+                                    "p_id": 32290124,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 418,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "Създава се чл. 125в:\n\n\"Чл. 125в.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§4/АЛ4/Т8",
+                                    "p_id": 32290124,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 430,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "Създава се чл. 133а:\n\n\"Чл. 133а.",
+                                    "children": []
+                                }
+                            ]
                         },
                         {
                             "path": "ПЗР/§4/АЛ5",
@@ -5499,11 +5528,40 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 403,
+                            "sort_order": 423,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Копие от заповедта се връчва на задържаното лице срещу подпис.",
-                            "children": []
+                            "text_markdown": "Протоколът се прочита на чужденеца и се подписва от него, от преводача, съответно от тълковника и от интервюиращия орган. Отказът на чужденеца да подпише протокола от интервюто се удостоверява с подписите на двама свидетели.\"",
+                            "children": [
+                                {
+                                    "path": "ПЗР/§4/АЛ5/Т6",
+                                    "p_id": 32290124,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 424,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 128 ал. 2 и 3 се отменят.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§4/АЛ5/Т7",
+                                    "p_id": 32290124,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 425,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "Създава се чл. 128а:\n\n\"Чл. 128а.",
+                                    "children": []
+                                }
+                            ]
                         },
                         {
                             "path": "ПЗР/§4/АЛ6",
@@ -5645,275 +5703,6 @@
                                     "children": []
                                 }
                             ]
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ1-2",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 414,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "В случаите по чл. 124б и 125 органите на агенцията могат да извършват обиск на лице.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ2-2",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 415,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Обиск може да бъде извършен само от лице, което принадлежи към пола на обискирания, и по начин, който не уронва неговата чест и достойнство.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ3-2",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 416,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "За всеки извършен обиск органът на агенцията съставя протокол.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ4-2",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 417,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Протоколът по ал. 3 се подписва от органа на агенцията, от един свидетел и от съответното лице, на което се предоставя екземпляр от него.\"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§4/АЛ4-2/Т5",
-                                    "p_id": 32290124,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 418,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "Създава се чл. 125в:\n\n\"Чл. 125в.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ1-3",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 419,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "За осъществяване на дейностите по чл. 4, ал. 1, т. 11 или 13 органите на агенцията могат да провеждат интервю с незаконно влезли на територията на страната чужденци или пребиваващи без законово основание на територията на страната чужденци.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ2-3",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 420,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "За провеждането на интервюто се съставя протокол.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ3-3",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 421,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "На интервюто може да се прави звукозапис и видеозапис, което се отразява в протокола по ал. 2. При започване на интервюто чужденецът се уведомява за осъществяването на аудио- или аудио-визуално записване.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ4-3",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 422,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Интервюто се провежда с участието на преводач на разбираем за чужденеца език. Когато чужденецът е глух или ням, интервюто се провежда с участието на тълковник.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ5-2",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 423,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Протоколът се прочита на чужденеца и се подписва от него, от преводача, съответно от тълковника и от интервюиращия орган. Отказът на чужденеца да подпише протокола от интервюто се удостоверява с подписите на двама свидетели.\"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§4/АЛ5-2/Т6",
-                                    "p_id": 32290124,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 424,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 128 ал. 2 и 3 се отменят.",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§4/АЛ5-2/Т7",
-                                    "p_id": 32290124,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 425,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "Създава се чл. 128а:\n\n\"Чл. 128а.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ1-4",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 426,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Органите на агенцията могат да призовават в служебните помещения граждани за изпълнение на определените им с този закон правомощия.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ2-4",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 427,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Органите на агенцията писмено уведомяват гражданите за призоваването. В съобщението изрично се посочват целта на призоваването, часът и мястото на явяване.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ3-4",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 428,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "В неотложни случаи призоваването може да се извършва по телефон, телекс или факс. Призоваването по телефон или факс се удостоверява писмено от длъжностното лице, което го е извършило, а по телекс – с писмено потвърждаване за полученото съобщение.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ4-4",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 429,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "За призоваването задължително се изготвя протокол.\"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§4/АЛ4-4/Т8",
-                                    "p_id": 32290124,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 430,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "Създава се чл. 133а:\n\n\"Чл. 133а.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ1-5",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 431,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Който без уважителни причини не се яви в местата по чл. 128а, ал. 1, след като е редовно призован, се наказва с глоба от 100 до 300 лв.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ2-5",
-                            "p_id": 32290124,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 432,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "При повторно неявяване без уважителни причини се налага глоба в двоен размер.\"",
-                            "children": []
                         }
                     ]
                 },
@@ -6196,10 +5985,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 447,
+                            "sort_order": 457,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 3, ал. 1 след думите \"чл. 308, ал. 2, 3 и 5, изречение второ\" се поставя запетая и се добавя \"чл. 320, ал. 2\".",
+                            "text_markdown": "посочване на фактите и обстоятелствата, даващи основание да се предполага, че се подготвя, извършва или е извършено тежко умишлено престъпление по чл. 108а, ал. 1 – 4, ал. 6 и 7, чл. 109, ал. 3, чл. 110, ал. 1, предложение шесто, чл. 110, ал. 2, чл. 308, ал. 3, т. 1 и чл. 320, ал. 2 от Наказателния кодекс;",
                             "children": []
                         },
                         {
@@ -6210,10 +5999,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 448,
+                            "sort_order": 458,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 10в:",
+                            "text_markdown": "установъчни данни на лицата или обектите, спрямо които ще се използват – когато тези данни са налични;",
                             "children": [
                                 {
                                     "path": "ПЗР/§9/Т2/БУКВА_А",
@@ -6253,10 +6042,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 451,
+                            "sort_order": 459,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 13:",
+                            "text_markdown": "срока, за който се иска ползването;",
                             "children": [
                                 {
                                     "path": "ПЗР/§9/Т3/БУКВА_А",
@@ -6324,62 +6113,6 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 456,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "В чл. 14 се създава ал. 3:\n\n\"(3) В случаите по чл. 13, ал. 4 искането за използване на специални разузнавателни средства съдържа информация относно:",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т1-2",
-                            "p_id": 32290129,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 457,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "посочване на фактите и обстоятелствата, даващи основание да се предполага, че се подготвя, извършва или е извършено тежко умишлено престъпление по чл. 108а, ал. 1 – 4, ал. 6 и 7, чл. 109, ал. 3, чл. 110, ал. 1, предложение шесто, чл. 110, ал. 2, чл. 308, ал. 3, т. 1 и чл. 320, ал. 2 от Наказателния кодекс;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т2-2",
-                            "p_id": 32290129,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 458,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "установъчни данни на лицата или обектите, спрямо които ще се използват – когато тези данни са налични;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т3-2",
-                            "p_id": 32290129,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 459,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "срока, за който се иска ползването;",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т4-2",
-                            "p_id": 32290129,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 460,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -6394,27 +6127,13 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 461,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "оправомощеното длъжностно лице, което да бъде уведомявано за получените резултати.\"",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§9/Т5-2",
-                            "p_id": 32290129,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 462,
                             "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "В чл. 15:",
                             "children": [
                                 {
-                                    "path": "ПЗР/§9/Т5-2/БУКВА_А",
+                                    "path": "ПЗР/§9/Т5/БУКВА_А",
                                     "p_id": 32290129,
                                     "caption": null,
                                     "node_type": "letter",
@@ -6428,7 +6147,7 @@
                                     "children": []
                                 },
                                 {
-                                    "path": "ПЗР/§9/Т5-2/БУКВА_Б",
+                                    "path": "ПЗР/§9/Т5/БУКВА_Б",
                                     "p_id": 32290129,
                                     "caption": null,
                                     "node_type": "letter",
@@ -6442,7 +6161,7 @@
                                     "children": []
                                 },
                                 {
-                                    "path": "ПЗР/§9/Т5-2/БУКВА_В",
+                                    "path": "ПЗР/§9/Т5/БУКВА_В",
                                     "p_id": 32290129,
                                     "caption": null,
                                     "node_type": "letter",

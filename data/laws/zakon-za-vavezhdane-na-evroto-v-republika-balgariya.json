@@ -22,8 +22,8 @@
         "unique_id": 5927777,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-06-20",
+    "processed_at": "2026-06-20",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -9070,10 +9070,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 728,
+                            "sort_order": 743,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "В чл. 19:",
+                            "text_markdown": "нетни приходи от продажби - 50 000 000 евро.\"",
                             "children": [
                                 {
                                     "path": "ПЗР/§43/Т2/БУКВА_А",
@@ -9088,82 +9088,37 @@
                                     "is_orphaned": false,
                                     "text_markdown": "в ал. 2 т. 1 и 2 се изменят така:\n\n\"1. балансова стойност на активите - 450 000 евро;",
                                     "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§43/Т2-2",
-                            "p_id": 55998997,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 730,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "нетни приходи от продажби - 900 000 евро;\"",
-                            "children": [
+                                },
                                 {
-                                    "path": "ПЗР/§43/Т2-2/БУКВА_Б",
+                                    "path": "ПЗР/§43/Т2/БУКВА_Б",
                                     "p_id": 55998997,
                                     "caption": null,
                                     "node_type": "letter",
                                     "type": 11,
                                     "field_type": 9,
                                     "level": 3,
-                                    "sort_order": 731,
+                                    "sort_order": 740,
                                     "has_in_links": true,
                                     "is_orphaned": false,
-                                    "text_markdown": "в ал. 3 т. 1 и 2 се изменят така:\n\n\"1. балансова стойност на активите - 5 000 000 евро;",
+                                    "text_markdown": "в ал. 3 т. 1 и 2 се изменят така:\n\n\"1. балансова стойност на активите - 25 000 000 евро;",
                                     "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§43/Т2-3",
-                            "p_id": 55998997,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 732,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "нетни приходи от продажби - 10 000 000 евро;\"",
-                            "children": [
+                                },
                                 {
-                                    "path": "ПЗР/§43/Т2-3/БУКВА_В",
+                                    "path": "ПЗР/§43/Т2/БУКВА_В",
                                     "p_id": 55998997,
                                     "caption": null,
                                     "node_type": "letter",
                                     "type": 11,
                                     "field_type": 9,
                                     "level": 3,
-                                    "sort_order": 733,
+                                    "sort_order": 742,
                                     "has_in_links": true,
                                     "is_orphaned": false,
                                     "text_markdown": "в ал. 4 т. 1 и 2 се изменят така:\n\n\"1. балансова стойност на активите - 25 000 000 евро;",
                                     "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§43/Т2-4",
-                            "p_id": 55998997,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 734,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "нетни приходи от продажби - 50 000 000 евро;\"",
-                            "children": [
+                                },
                                 {
-                                    "path": "ПЗР/§43/Т2-4/БУКВА_Г",
+                                    "path": "ПЗР/§43/Т2/БУКВА_Г",
                                     "p_id": 55998997,
                                     "caption": null,
                                     "node_type": "letter",
@@ -9177,20 +9132,6 @@
                                     "children": []
                                 }
                             ]
-                        },
-                        {
-                            "path": "ПЗР/§43/Т2-5",
-                            "p_id": 55998997,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 736,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "нетни приходи от продажби - 50 000 000 евро.\"",
-                            "children": []
                         },
                         {
                             "path": "ПЗР/§43/Т3",
@@ -9220,78 +9161,6 @@
                                     "children": []
                                 }
                             ]
-                        },
-                        {
-                            "path": "ПЗР/§43/Т2-6",
-                            "p_id": 55998997,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 739,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "нетни приходи от продажби - 10 000 000 евро;\"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§43/Т2-6/БУКВА_Б",
-                                    "p_id": 55998997,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 740,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "в ал. 3 т. 1 и 2 се изменят така:\n\n\"1. балансова стойност на активите - 25 000 000 евро;",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§43/Т2-7",
-                            "p_id": 55998997,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 741,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "нетни приходи от продажби - 50 000 000 евро;\"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§43/Т2-7/БУКВА_В",
-                                    "p_id": 55998997,
-                                    "caption": null,
-                                    "node_type": "letter",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 742,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "в ал. 4 т. 1 и 2 се изменят така:\n\n\"1. балансова стойност на активите - 25 000 000 евро;",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§43/Т2-8",
-                            "p_id": 55998997,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 743,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "нетни приходи от продажби - 50 000 000 евро.\"",
-                            "children": []
                         },
                         {
                             "path": "ПЗР/§43/Т4",
@@ -10055,20 +9924,6 @@
         },
         {
             "path": "ПУБЛ_ИНФО",
-            "p_id": 57321724,
-            "caption": null,
-            "node_type": "publication_info",
-            "type": 0,
-            "field_type": 2,
-            "level": 0,
-            "sort_order": 125,
-            "has_in_links": false,
-            "is_orphaned": true,
-            "text_markdown": "Oбн., ДВ, бр. 70 от 20.08.2024 г., изм. и доп., бр. 25 от 25.03.2025 г., в сила от 1.01.2025 г., изм., бр. 49 от 17.06.2025 г., изм. и доп., бр. 63 от 1.08.2025 г., в сила от 1.08.2025 г., бр. 65 от 8.08.2025 г., бр. 99 от 21.11.2025 г., бр. 100 от 25.11.2025 г., в сила от 1.01.2026 г., изм., бр. 115 от 30.12.2025 г., в сила от 1.01.2026 г., бр. 55 от 16.06.2026 г.",
-            "children": []
-        },
-        {
-            "path": "ПУБЛ_ИНФО-2",
             "p_id": 55996541,
             "caption": null,
             "node_type": "publication_info",

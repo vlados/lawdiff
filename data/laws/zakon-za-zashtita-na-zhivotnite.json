@@ -22,8 +22,8 @@
         "unique_id": 285903,
         "db_index": 0
     },
-    "fetched_at": "2026-05-04",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-05-05",
+    "processed_at": "2026-05-05",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -5591,34 +5591,6 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 415,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Досегашният текст става ал. 1.",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§8/Т2",
-                            "p_id": 3530098,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 416,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Създава се ал. 2:\n\n \"(2) Опити с животни се извършват с цел:",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§8/Т1-2",
-                            "p_id": 3530098,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 417,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -5626,7 +5598,7 @@
                             "children": []
                         },
                         {
-                            "path": "ПЗР/§8/Т2-2",
+                            "path": "ПЗР/§8/Т2",
                             "p_id": 3530098,
                             "caption": null,
                             "node_type": "point",

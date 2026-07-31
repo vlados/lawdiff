@@ -23,7 +23,7 @@
         "db_index": 0
     },
     "fetched_at": "2026-05-04",
-    "processed_at": "2026-07-30",
+    "processed_at": "2026-05-04",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -7076,148 +7076,6 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 519,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Тъканната банка е лечебно заведение, в което лекар с помощта на други специалисти взема, изследва, съхранява и преработва органи, тъкани и клетки с медицински цели.",
-                            "children": []
-                        },
-                        {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2",
-                            "p_id": 3770818,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 520,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Тъканните банки могат да вземат само тъкани и клетки за присаждане или преработка, а органи - само за преработка.",
-                            "children": []
-                        },
-                        {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3",
-                            "p_id": 3770818,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 521,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Дейността на тъканната банка се извършва съгласно правилник за устройството, дейността и вътрешния ред, утвърден от ръководителя на лечебното заведение.\"",
-                            "children": [
-                                {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3/Т5",
-                                    "p_id": 3770818,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 522,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "Създава се чл. 36а:\n\n \"Чл. 36а.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ1-2",
-                            "p_id": 3770818,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 523,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Тъканната банка се учредява като дружество с ограничена отговорност или акционерно дружество и осъществява дейност след получаване на разрешение по реда на чл. 51а.",
-                            "children": []
-                        },
-                        {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2-2",
-                            "p_id": 3770818,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 524,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "В предмета на дейност на тъканната банка задължително се вписва осъществяването само на дейностите по чл. 28б.",
-                            "children": []
-                        },
-                        {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3-2",
-                            "p_id": 3770818,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 525,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Съдебната регистрация на фирмата задължително трябва да съдържа пълното обозначение на лечебното заведение.\"",
-                            "children": [
-                                {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3-2/Т6",
-                                    "p_id": 3770818,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 526,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 40, ал. 1 се създава т. 11:\n\n \"11. удостоверение от Изпълнителната агенция по трансплантация, че лечебното заведение може да извършва вземане и присаждане на тъкани и клетки в съответствие с утвърдените медицински стандарти в случаите, когато лечебното заведение ще извършва такава дейност.\"",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3-2/Т7",
-                                    "p_id": 3770818,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 527,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 47 се създава т. 12:\n\n \"12. удостоверение от Изпълнителната агенция по трансплантация, че лечебното заведение може да извършва вземане и присаждане на органи, тъкани и клетки в съответствие с утвърдените медицински стандарти в случаите, когато лечебното заведение ще извършва такава дейност.\"",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3-2/Т8",
-                                    "p_id": 3770818,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 528,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "Създава се чл. 51а:\n\n \"Чл. 51а.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ1-3",
-                            "p_id": 3770818,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 529,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -7225,7 +7083,7 @@
                             "children": []
                         },
                         {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2-3",
+                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2",
                             "p_id": 3770818,
                             "caption": null,
                             "node_type": "paragraph",
@@ -7238,7 +7096,7 @@
                             "text_markdown": "Разрешение по ал. 1 се издава въз основа на заявление, към което се прилагат:",
                             "children": [
                                 {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2-3/Т1",
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2/Т1",
                                     "p_id": 3770818,
                                     "caption": null,
                                     "node_type": "point",
@@ -7252,7 +7110,7 @@
                                     "children": []
                                 },
                                 {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2-3/Т2",
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2/Т2",
                                     "p_id": 3770818,
                                     "caption": null,
                                     "node_type": "point",
@@ -7266,7 +7124,7 @@
                                     "children": []
                                 },
                                 {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2-3/Т3",
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2/Т3",
                                     "p_id": 3770818,
                                     "caption": null,
                                     "node_type": "point",
@@ -7280,7 +7138,7 @@
                                     "children": []
                                 },
                                 {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2-3/Т4",
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2/Т4",
                                     "p_id": 3770818,
                                     "caption": null,
                                     "node_type": "point",
@@ -7294,7 +7152,7 @@
                                     "children": []
                                 },
                                 {
-                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2-3/Т5",
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ2/Т5",
                                     "p_id": 3770818,
                                     "caption": null,
                                     "node_type": "point",
@@ -7310,7 +7168,7 @@
                             ]
                         },
                         {
-                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3-3",
+                            "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3",
                             "p_id": 3770818,
                             "caption": null,
                             "node_type": "paragraph",
@@ -7321,7 +7179,64 @@
                             "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "При непълнота на представените документи по ал. 2 директорът на Изпълнителната агенция по трансплантация в 15-дневен срок уведомява писмено заявителя за това и определя срок за отстраняването й.",
-                            "children": []
+                            "children": [
+                                {
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3/Т5",
+                                    "p_id": 3770818,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 522,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "Създава се чл. 36а:\n\n \"Чл. 36а.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3/Т6",
+                                    "p_id": 3770818,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 526,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 40, ал. 1 се създава т. 11:\n\n \"11. удостоверение от Изпълнителната агенция по трансплантация, че лечебното заведение може да извършва вземане и присаждане на тъкани и клетки в съответствие с утвърдените медицински стандарти в случаите, когато лечебното заведение ще извършва такава дейност.\"",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3/Т7",
+                                    "p_id": 3770818,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 527,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 47 се създава т. 12:\n\n \"12. удостоверение от Изпълнителната агенция по трансплантация, че лечебното заведение може да извършва вземане и присаждане на органи, тъкани и клетки в съответствие с утвърдените медицински стандарти в случаите, когато лечебното заведение ще извършва такава дейност.\"",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ3/Т8",
+                                    "p_id": 3770818,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 528,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "Създава се чл. 51а:\n\n \"Чл. 51а.",
+                                    "children": []
+                                }
+                            ]
                         },
                         {
                             "path": "ЗАКЛЮЧИТЕЛНИ/§4/АЛ4",

@@ -22,8 +22,8 @@
         "unique_id": 2719535,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-06-05",
+    "processed_at": "2026-06-05",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -7304,20 +7304,6 @@
                         },
                         {
                             "path": "ПЗР/§12/Т2",
-                            "p_id": 28514472,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 524,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "издаване на декларация за приключване на програма, съфинансирана от фондове на Европейския съюз.\"",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§12/Т2-2",
                             "p_id": 28514472,
                             "caption": null,
                             "node_type": "point",

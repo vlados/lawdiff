@@ -22,8 +22,8 @@
         "unique_id": 394739,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-06-21",
+    "processed_at": "2026-06-21",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -5186,20 +5186,6 @@
                                 },
                                 {
                                     "path": "ПЗР/§10/АЛ5/Т3",
-                                    "p_id": 26129125,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 387,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "копие от документ, доказващ притежаването на квалификация, отговаряща на изискванията за майстор, или друг документ, доказващ правото му да извършва занаятчийска дейност.\"",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§10/АЛ5/Т3-2",
                                     "p_id": 26129125,
                                     "caption": null,
                                     "node_type": "point",

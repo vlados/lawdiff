@@ -22,8 +22,8 @@
         "unique_id": 2669542,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-06-06",
+    "processed_at": "2026-06-06",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -8605,7 +8605,7 @@
             "field_type": 8,
             "level": 0,
             "sort_order": 108,
-            "has_in_links": true,
+            "has_in_links": false,
             "is_orphaned": false,
             "text_markdown": "Чл. 109.",
             "children": [
@@ -8618,7 +8618,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 653,
-                    "has_in_links": true,
+                    "has_in_links": false,
                     "is_orphaned": false,
                     "text_markdown": "За определяне размера на еднократното парично обезщетение при освобождаване се вземат предвид прослужените години без приравнения трудов и служебен стаж.",
                     "children": []
@@ -8632,7 +8632,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 654,
-                    "has_in_links": true,
+                    "has_in_links": false,
                     "is_orphaned": false,
                     "text_markdown": "При освобождаване поради пенсиониране на прослужилите последните 13 години и 4 месеца като държавни служители размерът на обезщетението се определя от сбора на:",
                     "children": [
@@ -8645,7 +8645,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 655,
-                            "has_in_links": true,
+                            "has_in_links": false,
                             "is_orphaned": false,
                             "text_markdown": "прослужените години в Агенцията;",
                             "children": []
@@ -8659,7 +8659,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 656,
-                            "has_in_links": true,
+                            "has_in_links": false,
                             "is_orphaned": false,
                             "text_markdown": "годините на приравнения трудов и служебен стаж към първа категория труд.",
                             "children": []

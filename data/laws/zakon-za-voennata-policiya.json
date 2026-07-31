@@ -22,8 +22,8 @@
         "unique_id": 482179,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-07-04",
+    "processed_at": "2026-07-04",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -4922,11 +4922,40 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 359,
+                            "sort_order": 366,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Служба \"Военна информация\" e юридическо лице на бюджетна издръжка.",
-                            "children": []
+                            "text_markdown": "Ръководителят на служба \"Военна информация\" прекратява или предлага на министъра на отбраната прекратяване на договора за военна служба и освобождаване от военна служба без предизвестие при:",
+                            "children": [
+                                {
+                                    "path": "ПЗР/§4/АЛ1/Т1",
+                                    "p_id": 5840382,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 367,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "неефективно изпълнение на заеманата длъжност под или на прикритие;",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§4/АЛ1/Т2",
+                                    "p_id": 5840382,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 368,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "поведение, несъответстващо на нормите и изискванията на етичния кодекс на служителите от службата.",
+                                    "children": []
+                                }
+                            ]
                         },
                         {
                             "path": "ПЗР/§4/АЛ2",
@@ -4936,11 +4965,68 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 360,
+                            "sort_order": 369,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "Ръководителят на службата по ал. 1 се назначава от министъра на отбраната или по негово предложение по ред, определен с този закон и с правилника за прилагането му.",
-                            "children": []
+                            "text_markdown": "Редът за прекратяване на правоотношението по ал. 1 се определя с правилника по чл. 100, ал. 5. \"",
+                            "children": [
+                                {
+                                    "path": "ПЗР/§4/АЛ2/Т5",
+                                    "p_id": 5840382,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 370,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 290, ал. 3 думата \"службите\" се заменя със \"службата\", а думите \"на съответната служба\" се заличават.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§4/АЛ2/Т6",
+                                    "p_id": 5840382,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 371,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 327, ал. 6 думите \"или представител на служба \"Военна полиция\" се заличават и се създава изречение второ: \"Представители на служба \"Военна полиция\" се включват в комисиите по предложение на директора на службата.\"",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§4/АЛ2/Т7",
+                                    "p_id": 5840382,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 372,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "В чл. 329 ал. 8 се отменя.",
+                                    "children": []
+                                },
+                                {
+                                    "path": "ПЗР/§4/АЛ2/Т8",
+                                    "p_id": 5840382,
+                                    "caption": null,
+                                    "node_type": "point",
+                                    "type": 11,
+                                    "field_type": 9,
+                                    "level": 3,
+                                    "sort_order": 373,
+                                    "has_in_links": true,
+                                    "is_orphaned": false,
+                                    "text_markdown": "Членове 332 и 333 се отменят.",
+                                    "children": []
+                                }
+                            ]
                         },
                         {
                             "path": "ПЗР/§4/АЛ3",
@@ -5009,120 +5095,6 @@
                                     "has_in_links": true,
                                     "is_orphaned": false,
                                     "text_markdown": "Член 166 се изменя така:\n\n \"Чл. 166.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ1-2",
-                            "p_id": 5840382,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 366,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Ръководителят на служба \"Военна информация\" прекратява или предлага на министъра на отбраната прекратяване на договора за военна служба и освобождаване от военна служба без предизвестие при:",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§4/АЛ1-2/Т1",
-                                    "p_id": 5840382,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 367,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "неефективно изпълнение на заеманата длъжност под или на прикритие;",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§4/АЛ1-2/Т2",
-                                    "p_id": 5840382,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 368,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "поведение, несъответстващо на нормите и изискванията на етичния кодекс на служителите от службата.",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "path": "ПЗР/§4/АЛ2-2",
-                            "p_id": 5840382,
-                            "caption": null,
-                            "node_type": "paragraph",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
-                            "sort_order": 369,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "Редът за прекратяване на правоотношението по ал. 1 се определя с правилника по чл. 100, ал. 5. \"",
-                            "children": [
-                                {
-                                    "path": "ПЗР/§4/АЛ2-2/Т5",
-                                    "p_id": 5840382,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 370,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 290, ал. 3 думата \"службите\" се заменя със \"службата\", а думите \"на съответната служба\" се заличават.",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§4/АЛ2-2/Т6",
-                                    "p_id": 5840382,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 371,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 327, ал. 6 думите \"или представител на служба \"Военна полиция\" се заличават и се създава изречение второ: \"Представители на служба \"Военна полиция\" се включват в комисиите по предложение на директора на службата.\"",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§4/АЛ2-2/Т7",
-                                    "p_id": 5840382,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 372,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "В чл. 329 ал. 8 се отменя.",
-                                    "children": []
-                                },
-                                {
-                                    "path": "ПЗР/§4/АЛ2-2/Т8",
-                                    "p_id": 5840382,
-                                    "caption": null,
-                                    "node_type": "point",
-                                    "type": 11,
-                                    "field_type": 9,
-                                    "level": 3,
-                                    "sort_order": 373,
-                                    "has_in_links": true,
-                                    "is_orphaned": false,
-                                    "text_markdown": "Членове 332 и 333 се отменят.",
                                     "children": []
                                 }
                             ]

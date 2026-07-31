@@ -22,8 +22,8 @@
         "unique_id": 6330036,
         "db_index": 0
     },
-    "fetched_at": "2026-05-04",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-05-05",
+    "processed_at": "2026-05-05",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -6509,20 +6509,6 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 478,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "В чл. 8 се създава ал. 3:\n\n\"(3) Спешните повиквания на хората със слухови или говорни увреждания се обслужват от най-подходящия център за обслужване на спешните повиквания чрез същите комуникационни средства, с които е прието повикването, а именно:",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§5/Т1-2",
-                            "p_id": 53961438,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 479,
                             "has_in_links": true,
                             "is_orphaned": false,
@@ -6537,27 +6523,13 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 480,
-                            "has_in_links": true,
-                            "is_orphaned": false,
-                            "text_markdown": "когато се предоставя видео – глас, текст (включително текст в реално време) и видео, синхронизирани като цялостен разговор.\"",
-                            "children": []
-                        },
-                        {
-                            "path": "ПЗР/§5/Т2-2",
-                            "p_id": 53961438,
-                            "caption": null,
-                            "node_type": "point",
-                            "type": 11,
-                            "field_type": 9,
-                            "level": 2,
                             "sort_order": 481,
                             "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "В § 1 от допълнителните разпоредби:",
                             "children": [
                                 {
-                                    "path": "ПЗР/§5/Т2-2/БУКВА_А",
+                                    "path": "ПЗР/§5/Т2/БУКВА_А",
                                     "p_id": 53961438,
                                     "caption": null,
                                     "node_type": "letter",
@@ -6571,7 +6543,7 @@
                                     "children": []
                                 },
                                 {
-                                    "path": "ПЗР/§5/Т2-2/БУКВА_Б",
+                                    "path": "ПЗР/§5/Т2/БУКВА_Б",
                                     "p_id": 53961438,
                                     "caption": null,
                                     "node_type": "letter",

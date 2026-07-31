@@ -22,8 +22,8 @@
         "unique_id": 198384,
         "db_index": 0
     },
-    "fetched_at": "2026-07-30",
-    "processed_at": "2026-07-30",
+    "fetched_at": "2026-06-21",
+    "processed_at": "2026-06-21",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -21629,20 +21629,6 @@
             "children": [
                 {
                     "path": "ЧЛ246/АЛ1",
-                    "p_id": 42979749,
-                    "caption": null,
-                    "node_type": "paragraph",
-                    "type": 11,
-                    "field_type": 8,
-                    "level": 1,
-                    "sort_order": 1991,
-                    "has_in_links": true,
-                    "is_orphaned": false,
-                    "text_markdown": "(Изм. - ДВ, бр. 7 от 2013 г., бр. 17 от 2018 г., в сила от 23.02.2018 г., бр. 51 от 2020 г., в сила от 20.06.2020 г.)",
-                    "children": []
-                },
-                {
-                    "path": "ЧЛ246/АЛ1-2",
                     "p_id": 42979749,
                     "caption": null,
                     "node_type": "paragraph",

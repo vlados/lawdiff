@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-07-30T20:50:32+00:00",
-    "count": 423,
+    "generated_at": "2026-07-31T08:54:35+00:00",
+    "count": 424,
     "laws": [
         {
             "unique_id": 8747,
@@ -113,8 +113,8 @@
             "caption": "ЗАКОН за защита на личните данни",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-na-lichnite-danni.json"
@@ -152,8 +152,8 @@
             "caption": "ЗАКОН за защита на класифицираната информация",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-na-klasificiranata-informaciya.json"
@@ -217,8 +217,8 @@
             "caption": "ЗАКОН за безопасно използване на ядрената енергия",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-bezopasno-izpolzvane-na-yadrenata-energiya.json"
@@ -308,8 +308,8 @@
             "caption": "ЗАКОН за вероизповеданията",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-03-27",
-            "start_date": "2025-01-01",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-10-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-veroizpovedaniyata.json"
@@ -321,8 +321,8 @@
             "caption": "ЗАКОН за Комисията за финансов надзор",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-24",
-            "start_date": "2026-07-28",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-komisiyata-za-finansov-nadzor.json"
@@ -477,8 +477,8 @@
             "caption": "ЗАКОН за ограничаване на административното регулиране и административния контрол върху стопанската дейност",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-07-04",
-            "start_date": "2025-07-08",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-08-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ogranichavane-na-administrativnoto-regulirane-i-administrativniya-kontrol-varhu-stopanskata-deynost.json"
@@ -607,8 +607,8 @@
             "caption": "ЗАКОН за енергетиката",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-energetikata.json"
@@ -1439,8 +1439,8 @@
             "caption": "ЗАКОН за радиото и телевизията",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-radioto-i-televiziyata.json"
@@ -2037,8 +2037,8 @@
             "caption": "ЗАКОН за висшето образование",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-vissheto-obrazovanie.json"
@@ -2401,8 +2401,8 @@
             "caption": "ЗАКОН за администрацията",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-administraciyata.json"
@@ -2440,8 +2440,8 @@
             "caption": "ЗАКОН за държавния служител",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-08-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavniya-sluzhitel.json"
@@ -2713,8 +2713,8 @@
             "caption": "ЗАКОН за правната помощ",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pravnata-pomosht.json"
@@ -2752,8 +2752,8 @@
             "caption": "ЗАКОН за акцизите и данъчните складове",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-07-04",
-            "start_date": "2026-01-01",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-08-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-akcizite-i-danachnite-skladove.json"
@@ -2973,8 +2973,8 @@
             "caption": "ЗАКОН за данък върху добавената стойност",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-12-30",
-            "start_date": "2026-01-01",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-08-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-danak-varhu-dobavenata-stoynost.json"
@@ -3064,8 +3064,8 @@
             "caption": "ЗАКОН за достъп и разкриване на документите и за обявяване на принадлежност на български граждани към Държавна сигурност и разузнавателните служби на Българската народна армия",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-dostap-i-razkrivane-na-dokumentite-i-za-obyavyavane-na-prinadlezhnost-na-balgarski-grazhdani-kam-darzhavna-sigu.json"
@@ -3272,8 +3272,8 @@
             "caption": "ЗАКОН за съдебната власт",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-01",
-            "start_date": "2026-07-01",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-sadebnata-vlast.json"
@@ -3428,8 +3428,8 @@
             "caption": "ТЪРГОВСКИ ЗАКОН",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-31",
+            "start_date": "2027-04-02",
             "end_date": null,
             "version": null,
             "file": "laws/targovski-zakon.json"
@@ -3974,8 +3974,8 @@
             "caption": "ЗАКОН за хазарта",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-01-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-hazarta.json"
@@ -4169,8 +4169,8 @@
             "caption": "ЗАКОН за Фискален съвет и автоматични корективни механизми",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-fiskalen-savet-i-avtomatichni-korektivni-mehanizmi.json"
@@ -4286,8 +4286,8 @@
             "caption": "ЗАКОН за предучилищното и училищното образование",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-08-05",
-            "start_date": "2025-09-15",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-preduchilishtnoto-i-uchilishtnoto-obrazovanie.json"
@@ -4637,8 +4637,8 @@
             "caption": "ЗАКОН за административното регулиране на икономическите дейности, свързани с нефт и продукти от нефтен произход",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-administrativnoto-regulirane-na-ikonomicheskite-deynosti-svarzani-s-neft-i-produkti-ot-neften-proizhod.json"
@@ -4780,8 +4780,8 @@
             "caption": "ЗАКОН за публичните предприятия",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-07-31",
+            "start_date": "2026-07-31",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-publichnite-predpriyatiya.json"
@@ -5500,6 +5500,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-byudzheta-na-nacionalnata-zdravnoosiguritelna-kasa-za-2026-g.json"
+        },
+        {
+            "unique_id": 7104315,
+            "code": "43003",
+            "slug": "zakon-za-darzhavniya-byudzhet-na-republika-balgariya-za-2026-g",
+            "caption": "ЗАКОН за държавния бюджет на Репуб­лика България за 2026 г.",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-07-31",
+            "start_date": "2026-01-01",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-darzhavniya-byudzhet-na-republika-balgariya-za-2026-g.json"
         }
     ]
 }
