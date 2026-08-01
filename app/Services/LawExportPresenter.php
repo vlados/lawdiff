@@ -50,8 +50,13 @@ class LawExportPresenter
     }
 
     /**
-     * Convert a flat node collection into a nested tree using path hierarchy
-     * (parent path = path with the last "/segment" stripped).
+     * Convert a flat node collection into a nested tree.
+     *
+     * Nesting follows parent_id, which is the only thing that knows a глава
+     * contains its articles: chapters are deliberately absent from their
+     * descendants' citation paths, so stripping the last "/segment" off a path
+     * would orphan every article in the law. Path ancestry stays as the
+     * fallback for rows predating parent_id.
      *
      * Nodes whose parent is absent from the collection surface as roots, which
      * is what lets a filtered subset still render as a valid tree.
@@ -62,9 +67,14 @@ class LawExportPresenter
     public function buildNodeTree(iterable $nodes): array
     {
         $shaped = [];
+        $pathById = [];
+
         foreach ($nodes as $node) {
+            $pathById[$node->id] = $node->path;
+
             $shaped[$node->path] = [
                 'path' => $node->path,
+                'parent_path' => null,
                 'p_id' => $node->p_id,
                 'caption' => $node->caption,
                 'node_type' => $node->node_type,
@@ -76,14 +86,20 @@ class LawExportPresenter
                 'is_orphaned' => (bool) $node->is_orphaned,
                 'text_markdown' => $node->text_markdown,
                 'children' => [],
+                'parent_id' => $node->parent_id,
             ];
         }
 
         $roots = [];
         foreach ($shaped as &$entry) {
-            $parentPath = $this->parentPath((string) $entry['path']);
+            $parentPath = $entry['parent_id'] !== null
+                ? ($pathById[$entry['parent_id']] ?? null)
+                : $this->parentPath((string) $entry['path']);
+
+            unset($entry['parent_id']);
 
             if ($parentPath !== null && isset($shaped[$parentPath])) {
+                $entry['parent_path'] = $parentPath;
                 $shaped[$parentPath]['children'][] = &$entry;
             } else {
                 $roots[] = &$entry;

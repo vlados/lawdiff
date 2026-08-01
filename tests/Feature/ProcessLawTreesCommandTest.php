@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Models\Law;
+use App\Services\LawTreeProcessor;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
@@ -207,11 +208,19 @@ test('processes laws with complex nested structure', function () {
 
     $nodes = $law->nodes()->orderBy('sort_order')->get();
 
-    // Chapter nodes are skipped, only article is saved
-    expect($nodes)->toHaveCount(1)
-        ->and($nodes[0]->path)->toBe('ЧЛ1')
-        ->and($nodes[0]->caption)->toBe('Чл. 1')
-        ->and($nodes[0]->text_markdown)->toContain('*text*');
+    // Chapters used to be dropped outright, taking their caption and their own
+    // text with them — the pId was marked as consumed, so it was not even
+    // recovered as an orphan. Both survive now, and the article keeps the bare
+    // citation path.
+    expect($nodes)->toHaveCount(2)
+        ->and($nodes[0]->path)->toBe('ГЛАВА_1')
+        ->and($nodes[0]->node_type)->toBe('chapter')
+        ->and($nodes[0]->caption)->toBe('Глава 1')
+        ->and($nodes[0]->text_markdown)->toContain('**text**')
+        ->and($nodes[1]->path)->toBe('ЧЛ1')
+        ->and($nodes[1]->caption)->toBe('Чл. 1')
+        ->and($nodes[1]->parent_id)->toBe($nodes[0]->id)
+        ->and($nodes[1]->text_markdown)->toContain('*text*');
 });
 
 test('command processes every pending law across chunk boundaries', function () {
@@ -238,7 +247,7 @@ test('command fails when every law fails to process', function () {
         'processed_at' => null,
     ]);
 
-    $this->mock(App\Services\LawTreeProcessor::class, function ($mock) {
+    $this->mock(LawTreeProcessor::class, function ($mock) {
         $mock->shouldReceive('process')->andThrow(new RuntimeException('boom'));
     });
 

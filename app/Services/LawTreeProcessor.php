@@ -9,6 +9,20 @@ use League\HTMLToMarkdown\HtmlConverter;
 
 class LawTreeProcessor
 {
+    /**
+     * Точка markers: "1.", the letter-suffixed "18а." used when a point is
+     * inserted between two existing ones, and the "18\." form html-to-markdown
+     * emits when it escapes a period that could otherwise start an ordered
+     * list. Bounded to three digits so a stray four-digit number cannot open a
+     * точка. Detection and splitting share the pattern so they cannot drift.
+     */
+    private const POINT_MARKER = '\n\n\s*(\d{1,3}[а-я]?)(\\\.|\.)';
+
+    /**
+     * Буква markers: "а)" plus the suffixed "а1)" form.
+     */
+    private const LETTER_MARKER = '\n\n([а-я]\d?)\)';
+
     protected HtmlConverter $converter;
 
     protected int $sortOrder = 0;
@@ -57,6 +71,8 @@ class LawTreeProcessor
                 $law->content_structure ?? [],
                 $textMap,
                 '',
+                '',
+                null,
                 0,
                 $usedPIds
             );
@@ -113,11 +129,21 @@ class LawTreeProcessor
         return $map;
     }
 
+    /**
+     * Two path chains are threaded down the tree rather than one.
+     *
+     * $citationPath is what descendants cite against and skips structural
+     * containers, so an article keeps ЧЛ80А whether or not a глава wraps it.
+     * $containerPath nests the containers among themselves, so the "Раздел I"
+     * of every chapter still gets a distinct path.
+     */
     protected function buildAndSaveNodes(
         Law $law,
         array $nodes,
         array $textMap,
-        string $parentPath,
+        string $citationPath,
+        string $containerPath,
+        ?int $parentId,
         int $level,
         array &$usedPIds
     ): void {
@@ -131,34 +157,22 @@ class LawTreeProcessor
 
             $caption = $node['caption'] ?? '';
             $nodeType = $this->pathBuilder->determineNodeType($caption);
+            $isContainer = $this->pathBuilder->isCitationTransparent($nodeType);
 
-            // Skip ГЛАВА, РАЗДЕЛ, and transitional section headers - don't create them, but process their children
-            if ($this->pathBuilder->shouldSkipNode($nodeType)) {
-                // Process children with the same parent path (skip this node in the path)
-                if (isset($node['children']) && is_array($node['children']) && count($node['children']) > 0) {
-                    $this->buildAndSaveNodes(
-                        $law,
-                        $node['children'],
-                        $textMap,
-                        $parentPath,
-                        $level,
-                        $usedPIds
-                    );
-                }
+            $pathSegment = $isContainer
+                ? $this->pathBuilder->buildStructuralSegment($caption, $node['pId'])
+                : $this->pathBuilder->buildSegment($caption, $node['pId']);
 
-                continue;
-            }
-
-            // Build the path for this node
-            $pathSegment = $this->pathBuilder->buildSegment($caption, $node['pId']);
-            $currentPath = $this->uniquePath($parentPath ? $parentPath.'/'.$pathSegment : $pathSegment);
+            $base = $isContainer ? $containerPath : $citationPath;
+            $currentPath = $this->uniquePath($base ? $base.'/'.$pathSegment : $pathSegment);
 
             // Get text data if available
             $textData = $textMap[$node['pId']] ?? null;
 
             // Create and save the node
-            LawNode::create([
+            $saved = LawNode::create([
                 'law_id' => $law->id,
+                'parent_id' => $parentId,
                 'path' => $currentPath,
                 'p_id' => $node['pId'],
                 'caption' => $caption ?: null,
@@ -178,7 +192,9 @@ class LawTreeProcessor
                     $law,
                     $node['children'],
                     $textMap,
+                    $isContainer ? $citationPath : $currentPath,
                     $currentPath,
+                    $saved->id,
                     $level + 1,
                     $usedPIds
                 );
@@ -271,16 +287,15 @@ class LawTreeProcessor
             return;
         }
 
-        // Check if this node has точки (points) marked with 1., 2., etc.
-        // Pattern matches: "\n\n 1." (regular) or "\n\n1\." (escaped period in markdown)
-        if (preg_match('/\n\n\s*\d+(\\\\\.|\\.)/u', $text)) {
+        // Check if this node has точки (points) marked with 1., 2., 18а., etc.
+        if (preg_match('/'.self::POINT_MARKER.'/u', $text)) {
             $this->parsePoints($law, $article, $text);
 
             return;
         }
 
         // Check if this node has букви (letters) marked with а), б), etc.
-        if (preg_match('/\n\n[а-я]\)/u', $text)) {
+        if (preg_match('/'.self::LETTER_MARKER.'/u', $text)) {
             $this->parseLetters($law, $article, $text);
         }
     }
@@ -315,6 +330,7 @@ class LawTreeProcessor
 
             $alineaNode = LawNode::create([
                 'law_id' => $law->id,
+                'parent_id' => $article->id,
                 'path' => $alineaPath,
                 'p_id' => $article->p_id,
                 'caption' => null,
@@ -329,9 +345,9 @@ class LawTreeProcessor
             ]);
 
             // Check if this алинея contains точки or букви
-            if (preg_match('/\n\n\s*\d+(\\\\\.|\\.)/u', $alineaText)) {
+            if (preg_match('/'.self::POINT_MARKER.'/u', $alineaText)) {
                 $this->parsePoints($law, $alineaNode, $alineaText);
-            } elseif (preg_match('/\n\n[а-я]\)/u', $alineaText)) {
+            } elseif (preg_match('/'.self::LETTER_MARKER.'/u', $alineaText)) {
                 $this->parseLetters($law, $alineaNode, $alineaText);
             }
         }
@@ -339,9 +355,7 @@ class LawTreeProcessor
 
     protected function parsePoints(Law $law, LawNode $parent, string $text): void
     {
-        // Split text by точка pattern: \n\n 1. or \n\n1\. (escaped)
-        // Pattern matches optional space and either regular or escaped period
-        $parts = preg_split('/\n\n\s*(\d+)(\\\\\.|\.)/', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+        $parts = preg_split('/'.self::POINT_MARKER.'/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
 
         // First part is introduction (before first точка)
         $introduction = trim($parts[0]);
@@ -356,7 +370,7 @@ class LawTreeProcessor
                 break;
             }
 
-            $pointNumber = (int) $parts[$i];
+            $pointNumber = $parts[$i]; // Keep as string to preserve letter suffixes like "18а"
             $pointText = trim($parts[$i + 2]);
 
             // Create точка node
@@ -364,6 +378,7 @@ class LawTreeProcessor
 
             $pointNode = LawNode::create([
                 'law_id' => $law->id,
+                'parent_id' => $parent->id,
                 'path' => $pointPath,
                 'p_id' => $parent->p_id,
                 'caption' => null,
@@ -378,7 +393,7 @@ class LawTreeProcessor
             ]);
 
             // Check if this точка contains букви
-            if (preg_match('/\n\n[а-я]\)/u', $pointText)) {
+            if (preg_match('/'.self::LETTER_MARKER.'/u', $pointText)) {
                 $this->parseLetters($law, $pointNode, $pointText);
             }
         }
@@ -386,8 +401,8 @@ class LawTreeProcessor
 
     protected function parseLetters(Law $law, LawNode $parent, string $text): void
     {
-        // Split text by буква pattern: \n\nа), \n\nб), etc.
-        $parts = preg_split('/\n\n([а-я])\)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+        // Split text by буква pattern: \n\nа), \n\nб), \n\nа1), etc.
+        $parts = preg_split('/'.self::LETTER_MARKER.'/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
 
         // First part is introduction (before first буква)
         $introduction = trim($parts[0]);
@@ -409,6 +424,7 @@ class LawTreeProcessor
 
             LawNode::create([
                 'law_id' => $law->id,
+                'parent_id' => $parent->id,
                 'path' => $letterPath,
                 'p_id' => $parent->p_id,
                 'caption' => null,

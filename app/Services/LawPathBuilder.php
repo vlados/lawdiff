@@ -92,14 +92,16 @@ class LawPathBuilder
 
     /**
      * Build a path for a точка (point) node.
+     * Supports точки with letter suffixes like "18а", "18б", etc.
      */
-    public function buildPointPath(string $parentPath, int $pointNumber): string
+    public function buildPointPath(string $parentPath, string $pointNumber): string
     {
-        return $parentPath.'/Т'.$pointNumber;
+        return $parentPath.'/Т'.mb_strtoupper($pointNumber);
     }
 
     /**
      * Build a path for a буква (letter) node.
+     * Supports букви with numeric suffixes like "а1", "б1", etc.
      */
     public function buildLetterPath(string $parentPath, string $letter): string
     {
@@ -162,10 +164,38 @@ class LawPathBuilder
     }
 
     /**
-     * Check if a node type should be skipped (not saved, but children processed).
+     * Whether a node is a structural container that must not appear in its
+     * descendants' paths.
+     *
+     * Article numbering runs law-wide and continues across chapters, so the
+     * citation for чл. 80а is ЧЛ80А no matter which глава holds it — putting
+     * the chapter in the path would make paths unciteable and break every
+     * reference the moment a chapter is renamed or renumbered. Chapters and
+     * sections are still saved as nodes; parent_id carries the hierarchy.
+     *
+     * Transitional sections are deliberately NOT transparent: § numbering
+     * restarts in each ПЗР block, so the ПЗР/§1 prefix is what keeps the § of
+     * one amending act apart from the § of the next.
      */
-    public function shouldSkipNode(string $nodeType): bool
+    public function isCitationTransparent(string $nodeType): bool
     {
-        return in_array($nodeType, ['chapter', 'section']);
+        return in_array($nodeType, ['chapter', 'section'], true);
+    }
+
+    /**
+     * Build a path segment for a structural container. Unlike citable segments
+     * these keep word boundaries, since a chapter is identified by its caption
+     * rather than by a number ("Глава първа" -> ГЛАВА_ПЪРВА).
+     */
+    public function buildStructuralSegment(?string $caption, int $pId): string
+    {
+        if (! $caption) {
+            return 'NODE_'.$pId;
+        }
+
+        $normalized = preg_replace('/[^\p{L}\p{N}]+/u', '_', mb_strtoupper($caption));
+        $normalized = trim((string) $normalized, '_');
+
+        return $normalized ?: 'NODE_'.$pId;
     }
 }

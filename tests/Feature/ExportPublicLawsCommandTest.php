@@ -290,3 +290,61 @@ test('prune removes stale law files', function () {
 
     expect(File::exists($this->outputDir.'/laws/old-removed-law.json'))->toBeFalse();
 });
+
+test('the exported tree nests articles under their chapter', function () {
+    // Chapters are absent from their descendants' citation paths, so deriving
+    // the parent by stripping "/segment" would flatten every law into a list of
+    // roots. Nesting follows parent_id instead.
+    $law = Law::factory()->create([
+        'caption' => 'ЗАКОН за пробата',
+        'processed_at' => now(),
+        'content_fetched_at' => now(),
+    ]);
+
+    $chapter = LawNode::create([
+        'law_id' => $law->id,
+        'path' => 'ГЛАВА_ПЪРВА',
+        'caption' => 'Глава първа',
+        'node_type' => 'chapter',
+        'sort_order' => 1,
+        'level' => 0,
+    ]);
+
+    $article = LawNode::create([
+        'law_id' => $law->id,
+        'parent_id' => $chapter->id,
+        'path' => 'ЧЛ1',
+        'caption' => 'Чл. 1',
+        'node_type' => 'article',
+        'sort_order' => 2,
+        'level' => 1,
+    ]);
+
+    LawNode::create([
+        'law_id' => $law->id,
+        'parent_id' => $article->id,
+        'path' => 'ЧЛ1/АЛ1',
+        'text_markdown' => 'Алинея първа',
+        'node_type' => 'paragraph',
+        'sort_order' => 3,
+        'level' => 2,
+    ]);
+
+    $this->artisan('laws:export-public', ['--output' => $this->outputDir])
+        ->assertExitCode(0);
+
+    $payload = json_decode(
+        File::get(File::files($this->outputDir.'/laws')[0]->getPathname()),
+        true,
+        flags: JSON_THROW_ON_ERROR
+    );
+
+    expect($payload['nodes'])->toHaveCount(1)
+        ->and($payload['nodes'][0]['path'])->toBe('ГЛАВА_ПЪРВА')
+        ->and($payload['nodes'][0]['parent_path'])->toBeNull()
+        ->and($payload['nodes'][0]['children'])->toHaveCount(1)
+        ->and($payload['nodes'][0]['children'][0]['path'])->toBe('ЧЛ1')
+        ->and($payload['nodes'][0]['children'][0]['parent_path'])->toBe('ГЛАВА_ПЪРВА')
+        ->and($payload['nodes'][0]['children'][0]['children'][0]['path'])->toBe('ЧЛ1/АЛ1')
+        ->and($payload['nodes'][0]['children'][0]['children'][0]['parent_path'])->toBe('ЧЛ1');
+});

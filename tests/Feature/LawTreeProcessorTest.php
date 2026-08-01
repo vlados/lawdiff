@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 use App\Models\Law;
+use App\Models\LawNode;
+use App\Services\LawPathBuilder;
 use App\Services\LawTreeProcessor;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -80,14 +82,235 @@ test('processes law with nested children', function () {
 
     $nodes = $law->nodes()->orderBy('sort_order')->get();
 
-    // Chapter nodes are skipped, so only article and paragraph are saved
-    expect($nodes)->toHaveCount(2)
-        ->and($nodes[0]->path)->toBe('ЧЛ1')
-        ->and($nodes[0]->level)->toBe(0)
-        ->and($nodes[0]->caption)->toBe('Чл. 1')
-        ->and($nodes[1]->path)->toBe('ЧЛ1/АЛ1')
+    // The chapter is kept as a node, but stays out of the article's citation
+    // path: чл. 1 is cited as ЧЛ1 regardless of which глава holds it.
+    expect($nodes)->toHaveCount(3)
+        ->and($nodes[0]->path)->toBe('ГЛАВА_1')
+        ->and($nodes[0]->node_type)->toBe('chapter')
+        ->and($nodes[0]->caption)->toBe('Глава 1')
+        ->and($nodes[0]->text_markdown)->toBe('Chapter text')
+        ->and($nodes[0]->parent_id)->toBeNull()
+        ->and($nodes[1]->path)->toBe('ЧЛ1')
         ->and($nodes[1]->level)->toBe(1)
-        ->and($nodes[1]->caption)->toBe('Ал. 1');
+        ->and($nodes[1]->caption)->toBe('Чл. 1')
+        ->and($nodes[1]->parent_id)->toBe($nodes[0]->id)
+        ->and($nodes[2]->path)->toBe('ЧЛ1/АЛ1')
+        ->and($nodes[2]->level)->toBe(2)
+        ->and($nodes[2]->caption)->toBe('Ал. 1')
+        ->and($nodes[2]->parent_id)->toBe($nodes[1]->id);
+});
+
+test('точки with letter suffixes become their own nodes', function () {
+    // ЗДвП § 6 defines terms as т. 18, 18а, 18б, 18в. A точка pattern of (\d+)
+    // never matched "18а." at all, so four separate definitions collapsed into
+    // one node — a single embedding covering полуремарке, регистрация and ИЕПС.
+    $law = Law::factory()->create([
+        'content_structure' => [
+            ['pId' => 1, 'caption' => '§ 6'],
+        ],
+        'content_text' => [
+            'paragraphs' => [
+                [
+                    'pId' => 1,
+                    'text' => '<p>§ 6. По смисъла на този закон:</p>'
+                        .'<p>18. "Полуремарке" е ремарке без предна ос.</p>'
+                        .'<p>18а. "Регистрация" е административно разрешение.</p>'
+                        .'<p>18б. "Индивидуално електрическо превозно средство" е пътно превозно средство.</p>'
+                        .'<p>18в. "Самобалансиращо се превозно средство" е ППС с електродвигател.</p>',
+                    'type' => 1,
+                ],
+            ],
+        ],
+        'content_fetched_at' => now(),
+    ]);
+
+    $this->processor->process($law);
+
+    $nodes = $law->nodes()->orderBy('sort_order')->get();
+
+    expect($nodes)->toHaveCount(5)
+        ->and($nodes[0]->path)->toBe('§6')
+        ->and($nodes[1]->path)->toBe('§6/Т18')
+        ->and($nodes[1]->text_markdown)->toContain('Полуремарке')
+        ->and($nodes[2]->path)->toBe('§6/Т18А')
+        ->and($nodes[2]->text_markdown)->toContain('Регистрация')
+        ->and($nodes[2]->text_markdown)->not->toContain('Полуремарке')
+        ->and($nodes[3]->path)->toBe('§6/Т18Б')
+        ->and($nodes[3]->text_markdown)->toContain('Индивидуално електрическо')
+        ->and($nodes[4]->path)->toBe('§6/Т18В')
+        ->and($nodes[4]->text_markdown)->toContain('Самобалансиращо');
+});
+
+test('букви with numeric suffixes become their own nodes', function () {
+    $law = Law::factory()->create([
+        'content_structure' => [
+            ['pId' => 1, 'caption' => 'Чл. 9'],
+        ],
+        'content_text' => [
+            'paragraphs' => [
+                [
+                    'pId' => 1,
+                    'text' => '<p>Чл. 9. Освобождават се:</p>'
+                        .'<p>а) учебните заведения;</p>'
+                        .'<p>а1) детските градини;</p>'
+                        .'<p>б) читалищата.</p>',
+                    'type' => 1,
+                ],
+            ],
+        ],
+        'content_fetched_at' => now(),
+    ]);
+
+    $this->processor->process($law);
+
+    $paths = $law->nodes()->orderBy('sort_order')->pluck('path')->all();
+
+    expect($paths)->toBe(['ЧЛ9', 'ЧЛ9/БУКВА_А', 'ЧЛ9/БУКВА_А1', 'ЧЛ9/БУКВА_Б']);
+});
+
+test('sections nest under chapters without entering citation paths', function () {
+    $law = Law::factory()->create([
+        'content_structure' => [
+            [
+                'pId' => 1,
+                'caption' => 'Глава първа',
+                'children' => [
+                    [
+                        'pId' => 2,
+                        'caption' => 'Раздел I',
+                        'children' => [
+                            ['pId' => 3, 'caption' => 'Чл. 1'],
+                        ],
+                    ],
+                ],
+            ],
+            [
+                'pId' => 4,
+                'caption' => 'Глава втора',
+                'children' => [
+                    [
+                        'pId' => 5,
+                        'caption' => 'Раздел I',
+                        'children' => [
+                            ['pId' => 6, 'caption' => 'Чл. 2'],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        'content_text' => ['paragraphs' => []],
+        'content_fetched_at' => now(),
+    ]);
+
+    $this->processor->process($law);
+
+    $paths = $law->nodes()->orderBy('sort_order')->pluck('path')->all();
+
+    // "Раздел I" repeats per chapter, so containers nest among themselves to
+    // stay distinct — while the articles keep bare, citeable paths.
+    expect($paths)->toBe([
+        'ГЛАВА_ПЪРВА',
+        'ГЛАВА_ПЪРВА/РАЗДЕЛ_I',
+        'ЧЛ1',
+        'ГЛАВА_ВТОРА',
+        'ГЛАВА_ВТОРА/РАЗДЕЛ_I',
+        'ЧЛ2',
+    ]);
+});
+
+test('splitting an article conserves every fragment of its text exactly once', function () {
+    // The structural guarantee the corpus rests on, checked from two sides
+    // because neither alone is enough:
+    //
+    // The path list catches merging. An unrecognised marker does not lose text —
+    // it leaves the following provision buried inside its predecessor, which is
+    // exactly what (\d+) did to "18а." and what produces a node whose embedding
+    // covers four unrelated definitions at once.
+    //
+    // The concatenation catches loss and duplication, which merging hides: it
+    // shortens or lengthens the total, so a fragment dropped on the floor or
+    // emitted under two nodes fails here even when every path looks right.
+    $html = '<p>Чл. 80а. Водачът на ИЕПС е длъжен:</p>'
+        .'<p>(1) При движение по пътищата:</p>'
+        .'<p>1. да управлява с двете ръце;</p>'
+        .'<p>18. да ползва велоалея, когато има такава;</p>'
+        .'<p>18а. да не превозва други лица;</p>'
+        .'<p>18б. да не се движи по автомагистрала;</p>'
+        .'<p>(2) Забраната по ал. 1 не се прилага за:</p>'
+        .'<p>а) служебни превозни средства;</p>'
+        .'<p>а1) превозни средства на органите за пожарна безопасност;</p>'
+        .'<p>б) технически изпитвания.</p>';
+
+    // Markdown of the same payload, unsplit: a caption the splitter ignores
+    // gives us the conversion result without coupling the test to the converter.
+    $reference = Law::factory()->create([
+        'content_structure' => [['pId' => 1, 'caption' => 'Приложение']],
+        'content_text' => ['paragraphs' => [['pId' => 1, 'text' => $html, 'type' => 1]]],
+        'content_fetched_at' => now(),
+    ]);
+    $this->processor->process($reference);
+
+    $sourceMarkdown = $reference->nodes()->firstOrFail()->text_markdown;
+    expect($reference->nodes()->count())->toBe(1);
+
+    $law = Law::factory()->create([
+        'content_structure' => [['pId' => 1, 'caption' => 'Чл. 80а']],
+        'content_text' => ['paragraphs' => [['pId' => 1, 'text' => $html, 'type' => 1]]],
+        'content_fetched_at' => now(),
+    ]);
+    $this->processor->process($law);
+
+    $nodes = $law->nodes()->orderBy('sort_order')->get();
+
+    expect($nodes->pluck('path')->all())->toBe([
+        'ЧЛ80А',
+        'ЧЛ80А/АЛ1',
+        'ЧЛ80А/АЛ1/Т1',
+        'ЧЛ80А/АЛ1/Т18',
+        'ЧЛ80А/АЛ1/Т18А',
+        'ЧЛ80А/АЛ1/Т18Б',
+        'ЧЛ80А/АЛ2',
+        'ЧЛ80А/АЛ2/БУКВА_А',
+        'ЧЛ80А/АЛ2/БУКВА_А1',
+        'ЧЛ80А/АЛ2/БУКВА_Б',
+    ]);
+
+    // Applied to both sides, so removing the markers the splitter consumes can
+    // never manufacture a pass out of a genuine difference in the prose.
+    $withoutMarkers = function (string $text): string {
+        $text = preg_replace('/\(\d{1,2}[а-я]?\)/u', '', $text);
+        $text = preg_replace('/\d{1,3}[а-я]?\\\\?\./u', '', (string) $text);
+        $text = preg_replace('/[а-я]\d?\)/u', '', (string) $text);
+
+        return (string) preg_replace('/\s+/u', '', (string) $text);
+    };
+
+    expect($withoutMarkers($nodes->pluck('text_markdown')->implode('')))
+        ->toBe($withoutMarkers((string) $sourceMarkdown));
+});
+
+test('transitional paragraphs stay prefixed by their section', function () {
+    // § numbering restarts in every ПЗР block, so unlike глава the section must
+    // remain in the path or the § of two amending acts would collide.
+    $law = Law::factory()->create([
+        'content_structure' => [
+            [
+                'pId' => 1,
+                'caption' => 'ПРЕХОДНИ И ЗАКЛЮЧИТЕЛНИ РАЗПОРЕДБИ',
+                'children' => [
+                    ['pId' => 2, 'caption' => '§ 1'],
+                ],
+            ],
+        ],
+        'content_text' => ['paragraphs' => []],
+        'content_fetched_at' => now(),
+    ]);
+
+    $this->processor->process($law);
+
+    $paths = $law->nodes()->orderBy('sort_order')->pluck('path')->all();
+
+    expect($paths)->toBe(['ПЗР', 'ПЗР/§1']);
 });
 
 test('includes orphaned paragraphs not in structure', function () {
@@ -545,7 +768,7 @@ test('a mid-process failure rolls back to the previous complete node set', funct
     ]);
 
     foreach ([['ЧЛ1', 1], ['ЧЛ2', 2]] as [$path, $sort]) {
-        App\Models\LawNode::create([
+        LawNode::create([
             'law_id' => $law->id,
             'path' => $path,
             'caption' => $path,
@@ -554,10 +777,10 @@ test('a mid-process failure rolls back to the previous complete node set', funct
         ]);
     }
 
-    $builder = Mockery::mock(App\Services\LawPathBuilder::class);
+    $builder = Mockery::mock(LawPathBuilder::class);
     $builder->shouldReceive('determineNodeType')->andThrow(new RuntimeException('boom'));
 
-    $processor = new App\Services\LawTreeProcessor($builder);
+    $processor = new LawTreeProcessor($builder);
 
     expect(fn () => $processor->process($law))->toThrow(RuntimeException::class);
 
