@@ -14,6 +14,14 @@ on:
         options:
           - 'false'
           - 'true'
+      reprocess:
+        description: 'Rebuild every law_node from stored content (no re-fetching)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 concurrency:
   group: daily-export
@@ -29,6 +37,22 @@ jobs:
 
     env:
       FORCE_REFETCH: ${{ github.event.inputs.force-refetch || 'false' }}
+      REPROCESS: ${{ github.event.inputs.reprocess || 'false' }}
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: lawdiff
+          POSTGRES_PASSWORD: lawdiff
+          POSTGRES_DB: lawdiff
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
       - name: Checkout
@@ -42,7 +66,7 @@ jobs:
         with:
           php-version: 8.4
           tools: composer:v2
-          extensions: mbstring, sqlite3, pdo_sqlite, intl
+          extensions: mbstring, pdo_pgsql, intl
           coverage: none
 
       - name: Configure Flux Pro credentials
@@ -64,24 +88,42 @@ jobs:
           cp .env.example .env
           {
             echo ""
-            echo "DB_CONNECTION=sqlite"
-            echo "DB_DATABASE=${{ github.workspace }}/database/database.sqlite"
+            echo "DB_CONNECTION=pgsql"
+            echo "DB_HOST=127.0.0.1"
+            echo "DB_PORT=5432"
+            echo "DB_DATABASE=lawdiff"
+            echo "DB_USERNAME=lawdiff"
+            echo "DB_PASSWORD=lawdiff"
             echo "SESSION_DRIVER=array"
             echo "CACHE_STORE=array"
             echo "QUEUE_CONNECTION=sync"
           } >> .env
           mkdir -p database
-          touch database/database.sqlite
           php artisan key:generate --no-interaction
 
-      - name: Restore SQLite snapshot from previous run
+      # The service container is empty on every run, so without this the job
+      # would re-fetch all 424 laws from APIS.BG daily and blow the timeout.
+      # The cached artifact is a pg dump rather than a database file.
+      - name: Restore database snapshot from previous run
         id: db-cache
         uses: actions/cache@v4
         with:
-          path: database/database.sqlite
-          key: lawdiff-sqlite-${{ github.run_id }}
+          path: database/snapshot.dump
+          key: lawdiff-pgdump-${{ github.run_id }}
           restore-keys: |
-            lawdiff-sqlite-
+            lawdiff-pgdump-
+
+      # pg_dump/pg_restore run inside the service container so their version
+      # always matches the server, whatever client the runner image ships.
+      - name: Load snapshot into the database
+        run: |
+          if [ -s database/snapshot.dump ]; then
+            docker exec -i ${{ job.services.postgres.id }} \
+              pg_restore -U lawdiff -d lawdiff --no-owner --no-privileges \
+              < database/snapshot.dump
+          else
+            echo "No snapshot cached; starting from an empty database."
+          fi
 
       - name: Run migrations
         run: php artisan migrate --force --no-interaction
@@ -97,6 +139,18 @@ jobs:
           fi
           php artisan laws:fetch-contents ${ARGS}
 
+      # laws:fetch-contents only rebuilds the tree of a law it just re-fetched,
+      # so without this a parser change never reaches laws already in the cache.
+      # The plain run is a safety net for anything left unprocessed; --force
+      # rebuilds the whole corpus from stored content and needs no network.
+      - name: Process law trees
+        run: |
+          ARGS="--no-interaction"
+          if [ "${REPROCESS}" = "true" ]; then
+            ARGS="${ARGS} --force"
+          fi
+          php artisan laws:process-trees ${ARGS}
+
       - name: Export public dataset
         run: php artisan laws:export-public --prune --no-interaction
 
@@ -104,6 +158,15 @@ jobs:
       # must run after it. Fails the job rather than committing a gutted dataset.
       - name: Export ИЕПС dataset
         run: php artisan laws:export-ieps --prune --no-interaction
+
+      # Runs even when an export guard trips: the fetch is the expensive part of
+      # the job and is worth keeping regardless of what the export decided.
+      - name: Snapshot the database for the next run
+        if: always()
+        run: |
+          docker exec ${{ job.services.postgres.id }} \
+            pg_dump -U lawdiff -d lawdiff --format=custom --no-owner --no-privileges \
+            > database/snapshot.dump
 
       - name: Inspect changes
         id: diff

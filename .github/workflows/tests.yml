@@ -15,6 +15,24 @@ jobs:
     runs-on: ubuntu-latest
     environment: Testing
 
+    # phpunit.xml points the suite at this service. Running the tests on the
+    # same engine as production is the point of the switch: SQLite would keep
+    # passing over the driver differences the corpus work depends on.
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: lawdiff
+          POSTGRES_PASSWORD: lawdiff
+          POSTGRES_DB: lawdiff_testing
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,6 +42,7 @@ jobs:
         with:
           php-version: 8.4
           tools: composer:v2
+          extensions: mbstring, pdo_pgsql, intl
           coverage: xdebug
 
       - name: Setup Node
