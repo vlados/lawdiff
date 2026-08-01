@@ -22,8 +22,8 @@
         "unique_id": 9731,
         "db_index": 0
     },
-    "fetched_at": "2026-07-28",
-    "processed_at": "2026-07-28",
+    "fetched_at": "2026-08-01",
+    "processed_at": "2026-08-01",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -24972,10 +24972,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 1968,
+                            "sort_order": 1961,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "лицето, за което са предназначени, има необходимата лицензия или разрешение, които му дават право да ги използва и/или да ги съхранява;",
+                            "text_markdown": "В чл. 15:\n\n а) в ал. 3 т. 6 се отменя;\n\n б) в ал. 4 т. 8 се отменя.",
                             "children": []
                         },
                         {
@@ -24986,10 +24986,10 @@
                             "type": 11,
                             "field_type": 9,
                             "level": 2,
-                            "sort_order": 1969,
+                            "sort_order": 1962,
                             "has_in_links": true,
                             "is_orphaned": false,
-                            "text_markdown": "е осигурено превозването им от лице, което има лицензия или разрешение за превоз по този закон.\"",
+                            "text_markdown": "В чл. 18, ал. 1 т. 3 се изменя така:\n\n \"3. по чл. 15, ал. 3, т. 2 - 5 в срок до един месец\".",
                             "children": []
                         },
                         {
@@ -25060,6 +25060,34 @@
                             "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "Член 59 се изменя така:\n\n \"Чл. 59. Разрешение за внос на радиоактивни източници на йонизиращи лъчения се издава, ако:",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§7/Т1-2",
+                            "p_id": 290486,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 1968,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "лицето, за което са предназначени, има необходимата лицензия или разрешение, които му дават право да ги използва и/или да ги съхранява;",
+                            "children": []
+                        },
+                        {
+                            "path": "ПЗР/§7/Т2-2",
+                            "p_id": 290486,
+                            "caption": null,
+                            "node_type": "point",
+                            "type": 11,
+                            "field_type": 9,
+                            "level": 2,
+                            "sort_order": 1969,
+                            "has_in_links": true,
+                            "is_orphaned": false,
+                            "text_markdown": "е осигурено превозването им от лице, което има лицензия или разрешение за превоз по този закон.\"",
                             "children": []
                         },
                         {
