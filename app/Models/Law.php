@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use Database\Factories\LawFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Law extends Model
 {
-    /** @use HasFactory<\Database\Factories\LawFactory> */
+    /** @use HasFactory<LawFactory> */
     use HasFactory;
 
     protected $fillable = [
@@ -78,5 +79,13 @@ class Law extends Model
     public function nodes(): HasMany
     {
         return $this->hasMany(LawNode::class);
+    }
+
+    /**
+     * Citations made by this law's provisions, wherever they point.
+     */
+    public function references(): HasMany
+    {
+        return $this->hasMany(LegalReference::class);
     }
 }

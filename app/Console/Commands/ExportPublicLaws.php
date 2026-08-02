@@ -231,6 +231,10 @@ class ExportPublicLaws extends Command
             ['unique_id' => $law->unique_id, 'slug' => $slug],
             $presenter->metadata($law),
             ['nodes' => $presenter->buildNodeTree($law->nodes)],
+            // Flat and keyed by path rather than nested into the tree: a
+            // reference is an edge, and burying it under its source node would
+            // hide the incoming half of every dependency.
+            ['references' => $presenter->references($law)],
         );
     }
 

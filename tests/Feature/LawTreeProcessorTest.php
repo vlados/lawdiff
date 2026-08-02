@@ -6,6 +6,7 @@ use App\Models\Law;
 use App\Models\LawNode;
 use App\Services\LawPathBuilder;
 use App\Services\LawTreeProcessor;
+use App\Services\LegalReferenceExtractor;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
@@ -780,7 +781,7 @@ test('a mid-process failure rolls back to the previous complete node set', funct
     $builder = Mockery::mock(LawPathBuilder::class);
     $builder->shouldReceive('determineNodeType')->andThrow(new RuntimeException('boom'));
 
-    $processor = new LawTreeProcessor($builder);
+    $processor = new LawTreeProcessor($builder, app(LegalReferenceExtractor::class));
 
     expect(fn () => $processor->process($law))->toThrow(RuntimeException::class);
 

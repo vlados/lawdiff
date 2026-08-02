@@ -6,6 +6,10 @@ class LawAmendmentParser
 {
     protected array $context = [];
 
+    public function __construct(
+        protected LegalCitationParser $citations
+    ) {}
+
     public function parse(string $filePath): array
     {
         if (! file_exists($filePath)) {
@@ -257,6 +261,14 @@ class LawAmendmentParser
         return false;
     }
 
+    /**
+     * Emits both spellings of the target on purpose.
+     *
+     * `path` reads back to a human ("чл. 151 > ал. 1 > т. 12"); `canonical_path`
+     * is the same target as law_nodes addresses it (ЧЛ151/АЛ1/Т12). Only the
+     * second can be joined, so without it a parsed amendment could never be
+     * matched to the provision it amends.
+     */
     protected function addTarget(array &$targets): void
     {
         $path = [];
@@ -293,6 +305,9 @@ class LawAmendmentParser
 
         if (! empty($path)) {
             $target['path'] = implode(' > ', $path);
+            $target['canonical_path'] = $this->citations->toCanonicalPath(
+                array_intersect_key($this->context, array_flip(['article', 'section', 'paragraph', 'point', 'letter']))
+            );
             $targets[] = $target;
         }
     }

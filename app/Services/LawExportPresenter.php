@@ -110,6 +110,30 @@ class LawExportPresenter
         return $roots;
     }
 
+    /**
+     * The law's citation graph, addressed by path so it survives a reprocess:
+     * node ids are rebuilt delete-then-insert and mean nothing across runs.
+     *
+     * @return list<array<string, mixed>>
+     */
+    public function references(Law $law): array
+    {
+        return $law->references()
+            ->with(['sourceNode:id,path', 'targetNode:id,path'])
+            ->orderBy('source_node_id')
+            ->orderBy('position')
+            ->get()
+            ->map(fn ($reference): array => [
+                'source_path' => $reference->sourceNode?->path,
+                'target_path' => $reference->target_path,
+                'target_act' => $reference->target_act_name,
+                'citation' => $reference->citation_text,
+                'relation' => $reference->relation_type,
+                'status' => $reference->resolution_status,
+            ])
+            ->all();
+    }
+
     public function parentPath(string $path): ?string
     {
         $pos = strrpos($path, '/');

@@ -37,7 +37,8 @@ class LawTreeProcessor
     protected array $usedPaths = [];
 
     public function __construct(
-        protected LawPathBuilder $pathBuilder
+        protected LawPathBuilder $pathBuilder,
+        protected LegalReferenceExtractor $referenceExtractor
     ) {
         $this->converter = new HtmlConverter([
             'strip_tags' => true,
@@ -82,6 +83,10 @@ class LawTreeProcessor
 
             // Parse and split article text into алинеи, точки, букви
             $this->parseAndSplitArticles($law);
+
+            // Inside the transaction and after the split, so references can
+            // only ever describe the node set they were extracted from.
+            $this->referenceExtractor->extract($law);
         });
     }
 

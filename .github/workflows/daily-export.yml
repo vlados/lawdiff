@@ -151,6 +151,12 @@ jobs:
           fi
           php artisan laws:process-trees ${ARGS}
 
+      # Processing a law extracts its references, but a law that was neither
+      # re-fetched nor reprocessed would export an empty graph — which reads as
+      # "cites nothing" rather than "not extracted". Cheap, and no network.
+      - name: Extract legal references
+        run: php artisan laws:extract-references --no-interaction
+
       - name: Export public dataset
         run: php artisan laws:export-public --prune --no-interaction
 

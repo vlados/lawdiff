@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Models\Law;
 use App\Models\LawNode;
+use App\Services\LawTreeProcessor;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\File;
 
@@ -67,6 +68,7 @@ test('exports a processed law to a slug-named JSON file', function () {
 test('law payload key order is stable', function () {
     // 423 files are already committed with this exact order. Reordering keys would
     // churn the entire dataset in a single daily commit for no semantic change.
+    // Appending is the one safe move, which is why `references` sits last.
     $law = Law::factory()->create([
         'caption' => 'ЗАКОН за реда на ключовете',
         'processed_at' => now(),
@@ -92,6 +94,7 @@ test('law payload key order is stable', function () {
         'unique_id', 'slug', 'code', 'caption', 'type', 'func', 'base', 'is_actual',
         'publ_year', 'publ_date', 'start_date', 'end_date', 'act_date', 'dv', 'version',
         'celex', 'doc_lead', 'seria', 'source', 'fetched_at', 'processed_at', 'nodes',
+        'references',
     ]);
 });
 
@@ -347,4 +350,42 @@ test('the exported tree nests articles under their chapter', function () {
         ->and($payload['nodes'][0]['children'][0]['parent_path'])->toBe('ГЛАВА_ПЪРВА')
         ->and($payload['nodes'][0]['children'][0]['children'][0]['path'])->toBe('ЧЛ1/АЛ1')
         ->and($payload['nodes'][0]['children'][0]['children'][0]['parent_path'])->toBe('ЧЛ1');
+});
+
+test('the export carries the citation graph keyed by path', function () {
+    // Node ids are rebuilt on every reprocess, so an exported edge has to be
+    // addressed by path or it means nothing to a consumer of the dataset.
+    $law = Law::factory()->create([
+        'caption' => 'ЗАКОН за пробата',
+        'content_structure' => [
+            ['pId' => 1, 'caption' => 'Чл. 80а'],
+            ['pId' => 2, 'caption' => 'Чл. 183а'],
+        ],
+        'content_text' => ['paragraphs' => [
+            ['pId' => 1, 'text' => '<p>Чл. 80а. Водачът носи каска.</p>', 'type' => 1],
+            ['pId' => 2, 'text' => '<p>Чл. 183а. Наказва се нарушение на чл. 80а.</p>', 'type' => 1],
+        ]],
+        'content_fetched_at' => now(),
+        'processed_at' => now(),
+    ]);
+
+    app(LawTreeProcessor::class)->process($law);
+
+    $this->artisan('laws:export-public', ['--output' => $this->outputDir])
+        ->assertExitCode(0);
+
+    $payload = json_decode(
+        File::get(File::files($this->outputDir.'/laws')[0]->getPathname()),
+        true,
+        flags: JSON_THROW_ON_ERROR
+    );
+
+    expect($payload['references'])->toHaveCount(1)
+        ->and($payload['references'][0])->toMatchArray([
+            'source_path' => 'ЧЛ183А',
+            'target_path' => 'ЧЛ80А',
+            'citation' => 'чл. 80а',
+            'relation' => 'refers_to',
+            'status' => 'resolved',
+        ]);
 });
