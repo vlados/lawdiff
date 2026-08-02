@@ -230,6 +230,10 @@ class ExportPublicLaws extends Command
         return array_merge(
             ['unique_id' => $law->unique_id, 'slug' => $slug],
             $presenter->metadata($law),
+            // Not `version`: metadata already exports APIS's own version string
+            // under that key, and array_merge would have silently overwritten it
+            // in place rather than adding a field.
+            ['versions' => $presenter->versionInfo($law)],
             ['nodes' => $presenter->buildNodeTree($law->nodes)],
             // Flat and keyed by path rather than nested into the tree: a
             // reference is an edge, and burying it under its source node would
@@ -315,6 +319,23 @@ Each law file includes the structured tree of articles, paragraphs, and items
 as parsed by `App\Services\LawTreeProcessor`, with text rendered as Markdown.
 
 **Total laws:** {$count}
+
+## What is in a law file
+
+- `versions` — the redaction the text below is. `versions.current.changed_at`
+  is the law's date of last change (the ДВ publication that produced this
+  text); `valid_from`/`valid_to` say when it applies, which is not the same
+  date — a law published on 31.07 may take effect on 01.10. `versions.known`
+  lists every redaction on record. (The unrelated top-level `version` is APIS's
+  own version string, which is empty for every law in the corpus.)
+- `nodes` — the provision tree. `path` is the citation (`ЧЛ80А/АЛ1/Т6`) and is
+  stable across rebuilds; глава and раздел are kept as nodes but deliberately
+  left out of their descendants' paths, since article numbering runs law-wide.
+  Nesting therefore follows `parent_path`, not the path prefix.
+- `references` — citations made by the provisions, as edges between paths.
+  `status` is `resolved` when the target is a provision of this law,
+  `unresolved_internal` when the cited provision is not in the corpus, and
+  `unresolved_external` when the citation names another act (`target_act`).
 
 ## Consuming the data
 

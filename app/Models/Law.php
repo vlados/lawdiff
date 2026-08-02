@@ -3,8 +3,10 @@
 namespace App\Models;
 
 use Database\Factories\LawFactory;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Law extends Model
@@ -13,6 +15,7 @@ class Law extends Model
     use HasFactory;
 
     protected $fillable = [
+        'current_version_id',
         'unique_id',
         'db_index',
         'caption',
@@ -34,22 +37,8 @@ class Law extends Model
         'celex',
         'doc_lead',
         'seria',
-        'content_structure',
-        'content_text',
         'content_fetched_at',
         'processed_at',
-    ];
-
-    /**
-     * Raw APIS payloads are megabytes per law; they must never be serialized
-     * onto the public JSON endpoint. Internal code reads them as properties,
-     * which $hidden does not affect.
-     *
-     * @var list<string>
-     */
-    protected $hidden = [
-        'content_structure',
-        'content_text',
     ];
 
     protected function casts(): array
@@ -69,11 +58,40 @@ class Law extends Model
             'has_content' => 'boolean',
             'dv' => 'integer',
             'original_id' => 'integer',
-            'content_structure' => 'array',
-            'content_text' => 'array',
             'content_fetched_at' => 'datetime',
             'processed_at' => 'datetime',
         ];
+    }
+
+    public function versions(): HasMany
+    {
+        return $this->hasMany(LawVersion::class)->orderByDesc('changed_at');
+    }
+
+    /**
+     * The redaction currently in the corpus. Held as a column rather than
+     * derived from max(changed_at) so a version published ahead of the one in
+     * force cannot silently become "current" the moment it is fetched.
+     */
+    public function currentVersion(): BelongsTo
+    {
+        return $this->belongsTo(LawVersion::class, 'current_version_id');
+    }
+
+    /**
+     * The payload lives on the version, not the law — a law has no text of its
+     * own, only the text of whichever redaction you asked for. Reading through
+     * the current version keeps the common case ("what does it say now")
+     * spelled the way it reads.
+     */
+    protected function contentStructure(): Attribute
+    {
+        return Attribute::make(get: fn (): ?array => $this->currentVersion?->content_structure);
+    }
+
+    protected function contentText(): Attribute
+    {
+        return Attribute::make(get: fn (): ?array => $this->currentVersion?->content_text);
     }
 
     public function nodes(): HasMany

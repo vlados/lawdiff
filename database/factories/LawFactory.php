@@ -2,10 +2,14 @@
 
 namespace Database\Factories;
 
+use App\Models\Law;
+use App\Models\LawVersion;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Law>
+ * @extends Factory<Law>
  */
 class LawFactory extends Factory
 {
@@ -39,5 +43,53 @@ class LawFactory extends Factory
             'doc_lead' => fake()->optional()->word(),
             'seria' => fake()->optional()->word(),
         ];
+    }
+
+    /**
+     * A law has no content of its own — the payload belongs to a redaction of
+     * it. Accepting content_structure/content_text here and turning them into
+     * the law's first version keeps "a law with this text" sayable in one
+     * expression, which is what every test actually means by it.
+     *
+     * @param  array<string, mixed>  $attributes
+     * @return Law|Collection<int, Law>
+     */
+    public function create($attributes = [], ?Model $parent = null)
+    {
+        $structure = $attributes['content_structure'] ?? null;
+        $text = $attributes['content_text'] ?? null;
+        $hasContent = array_key_exists('content_structure', $attributes)
+            || array_key_exists('content_text', $attributes);
+
+        unset($attributes['content_structure'], $attributes['content_text']);
+
+        $created = parent::create($attributes, $parent);
+
+        if (! $hasContent) {
+            return $created;
+        }
+
+        $laws = $created instanceof Collection ? $created : collect([$created]);
+
+        foreach ($laws as $law) {
+            $version = LawVersion::create([
+                'law_id' => $law->id,
+                'changed_at' => $law->publ_date?->toDateString() ?? now()->toDateString(),
+                'dv' => $law->dv,
+                'publ_year' => $law->publ_year,
+                'valid_from' => $law->start_date?->toDateString(),
+                'valid_to' => $law->end_date?->toDateString(),
+                'content_structure' => $structure,
+                'content_text' => $text,
+                'source_hash' => LawVersion::hashPayload($structure, $text),
+                'fetched_at' => $law->content_fetched_at,
+                'processed_at' => $law->processed_at,
+            ]);
+
+            $law->forceFill(['current_version_id' => $version->id])->save();
+            $law->setRelation('currentVersion', $version);
+        }
+
+        return $created;
     }
 }

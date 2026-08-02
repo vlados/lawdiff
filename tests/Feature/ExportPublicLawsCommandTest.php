@@ -93,8 +93,8 @@ test('law payload key order is stable', function () {
     expect(array_keys($payload))->toBe([
         'unique_id', 'slug', 'code', 'caption', 'type', 'func', 'base', 'is_actual',
         'publ_year', 'publ_date', 'start_date', 'end_date', 'act_date', 'dv', 'version',
-        'celex', 'doc_lead', 'seria', 'source', 'fetched_at', 'processed_at', 'nodes',
-        'references',
+        'celex', 'doc_lead', 'seria', 'source', 'fetched_at', 'processed_at', 'versions',
+        'nodes', 'references',
     ]);
 });
 
@@ -388,4 +388,40 @@ test('the export carries the citation graph keyed by path', function () {
             'relation' => 'refers_to',
             'status' => 'resolved',
         ]);
+});
+
+test('the export names the redaction its text is', function () {
+    $law = Law::factory()->create([
+        'caption' => 'ЗАКОН за движението по пътищата',
+        'publ_date' => '2026-06-16',
+        'start_date' => '2026-06-20',
+        'end_date' => null,
+        'dv' => 55,
+        'publ_year' => 2026,
+        'content_structure' => [['pId' => 1, 'caption' => 'Чл. 1']],
+        'content_text' => ['paragraphs' => [['pId' => 1, 'text' => '<p>Чл. 1. Текст.</p>', 'type' => 1]]],
+        'content_fetched_at' => now(),
+        'processed_at' => now(),
+    ]);
+
+    app(LawTreeProcessor::class)->process($law);
+
+    $this->artisan('laws:export-public', ['--output' => $this->outputDir])
+        ->assertExitCode(0);
+
+    $payload = json_decode(
+        File::get(File::files($this->outputDir.'/laws')[0]->getPathname()),
+        true,
+        flags: JSON_THROW_ON_ERROR
+    );
+
+    expect($payload['versions']['current'])->toMatchArray([
+        'changed_at' => '2026-06-16',
+        'label' => 'ДВ бр. 55 от 2026 г.',
+        'dv' => 55,
+        'valid_from' => '2026-06-20',
+        'valid_to' => null,
+    ])
+        ->and($payload['versions']['current']['source_hash'])->not->toBeNull()
+        ->and($payload['versions']['known'])->toHaveCount(1);
 });

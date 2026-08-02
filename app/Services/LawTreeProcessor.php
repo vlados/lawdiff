@@ -28,6 +28,13 @@ class LawTreeProcessor
     protected int $sortOrder = 0;
 
     /**
+     * The redaction the nodes being built describe. Stamped on every node so a
+     * provision can say which version of the law it came from rather than
+     * merely which law.
+     */
+    protected ?int $versionId = null;
+
+    /**
      * Paths already assigned within the current process() run, used to keep
      * every node path unique per law. Duplicate paths silently overwrite each
      * other in the export tree builder, which keys nodes by path.
@@ -56,6 +63,7 @@ class LawTreeProcessor
         DB::transaction(function () use ($law): void {
             $this->sortOrder = 0;
             $this->usedPaths = [];
+            $this->versionId = $law->current_version_id;
 
             // Delete existing nodes for this law
             $law->nodes()->delete();
@@ -177,6 +185,7 @@ class LawTreeProcessor
             // Create and save the node
             $saved = LawNode::create([
                 'law_id' => $law->id,
+                'law_version_id' => $this->versionId,
                 'parent_id' => $parentId,
                 'path' => $currentPath,
                 'p_id' => $node['pId'],
@@ -216,6 +225,7 @@ class LawTreeProcessor
 
                 LawNode::create([
                     'law_id' => $law->id,
+                    'law_version_id' => $this->versionId,
                     'path' => $pathSegment,
                     'p_id' => $pId,
                     'caption' => null,
@@ -335,6 +345,7 @@ class LawTreeProcessor
 
             $alineaNode = LawNode::create([
                 'law_id' => $law->id,
+                'law_version_id' => $this->versionId,
                 'parent_id' => $article->id,
                 'path' => $alineaPath,
                 'p_id' => $article->p_id,
@@ -383,6 +394,7 @@ class LawTreeProcessor
 
             $pointNode = LawNode::create([
                 'law_id' => $law->id,
+                'law_version_id' => $this->versionId,
                 'parent_id' => $parent->id,
                 'path' => $pointPath,
                 'p_id' => $parent->p_id,
@@ -429,6 +441,7 @@ class LawTreeProcessor
 
             LawNode::create([
                 'law_id' => $law->id,
+                'law_version_id' => $this->versionId,
                 'parent_id' => $parent->id,
                 'path' => $letterPath,
                 'p_id' => $parent->p_id,

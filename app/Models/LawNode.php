@@ -10,6 +10,7 @@ class LawNode extends Model
 {
     protected $fillable = [
         'law_id',
+        'law_version_id',
         'parent_id',
         'path',
         'p_id',

@@ -6,6 +6,7 @@ namespace App\Services;
 
 use App\Models\Law;
 use App\Models\LawNode;
+use App\Models\LawVersion;
 
 /**
  * Shared presentation layer for the public dataset export and any topical
@@ -108,6 +109,42 @@ class LawExportPresenter
         unset($entry);
 
         return $roots;
+    }
+
+    /**
+     * The redaction the exported text is, and every redaction known of it.
+     *
+     * publ_date/start_date at the top level already say when the law last
+     * changed, but they say it about the law rather than about the text below
+     * them. Naming the version the nodes were built from is what lets a
+     * consumer tell current text from stale, and listing the rest is what makes
+     * a new redaction visible as a diff instead of a silent rewrite.
+     *
+     * @return array<string, mixed>
+     */
+    public function versionInfo(Law $law): array
+    {
+        $law->loadMissing(['currentVersion', 'versions']);
+
+        return [
+            'current' => $law->currentVersion === null ? null : [
+                'changed_at' => $this->date($law->currentVersion->changed_at),
+                'label' => $law->currentVersion->label(),
+                'dv' => $law->currentVersion->dv,
+                'publ_year' => $law->currentVersion->publ_year,
+                'valid_from' => $this->date($law->currentVersion->valid_from),
+                'valid_to' => $this->date($law->currentVersion->valid_to),
+                'source_hash' => $law->currentVersion->source_hash,
+            ],
+            'known' => $law->versions
+                ->map(fn (LawVersion $version): array => [
+                    'changed_at' => $this->date($version->changed_at),
+                    'label' => $version->label(),
+                    'valid_from' => $this->date($version->valid_from),
+                    'valid_to' => $this->date($version->valid_to),
+                ])
+                ->all(),
+        ];
     }
 
     /**

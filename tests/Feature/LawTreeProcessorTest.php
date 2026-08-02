@@ -7,6 +7,7 @@ use App\Models\LawNode;
 use App\Services\LawPathBuilder;
 use App\Services\LawTreeProcessor;
 use App\Services\LegalReferenceExtractor;
+use App\Services\RecordLawVersion;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
@@ -442,19 +443,21 @@ test('deletes existing nodes before reprocessing', function () {
     $this->processor->process($law);
     expect($law->nodes)->toHaveCount(1);
 
-    // Update content and reprocess
-    $law->update([
-        'content_structure' => [
+    // An amended law arrives as a new redaction, not as an edit of the old one.
+    $law->update(['publ_date' => now()->addDay()]);
+    app(RecordLawVersion::class)->record(
+        $law->fresh(),
+        [
             ['pId' => 2, 'caption' => 'Чл. 2', 'parentId' => null],
             ['pId' => 3, 'caption' => 'Чл. 3', 'parentId' => null],
         ],
-        'content_text' => [
+        [
             'paragraphs' => [
                 ['pId' => 2, 'text' => '<p>New text 1</p>', 'type' => 1],
                 ['pId' => 3, 'text' => '<p>New text 2</p>', 'type' => 1],
             ],
-        ],
-    ]);
+        ]
+    );
 
     $this->processor->process($law->fresh());
 

@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Law;
 use App\Services\LawTreeProcessor;
+use App\Services\RecordLawVersion;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;
 
@@ -30,7 +31,7 @@ class FetchLawContents extends Command
     /**
      * Execute the console command.
      */
-    public function handle(LawTreeProcessor $processor): int
+    public function handle(LawTreeProcessor $processor, RecordLawVersion $recorder): int
     {
         $this->info('Starting to fetch law contents...');
 
@@ -81,7 +82,7 @@ class FetchLawContents extends Command
         // chunkById, not chunk: the pending filter keys on content_fetched_at and the
         // loop below sets it, so the result set shrinks as we go. Offset-based paging
         // would step past whole pages of unfetched laws.
-        $query->chunkById(50, function ($laws) use ($processor, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $throttleMs, $progressBar) {
+        $query->chunkById(50, function ($laws) use ($processor, $recorder, &$totalProcessed, &$totalSuccess, &$totalFailed, $limit, $throttleMs, $progressBar) {
             foreach ($laws as $law) {
                 if ($limit !== null && $totalProcessed >= $limit) {
                     return false;
@@ -91,11 +92,12 @@ class FetchLawContents extends Command
                     $contentStructure = $this->fetchDocContent($law->unique_id, $law->db_index);
                     $contentText = $this->fetchDocTextJson($law->unique_id, $law->db_index);
 
-                    $law->update([
-                        'content_structure' => $contentStructure,
-                        'content_text' => $contentText,
-                        'content_fetched_at' => now(),
-                    ]);
+                    // Opens a version keyed by the law's date of last change
+                    // rather than overwriting the text the previous ДВ issue
+                    // left behind.
+                    $recorder->record($law, $contentStructure, $contentText);
+
+                    $law->update(['content_fetched_at' => now()]);
 
                     // Process the tree with markdown conversion and save to law_nodes
                     $processor->process($law->fresh());

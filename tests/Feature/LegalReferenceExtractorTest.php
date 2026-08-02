@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Models\Law;
 use App\Models\LegalReference;
 use App\Services\LawTreeProcessor;
+use App\Services\RecordLawVersion;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
@@ -142,13 +143,12 @@ test('references are rebuilt with the nodes rather than left stale', function ()
 
     expect(LegalReference::query()->count())->toBe(1);
 
-    $law->update([
-        'content_text' => [
-            'paragraphs' => [
-                ['pId' => 1, 'text' => '<p>Чл. 12. Няма препратки.</p>', 'type' => 1],
-            ],
-        ],
-    ]);
+    $law->update(['publ_date' => now()->addDay()]);
+    app(RecordLawVersion::class)->record(
+        $law->fresh(),
+        [['pId' => 1, 'caption' => 'Чл. 12']],
+        ['paragraphs' => [['pId' => 1, 'text' => '<p>Чл. 12. Няма препратки.</p>', 'type' => 1]]]
+    );
 
     $processor->process($law->fresh());
 

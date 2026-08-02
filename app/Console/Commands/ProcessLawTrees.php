@@ -36,9 +36,12 @@ class ProcessLawTrees extends Command
         $limit = $this->option('limit') !== null ? (int) $this->option('limit') : null;
         $force = $this->option('force');
 
+        // The payload moved onto the version, so "has content" is now "has a
+        // current redaction carrying one".
         $query = Law::query()
-            ->whereNotNull('content_structure')
-            ->whereNotNull('content_text');
+            ->whereHas('currentVersion', function ($version): void {
+                $version->whereNotNull('content_structure')->whereNotNull('content_text');
+            });
 
         if ($lawId) {
             $query->where('id', $lawId);
