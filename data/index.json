@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-03T09:51:41+00:00",
+    "generated_at": "2026-08-04T08:42:00+00:00",
     "count": 424,
     "laws": [
         {
@@ -607,8 +607,8 @@
             "caption": "ЗАКОН за енергетиката",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-07-31",
+            "publ_date": "2026-08-04",
+            "start_date": "2026-08-08",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-energetikata.json"
@@ -3273,7 +3273,7 @@
             "type": 4,
             "is_actual": true,
             "publ_date": "2026-07-31",
-            "start_date": "2026-07-31",
+            "start_date": "2026-08-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-sadebnata-vlast.json"
@@ -3870,8 +3870,8 @@
             "caption": "ЗАКОН за енергията от възобновяеми източници",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-08-04",
+            "start_date": "2026-08-08",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-energiyata-ot-vazobnovyaemi-iztochnici.json"
@@ -4637,8 +4637,8 @@
             "caption": "ЗАКОН за административното регулиране на икономическите дейности, свързани с нефт и продукти от нефтен произход",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-07-31",
+            "publ_date": "2026-08-04",
+            "start_date": "2026-08-08",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-administrativnoto-regulirane-na-ikonomicheskite-deynosti-svarzani-s-neft-i-produkti-ot-neften-proizhod.json"
