@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-06T07:01:06+00:00",
+    "generated_at": "2026-08-07T06:30:23+00:00",
     "count": 424,
     "laws": [
         {
@@ -321,8 +321,8 @@
             "caption": "ЗАКОН за Комисията за финансов надзор",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-07-31",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-komisiyata-za-finansov-nadzor.json"
@@ -1894,8 +1894,8 @@
             "caption": "ЗАКОН за публичното предлагане на ценни книжа",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-07",
-            "start_date": "2026-07-07",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-publichnoto-predlagane-na-cenni-knizha.json"
@@ -2960,8 +2960,8 @@
             "caption": "ЗАКОН за кредитните институции",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-24",
-            "start_date": "2026-07-28",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-kreditnite-institucii.json"
@@ -3909,8 +3909,8 @@
             "caption": "ЗАКОН за дейността на колективните инвестиционни схеми и на други предприятия за колективно инвестиране",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-24",
-            "start_date": "2026-07-28",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-deynostta-na-kolektivnite-investicionni-shemi-i-na-drugi-predpriyatiya-za-kolektivno-investirane.json"
@@ -4104,8 +4104,8 @@
             "caption": "ЗАКОН за икономическите и финансовите отношения с дружествата, регистрирани в юрисдикции с преференциален данъчен режим, контролираните от тях лица и техните действителни собственици  (Загл. изм. – ДВ, бр. 48 от 2016 г., в сила от 1.07.2016 г.)",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ikonomicheskite-i-finansovite-otnosheniya-s-druzhestvata-registrirani-v-yurisdikcii-s-preferencialen-danachen-r.json"
@@ -4364,8 +4364,8 @@
             "caption": "ЗАКОН за обществените поръчки",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-obshtestvenite-porachki.json"
@@ -4468,8 +4468,8 @@
             "caption": "ЗАКОН за прилагане на мерките срещу пазарните злоупотреби с финансови инструменти",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-10",
-            "start_date": "2026-03-14",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-prilagane-na-merkite-sreshtu-pazarnite-zloupotrebi-s-finansovi-instrumenti.json"
@@ -4572,8 +4572,8 @@
             "caption": "ЗАКОН за пазарите на финансови инструменти",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-24",
-            "start_date": "2026-07-28",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pazarite-na-finansovi-instrumenti.json"
@@ -4598,8 +4598,8 @@
             "caption": "ЗАКОН за платежните услуги и платежните системи",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-24",
-            "start_date": "2026-07-28",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-platezhnite-uslugi-i-platezhnite-sistemi.json"
@@ -4910,8 +4910,8 @@
             "caption": "ЗАКОН за дружествата със специална инвестиционна цел и за дружествата за секюритизация",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-24",
-            "start_date": "2026-07-28",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-druzhestvata-sas-specialna-investicionna-cel-i-za-druzhestvata-za-sekyuritizaciya.json"
@@ -5027,8 +5027,8 @@
             "caption": "ЗАКОН за Българската народна банка",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-24",
-            "start_date": "2026-07-28",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-balgarskata-narodna-banka-1.json"
@@ -5235,8 +5235,8 @@
             "caption": "ЗАКОН за пазарите на криптоактиви",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-10",
-            "start_date": "2026-03-14",
+            "publ_date": "2026-08-07",
+            "start_date": "2026-08-07",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pazarite-na-kriptoaktivi.json"
