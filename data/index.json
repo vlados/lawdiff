@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-26T06:14:59+00:00",
+    "generated_at": "2026-08-27T09:13:22+00:00",
     "count": 424,
     "laws": [
         {
@@ -2440,8 +2440,8 @@
             "caption": "ЗАКОН за държавния служител",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-08-01",
+            "publ_date": "2026-08-26",
+            "start_date": "2026-08-26",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavniya-sluzhitel.json"
