@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-08T06:26:03+00:00",
+    "generated_at": "2026-09-09T06:27:02+00:00",
     "count": 424,
     "laws": [
         {
@@ -5053,8 +5053,8 @@
             "caption": "ЗАКОН за въвеждане на еврото в Република България",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-09-08",
+            "start_date": "2026-09-08",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-vavezhdane-na-evroto-v-republika-balgariya.json"
