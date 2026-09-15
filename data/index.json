@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-14T06:34:09+00:00",
+    "generated_at": "2026-09-15T06:27:29+00:00",
     "count": 424,
     "laws": [
         {
@@ -2037,8 +2037,8 @@
             "caption": "ЗАКОН за висшето образование",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-07-31",
+            "publ_date": "2026-09-15",
+            "start_date": "2026-09-19",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-vissheto-obrazovanie.json"
@@ -3025,7 +3025,7 @@
             "caption": "ЗАКОН за данъците върху доходите на физическите лица",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-03-27",
+            "publ_date": "2026-09-15",
             "start_date": "2026-01-01",
             "end_date": null,
             "version": null,
@@ -4286,8 +4286,8 @@
             "caption": "ЗАКОН за предучилищното и училищното образование",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-07-31",
+            "publ_date": "2026-09-15",
+            "start_date": "2026-09-19",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-preduchilishtnoto-i-uchilishtnoto-obrazovanie.json"
