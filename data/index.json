@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-29T06:27:56+00:00",
+    "generated_at": "2026-09-30T06:28:00+00:00",
     "count": 424,
     "laws": [
         {
@@ -2752,8 +2752,8 @@
             "caption": "ЗАКОН за акцизите и данъчните складове",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-08-01",
+            "publ_date": "2026-09-30",
+            "start_date": "2026-10-01",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-akcizite-i-danachnite-skladove.json"
