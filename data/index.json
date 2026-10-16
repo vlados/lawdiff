@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-10-15T06:26:23+00:00",
-    "count": 424,
+    "generated_at": "2026-10-16T06:25:49+00:00",
+    "count": 425,
     "laws": [
         {
             "unique_id": 8747,
@@ -4416,8 +4416,8 @@
             "caption": "ЗАКОН за електронната идентификация",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-10-16",
+            "start_date": "2026-10-20",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-elektronnata-identifikaciya.json"
@@ -5513,6 +5513,19 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavniya-byudzhet-na-republika-balgariya-za-2026-g.json"
+        },
+        {
+            "unique_id": 7231728,
+            "code": "43016",
+            "slug": "zakon-za-ratificirane-na-sporazumenieto-mezhdu-mezhdunarodnata-banka-za-ikonomichesko-satrudnichestvo-mbis-i-pravitelstv",
+            "caption": "ЗАКОН за ратифициране на Споразумението между Международната банка за икономическо сът­рудничество (МБИС) и правителството на Република България за окончателно уреждане на взаимните претенции и задължения във връзка с оттеглянето на Република България от С",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-10-16",
+            "start_date": "2026-10-16",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ratificirane-na-sporazumenieto-mezhdu-mezhdunarodnata-banka-za-ikonomichesko-satrudnichestvo-mbis-i-pravitelstv.json"
         }
     ]
 }
