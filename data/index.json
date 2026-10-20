@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-19T06:34:12+00:00",
+    "generated_at": "2026-10-20T06:25:25+00:00",
     "count": 425,
     "laws": [
         {
@@ -4559,8 +4559,8 @@
             "caption": "ЗАКОН за частната охранителна дейност",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2020-08-04",
-            "start_date": "2020-08-08",
+            "publ_date": "2026-10-20",
+            "start_date": "2026-10-24",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-chastnata-ohranitelna-deynost.json"
