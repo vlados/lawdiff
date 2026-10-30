@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-29T06:19:34+00:00",
+    "generated_at": "2026-10-30T06:19:44+00:00",
     "count": 425,
     "laws": [
         {
@@ -1751,8 +1751,8 @@
             "caption": "ЗАКОН за подземните богатства",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-11-07",
-            "start_date": "2026-02-09",
+            "publ_date": "2026-10-30",
+            "start_date": "2026-11-03",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-podzemnite-bogatstva.json"
@@ -2674,8 +2674,8 @@
             "caption": "ЗАКОН за железопътния транспорт",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-05",
-            "start_date": "2026-06-05",
+            "publ_date": "2026-10-30",
+            "start_date": "2026-11-03",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zhelezopatniya-transport.json"
@@ -3272,8 +3272,8 @@
             "caption": "ЗАКОН за съдебната власт",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-10-06",
-            "start_date": "2026-10-10",
+            "publ_date": "2026-10-30",
+            "start_date": "2026-11-03",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-sadebnata-vlast.json"
@@ -3740,8 +3740,8 @@
             "caption": "ЗАКОН за оръжията, боеприпасите, взривните вещества и пиротехническите изделия",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-10-30",
+            "start_date": "2026-11-03",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-orazhiyata-boepripasite-vzrivnite-veshtestva-i-pirotehnicheskite-izdeliya.json"
@@ -3883,8 +3883,8 @@
             "caption": "ЗАКОН за устройство на територията",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-10-17",
-            "start_date": "2025-10-21",
+            "publ_date": "2026-10-30",
+            "start_date": "2026-11-03",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ustroystvo-na-teritoriyata.json"
@@ -4026,8 +4026,8 @@
             "caption": "ЗАКОН за управление на отпадъците",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2024-09-24",
-            "start_date": "2024-09-24",
+            "publ_date": "2026-10-30",
+            "start_date": "2026-10-30",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-upravlenie-na-otpadacite.json"
@@ -5508,8 +5508,8 @@
             "caption": "ЗАКОН за държавния бюджет на Република България за 2026 г.",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-07-31",
-            "start_date": "2026-01-01",
+            "publ_date": "2026-10-30",
+            "start_date": "2026-11-03",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-darzhavniya-byudzhet-na-republika-balgariya-za-2026-g.json"
