@@ -22,8 +22,8 @@
         "unique_id": 7104315,
         "db_index": 0
     },
-    "fetched_at": "2026-10-30",
-    "processed_at": "2026-10-30",
+    "fetched_at": "2026-11-03",
+    "processed_at": "2026-11-03",
     "nodes": [
         {
             "path": "ЧЛ1",
@@ -1962,7 +1962,7 @@
             "field_type": 8,
             "level": 0,
             "sort_order": 6,
-            "has_in_links": false,
+            "has_in_links": true,
             "is_orphaned": false,
             "text_markdown": "Чл. 7.",
             "children": [
@@ -1975,7 +1975,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 330,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Приема бюджета на Конституционния съд за 2026 г., както следва:\n\n    №\n\n  Показатели\n\n  Сума\n\n(хил. евро)\n\n     I.\n\n  ПРИХОДИ, ПОМОЩИ И ДАРЕНИЯ\n\n     II.\n\n  РАЗХОДИ\n\n  5 122,5\n\n    *1.*\n\n  *Текущи разходи*\n\n  *4 560,0*\n\n     в т.ч.",
                     "children": [
@@ -1988,7 +1988,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 331,
-                            "has_in_links": false,
+                            "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "1.\n\n  Персонал\n\n  3 942,4\n\n    *2.*\n\n  *Капиталови разходи*\n\n  *562,5*",
                             "children": []
@@ -2002,7 +2002,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 332,
-                            "has_in_links": false,
+                            "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "1.\n\n  Придобиване на дълготрайни активи и основен ремонт\n\n  562,5\n\n    III.\n\n  БЮДЖЕТНИ ВЗАИМООТНОШЕНИЯ (ТРАНСФЕРИ) – (+/-)\n\n  5 122,5",
                             "children": []
@@ -2016,7 +2016,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 333,
-                            "has_in_links": false,
+                            "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "Бюджетно взаимоотношение с централния бюджет (+/-)\n\n  5 122,5\n\n    IV.\n\n  БЮДЖЕТНО САЛДО (І-ІІ+ІІІ)\n\n     V.\n\n  ОПЕРАЦИИ В ЧАСТТА НА ФИНАНСИРАНЕТО – НЕТО",
                             "children": []
@@ -2032,7 +2032,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 334,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Утвърждава разпределение на разходите по ал. 1 по функционални области, както следва:\n\n   №\n\n  Наименование на функционалната област\n\n  Сума\n\n(хил. евро)",
                     "children": [
@@ -2045,7 +2045,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 335,
-                            "has_in_links": false,
+                            "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "Функционална област \"Върховенство на Конституцията\"\n\n  5 122,5\n\n     Всичко:\n\n  5 122,5",
                             "children": []
@@ -2061,7 +2061,7 @@
                     "field_type": 8,
                     "level": 1,
                     "sort_order": 336,
-                    "has_in_links": false,
+                    "has_in_links": true,
                     "is_orphaned": false,
                     "text_markdown": "Утвърждава максималните размери на ангажиментите за разходи, които могат да бъдат поети през 2026 г., и максималните размери на новите задължения за разходи, които могат да бъдат натрупани през 2026 г. от Конституционния съд, както следва:\n\n   №\n\n  Показатели\n\n  Сума\n\n(хил. евро)",
                     "children": [
@@ -2074,7 +2074,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 337,
-                            "has_in_links": false,
+                            "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "Максимален размер на ангажиментите за разходи, които могат да бъдат поети през 2026 г.\n\n  1 087,0",
                             "children": []
@@ -2088,7 +2088,7 @@
                             "field_type": 8,
                             "level": 2,
                             "sort_order": 338,
-                            "has_in_links": false,
+                            "has_in_links": true,
                             "is_orphaned": false,
                             "text_markdown": "Максимален размер на новите задължения за разходи, които могат да бъдат натрупани през 2026 г.\n\n  1 087,0",
                             "children": []
