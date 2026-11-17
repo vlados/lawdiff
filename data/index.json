@@ -1,6 +1,6 @@
 {
-    "generated_at": "2026-11-16T15:12:14+00:00",
-    "count": 425,
+    "generated_at": "2026-11-17T15:41:54+00:00",
+    "count": 427,
     "laws": [
         {
             "unique_id": 8747,
@@ -321,8 +321,8 @@
             "caption": "ЗАКОН за Комисията за финансов надзор",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-08-07",
-            "start_date": "2026-08-07",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-21",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-komisiyata-za-finansov-nadzor.json"
@@ -607,8 +607,8 @@
             "caption": "ЗАКОН за енергетиката",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-08-04",
-            "start_date": "2026-08-08",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-17",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-energetikata.json"
@@ -1894,8 +1894,8 @@
             "caption": "ЗАКОН за публичното предлагане на ценни книжа",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-09-25",
-            "start_date": "2026-09-25",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-21",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-publichnoto-predlagane-na-cenni-knizha.json"
@@ -2102,8 +2102,8 @@
             "caption": "ЗАКОН за чистотата на атмосферния въздух",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-17",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-chistotata-na-atmosferniya-vazduh.json"
@@ -3870,8 +3870,8 @@
             "caption": "ЗАКОН за енергията от възобновяеми източници",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-08-04",
-            "start_date": "2026-08-08",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-17",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-energiyata-ot-vazobnovyaemi-iztochnici.json"
@@ -3909,8 +3909,8 @@
             "caption": "ЗАКОН за дейността на колективните инвестиционни схеми и на други предприятия за колективно инвестиране",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-08-07",
-            "start_date": "2026-08-07",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-21",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-deynostta-na-kolektivnite-investicionni-shemi-i-na-drugi-predpriyatiya-za-kolektivno-investirane.json"
@@ -4117,8 +4117,8 @@
             "caption": "ЗАКОН за ограничаване изменението на климата",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-17",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ogranichavane-izmenenieto-na-klimata.json"
@@ -4572,8 +4572,8 @@
             "caption": "ЗАКОН за пазарите на финансови инструменти",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-08-07",
-            "start_date": "2026-08-07",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-21",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pazarite-na-finansovi-instrumenti.json"
@@ -5235,8 +5235,8 @@
             "caption": "ЗАКОН за пазарите на криптоактиви",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-08-07",
-            "start_date": "2026-08-07",
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-21",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-pazarite-na-kriptoaktivi.json"
@@ -5526,6 +5526,32 @@
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-ratificirane-na-sporazumenieto-mezhdu-mezhdunarodnata-banka-za-ikonomichesko-satrudnichestvo-mbis-i-pravitelstv.json"
+        },
+        {
+            "unique_id": 7279790,
+            "code": "43017",
+            "slug": "zakon-za-ratificirane-na-sporazumenieto-za-zasileno-partnyorstvo-i-satrudnichestvo-mezhdu-evropeyskiya-sayuz-i-negovite-",
+            "caption": "ЗАКОН за ратифициране на Споразумението за засилено партньорство и сътрудничество между Европейския съюз и неговите държави членки, от една страна, и Република Узбекистан, от друга страна",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-21",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ratificirane-na-sporazumenieto-za-zasileno-partnyorstvo-i-satrudnichestvo-mezhdu-evropeyskiya-sayuz-i-negovite-.json"
+        },
+        {
+            "unique_id": 7279791,
+            "code": "43018",
+            "slug": "zakon-za-ratificirane-na-konvenciyata-za-byuroto-na-evropeyskata-konferenciya-za-grazhdanska-aviaciya",
+            "caption": "ЗАКОН за ратифициране на Конвенцията за Бюрото на Европейската конференция за гражданска авиация",
+            "type": 4,
+            "is_actual": true,
+            "publ_date": "2026-11-17",
+            "start_date": "2026-11-21",
+            "end_date": null,
+            "version": null,
+            "file": "laws/zakon-za-ratificirane-na-konvenciyata-za-byuroto-na-evropeyskata-konferenciya-za-grazhdanska-aviaciya.json"
         }
     ]
 }
