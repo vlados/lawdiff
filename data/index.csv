@@ -49,7 +49,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 9577,4034,zakon-za-sobstvenostta,"ЗАКОН за собствеността",4,true,2022-03-04,2022-03-08,,,laws/zakon-za-sobstvenostta.json
 9685,40393,zakon-za-garantiranite-vzemaniya-na-rabotnicite-i-sluzhitelite-pri-nesastoyatelnost-na-rabotodatelya,"ЗАКОН за гарантираните вземания на работниците и служителите при несъстоятелност на работодателя",4,true,2026-07-28,2026-08-01,,,laws/zakon-za-garantiranite-vzemaniya-na-rabotnicite-i-sluzhitelite-pri-nesastoyatelnost-na-rabotodatelya.json
 9692,4040,zakon-za-oproshtavane-na-zadalzheniya-kam-darzhavata,"ЗАКОН за опрощаване на задължения към държавата",4,true,1964-09-15,1964-09-18,,,laws/zakon-za-oproshtavane-na-zadalzheniya-kam-darzhavata.json
-9701,40409,zakon-za-advokaturata,"ЗАКОН за адвокатурата",4,true,2026-10-06,2026-10-10,,,laws/zakon-za-advokaturata.json
+9701,40409,zakon-za-advokaturata,"ЗАКОН за адвокатурата",4,true,2026-11-24,2026-11-28,,,laws/zakon-za-advokaturata.json
 9704,4041,zakon-za-normativnite-aktove,"ЗАКОН за нормативните актове",4,true,2026-03-27,2026-03-31,,,laws/zakon-za-normativnite-aktove.json
 9724,4042,zakon-za-grazhdanskoto-vazduhoplavane,"ЗАКОН за гражданското въздухоплаване",4,true,2026-04-01,2026-04-16,,,laws/zakon-za-grazhdanskoto-vazduhoplavane.json
 9731,40426,zakon-za-zdraveto,"ЗАКОН за здравето",4,true,2026-07-28,2026-08-01,,,laws/zakon-za-zdraveto.json
@@ -208,7 +208,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 193739,40521,zakon-za-administrativnoto-regulirane-na-proizvodstvoto-na-optichni-diskove-i-matrici-zagl-izm-dv-br-26-ot-2020-g,"ЗАКОН за административното регулиране на производството на оптични дискове и матрици (Загл. изм. – ДВ, бр. 26 от 2020 г.)",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-administrativnoto-regulirane-na-proizvodstvoto-na-optichni-diskove-i-matrici-zagl-izm-dv-br-26-ot-2020-g.json
 193740,40522,zakon-za-zashtita-ot-shuma-v-okolnata-sreda,"ЗАКОН за защита от шума в околната среда",4,true,2020-11-27,2020-11-27,,,laws/zakon-za-zashtita-ot-shuma-v-okolnata-sreda.json
 195169,4402,zakon-za-pravnata-pomosht,"ЗАКОН за правната помощ",4,true,2026-07-31,2026-07-31,,,laws/zakon-za-pravnata-pomosht.json
-198384,40372,zakon-za-veterinarnomedicinskata-deynost,"ЗАКОН за ветеринарномедицинската дейност",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-veterinarnomedicinskata-deynost.json
+198384,40372,zakon-za-veterinarnomedicinskata-deynost,"ЗАКОН за ветеринарномедицинската дейност",4,true,2026-11-24,2026-11-28,,,laws/zakon-za-veterinarnomedicinskata-deynost.json
 198584,40373,zakon-za-nacionalnata-standartizaciya,"ЗАКОН за националната стандартизация",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-nacionalnata-standartizaciya.json
 199306,40525,zakon-za-akcizite-i-danachnite-skladove,"ЗАКОН за акцизите и данъчните складове",4,true,2026-09-30,2026-10-01,,,laws/zakon-za-akcizite-i-danachnite-skladove.json
 202063,40527,zakon-za-zashtita-na-potrebitelite,"ЗАКОН за защита на потребителите",4,true,2026-09-24,2026-09-24,2027-08-09,,laws/zakon-za-zashtita-na-potrebitelite.json
@@ -255,7 +255,7 @@ unique_id,code,slug,caption,type,is_actual,publ_date,start_date,end_date,version
 274253,40736,zakon-za-saslovnata-organizaciya-na-veterinarnite-lekari-v-balgariya,"ЗАКОН за съсловната организация на ветеринарните лекари в България",4,true,2024-03-19,2024-03-23,,,laws/zakon-za-saslovnata-organizaciya-na-veterinarnite-lekari-v-balgariya.json
 276479,40738,zakon-za-pochvite,"ЗАКОН за почвите",4,true,2023-12-08,2023-12-12,,,laws/zakon-za-pochvite.json
 281324,40746,zakon-za-darzhavna-agenciya-nacionalna-sigurnost,"ЗАКОН за Държавна агенция ""Национална сигурност""",4,true,2026-07-21,2026-07-25,,,laws/zakon-za-darzhavna-agenciya-nacionalna-sigurnost.json
-285903,40753,zakon-za-zashtita-na-zhivotnite,"ЗАКОН за защита на животните",4,true,2025-07-29,2025-07-29,,,laws/zakon-za-zashtita-na-zhivotnite.json
+285903,40753,zakon-za-zashtita-na-zhivotnite,"ЗАКОН за защита на животните",4,true,2026-11-24,2026-11-28,,,laws/zakon-za-zashtita-na-zhivotnite.json
 285905,40755,zakon-za-priznavane-na-profesionalni-kvalifikacii,"ЗАКОН за признаване на професионални квалификации",4,true,2026-06-16,2026-06-20,,,laws/zakon-za-priznavane-na-profesionalni-kvalifikacii.json
 285906,40756,zakon-za-voennite-pametnici,"ЗАКОН за военните паметници",4,true,2017-08-01,2017-08-05,,,laws/zakon-za-voennite-pametnici.json
 293693,40768,zakon-za-otgovornostta-za-predotvratyavane-i-otstranyavane-na-ekologichni-shteti,"ЗАКОН за отговорността за предотвратяване и отстраняване на екологични щети",4,true,2023-12-08,2023-12-12,,,laws/zakon-za-otgovornostta-za-predotvratyavane-i-otstranyavane-na-ekologichni-shteti.json

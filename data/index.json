@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-23T17:40:13+00:00",
+    "generated_at": "2026-11-24T17:12:02+00:00",
     "count": 427,
     "laws": [
         {
@@ -659,8 +659,8 @@
             "caption": "ЗАКОН за адвокатурата",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-10-06",
-            "start_date": "2026-10-10",
+            "publ_date": "2026-11-24",
+            "start_date": "2026-11-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-advokaturata.json"
@@ -2726,8 +2726,8 @@
             "caption": "ЗАКОН за ветеринарномедицинската дейност",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2026-06-16",
-            "start_date": "2026-06-20",
+            "publ_date": "2026-11-24",
+            "start_date": "2026-11-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-veterinarnomedicinskata-deynost.json"
@@ -3337,8 +3337,8 @@
             "caption": "ЗАКОН за защита на животните",
             "type": 4,
             "is_actual": true,
-            "publ_date": "2025-07-29",
-            "start_date": "2025-07-29",
+            "publ_date": "2026-11-24",
+            "start_date": "2026-11-28",
             "end_date": null,
             "version": null,
             "file": "laws/zakon-za-zashtita-na-zhivotnite.json"
